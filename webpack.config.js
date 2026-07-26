@@ -7,7 +7,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.[contenthash].js',
-    publicPath: 'auto'
+    publicPath: 'auto',
+    clean: true
   },
   resolve: {
     extensions: ['.js']
