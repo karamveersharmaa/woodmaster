@@ -1,0 +1,153 @@
+:host {
+  display: block;
+  background: var(--wm-bg);
+}
+
+.hero {
+  max-width: var(--wm-max);
+  margin: 0 auto;
+  padding: 64px 24px 80px;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: var(--wm-copper);
+  margin: 0 0 18px;
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.35rem, 3.6vw + 1rem, 4rem);
+  line-height: 1.04;
+  margin: 0 0 22px;
+  letter-spacing: -0.01em;
+}
+
+.lede {
+  font-size: 1.08rem;
+  line-height: 1.6;
+  color: var(--wm-ink-soft);
+  max-width: 46ch;
+  margin: 0 0 32px;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  padding: 14px 24px;
+  border-radius: var(--wm-radius);
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--wm-walnut-dark);
+  color: var(--wm-on-dark);
+  border: 1px solid var(--wm-walnut-dark);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background: var(--wm-copper);
+  border-color: var(--wm-copper);
+}
+
+.btn-ghost {
+  color: var(--wm-ink);
+  border: 1px solid var(--wm-line-strong);
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus-visible {
+  border-color: var(--wm-ink);
+}
+
+.trust {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0 0;
+  border-top: 1px solid var(--wm-line);
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  font-size: 0.86rem;
+  color: var(--wm-ink-soft);
+}
+
+.trust .num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--wm-ink);
+  font-weight: 600;
+}
+
+.drawing svg {
+  width: 100%;
+  height: auto;
+}
+
+.drawing .title {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  fill: var(--wm-ink-soft);
+}
+
+.drawing .label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  fill: var(--wm-ink-soft);
+}
+
+.drawing .guide {
+  stroke: var(--wm-copper);
+  stroke-width: 1.5;
+  stroke-dasharray: 3 4;
+}
+
+.drawing .lead {
+  stroke: var(--wm-line-strong);
+  stroke-width: 1;
+}
+
+.drawing .dim {
+  stroke: var(--wm-ink-soft);
+  stroke-width: 1;
+}
+
+@media (max-width: 900px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .drawing {
+    order: -1;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    padding: 40px 20px 56px;
+  }
+}

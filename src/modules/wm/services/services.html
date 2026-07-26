@@ -1,0 +1,24 @@
+<template>
+  <section class="services" id="services">
+    <div class="inner">
+      <p class="eyebrow">⊢— What We Build —⊣</p>
+      <h2>One workshop, every joint in the house.</h2>
+
+      <div class="grid">
+        <template for:each={items} for:item="item">
+          <article class="card" key={item.id}>
+            <div class="icon-box">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <rect x="6" y="6" width="36" height="36" fill="none" stroke="var(--wm-walnut-dark)" stroke-width="1.4"></rect>
+                <path d={item.path} fill="none" stroke="var(--wm-copper)" stroke-width="1.6"></path>
+              </svg>
+            </div>
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
+            <p class="tag">{item.tag}</p>
+          </article>
+        </template>
+      </div>
+    </div>
+  </section>
+</template>

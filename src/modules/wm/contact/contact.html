@@ -1,0 +1,64 @@
+<template>
+  <section class="contact" id="contact">
+    <div class="inner">
+      <div class="left">
+        <p class="eyebrow">⊢— Start A Project —⊣</p>
+        <h2>Tell us what you need built.</h2>
+        <p class="sub">
+          Free on-site measurement across Delhi NCR. Share a few details and
+          we'll call back within a day with a rough estimate.
+        </p>
+
+        <ul class="details">
+          <li>
+            <span class="k">Phone / WhatsApp</span>
+            <span class="v">+91 90000 00000</span>
+          </li>
+          <li>
+            <span class="k">Email</span>
+            <span class="v">hello@woodmaster.example</span>
+          </li>
+          <li>
+            <span class="k">Workshop</span>
+            <span class="v">Sector 63, Noida, Uttar Pradesh</span>
+          </li>
+          <li>
+            <span class="k">Hours</span>
+            <span class="v">Mon&ndash;Sat, 10am&ndash;7pm</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <template if:false={submitted}>
+          <form onsubmit={handleSubmit}>
+            <label for="name">Name</label>
+            <input type="text" id="name" required value={formName} onchange={handleNameChange} />
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" required value={formPhone} onchange={handlePhoneChange} />
+
+            <label for="piece">What do you need?</label>
+            <select id="piece" value={formPiece} onchange={handlePieceChange}>
+              <template for:each={pieceOptions} for:item="opt">
+                <option key={opt} value={opt}>{opt}</option>
+              </template>
+            </select>
+
+            <label for="message">Tell us about the space</label>
+            <textarea id="message" rows="4" required value={formMessage} onchange={handleMessageChange}></textarea>
+
+            <button type="submit" class="btn-primary">Request a Callback</button>
+          </form>
+        </template>
+
+        <template if:true={submitted}>
+          <div class="thanks">
+            <p class="thanks-title">Request received.</p>
+            <p>We'll call {formName} on {formPhone} within a day to talk through the {formPiece}.</p>
+          </div>
+        </template>
+      </div>
+    </div>
+  </section>
+</template>

@@ -1,0 +1,67 @@
+:host {
+  display: block;
+  background: var(--wm-bg-soft);
+}
+
+.inner {
+  max-width: var(--wm-max);
+  margin: 0 auto;
+  padding: 88px 24px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: var(--wm-copper);
+  margin: 0 0 12px;
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.8rem, 2.2vw + 1rem, 2.6rem);
+  margin: 0 0 44px;
+  max-width: 22ch;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1px;
+  background: var(--wm-line);
+  border: 1px solid var(--wm-line);
+}
+
+.card {
+  background: var(--wm-bg-panel);
+  padding: 32px 28px;
+}
+
+.icon-box svg {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 18px;
+}
+
+h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.card p {
+  margin: 0 0 10px;
+  color: var(--wm-ink-soft);
+  line-height: 1.55;
+  font-size: 0.95rem;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--wm-copper);
+  letter-spacing: 0.02em;
+  margin: 14px 0 0 !important;
+}

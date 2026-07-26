@@ -1,0 +1,32 @@
+<template>
+  <header class="bar">
+    <div class="inner">
+      <a href="#top" class="brand" onclick={closeMenu}>
+        <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+          <rect width="100" height="100" rx="14" fill="var(--wm-walnut-dark)"></rect>
+          <path d="M28 72 L28 28 L58 28 L58 40 L40 40 L40 72 Z" fill="var(--wm-copper-light)"></path>
+        </svg>
+        <span class="wordmark">WoodMaster</span>
+      </a>
+
+      <nav class={navClass} aria-label="Primary">
+        <a href="#services" onclick={closeMenu}>Services</a>
+        <a href="#process" onclick={closeMenu}>Process</a>
+        <a href="#gallery" onclick={closeMenu}>Work</a>
+        <a href="#about" onclick={closeMenu}>About</a>
+        <a href="#contact" class="nav-cta" onclick={closeMenu}>Get a Quote</a>
+      </nav>
+
+      <button
+        class="burger"
+        aria-label="Toggle menu"
+        aria-expanded={menuOpen}
+        onclick={toggleMenu}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+</template>

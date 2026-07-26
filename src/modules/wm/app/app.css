@@ -1,0 +1,42 @@
+/*
+  WoodMaster design tokens.
+  Defined on :host so they inherit down through every child
+  component's shadow tree (CSS custom properties pierce shadow
+  boundaries by design — only the values need to be set once, here).
+*/
+:host {
+  display: block;
+
+  /* ---- palette: workshop, not screen ---- */
+  --wm-bg: #F7F1E6;           /* sawdust cream */
+  --wm-bg-soft: #EFE4D0;      /* raw board */
+  --wm-bg-panel: #FBF7EF;
+  --wm-ink: #241A12;          /* charred oak */
+  --wm-ink-soft: #5B4A3D;
+  --wm-walnut: #4A2E1E;
+  --wm-walnut-dark: #2B1B12;
+  --wm-copper: #B5651D;       /* brass hardware */
+  --wm-copper-light: #D98A4B;
+  --wm-sage: #6E7A5F;         /* patina accent, used sparingly */
+  --wm-line: rgba(36, 26, 18, 0.18);
+  --wm-line-strong: rgba(36, 26, 18, 0.34);
+  --wm-on-dark: #F3E9D8;
+  --wm-on-dark-soft: rgba(243, 233, 216, 0.7);
+
+  /* ---- type ---- */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+
+  /* ---- rhythm ---- */
+  --wm-max: 1180px;
+  --wm-radius: 2px;
+
+  font-family: var(--font-body);
+  color: var(--wm-ink);
+  background: var(--wm-bg);
+}
+
+main {
+  display: block;
+}

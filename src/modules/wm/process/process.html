@@ -1,0 +1,18 @@
+<template>
+  <section class="process" id="process">
+    <div class="inner">
+      <p class="eyebrow">⊢— How A Piece Gets Made —⊣</p>
+      <h2>Five steps from sketch to install.</h2>
+
+      <ol class="timeline">
+        <template for:each={steps} for:item="step">
+          <li key={step.id}>
+            <span class="tick">⊢{step.id}⊣</span>
+            <h3>{step.title}</h3>
+            <p>{step.description}</p>
+          </li>
+        </template>
+      </ol>
+    </div>
+  </section>
+</template>

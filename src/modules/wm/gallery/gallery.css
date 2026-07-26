@@ -1,0 +1,74 @@
+:host {
+  display: block;
+  background: var(--wm-bg);
+}
+
+.inner {
+  max-width: var(--wm-max);
+  margin: 0 auto;
+  padding: 88px 24px 56px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: var(--wm-copper);
+  margin: 0 0 12px;
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.8rem, 2.2vw + 1rem, 2.6rem);
+  margin: 0 0 40px;
+  max-width: 20ch;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.piece {
+  margin: 0;
+}
+
+.swatch {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 1px solid var(--wm-line);
+}
+
+.swatch svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 10px;
+}
+
+.cap-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.cap-meta {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--wm-ink-soft);
+}
+
+.note {
+  margin-top: 36px;
+  font-size: 0.82rem;
+  color: var(--wm-ink-soft);
+  font-style: italic;
+}

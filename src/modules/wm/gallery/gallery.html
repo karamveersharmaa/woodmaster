@@ -1,0 +1,37 @@
+<template>
+  <section class="gallery" id="gallery">
+    <div class="inner">
+      <p class="eyebrow">⊢— Recent Work —⊣</p>
+      <h2>A few pieces that left the workshop.</h2>
+
+      <div class="grid">
+        <template for:each={pieces} for:item="piece">
+          <figure class="piece" key={piece.id}>
+            <div class="swatch">
+              <svg viewBox="0 0 300 220" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                  <filter id={piece.filterId}>
+                    <feTurbulence type="fractalNoise" baseFrequency="0.012 0.09" numOctaves="3" seed={piece.seed} result="noise"></feTurbulence>
+                    <feColorMatrix in="noise" type="saturate" values="0"></feColorMatrix>
+                    <feComponentTransfer>
+                      <feFuncA type="linear" slope="0.25" intercept="0"></feFuncA>
+                    </feComponentTransfer>
+                    <feComposite operator="over" in2="SourceGraphic"></feComposite>
+                  </filter>
+                </defs>
+                <rect width="300" height="220" fill={piece.color}></rect>
+                <rect width="300" height="220" filter={piece.filterUrl} fill="#000"></rect>
+              </svg>
+            </div>
+            <figcaption>
+              <span class="cap-title">{piece.title}</span>
+              <span class="cap-meta">{piece.meta}</span>
+            </figcaption>
+          </figure>
+        </template>
+      </div>
+
+      <p class="note">Photos of your own finished pieces will replace these swatches once the workshop gallery is loaded in.</p>
+    </div>
+  </section>
+</template>

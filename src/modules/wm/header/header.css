@@ -1,0 +1,136 @@
+:host {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: block;
+}
+
+.bar {
+  background: rgba(247, 241, 230, 0.92);
+  backdrop-filter: saturate(140%) blur(8px);
+  border-bottom: 1px solid var(--wm-line);
+}
+
+.inner {
+  max-width: var(--wm-max);
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--wm-ink);
+}
+
+.mark {
+  width: 30px;
+  height: 30px;
+  flex: none;
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 0.01em;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.links a {
+  color: var(--wm-ink-soft);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.links a:hover,
+.links a:focus-visible {
+  color: var(--wm-copper);
+}
+
+.nav-cta {
+  border: 1px solid var(--wm-walnut-dark);
+  color: var(--wm-walnut-dark) !important;
+  padding: 8px 16px;
+  border-radius: var(--wm-radius);
+  font-family: var(--font-mono);
+  font-size: 0.82rem !important;
+  letter-spacing: 0.03em;
+}
+
+.nav-cta:hover,
+.nav-cta:focus-visible {
+  background: var(--wm-walnut-dark);
+  color: var(--wm-on-dark) !important;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.burger span {
+  width: 22px;
+  height: 2px;
+  background: var(--wm-ink);
+  display: block;
+}
+
+@media (max-width: 860px) {
+  .links {
+    position: fixed;
+    top: 62px;
+    right: 0;
+    left: 0;
+    background: var(--wm-bg-panel);
+    border-bottom: 1px solid var(--wm-line);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+  }
+
+  .links.open {
+    max-height: 320px;
+  }
+
+  .links a {
+    width: 100%;
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--wm-line);
+  }
+
+  .nav-cta {
+    border: none;
+    color: var(--wm-copper) !important;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--wm-copper);
+  outline-offset: 2px;
+}

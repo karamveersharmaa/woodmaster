@@ -1,0 +1,22 @@
+{
+  "name": "woodmaster-lwc",
+  "version": "1.0.0",
+  "description": "WoodMaster — custom carpentry studio website, built with LWC Open Source (LWC OSS), deployable to GitHub Pages",
+  "scripts": {
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "lwc": "^9.3.4"
+  },
+  "devDependencies": {
+    "@lwc/module-resolver": "^9.0.2",
+    "lwc-webpack-plugin": "^3.1.0",
+    "gh-pages": "^6.1.1",
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.0"
+  }
+}

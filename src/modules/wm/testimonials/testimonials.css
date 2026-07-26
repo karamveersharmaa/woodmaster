@@ -1,0 +1,56 @@
+:host {
+  display: block;
+  background: var(--wm-bg-soft);
+}
+
+.inner {
+  max-width: var(--wm-max);
+  margin: 0 auto;
+  padding: 72px 24px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: var(--wm-copper);
+  margin: 0 0 32px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+blockquote {
+  margin: 0;
+  padding: 28px 26px;
+  background: var(--wm-bg-panel);
+  border-left: 3px solid var(--wm-copper);
+}
+
+.quote {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  line-height: 1.55;
+  margin: 0 0 18px;
+  color: var(--wm-ink);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.piece {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--wm-ink-soft);
+}

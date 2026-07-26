@@ -1,0 +1,18 @@
+<template>
+  <section class="testimonials">
+    <div class="inner">
+      <p class="eyebrow">⊢— From The Clients —⊣</p>
+      <div class="grid">
+        <template for:each={quotes} for:item="q">
+          <blockquote key={q.id}>
+            <p class="quote">&ldquo;{q.text}&rdquo;</p>
+            <footer>
+              <span class="name">{q.name}</span>
+              <span class="piece">{q.piece}</span>
+            </footer>
+          </blockquote>
+        </template>
+      </div>
+    </div>
+  </section>
+</template>
