@@ -15,7 +15,8 @@ module.exports = {
   optimization: {
     splitChunks: false,
     runtimeChunk: false,
-     minimize: false
+     minimize: false,
+     concatenateModules: false
   },
   plugins: [
     new LwcWebpackPlugin(),
