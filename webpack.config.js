@@ -9,10 +9,18 @@ module.exports = {
     filename: 'main.[contenthash].js',
     publicPath: 'auto',
     clean: true
-  },
+  },  
   resolve: {
     extensions: ['.js']
   },
+  module: {
+  rules: [
+    {
+      test: /\.(png|jpe?g|gif|webp|svg)$/i,
+      type: 'asset/resource'
+    }
+  ]
+},
   optimization: {
     splitChunks: false,
     runtimeChunk: false,
