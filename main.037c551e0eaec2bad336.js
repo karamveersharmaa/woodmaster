@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 622
+/***/ 727
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -20,16 +20,16 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 102
+/***/ 793
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _about_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(622);
+/* harmony import */ var _about_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(727);
 /* harmony import */ var _about_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<section class="about${0}"${"a0:id"}${2}><div class="inner${0}"${2}><div class="copy${0}"${2}><p class="eyebrow${0}"${2}>⊢— The Workshop —⊣</p><h2${3}>Wood first. Screws second.</h2><p${3}>WoodMaster is run out of a small workshop in the Delhi NCR area, building furniture and fittings the way it was done before flat-pack: seasoned solid wood, cut and joined by hand, finished on site. No MDF, no laminate shortcuts on load-bearing joints — if a piece is going to hold your clothes, your books or your dinner for the next twenty years, it&#x27;s built like it has to.</p><p${3}>Every job starts with a site visit and a hand-drawn sketch, not a catalogue page, because your almirah has to fit your wall, not the other way round.</p></div><dl class="stats${0}"${2}><div${3}><dt${3}>12+</dt><dd${3}>Years at the bench</dd></div><div${3}><dt${3}>300+</dt><dd${3}>Pieces delivered</dd></div><div${3}><dt${3}>4</dt><dd${3}>Timbers worked regularly</dd></div><div${3}><dt${3}>100%</dt><dd${3}>Site-measured, not guessed</dd></div></dl></div></section>`;
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<section class="about${0}"${"a0:id"}${2}><div class="inner${0}"${2}><div class="copy${0}"${2}><p class="eyebrow${0}"${2}>⊢— The Workshop —⊣</p><h2${3}>Wood first. Screws second.</h2><p${3}>WoodMaster is run out of a small workshop in the Delhi NCR area, building furniture and fittings the way it was done before flat-pack: seasoned solid wood, cut and joined by hand, finished on site. No MDF, no laminate shortcuts on load-bearing joints — if a piece is going to hold your clothes, your books or your dinner for the next twenty years, it&#x27;s built like it has to.</p><p${3}>Every job starts with a site visit and a hand-drawn sketch, not a catalogue page, because your almirah has to fit your wall, not the other way round.</p></div><dl class="stats${0}"${2}><div${3}><dt${3}>25+</dt><dd${3}>Years at the bench</dd></div><div${3}><dt${3}>300+</dt><dd${3}>Pieces delivered</dd></div><div${3}><dt${3}>4</dt><dd${3}>Timbers worked regularly</dd></div><div${3}><dt${3}>100%</dt><dd${3}>Site-measured, not guessed</dd></div></dl></div></section>`;
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {gid: api_scoped_id, sp: api_static_part, st: api_static_fragment} = $api;
   return [api_static_fragment($fragment1, 1, [api_static_part(0, {
@@ -58,10 +58,10 @@ if (_about_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ 
 
 /***/ },
 
-/***/ 108
+/***/ 932
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _about_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(102);
+/* harmony import */ var _about_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(793);
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(565);
 
 
@@ -81,7 +81,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_1__/* .re
 
 /***/ },
 
-/***/ 630
+/***/ 311
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -99,20 +99,20 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 302
+/***/ 73
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(630);
+/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(311);
 /* harmony import */ var _app_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
-/* harmony import */ var wm_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(756);
-/* harmony import */ var wm_hero__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(18);
-/* harmony import */ var wm_services__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(750);
-/* harmony import */ var wm_process__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(24);
-/* harmony import */ var wm_gallery__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(572);
-/* harmony import */ var wm_testimonials__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(369);
-/* harmony import */ var wm_about__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(108);
-/* harmony import */ var wm_contact__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(940);
-/* harmony import */ var wm_footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(668);
+/* harmony import */ var wm_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(415);
+/* harmony import */ var wm_hero__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(717);
+/* harmony import */ var wm_services__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(389);
+/* harmony import */ var wm_process__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(787);
+/* harmony import */ var wm_gallery__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(927);
+/* harmony import */ var wm_testimonials__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(1);
+/* harmony import */ var wm_about__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(932);
+/* harmony import */ var wm_contact__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(863);
+/* harmony import */ var wm_footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(707);
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(565);
 
 
@@ -180,10 +180,10 @@ if (_app_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A
 
 /***/ },
 
-/***/ 748
+/***/ 655
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _app_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(302);
+/* harmony import */ var _app_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(73);
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(565);
 
 
@@ -203,7 +203,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_1__/* .re
 
 /***/ },
 
-/***/ 654
+/***/ 15
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -221,16 +221,16 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 86
+/***/ 233
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _contact_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(654);
+/* harmony import */ var _contact_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
 /* harmony import */ var _contact_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="left${0}"${2}><p class="eyebrow${0}"${2}>⊢— Start A Project —⊣</p><h2${3}>Tell us what you need built.</h2><p class="sub${0}"${2}>Free on-site measurement across Delhi NCR. Share a few details and we&#x27;ll call back within a day with a rough estimate.</p><ul class="details${0}"${2}><li${3}><span class="k${0}"${2}>Phone / WhatsApp</span><span class="v${0}"${2}>+91 90000 00000</span></li><li${3}><span class="k${0}"${2}>Email</span><span class="v${0}"${2}>hello@woodmaster.example</span></li><li${3}><span class="k${0}"${2}>Workshop</span><span class="v${0}"${2}>Sector 63, Noida, Uttar Pradesh</span></li><li${3}><span class="k${0}"${2}>Hours</span><span class="v${0}"${2}>Mon–Sat, 10am–7pm</span></li></ul></div>`;
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="left${0}"${2}><p class="eyebrow${0}"${2}>⊢— Start A Project —⊣</p><h2${3}>Tell us what you need built.</h2><p class="sub${0}"${2}>Free on-site measurement across Delhi NCR. Share a few details and we&#x27;ll call back within a day with a rough estimate.</p><ul class="details${0}"${2}><li${3}><span class="k${0}"${2}>Phone / WhatsApp</span><span class="v${0}"${2}>+91 90000 00000</span></li><li${3}><span class="k${0}"${2}>Email</span><span class="v${0}"${2}>LuckySharma@woodmaster.example</span></li><li${3}><span class="k${0}"${2}>Workshop</span><span class="v${0}"${2}>Sorkha, Sector-115, Noida, Uttar Pradesh</span></li><li${3}><span class="k${0}"${2}>Hours</span><span class="v${0}"${2}>Mon–Sat, 10am–7pm</span></li></ul></div>`;
 const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Name</label>`;
 const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Phone</label>`;
 const $fragment4 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>What do you need?</label>`;
@@ -355,11 +355,11 @@ if (_contact_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] *
 
 /***/ },
 
-/***/ 940
+/***/ 863
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var _contact_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(86);
+/* harmony import */ var _contact_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(233);
 
 
 
@@ -414,7 +414,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 430
+/***/ 131
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -432,10 +432,10 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 590
+/***/ 293
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(430);
+/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(131);
 /* harmony import */ var _footer_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
@@ -466,11 +466,11 @@ if (_footer_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */
 
 /***/ },
 
-/***/ 668
+/***/ 707
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var _footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(590);
+/* harmony import */ var _footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(293);
 
 
 
@@ -497,14 +497,14 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 62
+/***/ 551
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
   var shadowSelector = token ? ("[" + token + "]") : "";
   var hostSelector = token ? ("[" + token + "-host]") : "";
   var suffixToken = token ? ("-" + token) : "";
-  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;background: var(--wm-bg);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 88px 24px 56px;}.eyebrow" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.78rem;letter-spacing: 0.06em;color: var(--wm-copper);margin: 0 0 12px;}h2" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: clamp(1.8rem, 2.2vw + 1rem, 2.6rem);margin: 0 0 40px;max-width: 20ch;}.grid" + shadowSelector + " {display: grid;grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));gap: 24px;}.piece" + shadowSelector + " {margin: 0;}.swatch" + shadowSelector + " {aspect-ratio: 4 / 3;overflow: hidden;border: 1px solid var(--wm-line);}.swatch" + shadowSelector + " svg" + shadowSelector + " {width: 100%;height: 100%;display: block;}figcaption" + shadowSelector + " {display: flex;flex-direction: column;gap: 2px;padding-top: 10px;}.cap-title" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: 1rem;}.cap-meta" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.76rem;color: var(--wm-ink-soft);}.note" + shadowSelector + " {margin-top: 36px;font-size: 0.82rem;color: var(--wm-ink-soft);font-style: italic;}";
+  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;background: var(--wm-bg);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 88px 24px 56px;}.eyebrow" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.78rem;letter-spacing: 0.06em;color: var(--wm-copper);margin: 0 0 12px;}h2" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: clamp(1.8rem, 2.2vw + 1rem, 2.6rem);margin: 0 0 40px;max-width: 20ch;}.grid" + shadowSelector + " {display: grid;grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));gap: 30px;}.piece" + shadowSelector + " {margin: 0;cursor: pointer;transition: transform 0.35s ease;}.piece:hover" + shadowSelector + " {transform: translateY(-6px);}.swatch" + shadowSelector + " {aspect-ratio: 4 / 3;overflow: hidden;border-radius: 12px;border: 1px solid var(--wm-line);background: #f7f4ef;transition: box-shadow 0.35s ease;}.piece:hover" + shadowSelector + " .swatch" + shadowSelector + " {box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);}.gallery-image" + shadowSelector + " {width: 100%;height: 100%;object-fit: cover;display: block;transition: transform 0.5s ease;}.piece:hover" + shadowSelector + " .gallery-image" + shadowSelector + " {transform: scale(1.12);}figcaption" + shadowSelector + " {display: flex;flex-direction: column;gap: 6px;padding-top: 14px;}.cap-title" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: 1rem;transition: color 0.3s ease;}.piece:hover" + shadowSelector + " .cap-title" + shadowSelector + " {color: var(--wm-copper);}.cap-meta" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.76rem;color: var(--wm-ink-soft);}.note" + shadowSelector + " {margin-top: 36px;font-size: 0.82rem;color: var(--wm-ink-soft);font-style: italic;}";
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
@@ -515,10 +515,10 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 886
+/***/ 177
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _gallery_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(62);
+/* harmony import */ var _gallery_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(551);
 /* harmony import */ var _gallery_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
@@ -526,7 +526,7 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p class="eyebrow${0}"${2}>⊢— Recent Work —⊣</p>`;
 const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<h2${3}>A few pieces that left the workshop.</h2>`;
-const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<figure class="piece${0}"${2}><div class="swatch${0}"${2}><svg viewBox="0 0 300 220" preserveAspectRatio="none" aria-hidden="true"${3}><defs${3}><filter${"a4:id"}${3}><feTurbulence type="fractalNoise" baseFrequency="0.012 0.09" numOctaves="3"${"a5:seed"} result="noise"${3}/><feColorMatrix in="noise" type="saturate" values="0"${3}/><feComponentTransfer${3}><feFuncA type="linear" slope="0.25" intercept="0"${3}/></feComponentTransfer><feComposite operator="over" in2="SourceGraphic"${3}/></filter></defs><rect width="300" height="220"${"a10:fill"}${3}/><rect width="300" height="220"${"a11:filter"} fill="#000"${3}/></svg></div><figcaption${3}><span class="cap-title${0}"${2}>${"t14"}</span><span class="cap-meta${0}"${2}>${"t16"}</span></figcaption></figure>`;
+const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<figure class="piece${0}"${2}><div class="swatch${0}"${2}><img${"a2:src"}${"a2:alt"} class="gallery-image${0}" loading="lazy"${2}></div><figcaption${3}><span class="cap-title${0}"${2}>${"t5"}</span><span class="cap-meta${0}"${2}>${"t7"}</span></figcaption></figure>`;
 const $fragment4 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p class="note${0}"${2}>Photos of your own finished pieces will replace these swatches once the workshop gallery is loaded in.</p>`;
 const stc0 = {
   "gallery": true
@@ -552,23 +552,12 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 0
   }, [api_element("div", stc1, [api_static_fragment($fragment1, 3), api_static_fragment($fragment2, 5), api_element("div", stc2, api_iterator($cmp.pieces, function (piece) {
-    return api_static_fragment($fragment3, api_key(8, piece.id), [api_static_part(4, {
+    return api_static_fragment($fragment3, api_key(8, piece.id), [api_static_part(2, {
       attrs: {
-        "id": api_scoped_id(piece.filterId)
+        "src": piece.image,
+        "alt": piece.title
       }
-    }, null), api_static_part(5, {
-      attrs: {
-        "seed": piece.seed
-      }
-    }, null), api_static_part(10, {
-      attrs: {
-        "fill": piece.color
-      }
-    }, null), api_static_part(11, {
-      attrs: {
-        "filter": piece.filterUrl
-      }
-    }, null), api_static_part(14, null, api_dynamic_text(piece.title)), api_static_part(16, null, api_dynamic_text(piece.meta))]);
+    }, null), api_static_part(5, null, api_dynamic_text(piece.title)), api_static_part(7, null, api_dynamic_text(piece.meta))]);
   })), api_static_fragment($fragment4, 10)])])];
   /*LWC compiler v9.3.6*/
 }
@@ -591,11 +580,23 @@ if (_gallery_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] *
 
 /***/ },
 
-/***/ 572
+/***/ 927
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var _gallery_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(886);
+/* harmony import */ var _gallery_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(177);
+/* harmony import */ var _assets_gallery_Almirah_webp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(725);
+/* harmony import */ var _assets_gallery_SheeshamTable_webp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(855);
+/* harmony import */ var _assets_gallery_PanelDoor_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(516);
+/* harmony import */ var _assets_gallery_DiningTable_webp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(172);
+/* harmony import */ var _assets_gallery_ChairSet_webp__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(558);
+/* harmony import */ var _assets_gallery_PoojaUnit_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(949);
+
+
+
+
+
+
 
 
 
@@ -606,50 +607,32 @@ class Gallery extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .x
       id: 'p1',
       title: 'Teak 3-Door Almirah',
       meta: 'Sector 62, Noida',
-      color: '#5A3A24',
-      seed: 2,
-      filterId: 'grain-1',
-      filterUrl: 'url(#grain-1)'
+      image: _assets_gallery_Almirah_webp__WEBPACK_IMPORTED_MODULE_2__
     }, {
       id: 'p2',
       title: 'Sheesham Study Table',
       meta: 'Indirapuram, Ghaziabad',
-      color: '#7A4A2B',
-      seed: 7,
-      filterId: 'grain-2',
-      filterUrl: 'url(#grain-2)'
+      image: _assets_gallery_SheeshamTable_webp__WEBPACK_IMPORTED_MODULE_3__
     }, {
       id: 'p3',
       title: 'Panel Main Door',
       meta: 'Vaishali, Ghaziabad',
-      color: '#3E2A1C',
-      seed: 4,
-      filterId: 'grain-3',
-      filterUrl: 'url(#grain-3)'
+      image: _assets_gallery_PanelDoor_jpg__WEBPACK_IMPORTED_MODULE_4__
     }, {
       id: 'p4',
       title: '6-Seater Dining Table',
       meta: 'Sector 137, Noida',
-      color: '#8A5A34',
-      seed: 11,
-      filterId: 'grain-4',
-      filterUrl: 'url(#grain-4)'
+      image: _assets_gallery_DiningTable_webp__WEBPACK_IMPORTED_MODULE_5__
     }, {
       id: 'p5',
       title: 'Mortise-Joined Chair Set',
       meta: 'Raj Nagar Extension',
-      color: '#6B4426',
-      seed: 9,
-      filterId: 'grain-5',
-      filterUrl: 'url(#grain-5)'
+      image: _assets_gallery_ChairSet_webp__WEBPACK_IMPORTED_MODULE_6__
     }, {
       id: 'p6',
       title: 'Pooja Unit, Mango Wood',
       meta: 'Crossings Republik',
-      color: '#96633B',
-      seed: 14,
-      filterId: 'grain-6',
-      filterUrl: 'url(#grain-6)'
+      image: _assets_gallery_PoojaUnit_jpg__WEBPACK_IMPORTED_MODULE_7__
     }];
   }
   /*LWC compiler v9.3.6*/
@@ -670,7 +653,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 422
+/***/ 36
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -688,10 +671,10 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 686
+/***/ 873
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _header_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(422);
+/* harmony import */ var _header_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(36);
 /* harmony import */ var _header_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
@@ -756,11 +739,11 @@ if (_header_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */
 
 /***/ },
 
-/***/ 756
+/***/ 415
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var _header_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(686);
+/* harmony import */ var _header_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(873);
 
 
 
@@ -798,7 +781,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 988
+/***/ 229
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -816,16 +799,16 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 148
+/***/ 519
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _hero_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(988);
+/* harmony import */ var _hero_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(229);
 /* harmony import */ var _hero_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<section class="hero${0}"${"a0:id"}${2}><div class="inner${0}"${2}><div class="copy${0}"${2}><p class="eyebrow${0}"${2}>⊢— Noida &amp; Delhi NCR —⊣</p><h1${3}>Built to outlast the house it stands in.</h1><p class="lede${0}"${2}>WoodMaster is a small carpentry workshop that designs and builds almirahs, doors, tables, chairs, study tables and one-off pieces in solid wood — measured for your space, joined by hand, finished to live with for decades.</p><div class="cta-row${0}"${2}><a${"a10:href"} class="btn btn-primary${0}"${2}>Get a Free Quote</a><a${"a12:href"} class="btn btn-ghost${0}"${2}>See Our Work</a></div><ul class="trust${0}"${2}><li${3}><span class="num${0}"${2}>12+</span> years at the bench</li><li${3}><span class="num${0}"${2}>300+</span> pieces delivered</li><li${3}><span class="num${0}"${2}>0%</span> MDF or particle board</li></ul></div><div class="drawing${0}" aria-hidden="true"${2}><svg viewBox="0 0 520 440" xmlns="http://www.w3.org/2000/svg"${3}><text x="20" y="30" class="label title${0}"${2}>FIG. 1 — THROUGH DOVETAIL, EXPLODED</text><rect x="30" y="70" width="170" height="260" fill="var(--wm-walnut-dark)"${3}/><polygon points="200,110 240,124 240,152 200,166" fill="var(--wm-walnut-dark)"${3}/><polygon points="200,224 240,238 240,266 200,280" fill="var(--wm-walnut-dark)"${3}/><rect x="320" y="70" width="170" height="260" fill="var(--wm-copper-light)"${3}/><polygon points="320,110 280,124 280,152 320,166" fill="var(--wm-bg)"${3}/><polygon points="320,224 280,238 280,266 320,280" fill="var(--wm-bg)"${3}/><line x1="240" y1="138" x2="280" y2="138" class="guide${0}"${2}/><line x1="240" y1="252" x2="280" y2="252" class="guide${0}"${2}/><line x1="220" y1="138" x2="220" y2="40" class="lead${0}"${2}/><text x="224" y="38" class="label${0}"${2}>TAIL</text><line x1="300" y1="252" x2="300" y2="400" class="lead${0}"${2}/><text x="234" y="414" class="label${0}"${2}>PIN SOCKET</text><line x1="30" y1="352" x2="490" y2="352" class="dim${0}"${2}/><line x1="30" y1="344" x2="30" y2="360" class="dim${0}"${2}/><line x1="490" y1="344" x2="490" y2="360" class="dim${0}"${2}/><text x="180" y="374" class="label${0}"${2}>460mm — SHEESHAM — 19mm STOCK</text></svg></div></div></section>`;
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<section class="hero${0}"${"a0:id"}${2}><div class="inner${0}"${2}><div class="copy${0}"${2}><p class="eyebrow${0}"${2}>⊢— Noida &amp; Delhi NCR —⊣</p><h1${3}>Built to outlast the house it stands in.</h1><p class="lede${0}"${2}>WoodMaster is a small carpentry workshop that designs and builds almirahs, doors, tables, chairs, study tables and one-off pieces in solid wood — measured for your space, joined by hand, finished to live with for decades.</p><div class="cta-row${0}"${2}><a${"a10:href"} class="btn btn-primary${0}"${2}>Get a Free Quote</a><a${"a12:href"} class="btn btn-ghost${0}"${2}>See Our Work</a></div><ul class="trust${0}"${2}><li${3}><span class="num${0}"${2}>25+</span> years at the bench</li><li${3}><span class="num${0}"${2}>300+</span> pieces delivered</li><li${3}><span class="num${0}"${2}>0%</span> MDF or particle board</li></ul></div><div class="drawing${0}" aria-hidden="true"${2}><svg viewBox="0 0 520 440" xmlns="http://www.w3.org/2000/svg"${3}><text x="20" y="30" class="label title${0}"${2}>FIG. 1 — THROUGH DOVETAIL, EXPLODED</text><rect x="30" y="70" width="170" height="260" fill="var(--wm-walnut-dark)"${3}/><polygon points="200,110 240,124 240,152 200,166" fill="var(--wm-walnut-dark)"${3}/><polygon points="200,224 240,238 240,266 200,280" fill="var(--wm-walnut-dark)"${3}/><rect x="320" y="70" width="170" height="260" fill="var(--wm-copper-light)"${3}/><polygon points="320,110 280,124 280,152 320,166" fill="var(--wm-bg)"${3}/><polygon points="320,224 280,238 280,266 320,280" fill="var(--wm-bg)"${3}/><line x1="240" y1="138" x2="280" y2="138" class="guide${0}"${2}/><line x1="240" y1="252" x2="280" y2="252" class="guide${0}"${2}/><line x1="220" y1="138" x2="220" y2="40" class="lead${0}"${2}/><text x="224" y="38" class="label${0}"${2}>TAIL</text><line x1="300" y1="252" x2="300" y2="400" class="lead${0}"${2}/><text x="234" y="414" class="label${0}"${2}>PIN SOCKET</text><line x1="30" y1="352" x2="490" y2="352" class="dim${0}"${2}/><line x1="30" y1="344" x2="30" y2="360" class="dim${0}"${2}/><line x1="490" y1="344" x2="490" y2="360" class="dim${0}"${2}/><text x="180" y="374" class="label${0}"${2}>460mm — SHEESHAM — 19mm STOCK</text></svg></div></div></section>`;
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {gid: api_scoped_id, fid: api_scoped_frag_id, sp: api_static_part, st: api_static_fragment} = $api;
   return [api_static_fragment($fragment1, 1, [api_static_part(0, {
@@ -862,10 +845,10 @@ if (_hero_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .
 
 /***/ },
 
-/***/ 18
+/***/ 717
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _hero_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(148);
+/* harmony import */ var _hero_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(519);
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(565);
 
 
@@ -885,7 +868,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_1__/* .re
 
 /***/ },
 
-/***/ 450
+/***/ 227
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -903,10 +886,10 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 114
+/***/ 461
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _process_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(450);
+/* harmony import */ var _process_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(227);
 /* harmony import */ var _process_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
@@ -962,11 +945,11 @@ if (_process_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] *
 
 /***/ },
 
-/***/ 24
+/***/ 787
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var _process_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(114);
+/* harmony import */ var _process_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(461);
 
 
 
@@ -1013,7 +996,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 808
+/***/ 693
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -1031,10 +1014,10 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 40
+/***/ 287
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _services_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(808);
+/* harmony import */ var _services_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(693);
 /* harmony import */ var _services_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
@@ -1094,11 +1077,11 @@ if (_services_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] 
 
 /***/ },
 
-/***/ 750
+/***/ 389
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var _services_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(40);
+/* harmony import */ var _services_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(287);
 
 
 
@@ -1161,7 +1144,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 784
+/***/ 697
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -1179,10 +1162,10 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 120
+/***/ 267
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _testimonials_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(784);
+/* harmony import */ var _testimonials_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(697);
 /* harmony import */ var _testimonials_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
@@ -1234,11 +1217,11 @@ if (_testimonials_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["defaul
 
 /***/ },
 
-/***/ 369
+/***/ 1
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var _testimonials_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(120);
+/* harmony import */ var _testimonials_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(267);
 
 
 
@@ -1294,6 +1277,48 @@ __webpack_unused_export__ = ({ value: true });
  */
 exports.A = undefined;
 
+
+/***/ },
+
+/***/ 725
+(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "338aa66afcd46480f4ce.webp";
+
+/***/ },
+
+/***/ 558
+(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "3864cc43885e46fc0eea.webp";
+
+/***/ },
+
+/***/ 172
+(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "dc38bf5abc1825a1627b.webp";
+
+/***/ },
+
+/***/ 516
+(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "7338b52b82b754460d42.jpg";
+
+/***/ },
+
+/***/ 949
+(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "a0210b9c36db3cac7b1c.jpg";
+
+/***/ },
+
+/***/ 855
+(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "9a6708ded0254f9f1678.webp";
 
 /***/ },
 
@@ -11086,15 +11111,50 @@ function registerContextProvider(elm, adapterContextToken, onContextSubscription
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		let scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		const document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript?.tagName.toUpperCase() === 'SCRIPT')
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				const scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					let i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/^blob:/, "").replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 let __webpack_exports__ = {};
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var wm_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(748);
+/* harmony import */ var wm_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(655);
 
 
 
