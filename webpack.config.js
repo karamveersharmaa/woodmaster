@@ -1,8 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const LwcWebpackPlugin = require('lwc-webpack-plugin');
-
 module.exports = {
+  target: 'web',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -11,6 +11,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js']
+  },
+  optimization: {
+    splitChunks: false,
+    runtimeChunk: false
   },
   plugins: [
     new LwcWebpackPlugin(),
