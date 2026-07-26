@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "WoodMaster — custom carpentry studio website, built with LWC Open Source (LWC OSS), deployable to GitHub Pages",
   "scripts": {
-    "start": "webpack serve --mode development --open",
-    "build": "webpack --mode production",
-    "deploy": "npm run build && gh-pages -d dist"
+  "start": "webpack serve --mode development --open",
+  "build": "webpack --mode production",
+  "postbuild": "node -e \"require('fs').writeFileSync('dist/.nojekyll','')\"",
+  "deploy": "npm run build && gh-pages -d dist --dotfiles"
   },
   "dependencies": {
     "lwc": "^9.3.4"
