@@ -1,24 +1,64 @@
 <template>
-  <section class="services" id="services">
-    <div class="inner">
-      <p class="eyebrow">⊢— What We Build —⊣</p>
-      <h2>One workshop, every joint in the house.</h2>
+    <section class="services" id="products">
+        <div class="inner">
 
-      <div class="grid">
-        <template for:each={items} for:item="item">
-          <article class="card" key={item.id}>
-            <div class="icon-box">
-              <svg viewBox="0 0 48 48" aria-hidden="true">
-                <rect x="6" y="6" width="36" height="36" fill="none" stroke="var(--wm-walnut-dark)" stroke-width="1.4"></rect>
-                <path d={item.path} fill="none" stroke="var(--wm-copper)" stroke-width="1.6"></path>
-              </svg>
+            <p class="eyebrow">⊢— Featured Products —⊣</p>
+
+            <h2>
+                Crafted Furniture for Every Corner of Your Home
+            </h2>
+
+            <div class="grid">
+
+                <template for:each={items} for:item="item">
+
+                    <article class="card" key={item.id}>
+
+                        <!-- Dummy Image -->
+                        <div class="image-container">
+                            <div class="image-placeholder">
+                                Image
+                            </div>
+                        </div>
+
+                        <!-- Product Details -->
+                        <div class="content">
+
+                            <h3>{item.name}</h3>
+
+                            <p class="material">
+                                {item.material}
+                            </p>
+
+                            <div class="price-rating">
+
+                                <span class="price">
+                                    ₹{item.price}
+                                </span>
+
+                                <span class="rating">
+                                    ★★★★★
+                                </span>
+
+                            </div>
+
+                            <button
+                                class="cart-btn"
+                                data-id={item.id}
+                                onclick={handleAddToCart}>
+
+                                Add to Cart
+
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </template>
+
             </div>
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
-            <p class="tag">{item.tag}</p>
-          </article>
-        </template>
-      </div>
-    </div>
-  </section>
+
+        </div>
+    </section>
 </template>

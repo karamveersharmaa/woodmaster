@@ -1,67 +1,184 @@
 :host {
-  display: block;
-  background: var(--wm-bg-soft);
+    display: block;
+    background: var(--wm-bg-soft);
 }
 
 .inner {
-  max-width: var(--wm-max);
-  margin: 0 auto;
-  padding: 88px 24px;
+    max-width: var(--wm-max);
+    margin: 0 auto;
+    padding: 90px 24px;
 }
 
 .eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  color: var(--wm-copper);
-  margin: 0 0 12px;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--wm-copper);
+    text-align: center;
+    margin-bottom: 12px;
 }
 
 h2 {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: clamp(1.8rem, 2.2vw + 1rem, 2.6rem);
-  margin: 0 0 44px;
-  max-width: 22ch;
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--wm-ink);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1px;
-  background: var(--wm-line);
-  border: 1px solid var(--wm-line);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
 }
 
 .card {
-  background: var(--wm-bg-panel);
-  padding: 32px 28px;
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    transition: all .35s ease;
+    display: flex;
+    flex-direction: column;
 }
 
-.icon-box svg {
-  width: 44px;
-  height: 44px;
-  margin-bottom: 18px;
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0,0,0,.15);
 }
 
-h3 {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin: 0 0 10px;
+.image-container {
+    height: 240px;
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.card p {
-  margin: 0 0 10px;
-  color: var(--wm-ink-soft);
-  line-height: 1.55;
-  font-size: 0.95rem;
+.image-placeholder {
+    width: 90%;
+    height: 85%;
+    border: 2px dashed #c8c8c8;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9b9b9b;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: .05em;
 }
 
-.tag {
-  font-family: var(--font-mono);
-  font-size: 0.76rem;
-  color: var(--wm-copper);
-  letter-spacing: 0.02em;
-  margin: 14px 0 0 !important;
+.content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.content h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-family: var(--font-display);
+    color: var(--wm-ink);
+}
+
+.material {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: var(--wm-ink-soft);
+    font-size: .95rem;
+    line-height: 1.5;
+}
+
+.price-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.price {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--wm-copper);
+}
+
+.rating {
+    color: #f5b301;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.cart-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: var(--wm-copper);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+    margin-top: auto;
+}
+
+.cart-btn:hover {
+    background: var(--wm-walnut-dark);
+    transform: translateY(-2px);
+}
+
+.cart-btn:active {
+    transform: scale(.98);
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .inner {
+        padding: 70px 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .image-container {
+        height: 220px;
+    }
+
+    h2 {
+        margin-bottom: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .content {
+        padding: 20px;
+    }
+
+    .content h3 {
+        font-size: 1.15rem;
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+
+    .cart-btn {
+        padding: 13px;
+    }
 }
