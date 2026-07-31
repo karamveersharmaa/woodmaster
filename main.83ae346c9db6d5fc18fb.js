@@ -1003,7 +1003,7 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
   var shadowSelector = token ? ("[" + token + "]") : "";
   var hostSelector = token ? ("[" + token + "-host]") : "";
   var suffixToken = token ? ("-" + token) : "";
-  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;background: var(--wm-bg-soft);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 88px 24px;}.eyebrow" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.78rem;letter-spacing: 0.06em;color: var(--wm-copper);margin: 0 0 12px;}h2" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: clamp(1.8rem, 2.2vw + 1rem, 2.6rem);margin: 0 0 44px;max-width: 22ch;}.grid" + shadowSelector + " {display: grid;grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));gap: 1px;background: var(--wm-line);border: 1px solid var(--wm-line);}.card" + shadowSelector + " {background: var(--wm-bg-panel);padding: 32px 28px;}.icon-box" + shadowSelector + " svg" + shadowSelector + " {width: 44px;height: 44px;margin-bottom: 18px;}h3" + shadowSelector + " {font-family: var(--font-display);font-size: 1.2rem;font-weight: 600;margin: 0 0 10px;}.card" + shadowSelector + " p" + shadowSelector + " {margin: 0 0 10px;color: var(--wm-ink-soft);line-height: 1.55;font-size: 0.95rem;}.tag" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.76rem;color: var(--wm-copper);letter-spacing: 0.02em;margin: 14px 0 0 !important;}";
+  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;background: var(--wm-bg-soft);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 90px 24px;}.eyebrow" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.8rem;letter-spacing: 0.08em;text-transform: uppercase;color: var(--wm-copper);text-align: center;margin-bottom: 12px;}h2" + shadowSelector + " {font-family: var(--font-display);font-size: clamp(2rem, 3vw, 3rem);font-weight: 600;text-align: center;margin-bottom: 60px;color: var(--wm-ink);max-width: 700px;margin-left: auto;margin-right: auto;}.grid" + shadowSelector + " {display: grid;grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));gap: 30px;}.card" + shadowSelector + " {background: #ffffff;border-radius: 18px;overflow: hidden;box-shadow: 0 10px 30px rgba(0,0,0,.08);transition: all .35s ease;display: flex;flex-direction: column;}.card:hover" + shadowSelector + " {transform: translateY(-10px);box-shadow: 0 20px 45px rgba(0,0,0,.15);}.image-container" + shadowSelector + " {height: 240px;background: #f4f4f4;display: flex;align-items: center;justify-content: center;}.image-placeholder" + shadowSelector + " {width: 90%;height: 85%;border: 2px dashed #c8c8c8;border-radius: 12px;display: flex;align-items: center;justify-content: center;color: #9b9b9b;font-size: 1.1rem;font-weight: 600;letter-spacing: .05em;}.content" + shadowSelector + " {padding: 24px;display: flex;flex-direction: column;flex-grow: 1;}.content" + shadowSelector + " h3" + shadowSelector + " {margin: 0;font-size: 1.3rem;font-family: var(--font-display);color: var(--wm-ink);}.material" + shadowSelector + " {margin-top: 10px;margin-bottom: 20px;color: var(--wm-ink-soft);font-size: .95rem;line-height: 1.5;}.price-rating" + shadowSelector + " {display: flex;justify-content: space-between;align-items: center;margin-bottom: 22px;}.price" + shadowSelector + " {font-size: 1.35rem;font-weight: 700;color: var(--wm-copper);}.rating" + shadowSelector + " {color: #f5b301;font-size: 1rem;letter-spacing: 2px;}.cart-btn" + shadowSelector + " {width: 100%;padding: 14px;border: none;border-radius: 10px;background: var(--wm-copper);color: #fff;font-size: 1rem;font-weight: 600;cursor: pointer;transition: all .3s ease;margin-top: auto;}.cart-btn:hover" + shadowSelector + " {background: var(--wm-walnut-dark);transform: translateY(-2px);}.cart-btn:active" + shadowSelector + " {transform: scale(.98);}@media (max-width: 1024px) {.grid" + shadowSelector + " {grid-template-columns: repeat(2, 1fr);}}@media (max-width: 768px) {.inner" + shadowSelector + " {padding: 70px 20px;}.grid" + shadowSelector + " {grid-template-columns: 1fr;gap: 24px;}.image-container" + shadowSelector + " {height: 220px;}h2" + shadowSelector + " {margin-bottom: 45px;}}@media (max-width: 480px) {.content" + shadowSelector + " {padding: 20px;}.content" + shadowSelector + " h3" + shadowSelector + " {font-size: 1.15rem;}.price" + shadowSelector + " {font-size: 1.2rem;}.cart-btn" + shadowSelector + " {padding: 13px;}}";
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
@@ -1023,9 +1023,9 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p class="eyebrow${0}"${2}>⊢— What We Build —⊣</p>`;
-const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<h2${3}>One workshop, every joint in the house.</h2>`;
-const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<article class="card${0}"${2}><div class="icon-box${0}"${2}><svg viewBox="0 0 48 48" aria-hidden="true"${3}><rect x="6" y="6" width="36" height="36" fill="none" stroke="var(--wm-walnut-dark)" stroke-width="1.4"${3}/><path${"a4:d"} fill="none" stroke="var(--wm-copper)" stroke-width="1.6"${3}/></svg></div><h3${3}>${"t6"}</h3><p${3}>${"t8"}</p><p class="tag${0}"${2}>${"t10"}</p></article>`;
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p class="eyebrow${0}"${2}>⊢— Featured Products —⊣</p>`;
+const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<h2${3}>Crafted Furniture for Every Corner of Your Home</h2>`;
+const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<article class="card${0}"${2}><div class="image-container${0}"${2}><div class="image-placeholder${0}"${2}>Image</div></div><div class="content${0}"${2}><h3${3}>${"t6"}</h3><p class="material${0}"${2}>${"t8"}</p><div class="price-rating${0}"${2}><span class="price${0}"${2}>${"t11"}</span><span class="rating${0}"${2}>★★★★★</span></div><button class="cart-btn${0}"${"a14:data-id"}${2}>Add to Cart</button></div></article>`;
 const stc0 = {
   "services": true
 };
@@ -1042,19 +1042,23 @@ const stc2 = {
   key: 6
 };
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {gid: api_scoped_id, st: api_static_fragment, k: api_key, d: api_dynamic_text, sp: api_static_part, i: api_iterator, h: api_element} = $api;
+  const {gid: api_scoped_id, st: api_static_fragment, k: api_key, d: api_dynamic_text, b: api_bind, sp: api_static_part, i: api_iterator, h: api_element} = $api;
+  const {_m0} = $ctx;
   return [api_element("section", {
     classMap: stc0,
     attrs: {
-      "id": api_scoped_id("services")
+      "id": api_scoped_id("products")
     },
     key: 0
   }, [api_element("div", stc1, [api_static_fragment($fragment1, 3), api_static_fragment($fragment2, 5), api_element("div", stc2, api_iterator($cmp.items, function (item) {
-    return api_static_fragment($fragment3, api_key(8, item.id), [api_static_part(4, {
+    return api_static_fragment($fragment3, api_key(8, item.id), [api_static_part(6, null, api_dynamic_text(item.name)), api_static_part(8, null, api_dynamic_text(item.material)), api_static_part(11, null, "₹" + api_dynamic_text(item.price)), api_static_part(14, {
+      on: _m0 || ($ctx._m0 = {
+        "click": api_bind($cmp.handleAddToCart)
+      }),
       attrs: {
-        "d": item.path
+        "data-id": item.id
       }
-    }, null), api_static_part(6, null, api_dynamic_text(item.title)), api_static_part(8, null, api_dynamic_text(item.description)), api_static_part(10, null, api_dynamic_text(item.tag))]);
+    }, null)]);
   }))])])];
   /*LWC compiler v9.3.6*/
 }
@@ -1089,47 +1093,83 @@ class Services extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .
   constructor(...args) {
     super(...args);
     this.items = [{
-      id: 'almirah',
-      title: 'Almirahs',
-      description: 'Floor-to-ceiling wardrobes built to your room\u2019s exact width, with adjustable shelving, drawers and hanging space laid out around what you actually own.',
-      tag: 'Sheesham \u00b7 Teak \u00b7 Mango wood',
-      path: 'M14 10 L14 38 M34 10 L34 38 M14 10 L34 10 M14 38 L34 38 M24 10 L24 38'
+      id: 'chair-01',
+      name: 'Premium Wooden Chair',
+      material: 'Sheesham Wood',
+      price: '3,500',
+      rating: 5,
+      image: ''
     }, {
-      id: 'door',
-      title: 'Doors',
-      description: 'Solid-core main doors, panel doors and frames, hung true and finished to weather Delhi\u2019s summers without warping.',
-      tag: 'Sal \u00b7 Teak \u00b7 Engineered core',
-      path: 'M16 8 L16 40 L32 40 L32 8 Z M27 24 L27 24.5'
+      id: 'dining-01',
+      name: 'Dining Table',
+      material: 'Solid Mango Wood',
+      price: '18,999',
+      rating: 5,
+      image: ''
     }, {
-      id: 'table',
-      title: 'Dining Tables',
-      description: 'Family-size tables in a single slab or joined boards, sized for the room and the number of chairs around it.',
-      tag: 'Mango \u00b7 Sheesham \u00b7 Live edge',
-      path: 'M8 16 L40 16 M12 16 L12 38 M36 16 L36 38'
+      id: 'almirah-01',
+      name: 'Modern Almirah',
+      material: 'Teak Wood',
+      price: '27,500',
+      rating: 5,
+      image: ''
     }, {
-      id: 'chair',
-      title: 'Chairs',
-      description: 'Dining and accent chairs, mortise-and-tenon joined at the frame so they hold up to daily use for years, not seasons.',
-      tag: 'Sheesham \u00b7 Cane \u00b7 Upholstered',
-      path: 'M14 10 L14 26 L34 26 L34 10 M16 26 L14 40 M32 26 L34 40'
+      id: 'door-01',
+      name: 'Wooden Panel Door',
+      material: 'Sal Wood',
+      price: '12,000',
+      rating: 4,
+      image: ''
     }, {
-      id: 'study-table',
-      title: 'Study Tables',
-      description: 'Desks with built-in drawers, cable routing and shelving, sized for kids\u2019 rooms, work-from-home corners or shared study spaces.',
-      tag: 'Ply core \u00b7 Solid edge \u00b7 Custom fit',
-      path: 'M8 20 L40 20 M12 20 L12 38 M36 20 L36 38 M28 20 L28 30 L36 30'
+      id: 'study-01',
+      name: 'Study Table',
+      material: 'Engineered Wood',
+      price: '8,999',
+      rating: 5,
+      image: ''
     }, {
-      id: 'custom',
-      title: 'Custom Woodwork',
-      description: 'TV units, pooja units, bookshelves, window seats, beds \u2014 if it can be drawn on paper, we can measure your room and build it in wood.',
-      tag: 'Site visit \u00b7 Free sketch',
-      path: 'M10 34 L18 14 L24 24 L30 10 L38 34 Z'
+      id: 'bed-01',
+      name: 'King Size Bed',
+      material: 'Sheesham Wood',
+      price: '34,999',
+      rating: 5,
+      image: ''
+    }, {
+      id: 'tv-01',
+      name: 'TV Unit',
+      material: 'Teak Finish',
+      price: '15,999',
+      rating: 4,
+      image: ''
+    }, {
+      id: 'pooja-01',
+      name: 'Pooja Unit',
+      material: 'Solid Wood',
+      price: '11,999',
+      rating: 5,
+      image: ''
     }];
+    this.cart = [];
+  }
+  handleAddToCart(event) {
+    const productId = event.target.dataset.id;
+    const selectedProduct = this.items.find(product => product.id === productId);
+    if (!selectedProduct) {
+      return;
+    }
+    this.cart = [...this.cart, selectedProduct];
+    console.log('Added to Cart:', selectedProduct);
+    console.log('Current Cart:', this.cart);
+
+    // Future Enhancement:
+    // localStorage
+    // Publish Event
+    // Salesforce REST API
   }
   /*LWC compiler v9.3.6*/
 }
 ;(0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerDecorators */ .CF)(Services, {
-  fields: ["items"]
+  fields: ["items", "cart"]
 });
 const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerComponent */ .Nj)(Services, {
   tmpl: _services_html__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A,
