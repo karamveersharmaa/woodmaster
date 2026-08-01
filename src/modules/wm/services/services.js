@@ -5,67 +5,74 @@ export default class Services extends LightningElement {
     items = [
         {
             id: 'chair-01',
-            name: 'Premium Wooden Chair',
+            title: 'Premium Wooden Chair',
             material: 'Sheesham Wood',
             price: '3,500',
             rating: 5,
-            image: ''
+            image: '',
+            description:'Premium handcrafted chair made from solid Sheesham wood. Designed for comfort, durability and timeless elegance.'
         },
         {
             id: 'dining-01',
-            name: 'Dining Table',
+            title: 'Dining Table',
             material: 'Solid Mango Wood',
             price: '18,999',
             rating: 5,
-            image: ''
+            image: '',
+            description:'Premium handcrafted chair made from solid Sheesham wood. Designed for comfort, durability and timeless elegance.'
         },
         {
             id: 'almirah-01',
-            name: 'Modern Almirah',
+            title: 'Modern Almirah',
             material: 'Teak Wood',
             price: '27,500',
-            rating: 5,
-            image: ''
+            image: '',
+            description:'Premium handcrafted chair made from solid Sheesham wood. Designed for comfort, durability and timeless elegance.'
         },
         {
             id: 'door-01',
-            name: 'Wooden Panel Door',
+            title: 'Wooden Panel Door',
             material: 'Sal Wood',
             price: '12,000',
             rating: 4,
-            image: ''
+            image: '',
+            description:'Premium handcrafted chair made from solid Sheesham wood. Designed for comfort, durability and timeless elegance.'
         },
         {
             id: 'study-01',
-            name: 'Study Table',
+            title: 'Study Table',
             material: 'Engineered Wood',
             price: '8,999',
             rating: 5,
-            image: ''
+            image: '',
+            description:'Premium handcrafted chair made from solid Sheesham wood. Designed for comfort, durability and timeless elegance.'
         },
         {
             id: 'bed-01',
-            name: 'King Size Bed',
+            title: 'King Size Bed',
             material: 'Sheesham Wood',
             price: '34,999',
             rating: 5,
-            image: ''
+            image: '',
+            description:'Premium handcrafted chair made from solid Sheesham wood. Designed for comfort, durability and timeless elegance.'
         },
         {
             id: 'tv-01',
-            name: 'TV Unit',
+            title: 'TV Unit',
             material: 'Teak Finish',
             price: '15,999',
             rating: 4,
-            image: ''
+            image: '',
+            description:'Premium handcrafted chair made from solid Sheesham wood. Designed for comfort, durability and timeless elegance.'
         },
         {
             id: 'pooja-01',
-            name: 'Pooja Unit',
+            title: 'Pooja Unit',
             material: 'Solid Wood',
             price: '11,999',
             rating: 5,
-            image: ''
+            image: '',
+            description:'Premium handcrafted chair made from solid Sheesham wood. Designed for comfort, durability and timeless elegance.'
         }
     ];
 
@@ -73,25 +80,34 @@ export default class Services extends LightningElement {
 
     handleAddToCart(event) {
 
-        const productId = event.target.dataset.id;
+        event.stopPropagation();
+
+        const productId = event.currentTarget.dataset.id;
 
         const selectedProduct = this.items.find(
-            product => product.id === productId
+            item => item.id === productId
         );
 
-        if (!selectedProduct) {
-            return;
-        }
 
-        this.cart = [...this.cart, selectedProduct];
+        console.log('Added To Cart', selectedProduct);
 
-        console.log('Added to Cart:', selectedProduct);
+    }
 
-        console.log('Current Cart:', this.cart);
+    handleProductClick(event) {
 
-        // Future Enhancement:
-        // localStorage
-        // Publish Event
-        // Salesforce REST API
+        const productId = event.currentTarget.dataset.id;
+
+        const selectedProduct = this.items.find(
+            item => item.id === productId
+        );
+
+        this.dispatchEvent(
+            new CustomEvent('productclick', {
+                detail: selectedProduct,
+                bubbles: true,
+                composed: true
+            })
+        );
+
     }
 }

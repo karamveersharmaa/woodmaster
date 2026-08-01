@@ -44,12 +44,21 @@ h2 {
     box-shadow: 0 10px 30px rgba(0,0,0,.08);
     transition: all .35s ease;
     display: flex;
+    cursor: pointer;
     flex-direction: column;
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 45px rgba(0,0,0,.15);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 25px 45px rgba(0,0,0,.18);
+}
+
+.image-placeholder{
+    transition: transform .5s ease;
+}
+
+.card:hover .image-placeholder{
+    transform: scale(1.05);
 }
 
 .image-container {

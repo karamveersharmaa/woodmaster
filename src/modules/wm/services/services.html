@@ -12,23 +12,23 @@
 
                 <template for:each={items} for:item="item">
 
-                    <article class="card" key={item.id}>
+                    <article
+                        class="card"
+                        key={item.id}
+                        data-id={item.id}
+                        onclick={handleProductClick}>
 
-                        <!-- Dummy Image -->
                         <div class="image-container">
                             <div class="image-placeholder">
                                 Image
                             </div>
                         </div>
 
-                        <!-- Product Details -->
                         <div class="content">
 
-                            <h3>{item.name}</h3>
+                            <h3>{item.title}</h3>
 
-                            <p class="material">
-                                {item.material}
-                            </p>
+                            <p class="material">{item.material}</p>
 
                             <div class="price-rating">
 
@@ -46,9 +46,7 @@
                                 class="cart-btn"
                                 data-id={item.id}
                                 onclick={handleAddToCart}>
-
                                 Add to Cart
-
                             </button>
 
                         </div>
