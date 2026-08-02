@@ -198,6 +198,8 @@ if (_app_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A
 
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
 /* harmony import */ var _app_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(73);
+/* harmony import */ var _data_products__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(505);
+
 
 
 
@@ -206,6 +208,22 @@ class App extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv {
     super(...args);
     this.currentPage = 'home';
     this.selectedProduct = null;
+    this.handleBrowserNavigation = event => {
+      if (event.state && event.state.page === 'productDetails') {
+        this.currentPage = 'productDetails';
+        this.selectedProduct = event.state.product;
+      } else {
+        this.currentPage = 'home';
+        this.selectedProduct = null;
+      }
+    };
+  }
+  connectedCallback() {
+    // Handle Browser Back / Forward
+    window.addEventListener('popstate', this.handleBrowserNavigation);
+  }
+  disconnectedCallback() {
+    window.removeEventListener('popstate', this.handleBrowserNavigation);
   }
   get isHomePage() {
     return this.currentPage === 'home';
@@ -214,20 +232,26 @@ class App extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv {
     return this.currentPage === 'productDetails';
   }
   handleProductClick(event) {
-    this.selectedProduct = event.detail;
+    const productId = event.detail.productId;
+    const selectedProduct = _data_products__WEBPACK_IMPORTED_MODULE_2__/* .products */ .Z.find(product => product.id === productId);
+    if (!selectedProduct) {
+      console.error('Product not found:', productId);
+      return;
+    }
+    this.selectedProduct = selectedProduct;
     this.currentPage = 'productDetails';
     console.log('Selected Product');
     console.log(this.selectedProduct);
   }
   handleBackToHome() {
-    console.log('Back event received in App');
+    console.log('Back event received');
     this.currentPage = 'home';
     this.selectedProduct = null;
   }
   /*LWC compiler v9.3.6*/
 }
 ;(0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerDecorators */ .CF)(App, {
-  fields: ["currentPage", "selectedProduct"]
+  fields: ["currentPage", "selectedProduct", "handleBrowserNavigation"]
 });
 const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerComponent */ .Nj)(App, {
   tmpl: _app_html__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A,
@@ -1113,6 +1137,8 @@ if (_productDetails_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["defa
 
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
 /* harmony import */ var _productDetails_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(98);
+/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(192);
+
 
 
 
@@ -1137,11 +1163,14 @@ class ProductDetails extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElemen
 
   // Add To Cart
   addToCart() {
-    console.log('Add To Cart');
-    console.log(this.product);
-    console.log('Quantity :', this.quantity);
-
-    // We'll connect this to the Cart page later
+    console.log('Method Started');
+    console.log(_services_cartService__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A);
+    console.log(typeof _services_cartService__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A.addItem);
+    for (let i = 0; i < this.quantity; i++) {
+      console.log('Loop', i);
+      _services_cartService__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A.addItem(this.product);
+    }
+    console.log('Method Finished');
   }
 
   // Buy Now
@@ -1290,89 +1319,37 @@ if (_services_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] 
 
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
 /* harmony import */ var _services_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(287);
+/* harmony import */ var _data_products__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(505);
+/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(192);
+
+
 
 
 
 class Services extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv {
   constructor(...args) {
     super(...args);
-    this.items = [{
-      id: 'chair-01',
-      title: 'Premium Wooden Chair',
-      material: 'Sheesham Wood',
-      price: '3,500',
-      rating: 5,
-      image: '',
-      description: 'Premium handcrafted chair made from solid Sheesham wood. Designed for comfort, durability and timeless elegance.'
-    }, {
-      id: 'dining-01',
-      title: 'Dining Table',
-      material: 'Solid Mango Wood',
-      price: '18,999',
-      rating: 5,
-      image: '',
-      description: 'Premium handcrafted chair made from solid Sheesham wood. Designed for comfort, durability and timeless elegance.'
-    }, {
-      id: 'almirah-01',
-      title: 'Modern Almirah',
-      material: 'Teak Wood',
-      price: '27,500',
-      image: '',
-      description: 'Premium handcrafted chair made from solid Sheesham wood. Designed for comfort, durability and timeless elegance.'
-    }, {
-      id: 'door-01',
-      title: 'Wooden Panel Door',
-      material: 'Sal Wood',
-      price: '12,000',
-      rating: 4,
-      image: '',
-      description: 'Premium handcrafted chair made from solid Sheesham wood. Designed for comfort, durability and timeless elegance.'
-    }, {
-      id: 'study-01',
-      title: 'Study Table',
-      material: 'Engineered Wood',
-      price: '8,999',
-      rating: 5,
-      image: '',
-      description: 'Premium handcrafted chair made from solid Sheesham wood. Designed for comfort, durability and timeless elegance.'
-    }, {
-      id: 'bed-01',
-      title: 'King Size Bed',
-      material: 'Sheesham Wood',
-      price: '34,999',
-      rating: 5,
-      image: '',
-      description: 'Premium handcrafted chair made from solid Sheesham wood. Designed for comfort, durability and timeless elegance.'
-    }, {
-      id: 'tv-01',
-      title: 'TV Unit',
-      material: 'Teak Finish',
-      price: '15,999',
-      rating: 4,
-      image: '',
-      description: 'Premium handcrafted chair made from solid Sheesham wood. Designed for comfort, durability and timeless elegance.'
-    }, {
-      id: 'pooja-01',
-      title: 'Pooja Unit',
-      material: 'Solid Wood',
-      price: '11,999',
-      rating: 5,
-      image: '',
-      description: 'Premium handcrafted chair made from solid Sheesham wood. Designed for comfort, durability and timeless elegance.'
-    }];
+    this.items = _data_products__WEBPACK_IMPORTED_MODULE_2__/* .products */ .Z;
     this.cart = [];
   }
   handleAddToCart(event) {
     event.stopPropagation();
-    const productId = event.currentTarget.dataset.id;
-    const selectedProduct = this.items.find(item => item.id === productId);
-    console.log('Added To Cart', selectedProduct);
+    const productId = event.target.dataset.id;
+    const selectedProduct = this.items.find(product => product.id === productId);
+    if (!selectedProduct) {
+      return;
+    }
+    _services_cartService__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A.addItem(selectedProduct);
+    console.log('Added To Cart');
+    console.log(_services_cartService__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A.getItems());
   }
   handleProductClick(event) {
     const productId = event.currentTarget.dataset.id;
     const selectedProduct = this.items.find(item => item.id === productId);
     this.dispatchEvent(new CustomEvent('productclick', {
-      detail: selectedProduct,
+      detail: {
+        productId: selectedProduct.id
+      },
       bubbles: true,
       composed: true
     }));
@@ -1527,6 +1504,281 @@ __webpack_unused_export__ = ({ value: true });
  * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/MIT
  */
 exports.A = undefined;
+
+
+/***/ },
+
+/***/ 505
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+const products = [
+
+    {
+        id: 'chair-01',
+        title: 'Premium Wooden Chair',
+        material: 'Sheesham Wood',
+        price: '3,500',
+        rating: 5,
+        image: '',
+        description:
+            'Premium handcrafted chair made from solid Sheesham wood. Designed for comfort, durability and timeless elegance.'
+    },
+
+    {
+        id: 'dining-01',
+        title: 'Dining Table',
+        material: 'Solid Mango Wood',
+        price: '18,999',
+        rating: 5,
+        image: '',
+        description:
+            'Premium handcrafted dining table made from solid mango wood.'
+    },
+
+    {
+        id: 'almirah-01',
+        title: 'Modern Almirah',
+        material: 'Teak Wood',
+        price: '27,500',
+        rating: 5,
+        image: '',
+        description:
+            'Premium handcrafted teak wood almirah with modern storage.'
+    },
+
+    {
+        id: 'door-01',
+        title: 'Wooden Panel Door',
+        material: 'Sal Wood',
+        price: '12,000',
+        rating: 4,
+        image: '',
+        description:
+            'Strong wooden panel door built from premium Sal wood.'
+    },
+
+    {
+        id: 'study-01',
+        title: 'Study Table',
+        material: 'Engineered Wood',
+        price: '8,999',
+        rating: 5,
+        image: '',
+        description:
+            'Modern study table with drawers and spacious workspace.'
+    },
+
+    {
+        id: 'bed-01',
+        title: 'King Size Bed',
+        material: 'Sheesham Wood',
+        price: '34,999',
+        rating: 5,
+        image: '',
+        description:
+            'Luxury king size bed crafted from premium Sheesham wood.'
+    },
+
+    {
+        id: 'tv-01',
+        title: 'TV Unit',
+        material: 'Teak Finish',
+        price: '15,999',
+        rating: 4,
+        image: '',
+        description:
+            'Elegant TV unit with modern shelves and storage.'
+    },
+
+    {
+        id: 'pooja-01',
+        title: 'Pooja Unit',
+        material: 'Solid Wood',
+        price: '11,999',
+        rating: 5,
+        image: '',
+        description:
+            'Traditional handcrafted pooja unit made from solid wood.'
+    }
+
+];
+/* harmony export */ __webpack_require__.d(__webpack_exports__, [
+/* harmony export */   "Z", 0, /* binding */ products
+/* harmony export */ ]);
+
+
+/***/ },
+
+/***/ 192
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+class CartService {
+
+    STORAGE_KEY = 'woodmaster-cart';
+
+    cartItems = [];
+
+    constructor() {
+        this.loadCart();
+    }
+
+    // ===========================
+    // Load Cart From localStorage
+    // ===========================
+    loadCart() {
+
+        const savedCart = localStorage.getItem(this.STORAGE_KEY);
+
+        if (savedCart) {
+            this.cartItems = JSON.parse(savedCart);
+        }
+
+    }
+
+    // ===========================
+    // Save Cart
+    // ===========================
+    saveCart() {
+
+        localStorage.setItem(
+            this.STORAGE_KEY,
+            JSON.stringify(this.cartItems)
+        );
+
+    }
+
+    // ===========================
+    // Add Item
+    // ===========================
+    addItem(product) {
+
+        const existingItem = this.cartItems.find(
+            item => item.product.id === product.id
+        );
+
+        if (existingItem) {
+
+            console.log('Before:', existingItem.quantity);
+
+            existingItem.quantity++;
+
+            console.log('After:', existingItem.quantity);
+
+        } else {
+
+            this.cartItems.push({
+                product,
+                quantity: 1
+            });
+
+            console.log('Added new item with quantity 1');
+        }
+
+        this.saveCart();
+
+        console.table(this.cartItems);
+    }
+
+    // ===========================
+    // Remove Item
+    // ===========================
+    removeItem(productId) {
+
+        this.cartItems = this.cartItems.filter(
+            item => item.product.id !== productId
+        );
+
+        this.saveCart();
+
+    }
+
+    // ===========================
+    // Update Quantity
+    // ===========================
+    updateQuantity(productId, quantity) {
+
+        const item = this.cartItems.find(
+            item => item.product.id === productId
+        );
+
+        if (!item) {
+            return;
+        }
+
+        item.quantity = quantity;
+
+        if (item.quantity <= 0) {
+
+            this.removeItem(productId);
+
+            return;
+
+        }
+
+        this.saveCart();
+
+    }
+
+    // ===========================
+    // Get Cart Items
+    // ===========================
+    getItems() {
+
+        return [...this.cartItems];
+
+    }
+
+    // ===========================
+    // Total Items
+    // ===========================
+    getItemCount() {
+
+        return this.cartItems.reduce(
+            (count, item) => count + item.quantity,
+            0
+        );
+
+    }
+
+    // ===========================
+    // Grand Total
+    // ===========================
+    getGrandTotal() {
+
+        return this.cartItems.reduce(
+            (total, item) => {
+
+                const price = Number(
+                    item.product.price.replace(/,/g, '')
+                );
+
+                return total + (price * item.quantity);
+
+            },
+            0
+        );
+
+    }
+
+    // ===========================
+    // Clear Cart
+    // ===========================
+    clearCart() {
+
+        this.cartItems = [];
+
+        this.saveCart();
+
+    }
+
+}
+
+const cartService = new CartService();
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (cartService);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, [
+/* harmony export */   "A", 0, /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ ]);
 
 
 /***/ },
