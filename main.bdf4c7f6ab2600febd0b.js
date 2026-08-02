@@ -114,7 +114,9 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 /* harmony import */ var wm_contact__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(863);
 /* harmony import */ var wm_footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(707);
 /* harmony import */ var wm_productDetails__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(595);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(565);
+/* harmony import */ var wm_cart__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(745);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(565);
+
 
 
 
@@ -157,7 +159,7 @@ const stc8 = {
 };
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {c: api_custom_element, b: api_bind, h: api_element} = $api;
-  const {_m0, _m1} = $ctx;
+  const {_m0, _m1, _m2} = $ctx;
   return [$cmp.isHomePage ? api_custom_element("wm-header", wm_header__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, stc0) : null, $cmp.isHomePage ? api_element("main", stc1, [api_custom_element("wm-hero", wm_hero__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, stc2), api_custom_element("wm-services", wm_services__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A, {
     key: 3,
     on: _m0 || ($ctx._m0 = {
@@ -169,12 +171,18 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     },
     key: 10,
     on: _m1 || ($ctx._m1 = {
-      "back": api_bind($cmp.handleBackToHome)
+      "back": api_bind($cmp.handleBackToHome),
+      "opencart": api_bind($cmp.handleOpenCart)
+    })
+  }) : null, $cmp.isCartPage ? api_custom_element("wm-cart", wm_cart__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A, {
+    key: 11,
+    on: _m2 || ($ctx._m2 = {
+      "backtohome": api_bind($cmp.handleContinueShopping)
     })
   }) : null];
   /*LWC compiler v9.3.6*/
 }
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,lwc__WEBPACK_IMPORTED_MODULE_12__/* .registerTemplate */ .cI)(tmpl));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,lwc__WEBPACK_IMPORTED_MODULE_13__/* .registerTemplate */ .cI)(tmpl));
 tmpl.stylesheets = [];
 tmpl.stylesheetToken = "lwc-7svu88ro565";
 tmpl.legacyStylesheetToken = "wm-app_app";
@@ -184,7 +192,7 @@ if (_app_css__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A) {
 if (_app_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A) {
   tmpl.stylesheets.push.apply(tmpl.stylesheets, _app_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A);
 }
-;(0,lwc__WEBPACK_IMPORTED_MODULE_12__/* .freezeTemplate */ .iU)(tmpl);
+;(0,lwc__WEBPACK_IMPORTED_MODULE_13__/* .freezeTemplate */ .iU)(tmpl);
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, [
 /* harmony export */   "A", 0, /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
@@ -231,6 +239,12 @@ class App extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv {
   get isProductDetailsPage() {
     return this.currentPage === 'productDetails';
   }
+  get isCartPage() {
+    return this.currentPage === 'cart';
+  }
+  handleOpenCart() {
+    this.currentPage = 'cart';
+  }
   handleProductClick(event) {
     const productId = event.detail.productId;
     const selectedProduct = _data_products__WEBPACK_IMPORTED_MODULE_2__/* .products */ .Z.find(product => product.id === productId);
@@ -248,6 +262,13 @@ class App extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv {
     this.currentPage = 'home';
     this.selectedProduct = null;
   }
+  handleContinueShopping() {
+    console.log('Continue Shopping event received');
+    this.currentPage = 'home';
+    window.history.pushState({
+      page: 'home'
+    }, '', '/');
+  }
   /*LWC compiler v9.3.6*/
 }
 ;(0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerDecorators */ .CF)(App, {
@@ -256,6 +277,203 @@ class App extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv {
 const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerComponent */ .Nj)(App, {
   tmpl: _app_html__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A,
   sel: "wm-app",
+  apiVersion: 66
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__lwc_component_class_internal);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, [
+/* harmony export */   "A", 0, /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ ]);
+
+
+/***/ },
+
+/***/ 886
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
+  var shadowSelector = token ? ("[" + token + "]") : "";
+  var hostSelector = token ? ("[" + token + "-host]") : "";
+  var suffixToken = token ? ("-" + token) : "";
+  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;background: #f8f4ee;min-height: 100vh;}.container" + shadowSelector + " {max-width: 1400px;margin: auto;padding: 60px 30px;}.cart-header" + shadowSelector + " {margin-bottom: 45px;}.back-btn" + shadowSelector + " {display: inline-block;color: #9c5b18;font-weight: 600;cursor: pointer;transition: .3s;margin-bottom: 20px;}.back-btn:hover" + shadowSelector + " {color: #603813;}.cart-header" + shadowSelector + " h1" + shadowSelector + " {margin: 0;font-size: 2.8rem;color: #2b2b2b;font-family: Georgia, serif;}.cart-layout" + shadowSelector + " {display: grid;grid-template-columns: 2fr 420px;gap: 40px;align-items: start;}.cart-items" + shadowSelector + " {display: flex;flex-direction: column;gap: 25px;}.cart-item" + shadowSelector + " {display: grid;grid-template-columns: 130px 1fr auto auto auto;gap: 25px;align-items: center;background: white;padding: 25px;border-radius: 18px;box-shadow: 0 10px 25px rgba(0,0,0,.06);}.product-image" + shadowSelector + " {width: 130px;height: 130px;border-radius: 14px;background: #f4f4f4;border: 2px dashed #d5d5d5;display: flex;justify-content: center;align-items: center;color: #999;font-weight: 600;}.product-details" + shadowSelector + " h2" + shadowSelector + " {margin: 0;font-size: 1.45rem;color: #2b2b2b;}.product-details" + shadowSelector + " p" + shadowSelector + " {margin: 12px 0;color: #777;}.price" + shadowSelector + " {color: #b96b1e;font-size: 1.3rem;font-weight: bold;}.quantity-section" + shadowSelector + " {display: flex;align-items: center;gap: 12px;}.qty-btn" + shadowSelector + " {width: 38px;height: 38px;border: none;border-radius: 50%;background: #b96b1e;color: white;cursor: pointer;font-size: 20px;transition: .3s;}.qty-btn:hover" + shadowSelector + " {background: #8a4f16;}.qty" + shadowSelector + " {min-width: 25px;text-align: center;font-size: 1.15rem;font-weight: bold;}.subtotal" + shadowSelector + " {font-size: 1.35rem;font-weight: bold;color: #2b2b2b;}.remove-btn" + shadowSelector + " {border: none;background: none;color: #c0392b;cursor: pointer;font-weight: 600;transition: .3s;}.remove-btn:hover" + shadowSelector + " {color: #96281b;}.summary-card" + shadowSelector + " {background: white;padding: 35px;border-radius: 20px;box-shadow: 0 10px 25px rgba(0,0,0,.06);position: sticky;top: 30px;}.summary-card" + shadowSelector + " h2" + shadowSelector + " {margin-top: 0;margin-bottom: 30px;color: #2b2b2b;}.summary-row" + shadowSelector + " {display: flex;justify-content: space-between;margin-bottom: 18px;font-size: 1.05rem;}.summary-row.total" + shadowSelector + " {margin-top: 20px;font-size: 1.3rem;}.summary-card" + shadowSelector + " hr" + shadowSelector + " {border: none;border-top: 1px solid #e5dfd7;margin: 22px 0;}.checkout-btn" + shadowSelector + " {width: 100%;margin-top: 30px;padding: 16px;border: none;border-radius: 12px;background: #b96b1e;color: white;font-size: 1rem;font-weight: 600;cursor: pointer;transition: .3s;}.checkout-btn:hover" + shadowSelector + " {background: #8a4f16;}@media (max-width:1100px) {.cart-layout" + shadowSelector + " {grid-template-columns: 1fr;}.summary-card" + shadowSelector + " {position: static;}}@media (max-width:800px) {.cart-item" + shadowSelector + " {grid-template-columns: 1fr;text-align: center;}.product-image" + shadowSelector + " {margin: auto;}.quantity-section" + shadowSelector + " {justify-content: center;}}@media (max-width:500px) {.container" + shadowSelector + " {padding: 40px 18px;}.cart-header" + shadowSelector + " h1" + shadowSelector + " {font-size: 2rem;}.product-details" + shadowSelector + " h2" + shadowSelector + " {font-size: 1.2rem;}}";
+  /*LWC compiler v9.3.6*/
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, [
+/* harmony export */   "A", 0, /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ ]);
+
+
+/***/ },
+
+/***/ 648
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+/* harmony import */ var _cart_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(886);
+/* harmony import */ var _cart_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
+
+
+
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="cart-header${0}"${2}><span class="back-btn${0}"${2}> ← Continue Shopping </span><h1${3}> Shopping Cart </h1></div>`;
+const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="cart-item${0}"${2}><div class="product-image${0}"${2}>Image</div><div class="product-details${0}"${2}><h2${3}>${"t5"}</h2><p${3}>${"t7"}</p><div class="price${0}"${2}>${"t9"}</div></div><div class="quantity-section${0}"${2}><button class="qty-btn${0}"${"a11:data-id"}${2}> - </button><span class="qty${0}"${2}>${"t14"}</span><button class="qty-btn${0}"${"a15:data-id"}${2}> + </button></div><div class="subtotal${0}"${2}>${"t18"}</div><button class="remove-btn${0}"${"a19:data-id"}${2}> Remove </button></div>`;
+const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="empty-cart${0}"${2}>Your cart is empty.</div>`;
+const $fragment4 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<aside class="summary-card${0}"${2}><h2${3}>Order Summary</h2><div class="summary-row${0}"${2}><span${3}>Items</span><strong${3}>${"t7"}</strong></div><div class="summary-row${0}"${2}><span${3}>Subtotal</span><strong${3}>${"t12"}</strong></div><div class="summary-row${0}"${2}><span${3}>Shipping</span><strong${3}>FREE</strong></div><hr${3}><div class="summary-row total${0}"${2}><span${3}>Total</span><strong${3}>${"t23"}</strong></div><button class="checkout-btn${0}"${2}>Proceed to Checkout</button></aside>`;
+const stc0 = {
+  classMap: {
+    "cart-page": true
+  },
+  key: 0
+};
+const stc1 = {
+  classMap: {
+    "container": true
+  },
+  key: 1
+};
+const stc2 = {
+  classMap: {
+    "cart-layout": true
+  },
+  key: 4
+};
+const stc3 = {
+  classMap: {
+    "cart-items": true
+  },
+  key: 5
+};
+const stc4 = [];
+function tmpl($api, $cmp, $slotset, $ctx) {
+  const {b: api_bind, sp: api_static_part, st: api_static_fragment, k: api_key, d: api_dynamic_text, i: api_iterator, f: api_flatten, h: api_element} = $api;
+  const {_m0, _m1, _m2, _m3} = $ctx;
+  return [api_element("section", stc0, [api_element("div", stc1, [api_static_fragment($fragment1, 3, [api_static_part(1, {
+    on: _m0 || ($ctx._m0 = {
+      "click": api_bind($cmp.continueShopping)
+    })
+  }, null)]), api_element("div", stc2, [api_element("div", stc3, api_flatten([$cmp.hasItems ? api_iterator($cmp.formattedCartItems, function (item) {
+    return api_static_fragment($fragment2, api_key(7, item.product.id), [api_static_part(5, null, api_dynamic_text(item.product.title)), api_static_part(7, null, api_dynamic_text(item.product.material)), api_static_part(9, null, api_dynamic_text(item.formattedPrice)), api_static_part(11, {
+      on: _m1 || ($ctx._m1 = {
+        "click": api_bind($cmp.decreaseQuantity)
+      }),
+      attrs: {
+        "data-id": item.product.id
+      }
+    }, null), api_static_part(14, null, api_dynamic_text(item.quantity)), api_static_part(15, {
+      on: _m2 || ($ctx._m2 = {
+        "click": api_bind($cmp.increaseQuantity)
+      }),
+      attrs: {
+        "data-id": item.product.id
+      }
+    }, null), api_static_part(18, null, api_dynamic_text(item.formattedSubtotal)), api_static_part(19, {
+      on: _m3 || ($ctx._m3 = {
+        "click": api_bind($cmp.removeItem)
+      }),
+      attrs: {
+        "data-id": item.product.id
+      }
+    }, null)]);
+  }) : stc4, !$cmp.hasItems ? api_static_fragment($fragment3, 9) : null])), api_static_fragment($fragment4, 11, [api_static_part(7, null, api_dynamic_text($cmp.itemCount)), api_static_part(12, null, " ₹" + api_dynamic_text($cmp.formattedGrandTotal) + " "), api_static_part(23, null, " ₹" + api_dynamic_text($cmp.formattedGrandTotal) + " ")])])])])];
+  /*LWC compiler v9.3.6*/
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .registerTemplate */ .cI)(tmpl));
+tmpl.stylesheets = [];
+tmpl.stylesheetToken = "lwc-2jiuei05tok";
+tmpl.legacyStylesheetToken = "wm-cart_cart";
+if (_cart_css__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A) {
+  tmpl.stylesheets.push.apply(tmpl.stylesheets, _cart_css__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A);
+}
+if (_cart_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A) {
+  tmpl.stylesheets.push.apply(tmpl.stylesheets, _cart_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A);
+}
+;(0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .freezeTemplate */ .iU)(tmpl);
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, [
+/* harmony export */   "A", 0, /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ ]);
+
+
+/***/ },
+
+/***/ 745
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
+/* harmony import */ var _cart_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(648);
+/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(192);
+
+
+
+
+class Cart extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv {
+  constructor(...args) {
+    super(...args);
+    this.cartItems = [];
+    this.itemCount = 0;
+    this.grandTotal = 0;
+  }
+  connectedCallback() {
+    this.loadCart();
+  }
+  loadCart() {
+    this.cartItems = _services_cartService__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A.getItems();
+    this.itemCount = _services_cartService__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A.getItemCount();
+    this.grandTotal = _services_cartService__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A.getGrandTotal();
+    console.log('Cart Loaded');
+    console.table(this.cartItems);
+  }
+  get hasItems() {
+    return this.cartItems.length > 0;
+  }
+  get formattedGrandTotal() {
+    return this.grandTotal.toLocaleString('en-IN');
+  }
+  get formattedCartItems() {
+    return this.cartItems.map(item => {
+      const price = Number(item.product.price.replace(/,/g, ''));
+      const subtotal = price * item.quantity;
+      return {
+        ...item,
+        formattedPrice: `₹${item.product.price}`,
+        formattedSubtotal: `₹${subtotal.toLocaleString('en-IN')}`
+      };
+    });
+  }
+  increaseQuantity(event) {
+    const productId = event.target.dataset.id;
+    const item = this.cartItems.find(item => item.product.id === productId);
+    if (!item) {
+      return;
+    }
+    _services_cartService__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A.updateQuantity(productId, item.quantity + 1);
+    this.loadCart();
+  }
+  decreaseQuantity(event) {
+    const productId = event.target.dataset.id;
+    const item = this.cartItems.find(item => item.product.id === productId);
+    if (!item) {
+      return;
+    }
+    _services_cartService__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A.updateQuantity(productId, item.quantity - 1);
+    this.loadCart();
+  }
+  removeItem(event) {
+    const productId = event.target.dataset.id;
+    _services_cartService__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A.removeItem(productId);
+    this.loadCart();
+  }
+  continueShopping() {
+    console.log('Continue Shopping Clicked');
+    this.dispatchEvent(new CustomEvent('backtohome'));
+  }
+  /*LWC compiler v9.3.6*/
+}
+;(0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerDecorators */ .CF)(Cart, {
+  fields: ["cartItems", "itemCount", "grandTotal"]
+});
+const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerComponent */ .Nj)(Cart, {
+  tmpl: _cart_html__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A,
+  sel: "wm-cart",
   apiVersion: 66
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__lwc_component_class_internal);
@@ -1170,6 +1388,7 @@ class ProductDetails extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElemen
       console.log('Loop', i);
       _services_cartService__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A.addItem(this.product);
     }
+    this.dispatchEvent(new CustomEvent('opencart'));
     console.log('Method Finished');
   }
 
