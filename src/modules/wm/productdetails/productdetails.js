@@ -1,5 +1,5 @@
 import { LightningElement, api } from 'lwc';
-
+import cartService from '../../../services/cartService';
 export default class ProductDetails extends LightningElement {
 
     // Product received from App component
@@ -21,11 +21,23 @@ export default class ProductDetails extends LightningElement {
 
     // Add To Cart
     addToCart() {
-        console.log('Add To Cart');
-        console.log(this.product);
-        console.log('Quantity :', this.quantity);
 
-        // We'll connect this to the Cart page later
+        console.log('Method Started');
+
+        console.log(cartService);
+
+        console.log(typeof cartService.addItem);
+
+        for (let i = 0; i < this.quantity; i++) {
+
+            console.log('Loop', i);
+
+            cartService.addItem(this.product);
+
+        }
+
+        console.log('Method Finished');
+
     }
 
     // Buy Now
