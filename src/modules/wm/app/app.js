@@ -47,6 +47,16 @@ export default class App extends LightningElement {
 
     }
 
+    get isCartPage() {
+        return this.currentPage === 'cart';
+    }
+
+    handleOpenCart() {
+
+        this.currentPage = 'cart';
+
+    }
+
     handleProductClick(event) {
 
         const productId = event.detail.productId;
@@ -76,6 +86,18 @@ export default class App extends LightningElement {
         this.currentPage = 'home';
 
         this.selectedProduct = null;
+
+    }
+
+    handleContinueShopping() {
+        console.log('Continue Shopping event received');
+        this.currentPage = 'home';
+
+        window.history.pushState(
+            { page: 'home' },
+            '',
+            '/'
+        );
 
     }
 

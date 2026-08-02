@@ -1,0 +1,168 @@
+<template>
+
+    <section class="cart-page">
+
+        <div class="container">
+
+            <!-- ===========================
+                 Header
+            =========================== -->
+
+            <div class="cart-header">
+                <span class="back-btn" onclick={continueShopping}> ← Continue Shopping </span>
+                <h1> Shopping Cart </h1>
+            </div>
+
+            <!-- ===========================
+                 Cart Layout
+            =========================== -->
+
+            <div class="cart-layout">
+
+                <!-- ===========================
+                     LEFT SIDE
+                =========================== -->
+
+                <div class="cart-items">
+                    <template if:true={hasItems}>
+                        <template for:each={formattedCartItems} for:item="item">
+
+                            <div
+                                key={item.product.id}
+                                class="cart-item">
+
+                                <div class="product-image">
+
+                                    Image
+
+                                </div>
+
+                                <div class="product-details">
+
+                                    <h2>{item.product.title}</h2>
+
+                                    <p>{item.product.material}</p>
+
+                                    <div class="price">
+
+                                        {item.formattedPrice}
+
+                                    </div>
+
+                                </div>
+
+                                <div class="quantity-section">
+
+                                    <button class="qty-btn" data-id={item.product.id} onclick={decreaseQuantity}> - </button>
+
+                                    <span class="qty">
+
+                                        {item.quantity}
+
+                                    </span>
+
+                                    <button class="qty-btn" data-id={item.product.id} onclick={increaseQuantity}> + </button>
+
+                                </div>
+
+                                <div class="subtotal">
+
+                                    {item.formattedSubtotal}
+
+                                </div>
+
+                                <button class="remove-btn" data-id={item.product.id} onclick={removeItem}> Remove </button>
+
+                            </div>
+
+                        </template>
+                    </template>
+                    <template if:false={hasItems}>
+                        <div class="empty-cart">
+                            Your cart is empty.
+                        </div>
+                    </template>
+                </div>
+
+                <!-- ===========================
+                     RIGHT SIDE
+                =========================== -->
+
+                <aside class="summary-card">
+
+                    <h2>
+
+                        Order Summary
+
+                    </h2>
+
+                    <div class="summary-row">
+
+                        <span>
+
+                            Items
+
+                        </span>
+
+                        <strong>{itemCount}</strong>
+
+                    </div>
+
+                    <div class="summary-row">
+
+                        <span>
+
+                            Subtotal
+
+                        </span>
+
+                        <strong> ₹{formattedGrandTotal} </strong>
+
+                    </div>
+
+                    <div class="summary-row">
+
+                        <span>
+
+                            Shipping
+
+                        </span>
+
+                        <strong>
+
+                            FREE
+
+                        </strong>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="summary-row total">
+
+                        <span>
+
+                            Total
+
+                        </span>
+
+                        <strong> ₹{formattedGrandTotal} </strong>
+
+                    </div>
+
+                    <button
+                        class="checkout-btn">
+
+                        Proceed to Checkout
+
+                    </button>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</template>

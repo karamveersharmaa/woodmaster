@@ -25,7 +25,6 @@
             <wm-about></wm-about>
 
             <wm-contact></wm-contact>
-
         </main>
 
         <wm-footer></wm-footer>
@@ -41,8 +40,19 @@
 
         <wm-product-details
             product={selectedProduct}
-            onback={handleBackToHome}>
+            onback={handleBackToHome}
+            onopencart={handleOpenCart}>
         </wm-product-details>
+
+    </template>
+
+     <!-- CART PAGE -->
+
+    <template if:true={isCartPage}>
+
+        <wm-cart
+            onbacktohome={handleContinueShopping}> 
+        </wm-cart>
 
     </template>
 

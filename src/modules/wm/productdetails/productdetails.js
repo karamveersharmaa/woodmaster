@@ -35,6 +35,9 @@ export default class ProductDetails extends LightningElement {
             cartService.addItem(this.product);
 
         }
+        this.dispatchEvent(
+            new CustomEvent('opencart')
+        );
 
         console.log('Method Finished');
 
