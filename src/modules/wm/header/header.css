@@ -134,3 +134,70 @@ button:focus-visible {
   outline: 2px solid var(--wm-copper);
   outline-offset: 2px;
 }
+
+/* =========================
+   Cart Button
+========================= */
+
+.cart-button {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 36px;
+    height: 36px;
+
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+    margin-left: 14px;
+}
+
+/* Cart icon */
+
+.cart-button:hover {
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   Cart Count
+========================= */
+
+.cart-button .cart-count {
+    position: absolute;
+
+    top: -5px;
+    right: -7px;
+
+    min-width: 18px;
+    height: 18px;
+
+    padding: 0 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    border-radius: 50%;
+
+    background: #c26d19 !important;
+    color: #ffffff !important;
+
+    font-size: 10px !important;
+    font-weight: 700 !important;
+
+    line-height: 18px !important;
+
+    z-index: 10;
+}

@@ -61,8 +61,17 @@ class CartService {
         }
 
         this.saveCart();
+        console.log(
+            'DISPATCHING CART CHANGE:',
+            this.getItemCount()
+        );
 
-        console.table(this.cartItems);
+        document.dispatchEvent(
+            new CustomEvent('cartchange')
+        );
+
+        console.log('Cart Updated');
+        console.log(this.cartItems);
     }
 
     // ===========================
@@ -75,6 +84,10 @@ class CartService {
         );
 
         this.saveCart();
+
+        document.dispatchEvent(
+            new CustomEvent('cartchange')
+        );
 
     }
 
@@ -102,6 +115,10 @@ class CartService {
         }
 
         this.saveCart();
+
+        document.dispatchEvent(
+            new CustomEvent('cartchange')
+        );
 
     }
 
@@ -157,7 +174,17 @@ class CartService {
 
     }
 
+    notifyCartChange() {
+
+    document.dispatchEvent(
+        new CustomEvent('cartchange')
+    );
+
 }
+
+}
+
+
 
 const cartService = new CartService();
 

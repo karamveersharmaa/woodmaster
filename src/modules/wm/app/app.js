@@ -89,6 +89,14 @@ export default class App extends LightningElement {
 
     }
 
+    handleCartClick() {
+
+        console.log('Cart event received');
+
+        this.currentPage = 'cart';
+
+    }
+
     handleContinueShopping() {
         console.log('Continue Shopping event received');
         this.currentPage = 'home';

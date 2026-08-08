@@ -17,6 +17,18 @@
         <a href="#contact" class="nav-cta" onclick={closeMenu}>Get a Quote</a>
       </nav>
 
+      <!-- Cart -->
+
+    <button class="cart-button" aria-label="Shopping Cart" onclick={openCart}>
+        🛒
+
+        <span class="cart-count">
+            {cartCount}
+        </span>
+
+    </button>
+
+
       <button
         class="burger"
         aria-label="Toggle menu"

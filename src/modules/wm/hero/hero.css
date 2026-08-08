@@ -1,153 +1,430 @@
 :host {
-  display: block;
-  background: var(--wm-bg);
+    display: block;
+    background: var(--wm-bg);
 }
 
 .hero {
-  max-width: var(--wm-max);
-  margin: 0 auto;
-  padding: 64px 24px 80px;
+    max-width: var(--wm-max);
+    margin: 0 auto;
+    padding: 64px 24px 80px;
 }
 
 .inner {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 56px;
-  align-items: center;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 56px;
+    align-items: center;
 }
 
+/* =========================
+   Hero Content
+========================= */
+
 .eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  color: var(--wm-copper);
-  margin: 0 0 18px;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    color: var(--wm-copper);
+    margin: 0 0 18px;
 }
 
 h1 {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: clamp(2.35rem, 3.6vw + 1rem, 4rem);
-  line-height: 1.04;
-  margin: 0 0 22px;
-  letter-spacing: -0.01em;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(2.35rem, 3.6vw + 1rem, 4rem);
+    line-height: 1.04;
+    margin: 0 0 22px;
+    letter-spacing: -0.01em;
 }
 
 .lede {
-  font-size: 1.08rem;
-  line-height: 1.6;
-  color: var(--wm-ink-soft);
-  max-width: 46ch;
-  margin: 0 0 32px;
+    font-size: 1.08rem;
+    line-height: 1.6;
+    color: var(--wm-ink-soft);
+    max-width: 46ch;
+    margin: 0 0 32px;
 }
 
+/* =========================
+   Buttons
+========================= */
+
 .cta-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 40px;
 }
 
 .btn {
-  font-family: var(--font-mono);
-  font-size: 0.88rem;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  padding: 14px 24px;
-  border-radius: var(--wm-radius);
-  display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: var(--wm-radius);
+    display: inline-block;
 }
 
 .btn-primary {
-  background: var(--wm-walnut-dark);
-  color: var(--wm-on-dark);
-  border: 1px solid var(--wm-walnut-dark);
+    background: var(--wm-walnut-dark);
+    color: var(--wm-on-dark);
+    border: 1px solid var(--wm-walnut-dark);
 }
 
 .btn-primary:hover,
 .btn-primary:focus-visible {
-  background: var(--wm-copper);
-  border-color: var(--wm-copper);
+    background: var(--wm-copper);
+    border-color: var(--wm-copper);
 }
 
 .btn-ghost {
-  color: var(--wm-ink);
-  border: 1px solid var(--wm-line-strong);
+    color: var(--wm-ink);
+    border: 1px solid var(--wm-line-strong);
 }
 
 .btn-ghost:hover,
 .btn-ghost:focus-visible {
-  border-color: var(--wm-ink);
+    border-color: var(--wm-ink);
 }
 
+/* =========================
+   Trust / Stats
+========================= */
+
 .trust {
-  list-style: none;
-  margin: 0;
-  padding: 20px 0 0;
-  border-top: 1px solid var(--wm-line);
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
-  font-size: 0.86rem;
-  color: var(--wm-ink-soft);
+    list-style: none;
+    margin: 0;
+    padding: 20px 0 0;
+    border-top: 1px solid var(--wm-line);
+
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+
+    font-size: 0.86rem;
+    color: var(--wm-ink-soft);
 }
 
 .trust .num {
-  display: block;
-  font-family: var(--font-display);
-  font-size: 1.4rem;
-  color: var(--wm-ink);
-  font-weight: 600;
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: var(--wm-ink);
+    font-weight: 600;
 }
 
-.drawing svg {
-  width: 100%;
-  height: auto;
+
+/* ==================================================
+   CUSTOM WOODWORKING SHOWCASE
+================================================== */
+
+.drawing {
+    min-height: 440px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+
+    padding: 20px 10px;
 }
 
-.drawing .title {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  fill: var(--wm-ink-soft);
+.showcase-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+
+    color: var(--wm-copper);
+
+    margin-bottom: 24px;
 }
 
-.drawing .label {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.03em;
-  fill: var(--wm-ink-soft);
+.showcase {
+    position: relative;
+
+    width: 100%;
+    min-height: 320px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: 16px;
 }
 
-.drawing .guide {
-  stroke: var(--wm-copper);
-  stroke-width: 1.5;
-  stroke-dasharray: 3 4;
+
+/* =========================
+   Furniture Cards
+========================= */
+
+.furniture-card {
+    position: relative;
+
+    min-height: 140px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: var(--wm-bg-panel);
+
+    border: 1px solid var(--wm-line);
+
+    padding-bottom: 32px;
 }
 
-.drawing .lead {
-  stroke: var(--wm-line-strong);
-  stroke-width: 1;
+.furniture-label {
+    position: absolute;
+    left: 14px;
+    bottom: 9px;
+
+    font-family: var(--font-mono);
+    font-size: 0.58rem;
+    letter-spacing: 0.08em;
+
+    color: var(--wm-ink-soft);
+
+    z-index: 2;
 }
 
-.drawing .dim {
-  stroke: var(--wm-ink-soft);
-  stroke-width: 1;
+.chair-card .furniture-label {
+    color: var(--wm-copper-light);
 }
+
+
+/* =========================
+   Chair
+========================= */
+
+.chair-card {
+    background: var(--wm-walnut-dark);
+}
+
+.chair {
+    position: relative;
+
+    width: 100px;
+    height: 110px;
+}
+
+.chair-back {
+    position: absolute;
+
+    left: 20px;
+    top: 8px;
+
+    width: 58px;
+    height: 58px;
+
+    border: 7px solid var(--wm-copper-light);
+    border-bottom: none;
+}
+
+.chair-seat {
+    position: absolute;
+
+    left: 10px;
+    top: 62px;
+
+    width: 78px;
+    height: 15px;
+
+    background: var(--wm-copper-light);
+}
+
+.chair-leg {
+    position: absolute;
+
+    top: 76px;
+
+    width: 8px;
+    height: 32px;
+
+    background: var(--wm-copper-light);
+}
+
+.chair-leg.left {
+    left: 20px;
+}
+
+.chair-leg.right {
+    right: 20px;
+}
+
+
+/* =========================
+   Table
+========================= */
+
+.table {
+    position: relative;
+
+    width: 150px;
+    height: 110px;
+}
+
+.table-top {
+    position: absolute;
+
+    top: 25px;
+    left: 0;
+
+    width: 150px;
+    height: 18px;
+
+    background: var(--wm-walnut-dark);
+}
+
+.table-leg {
+    position: absolute;
+
+    top: 43px;
+
+    width: 10px;
+    height: 65px;
+
+    background: var(--wm-walnut-dark);
+}
+
+.table-leg.left {
+    left: 18px;
+}
+
+.table-leg.right {
+    right: 18px;
+}
+
+
+/* =========================
+   Cabinet
+========================= */
+
+.cabinet-card {
+    grid-column: 1 / 3;
+
+    background: var(--wm-copper-light);
+}
+
+.cabinet {
+    display: flex;
+
+    width: 180px;
+    height: 105px;
+
+    background: var(--wm-walnut-dark);
+
+    box-shadow:
+        12px 12px 0 rgba(60, 35, 23, 0.08);
+}
+
+.cabinet-door {
+    position: relative;
+
+    flex: 1;
+
+    border: 1px solid rgba(247, 241, 230, 0.18);
+}
+
+.cabinet-door span {
+    position: absolute;
+
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+
+    background: var(--wm-copper-light);
+
+    top: 50%;
+    right: 10px;
+}
+
+
+/* =========================
+   Showcase Caption
+========================= */
+
+.showcase-caption {
+    margin-top: 20px;
+
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+
+    color: var(--wm-ink-soft);
+}
+
+
+/* =========================
+   Tablet
+========================= */
 
 @media (max-width: 900px) {
-  .inner {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
 
-  .drawing {
-    order: -1;
-    max-width: 420px;
-    margin: 0 auto;
-  }
+    .inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
 
-  .hero {
-    padding: 40px 20px 56px;
-  }
+    .drawing {
+        order: -1;
+
+        max-width: 520px;
+
+        margin: 0 auto;
+
+        width: 100%;
+    }
+
+    .hero {
+        padding: 40px 20px 56px;
+    }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+    .drawing {
+        min-height: 360px;
+
+        padding: 10px 0;
+    }
+
+    .showcase {
+        min-height: 280px;
+
+        gap: 10px;
+    }
+
+    .furniture-card {
+        min-height: 120px;
+    }
+
+    .chair {
+        transform: scale(0.8);
+    }
+
+    .table {
+        transform: scale(0.8);
+    }
+
+    .cabinet {
+        width: 140px;
+        height: 85px;
+    }
+
+    .showcase-caption {
+        font-size: 0.6rem;
+    }
+
 }
