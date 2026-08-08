@@ -131,52 +131,54 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 
 const stc0 = {
-  key: 0
-};
-const stc1 = {
   key: 1
 };
-const stc2 = {
+const stc1 = {
   key: 2
 };
-const stc3 = {
+const stc2 = {
   key: 4
 };
-const stc4 = {
+const stc3 = {
   key: 5
 };
-const stc5 = {
+const stc4 = {
   key: 6
 };
-const stc6 = {
+const stc5 = {
   key: 7
 };
-const stc7 = {
+const stc6 = {
   key: 8
 };
-const stc8 = {
+const stc7 = {
   key: 9
 };
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {c: api_custom_element, b: api_bind, h: api_element} = $api;
-  const {_m0, _m1, _m2} = $ctx;
-  return [$cmp.isHomePage ? api_custom_element("wm-header", wm_header__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, stc0) : null, $cmp.isHomePage ? api_element("main", stc1, [api_custom_element("wm-hero", wm_hero__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, stc2), api_custom_element("wm-services", wm_services__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A, {
-    key: 3,
+  const {b: api_bind, c: api_custom_element, h: api_element} = $api;
+  const {_m0, _m1, _m2, _m3} = $ctx;
+  return [$cmp.isHomePage ? api_custom_element("wm-header", wm_header__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+    key: 0,
     on: _m0 || ($ctx._m0 = {
+      "cartclick": api_bind($cmp.handleCartClick)
+    })
+  }) : null, $cmp.isHomePage ? api_element("main", stc0, [api_custom_element("wm-hero", wm_hero__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, stc1), api_custom_element("wm-services", wm_services__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A, {
+    key: 3,
+    on: _m1 || ($ctx._m1 = {
       "productclick": api_bind($cmp.handleProductClick)
     })
-  }), api_custom_element("wm-process", wm_process__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A, stc3), api_custom_element("wm-gallery", wm_gallery__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .A, stc4), api_custom_element("wm-testimonials", wm_testimonials__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A, stc5), api_custom_element("wm-about", wm_about__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .A, stc6), api_custom_element("wm-contact", wm_contact__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .A, stc7)]) : null, $cmp.isHomePage ? api_custom_element("wm-footer", wm_footer__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .A, stc8) : null, $cmp.isProductDetailsPage ? api_custom_element("wm-product-details", wm_productDetails__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A, {
+  }), api_custom_element("wm-process", wm_process__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A, stc2), api_custom_element("wm-gallery", wm_gallery__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .A, stc3), api_custom_element("wm-testimonials", wm_testimonials__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A, stc4), api_custom_element("wm-about", wm_about__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .A, stc5), api_custom_element("wm-contact", wm_contact__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .A, stc6)]) : null, $cmp.isHomePage ? api_custom_element("wm-footer", wm_footer__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .A, stc7) : null, $cmp.isProductDetailsPage ? api_custom_element("wm-product-details", wm_productDetails__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A, {
     props: {
       "product": $cmp.selectedProduct
     },
     key: 10,
-    on: _m1 || ($ctx._m1 = {
+    on: _m2 || ($ctx._m2 = {
       "back": api_bind($cmp.handleBackToHome),
       "opencart": api_bind($cmp.handleOpenCart)
     })
   }) : null, $cmp.isCartPage ? api_custom_element("wm-cart", wm_cart__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A, {
     key: 11,
-    on: _m2 || ($ctx._m2 = {
+    on: _m3 || ($ctx._m3 = {
       "backtohome": api_bind($cmp.handleContinueShopping)
     })
   }) : null];
@@ -261,6 +263,10 @@ class App extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv {
     console.log('Back event received');
     this.currentPage = 'home';
     this.selectedProduct = null;
+  }
+  handleCartClick() {
+    console.log('Cart event received');
+    this.currentPage = 'cart';
   }
   handleContinueShopping() {
     console.log('Continue Shopping event received');
@@ -941,7 +947,7 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
   var shadowSelector = token ? ("[" + token + "]") : "";
   var hostSelector = token ? ("[" + token + "-host]") : "";
   var suffixToken = token ? ("-" + token) : "";
-  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "position: sticky;top: 0;z-index: 100;display: block;}.bar" + shadowSelector + " {background: rgba(247, 241, 230, 0.92);backdrop-filter: saturate(140%) blur(8px);border-bottom: 1px solid var(--wm-line);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 14px 24px;display: flex;align-items: center;justify-content: space-between;gap: 16px;}.brand" + shadowSelector + " {display: flex;align-items: center;gap: 10px;text-decoration: none;color: var(--wm-ink);}.mark" + shadowSelector + " {width: 30px;height: 30px;flex: none;}.wordmark" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: 1.25rem;letter-spacing: 0.01em;}.links" + shadowSelector + " {display: flex;align-items: center;gap: 28px;}.links" + shadowSelector + " a" + shadowSelector + " {color: var(--wm-ink-soft);text-decoration: none;font-size: 0.95rem;font-weight: 500;}.links" + shadowSelector + " a:hover" + shadowSelector + ",\r.links" + shadowSelector + " a:focus-visible" + shadowSelector + " {color: var(--wm-copper);}.nav-cta" + shadowSelector + " {border: 1px solid var(--wm-walnut-dark);color: var(--wm-walnut-dark) !important;padding: 8px 16px;border-radius: var(--wm-radius);font-family: var(--font-mono);font-size: 0.82rem !important;letter-spacing: 0.03em;}.nav-cta:hover" + shadowSelector + ",\r.nav-cta:focus-visible" + shadowSelector + " {background: var(--wm-walnut-dark);color: var(--wm-on-dark) !important;}.burger" + shadowSelector + " {display: none;flex-direction: column;gap: 5px;background: none;border: none;cursor: pointer;padding: 8px;}.burger" + shadowSelector + " span" + shadowSelector + " {width: 22px;height: 2px;background: var(--wm-ink);display: block;}@media (max-width: 860px) {.links" + shadowSelector + " {position: fixed;top: 62px;right: 0;left: 0;background: var(--wm-bg-panel);border-bottom: 1px solid var(--wm-line);flex-direction: column;align-items: flex-start;gap: 0;max-height: 0;overflow: hidden;transition: max-height 0.25s ease;}.links.open" + shadowSelector + " {max-height: 320px;}.links" + shadowSelector + " a" + shadowSelector + " {width: 100%;padding: 16px 24px;border-bottom: 1px solid var(--wm-line);}.nav-cta" + shadowSelector + " {border: none;color: var(--wm-copper) !important;}.burger" + shadowSelector + " {display: flex;}}a:focus-visible" + shadowSelector + ",\rbutton:focus-visible" + shadowSelector + " {outline: 2px solid var(--wm-copper);outline-offset: 2px;}";
+  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "position: sticky;top: 0;z-index: 100;display: block;}.bar" + shadowSelector + " {background: rgba(247, 241, 230, 0.92);backdrop-filter: saturate(140%) blur(8px);border-bottom: 1px solid var(--wm-line);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 14px 24px;display: flex;align-items: center;justify-content: space-between;gap: 16px;}.brand" + shadowSelector + " {display: flex;align-items: center;gap: 10px;text-decoration: none;color: var(--wm-ink);}.mark" + shadowSelector + " {width: 30px;height: 30px;flex: none;}.wordmark" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: 1.25rem;letter-spacing: 0.01em;}.links" + shadowSelector + " {display: flex;align-items: center;gap: 28px;}.links" + shadowSelector + " a" + shadowSelector + " {color: var(--wm-ink-soft);text-decoration: none;font-size: 0.95rem;font-weight: 500;}.links" + shadowSelector + " a:hover" + shadowSelector + ",\r.links" + shadowSelector + " a:focus-visible" + shadowSelector + " {color: var(--wm-copper);}.nav-cta" + shadowSelector + " {border: 1px solid var(--wm-walnut-dark);color: var(--wm-walnut-dark) !important;padding: 8px 16px;border-radius: var(--wm-radius);font-family: var(--font-mono);font-size: 0.82rem !important;letter-spacing: 0.03em;}.nav-cta:hover" + shadowSelector + ",\r.nav-cta:focus-visible" + shadowSelector + " {background: var(--wm-walnut-dark);color: var(--wm-on-dark) !important;}.burger" + shadowSelector + " {display: none;flex-direction: column;gap: 5px;background: none;border: none;cursor: pointer;padding: 8px;}.burger" + shadowSelector + " span" + shadowSelector + " {width: 22px;height: 2px;background: var(--wm-ink);display: block;}@media (max-width: 860px) {.links" + shadowSelector + " {position: fixed;top: 62px;right: 0;left: 0;background: var(--wm-bg-panel);border-bottom: 1px solid var(--wm-line);flex-direction: column;align-items: flex-start;gap: 0;max-height: 0;overflow: hidden;transition: max-height 0.25s ease;}.links.open" + shadowSelector + " {max-height: 320px;}.links" + shadowSelector + " a" + shadowSelector + " {width: 100%;padding: 16px 24px;border-bottom: 1px solid var(--wm-line);}.nav-cta" + shadowSelector + " {border: none;color: var(--wm-copper) !important;}.burger" + shadowSelector + " {display: flex;}}a:focus-visible" + shadowSelector + ",\rbutton:focus-visible" + shadowSelector + " {outline: 2px solid var(--wm-copper);outline-offset: 2px;}.cart-button" + shadowSelector + " {position: relative;display: inline-flex;align-items: center;justify-content: center;width: 36px;height: 36px;padding: 0;border: none;background: transparent;cursor: pointer;font-size: 20px;margin-left: 14px;}.cart-button:hover" + shadowSelector + " {transform: translateY(-1px);}.cart-button" + shadowSelector + " .cart-count" + shadowSelector + " {position: absolute;top: -5px;right: -7px;min-width: 18px;height: 18px;padding: 0 4px;display: flex;align-items: center;justify-content: center;box-sizing: border-box;border-radius: 50%;background: #c26d19 !important;color: #ffffff !important;font-size: 10px !important;font-weight: 700 !important;line-height: 18px !important;z-index: 10;}";
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
@@ -961,10 +967,10 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<header class="bar${0}"${2}><div class="inner${0}"${2}><a href="#top" class="brand${0}"${2}><svg class="mark${0}" viewBox="0 0 100 100" aria-hidden="true"${2}><rect width="100" height="100" rx="14" fill="var(--wm-walnut-dark)"${3}/><path d="M28 72 L28 28 L58 28 L58 40 L40 40 L40 72 Z" fill="var(--wm-copper-light)"${3}/></svg><span class="wordmark${0}"${2}>WoodMaster</span></a><nav${"c8"} aria-label="Primary"${2}><a href="#services"${3}>Services</a><a href="#process"${3}>Process</a><a href="#gallery"${3}>Work</a><a href="#about"${3}>About</a><a href="#contact" class="nav-cta${0}"${2}>Get a Quote</a></nav><button class="burger${0}" aria-label="Toggle menu"${"a19:aria-expanded"}${2}><span${3}></span><span${3}></span><span${3}></span></button></div></header>`;
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<header class="bar${0}"${2}><div class="inner${0}"${2}><a href="#top" class="brand${0}"${2}><svg class="mark${0}" viewBox="0 0 100 100" aria-hidden="true"${2}><rect width="100" height="100" rx="14" fill="var(--wm-walnut-dark)"${3}/><path d="M28 72 L28 28 L58 28 L58 40 L40 40 L40 72 Z" fill="var(--wm-copper-light)"${3}/></svg><span class="wordmark${0}"${2}>WoodMaster</span></a><nav${"c8"} aria-label="Primary"${2}><a href="#services"${3}>Services</a><a href="#process"${3}>Process</a><a href="#gallery"${3}>Work</a><a href="#about"${3}>About</a><a href="#contact" class="nav-cta${0}"${2}>Get a Quote</a></nav><button class="cart-button${0}" aria-label="Shopping Cart"${2}>🛒<span class="cart-count${0}"${2}>${"t22"}</span></button><button class="burger${0}" aria-label="Toggle menu"${"a23:aria-expanded"}${2}><span${3}></span><span${3}></span><span${3}></span></button></div></header>`;
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {b: api_bind, ncls: api_normalize_class_name, sp: api_static_part, st: api_static_fragment} = $api;
-  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6} = $ctx;
+  const {b: api_bind, ncls: api_normalize_class_name, d: api_dynamic_text, sp: api_static_part, st: api_static_fragment} = $api;
+  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6, _m7} = $ctx;
   return [api_static_fragment($fragment1, 1, [api_static_part(2, {
     on: _m0 || ($ctx._m0 = {
       "click": api_bind($cmp.closeMenu)
@@ -993,6 +999,10 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     })
   }, null), api_static_part(19, {
     on: _m6 || ($ctx._m6 = {
+      "click": api_bind($cmp.openCart)
+    })
+  }, null), api_static_part(22, null, api_dynamic_text($cmp.cartCount)), api_static_part(23, {
+    on: _m7 || ($ctx._m7 = {
       "click": api_bind($cmp.toggleMenu)
     }),
     attrs: {
@@ -1025,6 +1035,8 @@ if (_header_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */
 
 /* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
 /* harmony import */ var _header_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(873);
+/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(192);
+
 
 
 
@@ -1032,6 +1044,27 @@ class Header extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv
   constructor(...args) {
     super(...args);
     this.menuOpen = false;
+    this.cartCount = 0;
+    this.handleCartChange = () => {
+      console.log('HEADER RECEIVED CART CHANGE');
+      console.log('Cart Changed - Updating Header');
+      this.loadCartCount();
+    };
+  }
+  connectedCallback() {
+    console.log('HEADER CONNECTED');
+    this.loadCartCount();
+  }
+  disconnectedCallback() {
+    window.removeEventListener('cartchange', this.handleCartChange);
+  }
+  loadCartCount() {
+    this.cartCount = _services_cartService__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A.getItemCount();
+    console.log('HEADER CART COUNT:', this.cartCount);
+  }
+  openCart() {
+    console.log('Cart Icon Clicked');
+    this.dispatchEvent(new CustomEvent('cartclick'));
   }
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
@@ -1046,8 +1079,10 @@ class Header extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv
 }
 ;(0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerDecorators */ .CF)(Header, {
   track: {
-    menuOpen: 1
-  }
+    menuOpen: 1,
+    cartCount: 1
+  },
+  fields: ["handleCartChange"]
 });
 const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerComponent */ .Nj)(Header, {
   tmpl: _header_html__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A,
@@ -1069,7 +1104,7 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
   var shadowSelector = token ? ("[" + token + "]") : "";
   var hostSelector = token ? ("[" + token + "-host]") : "";
   var suffixToken = token ? ("-" + token) : "";
-  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;background: var(--wm-bg);}.hero" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 64px 24px 80px;}.inner" + shadowSelector + " {display: grid;grid-template-columns: 1.05fr 0.95fr;gap: 56px;align-items: center;}.eyebrow" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.78rem;letter-spacing: 0.06em;color: var(--wm-copper);margin: 0 0 18px;}h1" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: clamp(2.35rem, 3.6vw + 1rem, 4rem);line-height: 1.04;margin: 0 0 22px;letter-spacing: -0.01em;}.lede" + shadowSelector + " {font-size: 1.08rem;line-height: 1.6;color: var(--wm-ink-soft);max-width: 46ch;margin: 0 0 32px;}.cta-row" + shadowSelector + " {display: flex;flex-wrap: wrap;gap: 14px;margin-bottom: 40px;}.btn" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.88rem;letter-spacing: 0.02em;text-decoration: none;padding: 14px 24px;border-radius: var(--wm-radius);display: inline-block;}.btn-primary" + shadowSelector + " {background: var(--wm-walnut-dark);color: var(--wm-on-dark);border: 1px solid var(--wm-walnut-dark);}.btn-primary:hover" + shadowSelector + ",\r.btn-primary:focus-visible" + shadowSelector + " {background: var(--wm-copper);border-color: var(--wm-copper);}.btn-ghost" + shadowSelector + " {color: var(--wm-ink);border: 1px solid var(--wm-line-strong);}.btn-ghost:hover" + shadowSelector + ",\r.btn-ghost:focus-visible" + shadowSelector + " {border-color: var(--wm-ink);}.trust" + shadowSelector + " {list-style: none;margin: 0;padding: 20px 0 0;border-top: 1px solid var(--wm-line);display: flex;gap: 32px;flex-wrap: wrap;font-size: 0.86rem;color: var(--wm-ink-soft);}.trust" + shadowSelector + " .num" + shadowSelector + " {display: block;font-family: var(--font-display);font-size: 1.4rem;color: var(--wm-ink);font-weight: 600;}.drawing" + shadowSelector + " svg" + shadowSelector + " {width: 100%;height: auto;}.drawing" + shadowSelector + " .title" + shadowSelector + " {font-family: var(--font-mono);font-size: 12px;letter-spacing: 0.06em;fill: var(--wm-ink-soft);}.drawing" + shadowSelector + " .label" + shadowSelector + " {font-family: var(--font-mono);font-size: 11px;letter-spacing: 0.03em;fill: var(--wm-ink-soft);}.drawing" + shadowSelector + " .guide" + shadowSelector + " {stroke: var(--wm-copper);stroke-width: 1.5;stroke-dasharray: 3 4;}.drawing" + shadowSelector + " .lead" + shadowSelector + " {stroke: var(--wm-line-strong);stroke-width: 1;}.drawing" + shadowSelector + " .dim" + shadowSelector + " {stroke: var(--wm-ink-soft);stroke-width: 1;}@media (max-width: 900px) {.inner" + shadowSelector + " {grid-template-columns: 1fr;gap: 40px;}.drawing" + shadowSelector + " {order: -1;max-width: 420px;margin: 0 auto;}.hero" + shadowSelector + " {padding: 40px 20px 56px;}}";
+  return [((useActualHostSelector ? ":host {" : hostSelector + " {")), "display: block;background: var(--wm-bg);}.hero", shadowSelector, " {max-width: var(--wm-max);margin: 0 auto;padding: 64px 24px 80px;}.inner", shadowSelector, " {display: grid;grid-template-columns: 1.05fr 0.95fr;gap: 56px;align-items: center;}.eyebrow", shadowSelector, " {font-family: var(--font-mono);font-size: 0.78rem;letter-spacing: 0.06em;color: var(--wm-copper);margin: 0 0 18px;}h1", shadowSelector, " {font-family: var(--font-display);font-weight: 600;font-size: clamp(2.35rem, 3.6vw + 1rem, 4rem);line-height: 1.04;margin: 0 0 22px;letter-spacing: -0.01em;}.lede", shadowSelector, " {font-size: 1.08rem;line-height: 1.6;color: var(--wm-ink-soft);max-width: 46ch;margin: 0 0 32px;}.cta-row", shadowSelector, " {display: flex;flex-wrap: wrap;gap: 14px;margin-bottom: 40px;}.btn", shadowSelector, " {font-family: var(--font-mono);font-size: 0.88rem;letter-spacing: 0.02em;text-decoration: none;padding: 14px 24px;border-radius: var(--wm-radius);display: inline-block;}.btn-primary", shadowSelector, " {background: var(--wm-walnut-dark);color: var(--wm-on-dark);border: 1px solid var(--wm-walnut-dark);}.btn-primary:hover", shadowSelector, ",\r.btn-primary:focus-visible", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);}.btn-ghost", shadowSelector, " {color: var(--wm-ink);border: 1px solid var(--wm-line-strong);}.btn-ghost:hover", shadowSelector, ",\r.btn-ghost:focus-visible", shadowSelector, " {border-color: var(--wm-ink);}.trust", shadowSelector, " {list-style: none;margin: 0;padding: 20px 0 0;border-top: 1px solid var(--wm-line);display: flex;gap: 32px;flex-wrap: wrap;font-size: 0.86rem;color: var(--wm-ink-soft);}.trust", shadowSelector, " .num", shadowSelector, " {display: block;font-family: var(--font-display);font-size: 1.4rem;color: var(--wm-ink);font-weight: 600;}.drawing", shadowSelector, " {min-height: 440px;display: flex;flex-direction: column;justify-content: center;position: relative;padding: 20px 10px;}.showcase-label", shadowSelector, " {font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.08em;color: var(--wm-copper);margin-bottom: 24px;}.showcase", shadowSelector, " {position: relative;width: 100%;min-height: 320px;display: grid;grid-template-columns: 1fr 1fr;grid-template-rows: 1fr 1fr;gap: 16px;}.furniture-card", shadowSelector, " {position: relative;min-height: 140px;display: flex;align-items: center;justify-content: center;overflow: hidden;background: var(--wm-bg-panel);border: 1px solid var(--wm-line);padding-bottom: 32px;}.furniture-label", shadowSelector, " {position: absolute;left: 14px;bottom: 9px;font-family: var(--font-mono);font-size: 0.58rem;letter-spacing: 0.08em;color: var(--wm-ink-soft);z-index: 2;}.chair-card", shadowSelector, " .furniture-label", shadowSelector, " {color: var(--wm-copper-light);}.chair-card", shadowSelector, " {background: var(--wm-walnut-dark);}.chair", shadowSelector, " {position: relative;width: 100px;height: 110px;}.chair-back", shadowSelector, " {position: absolute;left: 20px;top: 8px;width: 58px;height: 58px;border: 7px solid var(--wm-copper-light);border-bottom: none;}.chair-seat", shadowSelector, " {position: absolute;left: 10px;top: 62px;width: 78px;height: 15px;background: var(--wm-copper-light);}.chair-leg", shadowSelector, " {position: absolute;top: 76px;width: 8px;height: 32px;background: var(--wm-copper-light);}.chair-leg.left", shadowSelector, " {left: 20px;}.chair-leg.right", shadowSelector, " {right: 20px;}.table", shadowSelector, " {position: relative;width: 150px;height: 110px;}.table-top", shadowSelector, " {position: absolute;top: 25px;left: 0;width: 150px;height: 18px;background: var(--wm-walnut-dark);}.table-leg", shadowSelector, " {position: absolute;top: 43px;width: 10px;height: 65px;background: var(--wm-walnut-dark);}.table-leg.left", shadowSelector, " {left: 18px;}.table-leg.right", shadowSelector, " {right: 18px;}.cabinet-card", shadowSelector, " {grid-column: 1 / 3;background: var(--wm-copper-light);}.cabinet", shadowSelector, " {display: flex;width: 180px;height: 105px;background: var(--wm-walnut-dark);box-shadow:\r\n 12px 12px 0 rgba(60, 35, 23, 0.08);}.cabinet-door", shadowSelector, " {position: relative;flex: 1;border: 1px solid rgba(247, 241, 230, 0.18);}.cabinet-door", shadowSelector, " span", shadowSelector, " {position: absolute;width: 4px;height: 4px;border-radius: 50%;background: var(--wm-copper-light);top: 50%;right: 10px;}.showcase-caption", shadowSelector, " {margin-top: 20px;font-family: var(--font-mono);font-size: 0.68rem;letter-spacing: 0.08em;color: var(--wm-ink-soft);}@media (max-width: 900px) {.inner", shadowSelector, " {grid-template-columns: 1fr;gap: 40px;}.drawing", shadowSelector, " {order: -1;max-width: 520px;margin: 0 auto;width: 100%;}.hero", shadowSelector, " {padding: 40px 20px 56px;}}@media (max-width: 600px) {.drawing", shadowSelector, " {min-height: 360px;padding: 10px 0;}.showcase", shadowSelector, " {min-height: 280px;gap: 10px;}.furniture-card", shadowSelector, " {min-height: 120px;}.chair", shadowSelector, " {transform: scale(0.8);}.table", shadowSelector, " {transform: scale(0.8);}.cabinet", shadowSelector, " {width: 140px;height: 85px;}.showcase-caption", shadowSelector, " {font-size: 0.6rem;}}"].join('');
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
@@ -1089,7 +1124,7 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<section class="hero${0}"${"a0:id"}${2}><div class="inner${0}"${2}><div class="copy${0}"${2}><p class="eyebrow${0}"${2}>⊢— Noida &amp; Delhi NCR —⊣</p><h1${3}>Built to outlast the house it stands in</h1><p class="lede${0}"${2}>WoodMaster is a small carpentry workshop that designs and builds almirahs, doors, tables, chairs, study tables and one-off pieces in solid wood — measured for your space, joined by hand, finished to live with for decades.</p><div class="cta-row${0}"${2}><a${"a10:href"} class="btn btn-primary${0}"${2}>Get a Free Quote</a><a${"a12:href"} class="btn btn-ghost${0}"${2}>See Our Work</a></div><ul class="trust${0}"${2}><li${3}><span class="num${0}"${2}>25+</span> years at the bench</li><li${3}><span class="num${0}"${2}>300+</span> pieces delivered</li><li${3}><span class="num${0}"${2}>0%</span> MDF or particle board</li></ul></div><div class="drawing${0}" aria-hidden="true"${2}><svg viewBox="0 0 520 440" xmlns="http://www.w3.org/2000/svg"${3}><text x="20" y="30" class="label title${0}"${2}>FIG. 1 — THROUGH DOVETAIL, EXPLODED</text><rect x="30" y="70" width="170" height="260" fill="var(--wm-walnut-dark)"${3}/><polygon points="200,110 240,124 240,152 200,166" fill="var(--wm-walnut-dark)"${3}/><polygon points="200,224 240,238 240,266 200,280" fill="var(--wm-walnut-dark)"${3}/><rect x="320" y="70" width="170" height="260" fill="var(--wm-copper-light)"${3}/><polygon points="320,110 280,124 280,152 320,166" fill="var(--wm-bg)"${3}/><polygon points="320,224 280,238 280,266 320,280" fill="var(--wm-bg)"${3}/><line x1="240" y1="138" x2="280" y2="138" class="guide${0}"${2}/><line x1="240" y1="252" x2="280" y2="252" class="guide${0}"${2}/><line x1="220" y1="138" x2="220" y2="40" class="lead${0}"${2}/><text x="224" y="38" class="label${0}"${2}>TAIL</text><line x1="300" y1="252" x2="300" y2="400" class="lead${0}"${2}/><text x="234" y="414" class="label${0}"${2}>PIN SOCKET</text><line x1="30" y1="352" x2="490" y2="352" class="dim${0}"${2}/><line x1="30" y1="344" x2="30" y2="360" class="dim${0}"${2}/><line x1="490" y1="344" x2="490" y2="360" class="dim${0}"${2}/><text x="180" y="374" class="label${0}"${2}>460mm — SHEESHAM — 19mm STOCK</text></svg></div></div></section>`;
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<section class="hero${0}"${"a0:id"}${2}><div class="inner${0}"${2}><div class="copy${0}"${2}><p class="eyebrow${0}"${2}>⊢— Noida &amp; Delhi NCR —⊣</p><h1${3}>Custom Woodwork, Built for Your Space</h1><p class="lede${0}"${2}>We design and build custom wooden furniture for homes, offices and commercial spaces — made around your requirements, dimensions and style.</p><div class="cta-row${0}"${2}><a${"a10:href"} class="btn btn-primary${0}"${2}>Get a Free Quote</a><a${"a12:href"} class="btn btn-ghost${0}"${2}>See Our Work</a></div><ul class="trust${0}"${2}><li${3}><span class="num${0}"${2}>25+</span> years at the bench</li><li${3}><span class="num${0}"${2}>300+</span> pieces delivered</li><li${3}><span class="num${0}"${2}>0%</span> MDF or particle board</li></ul></div><div class="drawing${0}" aria-hidden="true"${2}><div class="showcase-label${0}"${2}>CUSTOM WOODWORKING</div><div class="showcase${0}"${2}><div class="furniture-card chair-card${0}"${2}><div class="chair${0}"${2}><div class="chair-back${0}"${2}></div><div class="chair-seat${0}"${2}></div><div class="chair-leg left${0}"${2}></div><div class="chair-leg right${0}"${2}></div></div><span class="furniture-label${0}"${2}>CUSTOM CHAIRS</span></div><div class="furniture-card table-card${0}"${2}><div class="table${0}"${2}><div class="table-top${0}"${2}></div><div class="table-leg left${0}"${2}></div><div class="table-leg right${0}"${2}></div></div><span class="furniture-label${0}"${2}>DINING TABLES</span></div><div class="furniture-card cabinet-card${0}"${2}><div class="cabinet${0}"${2}><div class="cabinet-door${0}"${2}><span${3}></span></div><div class="cabinet-door${0}"${2}><span${3}></span></div></div><span class="furniture-label${0}"${2}>STORAGE &amp; CABINETS</span></div></div><div class="showcase-caption${0}"${2}>MADE TO YOUR DIMENSIONS · STYLE · SPACE</div></div></div></section>`;
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {gid: api_scoped_id, fid: api_scoped_frag_id, sp: api_static_part, st: api_static_fragment} = $api;
   return [api_static_fragment($fragment1, 1, [api_static_part(0, {
@@ -1894,8 +1929,17 @@ class CartService {
         }
 
         this.saveCart();
+        console.log(
+            'DISPATCHING CART CHANGE:',
+            this.getItemCount()
+        );
 
-        console.table(this.cartItems);
+        document.dispatchEvent(
+            new CustomEvent('cartchange')
+        );
+
+        console.log('Cart Updated');
+        console.log(this.cartItems);
     }
 
     // ===========================
@@ -1908,6 +1952,10 @@ class CartService {
         );
 
         this.saveCart();
+
+        document.dispatchEvent(
+            new CustomEvent('cartchange')
+        );
 
     }
 
@@ -1935,6 +1983,10 @@ class CartService {
         }
 
         this.saveCart();
+
+        document.dispatchEvent(
+            new CustomEvent('cartchange')
+        );
 
     }
 
@@ -1990,7 +2042,17 @@ class CartService {
 
     }
 
+    notifyCartChange() {
+
+    document.dispatchEvent(
+        new CustomEvent('cartchange')
+    );
+
 }
+
+}
+
+
 
 const cartService = new CartService();
 
