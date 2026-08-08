@@ -967,10 +967,10 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<header class="bar${0}"${2}><div class="inner${0}"${2}><a href="#top" class="brand${0}"${2}><svg class="mark${0}" viewBox="0 0 100 100" aria-hidden="true"${2}><rect width="100" height="100" rx="14" fill="var(--wm-walnut-dark)"${3}/><path d="M28 72 L28 28 L58 28 L58 40 L40 40 L40 72 Z" fill="var(--wm-copper-light)"${3}/></svg><span class="wordmark${0}"${2}>WoodMaster</span></a><nav${"c8"} aria-label="Primary"${2}><a href="#services"${3}>Services</a><a href="#process"${3}>Process</a><a href="#gallery"${3}>Work</a><a href="#about"${3}>About</a><a href="#contact" class="nav-cta${0}"${2}>Get a Quote</a></nav><button class="cart-button${0}" aria-label="Shopping Cart"${2}>🛒<span class="cart-count${0}"${2}>${"t22"}</span></button><button class="burger${0}" aria-label="Toggle menu"${"a23:aria-expanded"}${2}><span${3}></span><span${3}></span><span${3}></span></button></div></header>`;
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<header class="bar${0}"${2}><div class="inner${0}"${2}><a href="#top" class="brand${0}"${2}><svg class="mark${0}" viewBox="0 0 100 100" aria-hidden="true"${2}><rect width="100" height="100" rx="14" fill="var(--wm-walnut-dark)"${3}/><path d="M28 72 L28 28 L58 28 L58 40 L40 40 L40 72 Z" fill="var(--wm-copper-light)"${3}/></svg><span class="wordmark${0}"${2}>WoodMaster</span></a><nav${"c8"} aria-label="Primary"${2}><a href="#services"${3}>Services</a><a href="#collection"${3}>Collection</a><a href="#about"${3}>About</a><a href="#contact" class="nav-cta${0}"${2}>Get a Quote</a></nav><button class="cart-button${0}" aria-label="Shopping Cart"${2}>🛒<span class="cart-count${0}"${2}>${"t20"}</span></button><button class="burger${0}" aria-label="Toggle menu"${"a21:aria-expanded"}${2}><span${3}></span><span${3}></span><span${3}></span></button></div></header>`;
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {b: api_bind, ncls: api_normalize_class_name, d: api_dynamic_text, sp: api_static_part, st: api_static_fragment} = $api;
-  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6, _m7} = $ctx;
+  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6} = $ctx;
   return [api_static_fragment($fragment1, 1, [api_static_part(2, {
     on: _m0 || ($ctx._m0 = {
       "click": api_bind($cmp.closeMenu)
@@ -995,14 +995,10 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     })
   }, null), api_static_part(17, {
     on: _m5 || ($ctx._m5 = {
-      "click": api_bind($cmp.closeMenu)
-    })
-  }, null), api_static_part(19, {
-    on: _m6 || ($ctx._m6 = {
       "click": api_bind($cmp.openCart)
     })
-  }, null), api_static_part(22, null, api_dynamic_text($cmp.cartCount)), api_static_part(23, {
-    on: _m7 || ($ctx._m7 = {
+  }, null), api_static_part(20, null, api_dynamic_text($cmp.cartCount)), api_static_part(21, {
+    on: _m6 || ($ctx._m6 = {
       "click": api_bind($cmp.toggleMenu)
     }),
     attrs: {
