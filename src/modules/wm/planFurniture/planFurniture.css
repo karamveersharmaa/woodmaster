@@ -1,0 +1,466 @@
+:host {
+    display: block;
+    background: var(--wm-bg);
+    min-height: 100vh;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.plan-page {
+    padding: 64px 24px 90px;
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+.page-header {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto 48px;
+}
+
+
+.eyebrow {
+    margin: 0 0 14px;
+
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+
+    color: var(--wm-copper);
+}
+
+
+h1 {
+    margin: 0 0 18px;
+
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 4vw, 3.7rem);
+    line-height: 1.05;
+    font-weight: 600;
+
+    color: var(--wm-ink);
+}
+
+
+.intro {
+    max-width: 58ch;
+    margin: 0 auto;
+
+    font-size: 1.05rem;
+    line-height: 1.65;
+
+    color: var(--wm-ink-soft);
+}
+
+
+/* =========================
+   PROGRESS
+========================= */
+
+.progress-wrapper {
+    display: flex;
+    align-items: center;
+
+    max-width: 760px;
+    margin: 0 auto 42px;
+}
+
+
+.progress-step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    white-space: nowrap;
+
+    color: var(--wm-ink-soft);
+}
+
+
+.step-number {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--wm-line-strong);
+    border-radius: 50%;
+
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+}
+
+
+.step-label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
+}
+
+
+.progress-step.active {
+    color: var(--wm-ink);
+}
+
+
+.progress-step.active .step-number {
+    background: var(--wm-walnut-dark);
+    border-color: var(--wm-walnut-dark);
+
+    color: var(--wm-on-dark);
+}
+
+
+.progress-line {
+    flex: 1;
+
+    height: 1px;
+
+    margin: 0 16px;
+
+    background: var(--wm-line);
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+.form-card {
+    background: var(--wm-bg-panel);
+
+    border: 1px solid var(--wm-line);
+
+    border-radius: var(--wm-radius);
+
+    padding: 42px;
+}
+
+
+/* =========================
+   STEP HEADER
+========================= */
+
+.step-header {
+    max-width: 650px;
+    margin-bottom: 36px;
+}
+
+
+.step-count {
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+
+    color: var(--wm-copper);
+}
+
+
+.step-header h2 {
+    margin: 0 0 10px;
+
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 600;
+
+    color: var(--wm-ink);
+}
+
+
+.step-header p {
+    margin: 0;
+
+    color: var(--wm-ink-soft);
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   STEP CONTENT
+========================= */
+
+.step-content {
+    min-height: 280px;
+}
+
+
+.step-placeholder {
+    min-height: 240px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px dashed var(--wm-line-strong);
+    border-radius: var(--wm-radius);
+
+    color: var(--wm-ink-soft);
+
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.form-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 40px;
+    padding-top: 24px;
+
+    border-top: 1px solid var(--wm-line);
+}
+
+
+.back-button,
+.next-button {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    letter-spacing: 0.02em;
+
+    padding: 12px 20px;
+
+    border-radius: var(--wm-radius);
+
+    cursor: pointer;
+}
+
+
+.back-button {
+    background: transparent;
+
+    border: 1px solid var(--wm-line-strong);
+
+    color: var(--wm-ink-soft);
+}
+
+
+.back-button:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+
+.next-button {
+    background: var(--wm-walnut-dark);
+
+    border: 1px solid var(--wm-walnut-dark);
+
+    color: var(--wm-on-dark);
+}
+
+
+.next-button:hover {
+    background: var(--wm-copper);
+    border-color: var(--wm-copper);
+}
+
+
+/* =========================
+   FURNITURE OPTIONS
+========================= */
+
+.furniture-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    width: 100%;
+}
+
+
+.furniture-card {
+    position: relative;
+
+    min-height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    padding: 22px;
+
+    text-align: left;
+
+    background: var(--wm-bg);
+
+    border: 1px solid var(--wm-line);
+
+    border-radius: var(--wm-radius);
+
+    color: var(--wm-ink);
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.furniture-card:hover {
+    border-color: var(--wm-copper);
+    transform: translateY(-2px);
+}
+
+
+.furniture-card.selected {
+    background: var(--wm-walnut-dark);
+    border-color: var(--wm-walnut-dark);
+    color: var(--wm-on-dark);
+}
+
+
+.selection-mark {
+    position: absolute;
+
+    top: 16px;
+    right: 16px;
+
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--wm-line-strong);
+    border-radius: 50%;
+
+    font-size: 0.72rem;
+}
+
+
+.furniture-card.selected .selection-mark {
+    background: var(--wm-copper);
+    border-color: var(--wm-copper);
+    color: #ffffff;
+}
+
+
+.furniture-name {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-family: var(--font-display);
+
+    font-size: 1.2rem;
+
+    font-weight: 600;
+}
+
+
+.furniture-description {
+    display: block;
+
+    max-width: 28ch;
+
+    font-size: 0.82rem;
+
+    line-height: 1.45;
+
+    color: var(--wm-ink-soft);
+}
+
+
+.furniture-card.selected .furniture-description {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .furniture-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .plan-page {
+        padding: 42px 18px 64px;
+    }
+
+    .page-header {
+        margin-bottom: 36px;
+    }
+
+    .progress-wrapper {
+        align-items: flex-start;
+    }
+
+    .progress-step {
+        flex-direction: column;
+        gap: 7px;
+        text-align: center;
+    }
+
+    .step-label {
+        font-size: 0.62rem;
+    }
+
+    .progress-line {
+        margin: 16px 8px 0;
+    }
+
+    .form-card {
+        padding: 26px 20px;
+    }
+
+    .step-header h2 {
+        font-size: 1.65rem;
+    }
+
+    .step-content {
+        min-height: 0;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .furniture-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .furniture-card {
+        min-height: 125px;
+    }
+
+}
+

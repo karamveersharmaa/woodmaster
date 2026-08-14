@@ -109,4 +109,15 @@ export default class App extends LightningElement {
 
     }
 
+    handleTestPlanFurniture() {
+
+        this.currentPage = 'planFurniture';
+
+    }
+
+    get isPlanFurniturePage() {
+        console.log('isPlanFurniturePage called');
+        return this.currentPage === 'planFurniture';
+    }
+
 }

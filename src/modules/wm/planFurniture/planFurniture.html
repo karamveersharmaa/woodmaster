@@ -1,0 +1,186 @@
+<template>
+
+    <section class="plan-page">
+
+        <div class="container">
+
+            <!-- =========================
+                 PAGE HEADER
+            ========================== -->
+
+            <div class="page-header">
+
+                <p class="eyebrow">
+                    CUSTOM WOODWORKING
+                </p>
+
+                <h1>
+                    Plan Your Furniture
+                </h1>
+
+                <p class="intro">
+                    Tell us what you'd like to build.
+                    We'll help you turn your idea into furniture
+                    made for your space.
+                </p>
+
+            </div>
+
+
+            <!-- =========================
+                 PROGRESS INDICATOR
+            ========================== -->
+
+            <div class="progress-wrapper">
+
+                <div class="progress-step active">
+
+                    <span class="step-number">
+                        01
+                    </span>
+
+                    <span class="step-label">
+                        What do you need?
+                    </span>
+
+                </div>
+
+
+                <div class="progress-line"></div>
+
+
+                <div class="progress-step">
+
+                    <span class="step-number">
+                        02
+                    </span>
+
+                    <span class="step-label">
+                        Your space
+                    </span>
+
+                </div>
+
+
+                <div class="progress-line"></div>
+
+
+                <div class="progress-step">
+
+                    <span class="step-number">
+                        03
+                    </span>
+
+                    <span class="step-label">
+                        Your details
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 FORM CARD
+            ========================== -->
+
+            <div class="form-card">
+
+                <!-- STEP HEADER -->
+
+                <div class="step-header">
+
+                    <span class="step-count">
+                        STEP 01 OF 03
+                    </span>
+
+                    <h2>
+                        What would you like us to build?
+                    </h2>
+
+                    <p>
+                        Select one or more options.
+                        Don't worry if you're not sure yet.
+                    </p>
+
+                </div>
+
+
+                <!-- STEP CONTENT -->
+
+                <div class="step-content">
+
+                    <!-- Placeholder for Step 1 -->
+
+                    <div class="furniture-grid">
+
+                        <template
+                            for:each={furnitureOptionsWithState}
+                            for:item="option">
+
+                            <button
+                                key={option.id}
+                                class={option.cardClass}
+                                data-id={option.id}
+                                onclick={handleFurnitureSelect}>
+
+                                <span class="selection-mark">
+
+                                    <template if:true={option.isSelected}>
+                                        ✓
+                                    </template>
+
+                                </span>
+
+                                <span class="furniture-name">
+                                    {option.name}
+                                </span>
+
+                                <span class="furniture-description">
+                                    {option.description}
+                                </span>
+
+                            </button>
+
+                        </template>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     NAVIGATION
+                ========================== -->
+
+                <div class="form-navigation">
+
+                    <button
+                        class="back-button"
+                        disabled>
+
+                        ← Back
+
+                    </button>
+
+
+                    <button
+                        class="next-button">
+
+                        Next
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</template>
