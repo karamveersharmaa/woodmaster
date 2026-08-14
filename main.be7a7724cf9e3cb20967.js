@@ -115,7 +115,8 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 /* harmony import */ var wm_footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(707);
 /* harmony import */ var wm_productDetails__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(595);
 /* harmony import */ var wm_cart__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(745);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(565);
+/* harmony import */ var wm_planFurniture__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(127);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(565);
 
 
 
@@ -130,6 +131,8 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 
 
+
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_14__/* .parseFragment */ .oH)`<button${3}>Test Plan Your Furniture</button>`;
 const stc0 = {
   key: 1
 };
@@ -152,11 +155,14 @@ const stc6 = {
   key: 8
 };
 const stc7 = {
-  key: 9
+  key: 11
+};
+const stc8 = {
+  key: 14
 };
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {b: api_bind, c: api_custom_element, h: api_element} = $api;
-  const {_m0, _m1, _m2, _m3} = $ctx;
+  const {b: api_bind, c: api_custom_element, sp: api_static_part, st: api_static_fragment, h: api_element} = $api;
+  const {_m0, _m1, _m2, _m3, _m4, _m5} = $ctx;
   return [$cmp.isHomePage ? api_custom_element("wm-header", wm_header__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
     key: 0,
     on: _m0 || ($ctx._m0 = {
@@ -167,24 +173,28 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     on: _m1 || ($ctx._m1 = {
       "productclick": api_bind($cmp.handleProductClick)
     })
-  }), api_custom_element("wm-process", wm_process__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A, stc2), api_custom_element("wm-gallery", wm_gallery__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .A, stc3), api_custom_element("wm-testimonials", wm_testimonials__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A, stc4), api_custom_element("wm-about", wm_about__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .A, stc5), api_custom_element("wm-contact", wm_contact__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .A, stc6)]) : null, $cmp.isHomePage ? api_custom_element("wm-footer", wm_footer__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .A, stc7) : null, $cmp.isProductDetailsPage ? api_custom_element("wm-product-details", wm_productDetails__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A, {
+  }), api_custom_element("wm-process", wm_process__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A, stc2), api_custom_element("wm-gallery", wm_gallery__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .A, stc3), api_custom_element("wm-testimonials", wm_testimonials__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A, stc4), api_custom_element("wm-about", wm_about__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .A, stc5), api_custom_element("wm-contact", wm_contact__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .A, stc6), api_static_fragment($fragment1, 10, [api_static_part(0, {
+    on: _m3 || ($ctx._m3 = {
+      "click": api_bind($cmp.handleTestPlanFurniture)
+    })
+  }, null)])]) : null, $cmp.isHomePage ? api_custom_element("wm-footer", wm_footer__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .A, stc7) : null, $cmp.isProductDetailsPage ? api_custom_element("wm-product-details", wm_productDetails__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A, {
     props: {
       "product": $cmp.selectedProduct
     },
-    key: 10,
-    on: _m2 || ($ctx._m2 = {
+    key: 12,
+    on: _m4 || ($ctx._m4 = {
       "back": api_bind($cmp.handleBackToHome),
       "opencart": api_bind($cmp.handleOpenCart)
     })
   }) : null, $cmp.isCartPage ? api_custom_element("wm-cart", wm_cart__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A, {
-    key: 11,
-    on: _m3 || ($ctx._m3 = {
+    key: 13,
+    on: _m5 || ($ctx._m5 = {
       "backtohome": api_bind($cmp.handleContinueShopping)
     })
-  }) : null];
+  }) : null, $cmp.isPlanFurniturePage ? api_custom_element("wm-plan-furniture", wm_planFurniture__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .A, stc8) : null];
   /*LWC compiler v9.3.6*/
 }
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,lwc__WEBPACK_IMPORTED_MODULE_13__/* .registerTemplate */ .cI)(tmpl));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,lwc__WEBPACK_IMPORTED_MODULE_14__/* .registerTemplate */ .cI)(tmpl));
 tmpl.stylesheets = [];
 tmpl.stylesheetToken = "lwc-7svu88ro565";
 tmpl.legacyStylesheetToken = "wm-app_app";
@@ -194,7 +204,7 @@ if (_app_css__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A) {
 if (_app_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A) {
   tmpl.stylesheets.push.apply(tmpl.stylesheets, _app_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A);
 }
-;(0,lwc__WEBPACK_IMPORTED_MODULE_13__/* .freezeTemplate */ .iU)(tmpl);
+;(0,lwc__WEBPACK_IMPORTED_MODULE_14__/* .freezeTemplate */ .iU)(tmpl);
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, [
 /* harmony export */   "A", 0, /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
@@ -274,6 +284,13 @@ class App extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv {
     window.history.pushState({
       page: 'home'
     }, '', '/');
+  }
+  handleTestPlanFurniture() {
+    this.currentPage = 'planFurniture';
+  }
+  get isPlanFurniturePage() {
+    console.log('isPlanFurniturePage called');
+    return this.currentPage === 'planFurniture';
   }
   /*LWC compiler v9.3.6*/
 }
@@ -1170,6 +1187,199 @@ class Hero extends lwc__WEBPACK_IMPORTED_MODULE_1__/* .LightningElement */ .xv {
 const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_1__/* .registerComponent */ .Nj)(Hero, {
   tmpl: _hero_html__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A,
   sel: "wm-hero",
+  apiVersion: 66
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__lwc_component_class_internal);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, [
+/* harmony export */   "A", 0, /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ ]);
+
+
+/***/ },
+
+/***/ 263
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
+  var shadowSelector = token ? ("[" + token + "]") : "";
+  var hostSelector = token ? ("[" + token + "-host]") : "";
+  var suffixToken = token ? ("-" + token) : "";
+  return [((useActualHostSelector ? ":host {" : hostSelector + " {")), "display: block;background: var(--wm-bg);min-height: 100vh;}.plan-page", shadowSelector, " {padding: 64px 24px 90px;}.container", shadowSelector, " {max-width: 960px;margin: 0 auto;}.page-header", shadowSelector, " {text-align: center;max-width: 680px;margin: 0 auto 48px;}.eyebrow", shadowSelector, " {margin: 0 0 14px;font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.08em;color: var(--wm-copper);}h1", shadowSelector, " {margin: 0 0 18px;font-family: var(--font-display);font-size: clamp(2.4rem, 4vw, 3.7rem);line-height: 1.05;font-weight: 600;color: var(--wm-ink);}.intro", shadowSelector, " {max-width: 58ch;margin: 0 auto;font-size: 1.05rem;line-height: 1.65;color: var(--wm-ink-soft);}.progress-wrapper", shadowSelector, " {display: flex;align-items: center;max-width: 760px;margin: 0 auto 42px;}.progress-step", shadowSelector, " {display: flex;align-items: center;gap: 10px;white-space: nowrap;color: var(--wm-ink-soft);}.step-number", shadowSelector, " {width: 32px;height: 32px;display: flex;align-items: center;justify-content: center;border: 1px solid var(--wm-line-strong);border-radius: 50%;font-family: var(--font-mono);font-size: 0.7rem;}.step-label", shadowSelector, " {font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.02em;}.progress-step.active", shadowSelector, " {color: var(--wm-ink);}.progress-step.active", shadowSelector, " .step-number", shadowSelector, " {background: var(--wm-walnut-dark);border-color: var(--wm-walnut-dark);color: var(--wm-on-dark);}.progress-line", shadowSelector, " {flex: 1;height: 1px;margin: 0 16px;background: var(--wm-line);}.form-card", shadowSelector, " {background: var(--wm-bg-panel);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);padding: 42px;}.step-header", shadowSelector, " {max-width: 650px;margin-bottom: 36px;}.step-count", shadowSelector, " {display: block;margin-bottom: 12px;font-family: var(--font-mono);font-size: 0.7rem;letter-spacing: 0.08em;color: var(--wm-copper);}.step-header", shadowSelector, " h2", shadowSelector, " {margin: 0 0 10px;font-family: var(--font-display);font-size: 2rem;font-weight: 600;color: var(--wm-ink);}.step-header", shadowSelector, " p", shadowSelector, " {margin: 0;color: var(--wm-ink-soft);line-height: 1.6;}.step-content", shadowSelector, " {min-height: 280px;}.step-placeholder", shadowSelector, " {min-height: 240px;display: flex;align-items: center;justify-content: center;border: 1px dashed var(--wm-line-strong);border-radius: var(--wm-radius);color: var(--wm-ink-soft);font-family: var(--font-mono);font-size: 0.8rem;}.form-navigation", shadowSelector, " {display: flex;align-items: center;justify-content: space-between;margin-top: 40px;padding-top: 24px;border-top: 1px solid var(--wm-line);}.back-button", shadowSelector, ",\r.next-button", shadowSelector, " {font-family: var(--font-mono);font-size: 0.82rem;letter-spacing: 0.02em;padding: 12px 20px;border-radius: var(--wm-radius);cursor: pointer;}.back-button", shadowSelector, " {background: transparent;border: 1px solid var(--wm-line-strong);color: var(--wm-ink-soft);}.back-button:disabled", shadowSelector, " {opacity: 0.35;cursor: not-allowed;}.next-button", shadowSelector, " {background: var(--wm-walnut-dark);border: 1px solid var(--wm-walnut-dark);color: var(--wm-on-dark);}.next-button:hover", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);}.furniture-grid", shadowSelector, " {display: grid;grid-template-columns: repeat(3, minmax(0, 1fr));gap: 14px;width: 100%;}.furniture-card", shadowSelector, " {position: relative;min-height: 150px;display: flex;flex-direction: column;align-items: flex-start;justify-content: flex-end;padding: 22px;text-align: left;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);color: var(--wm-ink);cursor: pointer;box-sizing: border-box;transition:\r\n border-color 0.2s ease,\r\n background 0.2s ease,\r\n transform 0.2s ease;}.furniture-card:hover", shadowSelector, " {border-color: var(--wm-copper);transform: translateY(-2px);}.furniture-card.selected", shadowSelector, " {background: var(--wm-walnut-dark);border-color: var(--wm-walnut-dark);color: var(--wm-on-dark);}.selection-mark", shadowSelector, " {position: absolute;top: 16px;right: 16px;width: 24px;height: 24px;display: flex;align-items: center;justify-content: center;border: 1px solid var(--wm-line-strong);border-radius: 50%;font-size: 0.72rem;}.furniture-card.selected", shadowSelector, " .selection-mark", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);color: #ffffff;}.furniture-name", shadowSelector, " {display: block;margin-bottom: 7px;font-family: var(--font-display);font-size: 1.2rem;font-weight: 600;}.furniture-description", shadowSelector, " {display: block;max-width: 28ch;font-size: 0.82rem;line-height: 1.45;color: var(--wm-ink-soft);}.furniture-card.selected", shadowSelector, " .furniture-description", shadowSelector, " {color: rgba(255, 255, 255, 0.72);}@media (max-width: 800px) {.furniture-grid", shadowSelector, " {grid-template-columns: repeat(2, minmax(0, 1fr));}}@media (max-width: 700px) {.plan-page", shadowSelector, " {padding: 42px 18px 64px;}.page-header", shadowSelector, " {margin-bottom: 36px;}.progress-wrapper", shadowSelector, " {align-items: flex-start;}.progress-step", shadowSelector, " {flex-direction: column;gap: 7px;text-align: center;}.step-label", shadowSelector, " {font-size: 0.62rem;}.progress-line", shadowSelector, " {margin: 16px 8px 0;}.form-card", shadowSelector, " {padding: 26px 20px;}.step-header", shadowSelector, " h2", shadowSelector, " {font-size: 1.65rem;}.step-content", shadowSelector, " {min-height: 0;}}@media (max-width: 520px) {.furniture-grid", shadowSelector, " {grid-template-columns: 1fr;}.furniture-card", shadowSelector, " {min-height: 125px;}}"].join('');
+  /*LWC compiler v9.3.6*/
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, [
+/* harmony export */   "A", 0, /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ ]);
+
+
+/***/ },
+
+/***/ 425
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+/* harmony import */ var _planFurniture_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(263);
+/* harmony import */ var _planFurniture_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
+
+
+
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="page-header${0}"${2}><p class="eyebrow${0}"${2}>CUSTOM WOODWORKING</p><h1${3}>Plan Your Furniture</h1><p class="intro${0}"${2}>Tell us what you&#x27;d like to build. We&#x27;ll help you turn your idea into furniture made for your space.</p></div>`;
+const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="progress-wrapper${0}"${2}><div class="progress-step active${0}"${2}><span class="step-number${0}"${2}>01</span><span class="step-label${0}"${2}>What do you need?</span></div><div class="progress-line${0}"${2}></div><div class="progress-step${0}"${2}><span class="step-number${0}"${2}>02</span><span class="step-label${0}"${2}>Your space</span></div><div class="progress-line${0}"${2}></div><div class="progress-step${0}"${2}><span class="step-number${0}"${2}>03</span><span class="step-label${0}"${2}>Your details</span></div></div>`;
+const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="step-header${0}"${2}><span class="step-count${0}"${2}>STEP 01 OF 03</span><h2${3}>What would you like us to build?</h2><p${3}>Select one or more options. Don&#x27;t worry if you&#x27;re not sure yet.</p></div>`;
+const $fragment4 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="furniture-name${0}"${2}>${"t1"}</span>`;
+const $fragment5 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="furniture-description${0}"${2}>${"t1"}</span>`;
+const $fragment6 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="form-navigation${0}"${2}><button class="back-button${0}" disabled${2}>← Back</button><button class="next-button${0}"${2}>Next<span${3}>→</span></button></div>`;
+const stc0 = {
+  classMap: {
+    "plan-page": true
+  },
+  key: 0
+};
+const stc1 = {
+  classMap: {
+    "container": true
+  },
+  key: 1
+};
+const stc2 = {
+  classMap: {
+    "form-card": true
+  },
+  key: 6
+};
+const stc3 = {
+  classMap: {
+    "step-content": true
+  },
+  key: 9
+};
+const stc4 = {
+  classMap: {
+    "furniture-grid": true
+  },
+  key: 10
+};
+const stc5 = {
+  classMap: {
+    "selection-mark": true
+  },
+  key: 12
+};
+function tmpl($api, $cmp, $slotset, $ctx) {
+  const {st: api_static_fragment, ncls: api_normalize_class_name, k: api_key, b: api_bind, t: api_text, h: api_element, d: api_dynamic_text, sp: api_static_part, i: api_iterator} = $api;
+  const {_m0} = $ctx;
+  return [api_element("section", stc0, [api_element("div", stc1, [api_static_fragment($fragment1, 3), api_static_fragment($fragment2, 5), api_element("div", stc2, [api_static_fragment($fragment3, 8), api_element("div", stc3, [api_element("div", stc4, api_iterator($cmp.furnitureOptionsWithState, function (option) {
+    return api_element("button", {
+      className: api_normalize_class_name(option.cardClass),
+      attrs: {
+        "data-id": option.id
+      },
+      key: api_key(11, option.id),
+      on: _m0 || ($ctx._m0 = {
+        "click": api_bind($cmp.handleFurnitureSelect)
+      })
+    }, [api_element("span", stc5, [option.isSelected ? api_text("✓") : null]), api_static_fragment($fragment4, 14, [api_static_part(1, null, api_dynamic_text(option.name))]), api_static_fragment($fragment5, 16, [api_static_part(1, null, api_dynamic_text(option.description))])]);
+  }))]), api_static_fragment($fragment6, 18)])])])];
+  /*LWC compiler v9.3.6*/
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .registerTemplate */ .cI)(tmpl));
+tmpl.stylesheets = [];
+tmpl.stylesheetToken = "lwc-3ov0ihsdcqi";
+tmpl.legacyStylesheetToken = "wm-planFurniture_planFurniture";
+if (_planFurniture_css__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A) {
+  tmpl.stylesheets.push.apply(tmpl.stylesheets, _planFurniture_css__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A);
+}
+if (_planFurniture_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A) {
+  tmpl.stylesheets.push.apply(tmpl.stylesheets, _planFurniture_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A);
+}
+;(0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .freezeTemplate */ .iU)(tmpl);
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, [
+/* harmony export */   "A", 0, /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ ]);
+
+
+/***/ },
+
+/***/ 127
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
+/* harmony import */ var _planFurniture_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(425);
+
+
+
+class PlanFurniture extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv {
+  constructor(...args) {
+    super(...args);
+    this.currentStep = 1;
+    this.furnitureOptions = [{
+      id: 'tv-panel',
+      name: 'TV Panel',
+      description: 'TV units, wall panels and media storage'
+    }, {
+      id: 'dining-table',
+      name: 'Dining Table',
+      description: 'Dining tables made to your size and style'
+    }, {
+      id: 'chairs',
+      name: 'Chairs',
+      description: 'Dining, lounge and custom wooden chairs'
+    }, {
+      id: 'almirah',
+      name: 'Almirah',
+      description: 'Wardrobes and custom storage solutions'
+    }, {
+      id: 'bed',
+      name: 'Bed',
+      description: 'Wooden beds designed for your space'
+    }, {
+      id: 'storage',
+      name: 'Storage & Cabinets',
+      description: 'Cabinets, shelves and custom storage'
+    }, {
+      id: 'doors',
+      name: 'Wooden Doors',
+      description: 'Custom doors made to your requirements'
+    }, {
+      id: 'office',
+      name: 'Office Furniture',
+      description: 'Desks, storage and other office furniture'
+    }, {
+      id: 'other',
+      name: 'Others',
+      description: 'Tell us what you have in mind'
+    }];
+    this.selectedFurniture = [];
+  }
+  get furnitureOptionsWithState() {
+    return this.furnitureOptions.map(option => {
+      const isSelected = this.selectedFurniture.includes(option.id);
+      return {
+        ...option,
+        isSelected,
+        cardClass: isSelected ? 'furniture-card selected' : 'furniture-card'
+      };
+    });
+  }
+  handleFurnitureSelect(event) {
+    const furnitureId = event.currentTarget.dataset.id;
+    if (this.selectedFurniture.includes(furnitureId)) {
+      this.selectedFurniture = this.selectedFurniture.filter(id => id !== furnitureId);
+    } else {
+      this.selectedFurniture = [...this.selectedFurniture, furnitureId];
+    }
+    console.log('Selected Furniture:', this.selectedFurniture);
+  }
+  /*LWC compiler v9.3.6*/
+}
+;(0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerDecorators */ .CF)(PlanFurniture, {
+  fields: ["currentStep", "furnitureOptions", "selectedFurniture"]
+});
+const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerComponent */ .Nj)(PlanFurniture, {
+  tmpl: _planFurniture_html__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A,
+  sel: "wm-plan-furniture",
   apiVersion: 66
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__lwc_component_class_internal);
