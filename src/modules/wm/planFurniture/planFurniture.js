@@ -10,6 +10,7 @@ export default class PlanFurniture extends LightningElement {
     phone = '';
     email = '';
     contactMethod = '';
+    showReferenceDesigns = true;
 
     renderedCallback() {
         const select = this.template.querySelector('#preferredTime');
@@ -379,5 +380,20 @@ console.log('PlanFurniture: Back to Home clicked');
             !validEmail ||
             !this.contactMethod
         );
+    }
+
+    handleContinueWithoutChoosing() {
+
+        console.log(
+            'PLAN FURNITURE: Continue Without Inspiration received'
+        );
+
+        this.showReferenceDesigns = false;
+
+        console.log(
+            'Current Step:',
+            this.currentStep
+        );
+
     }
 }

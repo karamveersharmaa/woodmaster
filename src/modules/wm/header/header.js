@@ -56,9 +56,6 @@ export default class Header extends LightningElement {
   }
 
   handlePlanFurniture() {
-
-      this.closeMenu();
-
       this.dispatchEvent(
           new CustomEvent('planfurniture')
       );

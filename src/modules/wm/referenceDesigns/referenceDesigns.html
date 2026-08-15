@@ -1,0 +1,275 @@
+<template>
+
+    <section class="references">
+
+        <!-- =========================
+             HEADER
+        ========================== -->
+
+        <div class="references-header">
+
+            <p class="eyebrow">
+                GET SOME INSPIRATION
+            </p>
+
+            <h2>
+                Ideas for Your Project
+            </h2>
+
+            <p class="intro">
+                Explore some of our existing designs.
+                Click any design to see more photos and
+                use it as a reference for your project.
+            </p>
+
+        </div>
+
+
+        <!-- =========================
+             DESIGN GRID
+        ========================== -->
+
+        <div class="design-grid">
+
+            <template
+                for:each={relevantInspirations}
+                for:item="design">
+
+                <article
+                    key={design.id}
+                    class={design.cardClass}
+                    data-id={design.id}
+                    onclick={handleDesignClick}>
+
+                    <div class="design-image">
+
+                        <template if:true={design.cardImage}>
+                            <img
+                                src={design.cardImage}
+                                alt={design.name}
+                            />
+                        </template>
+
+                        <template if:false={design.cardImage}>
+                            <div class="image-placeholder">
+                                WOODMASTER
+                            </div>
+                        </template>
+
+                    </div>
+
+
+                    <div class="design-content">
+
+                        <h3>
+                            {design.name}
+                        </h3>
+
+                        <p class="design-description">
+                            {design.description}
+                        </p>
+
+                        <p class="price-range">
+                            Approx.
+                            ₹{design.minimumPrice}
+                            –
+                            ₹{design.maximumPrice}
+                        </p>
+
+
+                        <span class="view-design">
+                            <template if:true={design.isSelected}>
+                                ✓ Selected · View Design
+                            </template>
+
+                            <template if:false={design.isSelected}>
+                                View Design →
+                            </template>
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </template>
+
+        </div>
+
+
+        <!-- =========================
+             CONTINUE
+        ========================== -->
+
+        <div class="continue-section">
+
+            <button
+                class="continue-button"
+                onclick={handleContinueWithoutChoosing}>
+
+                Continue Without Inspiration
+
+                <span>→</span>
+
+            </button>
+
+        </div>
+
+
+        <!-- =========================
+             MODAL
+        ========================== -->
+
+        <template if:true={selectedDesign}>
+
+            <div
+                class="modal-overlay"
+                onclick={handleCloseModal}>
+
+                <div
+                    class="design-modal"
+                    role="dialog"
+                    aria-modal="true"
+                    onclick={handleModalContentClick}>
+
+
+                    <!-- CLOSE -->
+
+                    <button
+                        class="close-button"
+                        aria-label="Close"
+                        onclick={handleCloseModal}>
+
+                        ×
+
+                    </button>
+
+
+                    <!-- IMAGE -->
+
+                    <div class="modal-main-image">
+
+                        <template if:true={activeImageUrl}>
+
+                            <img
+                                src={activeImageUrl}
+                                alt={selectedDesign.name}
+                            />
+
+                        </template>
+
+                        <template if:false={activeImageUrl}>
+
+                            <div class="modal-image-placeholder">
+                                WOODMASTER
+                            </div>
+
+                        </template>
+
+                    </div>
+
+
+                    <!-- THUMBNAILS -->
+
+                    <div class="thumbnail-row">
+
+                        <template
+                            for:each={modalImages}
+                            for:item="image">
+
+                            <button
+                                key={image.index}
+                                class={image.className}
+                                data-index={image.index}
+                                onclick={handleImageSelect}>
+
+                                <template if:true={image.url}>
+
+                                    <img
+                                        src={image.url}
+                                        alt="Design view"
+                                    />
+
+                                </template>
+
+                                <template if:false={image.url}>
+
+                                    <span>
+                                        {image.displayNumber}
+                                    </span>
+
+                                </template>
+
+                            </button>
+
+                        </template>
+
+                    </div>
+
+
+                    <!-- DETAILS -->
+
+                    <div class="modal-details">
+
+                        <h2>
+                            {selectedDesign.name}
+                        </h2>
+
+                        <p class="modal-description">
+                            {selectedDesign.description}
+                        </p>
+
+                        <p class="modal-price">
+                            Approx.
+                            ₹{selectedDesign.minimumPrice}
+                            –
+                            ₹{selectedDesign.maximumPrice}
+                        </p>
+
+
+                        <div class="reference-message">
+
+                            <strong>
+                                Love this design?
+                            </strong>
+
+                            <span>
+                                Use it as a reference when
+                                we discuss your project.
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            class="select-reference-button"
+                            onclick={handleSelectReference}>
+
+                            Use This Design as Reference
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </template>
+
+
+        <!-- =========================
+             PRICE NOTE
+        ========================== -->
+
+        <p class="price-note">
+
+            Prices shown are indicative only.
+            Final pricing depends on size, material,
+            finish, customization, installation and
+            other project-specific requirements.
+
+        </p>
+
+    </section>
+
+</template>

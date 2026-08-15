@@ -699,6 +699,14 @@
                                 </p>
 
                             </div>
+                            <template if:true={showReferenceDesigns}>
+
+                                <wm-reference-designs
+                                    selected-furniture={selectedFurniture}
+                                    oncontinuewithoutinspiration={handleContinueWithoutChoosing}>
+                                </wm-reference-designs>
+
+                            </template>
 
 
                             <!-- REQUEST SUMMARY -->

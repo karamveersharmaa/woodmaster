@@ -1,0 +1,657 @@
+:host {
+    display: block;
+}
+
+
+/* =========================
+   REFERENCES
+========================= */
+
+.references {
+    padding: 48px 0 20px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.references-header {
+    max-width: 700px;
+    margin: 0 auto 38px;
+    text-align: center;
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+
+    color: var(--wm-copper);
+}
+
+.references-header h2 {
+    margin: 0 0 14px;
+
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 3vw, 2.6rem);
+    line-height: 1.1;
+    font-weight: 600;
+
+    color: var(--wm-ink);
+}
+
+.intro {
+    max-width: 62ch;
+    margin: 0 auto;
+
+    font-size: 0.98rem;
+    line-height: 1.65;
+
+    color: var(--wm-ink-soft);
+}
+
+
+/* =========================
+   DESIGN GRID
+========================= */
+
+.design-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 18px;
+
+    width: 100%;
+}
+
+
+/* =========================
+   DESIGN CARD
+========================= */
+
+.design-card {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+
+    overflow: hidden;
+
+    background: var(--wm-bg);
+
+    border: 1px solid var(--wm-line);
+
+    border-radius: var(--wm-radius);
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.design-card:hover {
+    border-color: var(--wm-copper);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+
+.design-card.selected {
+    border-color: var(--wm-copper);
+
+    box-shadow:
+        0 0 0 1px var(--wm-copper);
+}
+
+
+/* =========================
+   CARD IMAGE
+========================= */
+
+.design-image {
+    width: 100%;
+
+    aspect-ratio: 4 / 3;
+
+    overflow: hidden;
+
+    background: var(--wm-bg-panel);
+}
+
+
+.design-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.35s ease;
+}
+
+
+.design-card:hover .design-image img {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   IMAGE PLACEHOLDER
+========================= */
+
+.image-placeholder {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--wm-bg-panel),
+            var(--wm-bg)
+        );
+
+    color: var(--wm-ink-soft);
+
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+}
+
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.design-content {
+    padding: 20px;
+}
+
+
+.design-content h3 {
+    margin: 0 0 7px;
+
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: 600;
+
+    color: var(--wm-ink);
+}
+
+
+.design-description {
+    margin: 0 0 12px;
+
+    font-size: 0.84rem;
+    line-height: 1.5;
+
+    color: var(--wm-ink-soft);
+}
+
+
+.price-range {
+    margin: 0 0 14px;
+
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+
+    color: var(--wm-copper);
+}
+
+
+.view-design {
+    display: inline-block;
+
+    margin-top: 2px;
+
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+
+    color: var(--wm-copper);
+}
+
+
+.design-card:hover .view-design {
+    color: var(--wm-ink);
+}
+
+
+/* =========================
+   CONTINUE
+========================= */
+
+.continue-section {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 34px;
+}
+
+
+.continue-button {
+    padding: 0;
+
+    background: transparent;
+
+    border: none;
+
+    color: var(--wm-copper);
+
+    font-family: inherit;
+    font-size: 0.88rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+
+.continue-button span {
+    display: inline-block;
+
+    margin-left: 6px;
+
+    transition: margin-left 0.2s ease;
+}
+
+
+.continue-button:hover {
+    color: var(--wm-ink);
+}
+
+
+.continue-button:hover span {
+    margin-left: 10px;
+}
+
+
+/* =========================
+   PRICE NOTE
+========================= */
+
+.price-note {
+    max-width: 700px;
+
+    margin: 22px auto 0;
+
+    text-align: center;
+
+    font-size: 0.74rem;
+    line-height: 1.55;
+
+    color: var(--wm-ink-soft);
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.modal-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    background: rgba(28, 20, 15, 0.72);
+}
+
+
+.design-modal {
+    position: relative;
+
+    width: min(900px, 100%);
+
+    max-height: 92vh;
+
+    overflow-y: auto;
+
+    background: var(--wm-bg-panel);
+
+    border: 1px solid var(--wm-line);
+
+    border-radius: var(--wm-radius);
+
+    padding: 26px;
+
+    box-sizing: border-box;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.close-button {
+    position: absolute;
+
+    top: 14px;
+    right: 14px;
+
+    z-index: 2;
+
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--wm-bg-panel);
+
+    border: 1px solid var(--wm-line-strong);
+
+    border-radius: 50%;
+
+    color: var(--wm-ink);
+
+    font-size: 1.3rem;
+
+    cursor: pointer;
+}
+
+
+.close-button:hover {
+    background: var(--wm-walnut-dark);
+
+    border-color: var(--wm-walnut-dark);
+
+    color: var(--wm-on-dark);
+}
+
+
+/* =========================
+   MODAL MAIN IMAGE
+========================= */
+
+.modal-main-image {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    background: var(--wm-bg);
+
+    border-radius: var(--wm-radius);
+}
+
+
+.modal-main-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+.modal-image-placeholder {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--wm-ink-soft);
+
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+}
+
+
+/* =========================
+   THUMBNAILS
+========================= */
+
+.thumbnail-row {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 12px;
+
+    overflow-x: auto;
+}
+
+
+.thumbnail {
+    flex: 0 0 82px;
+
+    width: 82px;
+    height: 62px;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    background: var(--wm-bg);
+
+    border: 1px solid var(--wm-line);
+
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+.thumbnail.active {
+    border-color: var(--wm-copper);
+
+    box-shadow:
+        0 0 0 1px var(--wm-copper);
+}
+
+
+/* =========================
+   MODAL DETAILS
+========================= */
+
+.modal-details {
+    padding: 24px 4px 4px;
+}
+
+
+.modal-details h2 {
+    margin: 0 0 8px;
+
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 600;
+
+    color: var(--wm-ink);
+}
+
+
+.modal-description {
+    margin: 0 0 10px;
+
+    color: var(--wm-ink-soft);
+}
+
+
+.modal-price {
+    margin: 0;
+
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+
+    color: var(--wm-copper);
+}
+
+
+/* =========================
+   REFERENCE MESSAGE
+========================= */
+
+.reference-message {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+    margin-top: 22px;
+    margin-bottom: 18px;
+
+    padding: 16px;
+
+    background: var(--wm-bg);
+
+    border-left: 3px solid var(--wm-copper);
+}
+
+
+.reference-message strong {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+
+    color: var(--wm-ink);
+}
+
+
+.reference-message span {
+    font-size: 0.86rem;
+    line-height: 1.5;
+
+    color: var(--wm-ink-soft);
+}
+
+
+/* =========================
+   SELECT REFERENCE
+========================= */
+
+.select-reference-button {
+    width: 100%;
+
+    padding: 14px 20px;
+
+    background: var(--wm-walnut-dark);
+
+    border: 1px solid var(--wm-walnut-dark);
+
+    border-radius: var(--wm-radius);
+
+    color: var(--wm-on-dark);
+
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.select-reference-button:hover {
+    background: var(--wm-copper);
+
+    border-color: var(--wm-copper);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .design-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .references {
+        padding: 36px 0 16px;
+    }
+
+
+    .design-grid {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+
+    .design-content {
+        padding: 18px;
+    }
+
+
+    .modal-overlay {
+        padding: 12px;
+    }
+
+
+    .design-modal {
+        padding: 16px;
+    }
+
+
+    .modal-details h2 {
+        font-size: 1.65rem;
+    }
+
+
+    .thumbnail {
+        flex-basis: 68px;
+
+        width: 68px;
+        height: 52px;
+    }
+
+}
