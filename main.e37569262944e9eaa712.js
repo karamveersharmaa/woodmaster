@@ -132,66 +132,65 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_14__/* .parseFragment */ .oH)`<button${3}>Test Plan Your Furniture</button>`;
 const stc0 = {
   key: 1
 };
 const stc1 = {
-  key: 2
-};
-const stc2 = {
   key: 4
 };
-const stc3 = {
+const stc2 = {
   key: 5
 };
-const stc4 = {
+const stc3 = {
   key: 6
 };
-const stc5 = {
+const stc4 = {
   key: 7
 };
-const stc6 = {
+const stc5 = {
   key: 8
 };
-const stc7 = {
-  key: 11
-};
-const stc8 = {
-  key: 14
+const stc6 = {
+  key: 9
 };
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {b: api_bind, c: api_custom_element, sp: api_static_part, st: api_static_fragment, h: api_element} = $api;
+  const {b: api_bind, c: api_custom_element, h: api_element} = $api;
   const {_m0, _m1, _m2, _m3, _m4, _m5} = $ctx;
   return [$cmp.isHomePage ? api_custom_element("wm-header", wm_header__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
     key: 0,
     on: _m0 || ($ctx._m0 = {
       "cartclick": api_bind($cmp.handleCartClick)
     })
-  }) : null, $cmp.isHomePage ? api_element("main", stc0, [api_custom_element("wm-hero", wm_hero__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, stc1), api_custom_element("wm-services", wm_services__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A, {
-    key: 3,
+  }) : null, $cmp.isHomePage ? api_element("main", stc0, [api_custom_element("wm-hero", wm_hero__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
+    key: 2,
     on: _m1 || ($ctx._m1 = {
+      "planfurniture": api_bind($cmp.handlePlanFurniture)
+    })
+  }), api_custom_element("wm-services", wm_services__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A, {
+    key: 3,
+    on: _m2 || ($ctx._m2 = {
       "productclick": api_bind($cmp.handleProductClick)
     })
-  }), api_custom_element("wm-process", wm_process__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A, stc2), api_custom_element("wm-gallery", wm_gallery__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .A, stc3), api_custom_element("wm-testimonials", wm_testimonials__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A, stc4), api_custom_element("wm-about", wm_about__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .A, stc5), api_custom_element("wm-contact", wm_contact__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .A, stc6), api_static_fragment($fragment1, 10, [api_static_part(0, {
-    on: _m3 || ($ctx._m3 = {
-      "click": api_bind($cmp.handleTestPlanFurniture)
-    })
-  }, null)])]) : null, $cmp.isHomePage ? api_custom_element("wm-footer", wm_footer__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .A, stc7) : null, $cmp.isProductDetailsPage ? api_custom_element("wm-product-details", wm_productDetails__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A, {
+  }), api_custom_element("wm-process", wm_process__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A, stc1), api_custom_element("wm-gallery", wm_gallery__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .A, stc2), api_custom_element("wm-testimonials", wm_testimonials__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A, stc3), api_custom_element("wm-about", wm_about__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .A, stc4), api_custom_element("wm-contact", wm_contact__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .A, stc5)]) : null, $cmp.isHomePage ? api_custom_element("wm-footer", wm_footer__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .A, stc6) : null, $cmp.isProductDetailsPage ? api_custom_element("wm-product-details", wm_productDetails__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A, {
     props: {
       "product": $cmp.selectedProduct
     },
-    key: 12,
-    on: _m4 || ($ctx._m4 = {
+    key: 10,
+    on: _m3 || ($ctx._m3 = {
       "back": api_bind($cmp.handleBackToHome),
       "opencart": api_bind($cmp.handleOpenCart)
     })
   }) : null, $cmp.isCartPage ? api_custom_element("wm-cart", wm_cart__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A, {
-    key: 13,
-    on: _m5 || ($ctx._m5 = {
+    key: 11,
+    on: _m4 || ($ctx._m4 = {
       "backtohome": api_bind($cmp.handleContinueShopping)
     })
-  }) : null, $cmp.isPlanFurniturePage ? api_custom_element("wm-plan-furniture", wm_planFurniture__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .A, stc8) : null];
+  }) : null, $cmp.isPlanFurniturePage ? api_custom_element("wm-plan-furniture", wm_planFurniture__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .A, {
+    key: 12,
+    on: _m5 || ($ctx._m5 = {
+      "backtohome": api_bind($cmp.handleBackToHome)
+    })
+  }) : null];
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,lwc__WEBPACK_IMPORTED_MODULE_14__/* .registerTemplate */ .cI)(tmpl));
@@ -285,7 +284,8 @@ class App extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv {
       page: 'home'
     }, '', '/');
   }
-  handleTestPlanFurniture() {
+  handlePlanFurniture() {
+    console.log('Plan Furniture event received');
     this.currentPage = 'planFurniture';
   }
   get isPlanFurniturePage() {
@@ -964,7 +964,7 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
   var shadowSelector = token ? ("[" + token + "]") : "";
   var hostSelector = token ? ("[" + token + "-host]") : "";
   var suffixToken = token ? ("-" + token) : "";
-  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "position: sticky;top: 0;z-index: 100;display: block;}.bar" + shadowSelector + " {background: rgba(247, 241, 230, 0.92);backdrop-filter: saturate(140%) blur(8px);border-bottom: 1px solid var(--wm-line);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 14px 24px;display: flex;align-items: center;justify-content: space-between;gap: 16px;}.brand" + shadowSelector + " {display: flex;align-items: center;gap: 10px;text-decoration: none;color: var(--wm-ink);}.mark" + shadowSelector + " {width: 30px;height: 30px;flex: none;}.wordmark" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: 1.25rem;letter-spacing: 0.01em;}.links" + shadowSelector + " {display: flex;align-items: center;gap: 28px;}.links" + shadowSelector + " a" + shadowSelector + " {color: var(--wm-ink-soft);text-decoration: none;font-size: 0.95rem;font-weight: 500;}.links" + shadowSelector + " a:hover" + shadowSelector + ",\r.links" + shadowSelector + " a:focus-visible" + shadowSelector + " {color: var(--wm-copper);}.nav-cta" + shadowSelector + " {border: 1px solid var(--wm-walnut-dark);color: var(--wm-walnut-dark) !important;padding: 8px 16px;border-radius: var(--wm-radius);font-family: var(--font-mono);font-size: 0.82rem !important;letter-spacing: 0.03em;}.nav-cta:hover" + shadowSelector + ",\r.nav-cta:focus-visible" + shadowSelector + " {background: var(--wm-walnut-dark);color: var(--wm-on-dark) !important;}.burger" + shadowSelector + " {display: none;flex-direction: column;gap: 5px;background: none;border: none;cursor: pointer;padding: 8px;}.burger" + shadowSelector + " span" + shadowSelector + " {width: 22px;height: 2px;background: var(--wm-ink);display: block;}@media (max-width: 860px) {.links" + shadowSelector + " {position: fixed;top: 62px;right: 0;left: 0;background: var(--wm-bg-panel);border-bottom: 1px solid var(--wm-line);flex-direction: column;align-items: flex-start;gap: 0;max-height: 0;overflow: hidden;transition: max-height 0.25s ease;}.links.open" + shadowSelector + " {max-height: 320px;}.links" + shadowSelector + " a" + shadowSelector + " {width: 100%;padding: 16px 24px;border-bottom: 1px solid var(--wm-line);}.nav-cta" + shadowSelector + " {border: none;color: var(--wm-copper) !important;}.burger" + shadowSelector + " {display: flex;}}a:focus-visible" + shadowSelector + ",\rbutton:focus-visible" + shadowSelector + " {outline: 2px solid var(--wm-copper);outline-offset: 2px;}.cart-button" + shadowSelector + " {position: relative;display: inline-flex;align-items: center;justify-content: center;width: 36px;height: 36px;padding: 0;border: none;background: transparent;cursor: pointer;font-size: 20px;margin-left: 14px;}.cart-button:hover" + shadowSelector + " {transform: translateY(-1px);}.cart-button" + shadowSelector + " .cart-count" + shadowSelector + " {position: absolute;top: -5px;right: -7px;min-width: 18px;height: 18px;padding: 0 4px;display: flex;align-items: center;justify-content: center;box-sizing: border-box;border-radius: 50%;background: #c26d19 !important;color: #ffffff !important;font-size: 10px !important;font-weight: 700 !important;line-height: 18px !important;z-index: 10;}";
+  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "position: sticky;top: 0;z-index: 100;display: block;}.bar" + shadowSelector + " {background: rgba(247, 241, 230, 0.92);backdrop-filter: saturate(140%) blur(8px);border-bottom: 1px solid var(--wm-line);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 14px 24px;display: flex;align-items: center;justify-content: space-between;gap: 16px;}.brand" + shadowSelector + " {display: flex;align-items: center;gap: 10px;text-decoration: none;color: var(--wm-ink);}.mark" + shadowSelector + " {width: 30px;height: 30px;flex: none;}.wordmark" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: 1.25rem;letter-spacing: 0.01em;}.links" + shadowSelector + " {display: flex;align-items: center;gap: 28px;}.links" + shadowSelector + " a" + shadowSelector + " {color: var(--wm-ink-soft);text-decoration: none;font-size: 0.95rem;font-weight: 500;}.links" + shadowSelector + " a:hover" + shadowSelector + ",\r.links" + shadowSelector + " a:focus-visible" + shadowSelector + " {color: var(--wm-copper);}.nav-cta" + shadowSelector + " {border: 1px solid var(--wm-walnut-dark);color: var(--wm-walnut-dark) !important;padding: 8px 16px;border-radius: var(--wm-radius);font-family: var(--font-mono);font-size: 0.82rem !important;letter-spacing: 0.03em;background: transparent;cursor: pointer;}.nav-cta:hover" + shadowSelector + ",\r.nav-cta:focus-visible" + shadowSelector + " {background: var(--wm-walnut-dark);color: var(--wm-on-dark) !important;}.burger" + shadowSelector + " {display: none;flex-direction: column;gap: 5px;background: none;border: none;cursor: pointer;padding: 8px;}.burger" + shadowSelector + " span" + shadowSelector + " {width: 22px;height: 2px;background: var(--wm-ink);display: block;}@media (max-width: 860px) {.links" + shadowSelector + " {position: fixed;top: 62px;right: 0;left: 0;background: var(--wm-bg-panel);border-bottom: 1px solid var(--wm-line);flex-direction: column;align-items: flex-start;gap: 0;max-height: 0;overflow: hidden;transition: max-height 0.25s ease;}.links.open" + shadowSelector + " {max-height: 320px;}.links" + shadowSelector + " a" + shadowSelector + " {width: 100%;padding: 16px 24px;border-bottom: 1px solid var(--wm-line);}.nav-cta" + shadowSelector + " {border: none;color: var(--wm-copper) !important;}.burger" + shadowSelector + " {display: flex;}}a:focus-visible" + shadowSelector + ",\rbutton:focus-visible" + shadowSelector + " {outline: 2px solid var(--wm-copper);outline-offset: 2px;}.cart-button" + shadowSelector + " {position: relative;display: inline-flex;align-items: center;justify-content: center;width: 36px;height: 36px;padding: 0;border: none;background: transparent;cursor: pointer;font-size: 20px;margin-left: 14px;}.cart-button:hover" + shadowSelector + " {transform: translateY(-1px);}.cart-button" + shadowSelector + " .cart-count" + shadowSelector + " {position: absolute;top: -5px;right: -7px;min-width: 18px;height: 18px;padding: 0 4px;display: flex;align-items: center;justify-content: center;box-sizing: border-box;border-radius: 50%;background: #c26d19 !important;color: #ffffff !important;font-size: 10px !important;font-weight: 700 !important;line-height: 18px !important;z-index: 10;}";
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
@@ -984,7 +984,7 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<header class="bar${0}"${2}><div class="inner${0}"${2}><a href="#top" class="brand${0}"${2}><svg class="mark${0}" viewBox="0 0 100 100" aria-hidden="true"${2}><rect width="100" height="100" rx="14" fill="var(--wm-walnut-dark)"${3}/><path d="M28 72 L28 28 L58 28 L58 40 L40 40 L40 72 Z" fill="var(--wm-copper-light)"${3}/></svg><span class="wordmark${0}"${2}>WoodMaster</span></a><nav${"c8"} aria-label="Primary"${2}><a href="#services"${3}>Services</a><a href="#collection"${3}>Collection</a><a href="#about"${3}>About</a><a href="#contact" class="nav-cta${0}"${2}>Get a Quote</a></nav><button class="cart-button${0}" aria-label="Shopping Cart"${2}>🛒<span class="cart-count${0}"${2}>${"t20"}</span></button><button class="burger${0}" aria-label="Toggle menu"${"a21:aria-expanded"}${2}><span${3}></span><span${3}></span><span${3}></span></button></div></header>`;
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<header class="bar${0}"${2}><div class="inner${0}"${2}><a href="#top" class="brand${0}"${2}><svg class="mark${0}" viewBox="0 0 100 100" aria-hidden="true"${2}><rect width="100" height="100" rx="14" fill="var(--wm-walnut-dark)"${3}/><path d="M28 72 L28 28 L58 28 L58 40 L40 40 L40 72 Z" fill="var(--wm-copper-light)"${3}/></svg><span class="wordmark${0}"${2}>WoodMaster</span></a><nav${"c8"} aria-label="Primary"${2}><a href="#services"${3}>Services</a><a href="#collection"${3}>Collection</a><a href="#about"${3}>About</a><button class="nav-cta${0}"${2}>Plan Your Furniture</button></nav><button class="cart-button${0}" aria-label="Shopping Cart"${2}>🛒<span class="cart-count${0}"${2}>${"t20"}</span></button><button class="burger${0}" aria-label="Toggle menu"${"a21:aria-expanded"}${2}><span${3}></span><span${3}></span><span${3}></span></button></div></header>`;
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {b: api_bind, ncls: api_normalize_class_name, d: api_dynamic_text, sp: api_static_part, st: api_static_fragment} = $api;
   const {_m0, _m1, _m2, _m3, _m4, _m5, _m6} = $ctx;
@@ -1008,7 +1008,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     })
   }, null), api_static_part(15, {
     on: _m4 || ($ctx._m4 = {
-      "click": api_bind($cmp.closeMenu)
+      "click": api_bind($cmp.handlePlanFurniture)
     })
   }, null), api_static_part(17, {
     on: _m5 || ($ctx._m5 = {
@@ -1088,6 +1088,10 @@ class Header extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv
   get navClass() {
     return this.menuOpen ? 'links open' : 'links';
   }
+  handlePlanFurniture() {
+    this.closeMenu();
+    this.dispatchEvent(new CustomEvent('planfurniture'));
+  }
   /*LWC compiler v9.3.6*/
 }
 ;(0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerDecorators */ .CF)(Header, {
@@ -1137,17 +1141,18 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<section class="hero${0}"${"a0:id"}${2}><div class="inner${0}"${2}><div class="copy${0}"${2}><p class="eyebrow${0}"${2}>⊢— Noida &amp; Delhi NCR —⊣</p><h1${3}>Custom Woodwork, Built for Your Space</h1><p class="lede${0}"${2}>We design and build custom wooden furniture for homes, offices and commercial spaces — made around your requirements, dimensions and style.</p><div class="cta-row${0}"${2}><a${"a10:href"} class="btn btn-primary${0}"${2}>Get a Free Quote</a><a${"a12:href"} class="btn btn-ghost${0}"${2}>See Our Work</a></div><ul class="trust${0}"${2}><li${3}><span class="num${0}"${2}>25+</span> years at the bench</li><li${3}><span class="num${0}"${2}>300+</span> pieces delivered</li><li${3}><span class="num${0}"${2}>0%</span> MDF or particle board</li></ul></div><div class="drawing${0}" aria-hidden="true"${2}><div class="showcase-label${0}"${2}>CUSTOM WOODWORKING</div><div class="showcase${0}"${2}><div class="furniture-card chair-card${0}"${2}><div class="chair${0}"${2}><div class="chair-back${0}"${2}></div><div class="chair-seat${0}"${2}></div><div class="chair-leg left${0}"${2}></div><div class="chair-leg right${0}"${2}></div></div><span class="furniture-label${0}"${2}>CUSTOM CHAIRS</span></div><div class="furniture-card table-card${0}"${2}><div class="table${0}"${2}><div class="table-top${0}"${2}></div><div class="table-leg left${0}"${2}></div><div class="table-leg right${0}"${2}></div></div><span class="furniture-label${0}"${2}>DINING TABLES</span></div><div class="furniture-card cabinet-card${0}"${2}><div class="cabinet${0}"${2}><div class="cabinet-door${0}"${2}><span${3}></span></div><div class="cabinet-door${0}"${2}><span${3}></span></div></div><span class="furniture-label${0}"${2}>STORAGE &amp; CABINETS</span></div></div><div class="showcase-caption${0}"${2}>MADE TO YOUR DIMENSIONS · STYLE · SPACE</div></div></div></section>`;
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<section class="hero${0}"${"a0:id"}${2}><div class="inner${0}"${2}><div class="copy${0}"${2}><p class="eyebrow${0}"${2}>⊢— Noida &amp; Delhi NCR —⊣</p><h1${3}>Custom Woodwork, Built for Your Space</h1><p class="lede${0}"${2}>We design and build custom wooden furniture for homes, offices and commercial spaces — made around your requirements, dimensions and style.</p><div class="cta-row${0}"${2}><button class="btn btn-primary${0}"${2}>Plan Your Furniture</button><a${"a12:href"} class="btn btn-ghost${0}"${2}>See Our Work</a></div><ul class="trust${0}"${2}><li${3}><span class="num${0}"${2}>25+</span> years at the bench</li><li${3}><span class="num${0}"${2}>300+</span> pieces delivered</li><li${3}><span class="num${0}"${2}>0%</span> MDF or particle board</li></ul></div><div class="drawing${0}" aria-hidden="true"${2}><div class="showcase-label${0}"${2}>CUSTOM WOODWORKING</div><div class="showcase${0}"${2}><div class="furniture-card chair-card${0}"${2}><div class="chair${0}"${2}><div class="chair-back${0}"${2}></div><div class="chair-seat${0}"${2}></div><div class="chair-leg left${0}"${2}></div><div class="chair-leg right${0}"${2}></div></div><span class="furniture-label${0}"${2}>CUSTOM CHAIRS</span></div><div class="furniture-card table-card${0}"${2}><div class="table${0}"${2}><div class="table-top${0}"${2}></div><div class="table-leg left${0}"${2}></div><div class="table-leg right${0}"${2}></div></div><span class="furniture-label${0}"${2}>DINING TABLES</span></div><div class="furniture-card cabinet-card${0}"${2}><div class="cabinet${0}"${2}><div class="cabinet-door${0}"${2}><span${3}></span></div><div class="cabinet-door${0}"${2}><span${3}></span></div></div><span class="furniture-label${0}"${2}>STORAGE &amp; CABINETS</span></div></div><div class="showcase-caption${0}"${2}>MADE TO YOUR DIMENSIONS · STYLE · SPACE</div></div></div></section>`;
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {gid: api_scoped_id, fid: api_scoped_frag_id, sp: api_static_part, st: api_static_fragment} = $api;
+  const {gid: api_scoped_id, b: api_bind, fid: api_scoped_frag_id, sp: api_static_part, st: api_static_fragment} = $api;
+  const {_m0} = $ctx;
   return [api_static_fragment($fragment1, 1, [api_static_part(0, {
     attrs: {
       "id": api_scoped_id("top")
     }
   }, null), api_static_part(10, {
-    attrs: {
-      "href": api_scoped_frag_id("#contact")
-    }
+    on: _m0 || ($ctx._m0 = {
+      "click": api_bind($cmp.handlePlanFurniture)
+    })
   }, null), api_static_part(12, {
     attrs: {
       "href": api_scoped_frag_id("#gallery")
@@ -1182,6 +1187,10 @@ if (_hero_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .
 
 
 class Hero extends lwc__WEBPACK_IMPORTED_MODULE_1__/* .LightningElement */ .xv {
+  handlePlanFurniture() {
+    console.log('Hero: Plan Your Furniture button clicked');
+    this.dispatchEvent(new CustomEvent('planfurniture'));
+  }
   /*LWC compiler v9.3.6*/
 }
 const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_1__/* .registerComponent */ .Nj)(Hero, {
@@ -1204,7 +1213,7 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
   var shadowSelector = token ? ("[" + token + "]") : "";
   var hostSelector = token ? ("[" + token + "-host]") : "";
   var suffixToken = token ? ("-" + token) : "";
-  return [((useActualHostSelector ? ":host {" : hostSelector + " {")), "display: block;background: var(--wm-bg);min-height: 100vh;}.plan-page", shadowSelector, " {padding: 64px 24px 90px;}.container", shadowSelector, " {max-width: 960px;margin: 0 auto;}.page-header", shadowSelector, " {text-align: center;max-width: 680px;margin: 0 auto 48px;}.eyebrow", shadowSelector, " {margin: 0 0 14px;font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.08em;color: var(--wm-copper);}h1", shadowSelector, " {margin: 0 0 18px;font-family: var(--font-display);font-size: clamp(2.4rem, 4vw, 3.7rem);line-height: 1.05;font-weight: 600;color: var(--wm-ink);}.intro", shadowSelector, " {max-width: 58ch;margin: 0 auto;font-size: 1.05rem;line-height: 1.65;color: var(--wm-ink-soft);}.progress-wrapper", shadowSelector, " {display: flex;align-items: center;max-width: 760px;margin: 0 auto 42px;}.progress-step", shadowSelector, " {display: flex;align-items: center;gap: 10px;white-space: nowrap;color: var(--wm-ink-soft);}.step-number", shadowSelector, " {width: 32px;height: 32px;display: flex;align-items: center;justify-content: center;border: 1px solid var(--wm-line-strong);border-radius: 50%;font-family: var(--font-mono);font-size: 0.7rem;}.step-label", shadowSelector, " {font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.02em;}.progress-step.active", shadowSelector, " {color: var(--wm-ink);}.progress-step.active", shadowSelector, " .step-number", shadowSelector, " {background: var(--wm-walnut-dark);border-color: var(--wm-walnut-dark);color: var(--wm-on-dark);}.progress-line", shadowSelector, " {flex: 1;height: 1px;margin: 0 16px;background: var(--wm-line);}.form-card", shadowSelector, " {background: var(--wm-bg-panel);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);padding: 42px;}.step-header", shadowSelector, " {max-width: 650px;margin-bottom: 36px;}.step-count", shadowSelector, " {display: block;margin-bottom: 12px;font-family: var(--font-mono);font-size: 0.7rem;letter-spacing: 0.08em;color: var(--wm-copper);}.step-header", shadowSelector, " h2", shadowSelector, " {margin: 0 0 10px;font-family: var(--font-display);font-size: 2rem;font-weight: 600;color: var(--wm-ink);}.step-header", shadowSelector, " p", shadowSelector, " {margin: 0;color: var(--wm-ink-soft);line-height: 1.6;}.step-content", shadowSelector, " {min-height: 280px;}.step-placeholder", shadowSelector, " {min-height: 240px;display: flex;align-items: center;justify-content: center;border: 1px dashed var(--wm-line-strong);border-radius: var(--wm-radius);color: var(--wm-ink-soft);font-family: var(--font-mono);font-size: 0.8rem;}.form-navigation", shadowSelector, " {display: flex;align-items: center;justify-content: space-between;margin-top: 40px;padding-top: 24px;border-top: 1px solid var(--wm-line);}.back-button", shadowSelector, ",\r.next-button", shadowSelector, " {font-family: var(--font-mono);font-size: 0.82rem;letter-spacing: 0.02em;padding: 12px 20px;border-radius: var(--wm-radius);cursor: pointer;}.back-button", shadowSelector, " {background: transparent;border: 1px solid var(--wm-line-strong);color: var(--wm-ink-soft);}.back-button:disabled", shadowSelector, " {opacity: 0.35;cursor: not-allowed;}.next-button", shadowSelector, " {background: var(--wm-walnut-dark);border: 1px solid var(--wm-walnut-dark);color: var(--wm-on-dark);}.next-button:hover", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);}.furniture-grid", shadowSelector, " {display: grid;grid-template-columns: repeat(3, minmax(0, 1fr));gap: 14px;width: 100%;}.furniture-card", shadowSelector, " {position: relative;min-height: 150px;display: flex;flex-direction: column;align-items: flex-start;justify-content: flex-end;padding: 22px;text-align: left;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);color: var(--wm-ink);cursor: pointer;box-sizing: border-box;transition:\r\n border-color 0.2s ease,\r\n background 0.2s ease,\r\n transform 0.2s ease;}.furniture-card:hover", shadowSelector, " {border-color: var(--wm-copper);transform: translateY(-2px);}.furniture-card.selected", shadowSelector, " {background: var(--wm-walnut-dark);border-color: var(--wm-walnut-dark);color: var(--wm-on-dark);}.selection-mark", shadowSelector, " {position: absolute;top: 16px;right: 16px;width: 24px;height: 24px;display: flex;align-items: center;justify-content: center;border: 1px solid var(--wm-line-strong);border-radius: 50%;font-size: 0.72rem;}.furniture-card.selected", shadowSelector, " .selection-mark", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);color: #ffffff;}.furniture-name", shadowSelector, " {display: block;margin-bottom: 7px;font-family: var(--font-display);font-size: 1.2rem;font-weight: 600;}.furniture-description", shadowSelector, " {display: block;max-width: 28ch;font-size: 0.82rem;line-height: 1.45;color: var(--wm-ink-soft);}.furniture-card.selected", shadowSelector, " .furniture-description", shadowSelector, " {color: rgba(255, 255, 255, 0.72);}@media (max-width: 800px) {.furniture-grid", shadowSelector, " {grid-template-columns: repeat(2, minmax(0, 1fr));}}@media (max-width: 700px) {.plan-page", shadowSelector, " {padding: 42px 18px 64px;}.page-header", shadowSelector, " {margin-bottom: 36px;}.progress-wrapper", shadowSelector, " {align-items: flex-start;}.progress-step", shadowSelector, " {flex-direction: column;gap: 7px;text-align: center;}.step-label", shadowSelector, " {font-size: 0.62rem;}.progress-line", shadowSelector, " {margin: 16px 8px 0;}.form-card", shadowSelector, " {padding: 26px 20px;}.step-header", shadowSelector, " h2", shadowSelector, " {font-size: 1.65rem;}.step-content", shadowSelector, " {min-height: 0;}}@media (max-width: 520px) {.furniture-grid", shadowSelector, " {grid-template-columns: 1fr;}.furniture-card", shadowSelector, " {min-height: 125px;}}"].join('');
+  return [((useActualHostSelector ? ":host {" : hostSelector + " {")), "display: block;background: var(--wm-bg);min-height: 100vh;}.plan-page", shadowSelector, " {padding: 64px 24px 90px;}.container", shadowSelector, " {max-width: 960px;margin: 0 auto;}.page-header", shadowSelector, " {text-align: center;max-width: 680px;margin: 0 auto 48px;}.eyebrow", shadowSelector, " {margin: 0 0 14px;font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.08em;color: var(--wm-copper);}h1", shadowSelector, " {margin: 0 0 18px;font-family: var(--font-display);font-size: clamp(2.4rem, 4vw, 3.7rem);line-height: 1.05;font-weight: 600;color: var(--wm-ink);}.intro", shadowSelector, " {max-width: 58ch;margin: 0 auto;font-size: 1.05rem;line-height: 1.65;color: var(--wm-ink-soft);}.progress-wrapper", shadowSelector, " {display: flex;align-items: center;max-width: 760px;margin: 0 auto 42px;}.progress-step", shadowSelector, " {display: flex;align-items: center;gap: 10px;white-space: nowrap;color: var(--wm-ink-soft);}.step-number", shadowSelector, " {width: 32px;height: 32px;display: flex;align-items: center;justify-content: center;border: 1px solid var(--wm-line-strong);border-radius: 50%;font-family: var(--font-mono);font-size: 0.7rem;}.step-label", shadowSelector, " {font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.02em;}.progress-step.active", shadowSelector, " {color: var(--wm-ink);}.progress-step.active", shadowSelector, " .step-number", shadowSelector, " {background: var(--wm-walnut-dark);border-color: var(--wm-walnut-dark);color: var(--wm-on-dark);}.progress-line", shadowSelector, " {flex: 1;height: 1px;margin: 0 16px;background: var(--wm-line);}.form-card", shadowSelector, " {background: var(--wm-bg-panel);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);padding: 42px;}.step-header", shadowSelector, " {max-width: 650px;margin-bottom: 36px;}.step-count", shadowSelector, " {display: block;margin-bottom: 12px;font-family: var(--font-mono);font-size: 0.7rem;letter-spacing: 0.08em;color: var(--wm-copper);}.step-header", shadowSelector, " h2", shadowSelector, " {margin: 0 0 10px;font-family: var(--font-display);font-size: 2rem;font-weight: 600;color: var(--wm-ink);}.step-header", shadowSelector, " p", shadowSelector, " {margin: 0;color: var(--wm-ink-soft);line-height: 1.6;}.step-content", shadowSelector, " {min-height: 280px;}.step-placeholder", shadowSelector, " {min-height: 240px;display: flex;align-items: center;justify-content: center;border: 1px dashed var(--wm-line-strong);border-radius: var(--wm-radius);color: var(--wm-ink-soft);font-family: var(--font-mono);font-size: 0.8rem;}.form-navigation", shadowSelector, " {display: flex;align-items: center;justify-content: space-between;margin-top: 40px;padding-top: 24px;border-top: 1px solid var(--wm-line);}.back-button", shadowSelector, ",\r.next-button", shadowSelector, " {font-family: var(--font-mono);font-size: 0.82rem;letter-spacing: 0.02em;padding: 12px 20px;border-radius: var(--wm-radius);cursor: pointer;}.back-button", shadowSelector, " {background: transparent;border: 1px solid var(--wm-line-strong);color: var(--wm-ink-soft);}.back-button:disabled", shadowSelector, " {opacity: 0.35;cursor: not-allowed;}.next-button", shadowSelector, " {background: var(--wm-walnut-dark);border: 1px solid var(--wm-walnut-dark);color: var(--wm-on-dark);}.next-button:hover", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);}.furniture-grid", shadowSelector, " {display: grid;grid-template-columns: repeat(3, minmax(0, 1fr));gap: 14px;width: 100%;}.furniture-card", shadowSelector, " {position: relative;min-height: 150px;display: flex;flex-direction: column;align-items: flex-start;justify-content: flex-end;padding: 22px;text-align: left;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);color: var(--wm-ink);cursor: pointer;box-sizing: border-box;transition:\r\n border-color 0.2s ease,\r\n background 0.2s ease,\r\n transform 0.2s ease;}.furniture-card:hover", shadowSelector, " {border-color: var(--wm-copper);transform: translateY(-2px);}.furniture-card.selected", shadowSelector, " {background: var(--wm-walnut-dark);border-color: var(--wm-walnut-dark);color: var(--wm-on-dark);}.selection-mark", shadowSelector, " {position: absolute;top: 16px;right: 16px;width: 24px;height: 24px;display: flex;align-items: center;justify-content: center;border: 1px solid var(--wm-line-strong);border-radius: 50%;font-size: 0.72rem;}.furniture-card.selected", shadowSelector, " .selection-mark", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);color: #ffffff;}.furniture-name", shadowSelector, " {display: block;margin-bottom: 7px;font-family: var(--font-display);font-size: 1.2rem;font-weight: 600;}.furniture-description", shadowSelector, " {display: block;max-width: 28ch;font-size: 0.82rem;line-height: 1.45;color: var(--wm-ink-soft);}.furniture-card.selected", shadowSelector, " .furniture-description", shadowSelector, " {color: rgba(255, 255, 255, 0.72);}@media (max-width: 800px) {.furniture-grid", shadowSelector, " {grid-template-columns: repeat(2, minmax(0, 1fr));}}@media (max-width: 700px) {.plan-page", shadowSelector, " {padding: 42px 18px 64px;}.page-header", shadowSelector, " {margin-bottom: 36px;}.progress-wrapper", shadowSelector, " {align-items: flex-start;}.progress-step", shadowSelector, " {flex-direction: column;gap: 7px;text-align: center;}.step-label", shadowSelector, " {font-size: 0.62rem;}.progress-line", shadowSelector, " {margin: 16px 8px 0;}.form-card", shadowSelector, " {padding: 26px 20px;}.step-header", shadowSelector, " h2", shadowSelector, " {font-size: 1.65rem;}.step-content", shadowSelector, " {min-height: 0;}}@media (max-width: 520px) {.furniture-grid", shadowSelector, " {grid-template-columns: 1fr;}.furniture-card", shadowSelector, " {min-height: 125px;}}.next-button:disabled", shadowSelector, " {opacity: 0.4;cursor: not-allowed;}.next-button:disabled:hover", shadowSelector, " {background: var(--wm-walnut-dark);border-color: var(--wm-walnut-dark);}.space-form", shadowSelector, " {max-width: 620px;display: flex;flex-direction: column;gap: 28px;}.field-group", shadowSelector, " {display: flex;flex-direction: column;gap: 8px;}.field-group", shadowSelector, " label", shadowSelector, " {font-family: var(--font-display);font-size: 1.05rem;font-weight: 600;color: var(--wm-ink);}.field-group", shadowSelector, " input", shadowSelector, ",\r.field-group", shadowSelector, " select", shadowSelector, " {width: 100%;box-sizing: border-box;padding: 14px 16px;background: var(--wm-bg);border: 1px solid var(--wm-line-strong);border-radius: var(--wm-radius);color: var(--wm-ink);font-family: inherit;font-size: 0.95rem;outline: none;}.field-group", shadowSelector, " input:focus", shadowSelector, ",\r.field-group", shadowSelector, " select:focus", shadowSelector, " {border-color: var(--wm-copper);}.field-help", shadowSelector, " {font-size: 0.78rem;line-height: 1.4;color: var(--wm-ink-soft);}.details-form", shadowSelector, " {max-width: 620px;display: flex;flex-direction: column;gap: 24px;}.details-intro", shadowSelector, " {margin-bottom: 4px;}.details-intro", shadowSelector, " h3", shadowSelector, " {margin: 0 0 8px;font-family: var(--font-display);font-size: 1.25rem;font-weight: 600;color: var(--wm-ink);}.details-intro", shadowSelector, " p", shadowSelector, " {margin: 0;font-size: 0.88rem;line-height: 1.5;color: var(--wm-ink-soft);}.required", shadowSelector, " {color: var(--wm-copper);}.optional", shadowSelector, " {margin-left: 6px;font-family: var(--font-mono);font-size: 0.65rem;font-weight: 400;color: var(--wm-ink-soft);}.contact-options", shadowSelector, " {display: grid;grid-template-columns: repeat(2, minmax(0, 1fr));gap: 12px;}.contact-option", shadowSelector, " {display: flex;align-items: center;gap: 12px;padding: 15px 18px;background: var(--wm-bg);border: 1px solid var(--wm-line-strong);border-radius: var(--wm-radius);color: var(--wm-ink);font-family: inherit;font-size: 0.9rem;cursor: pointer;text-align: left;transition:\r\n border-color 0.2s ease,\r\n background 0.2s ease;}.contact-option:hover", shadowSelector, " {border-color: var(--wm-copper);}.contact-option.selected", shadowSelector, " {background: var(--wm-walnut-dark);border-color: var(--wm-walnut-dark);color: var(--wm-on-dark);}.contact-radio", shadowSelector, " {width: 22px;height: 22px;display: flex;align-items: center;justify-content: center;flex: none;border: 1px solid var(--wm-line-strong);border-radius: 50%;font-size: 0.7rem;}.contact-option.selected", shadowSelector, " .contact-radio", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);color: #ffffff;}.review-content", shadowSelector, " {display: flex;flex-direction: column;gap: 28px;}.review-section", shadowSelector, " {padding-bottom: 28px;border-bottom: 1px solid var(--wm-line);}.review-section:last-of-type", shadowSelector, " {border-bottom: none;padding-bottom: 0;}.review-section-header", shadowSelector, " {display: flex;align-items: flex-start;gap: 14px;margin-bottom: 20px;}.review-number", shadowSelector, " {width: 32px;height: 32px;display: flex;align-items: center;justify-content: center;flex: none;border: 1px solid var(--wm-line-strong);border-radius: 50%;font-family: var(--font-mono);font-size: 0.68rem;color: var(--wm-copper);}.review-section-header", shadowSelector, " h3", shadowSelector, " {margin: 0 0 4px;font-family: var(--font-display);font-size: 1.15rem;font-weight: 600;color: var(--wm-ink);}.review-section-header", shadowSelector, " p", shadowSelector, " {margin: 0;font-size: 0.8rem;color: var(--wm-ink-soft);}.review-furniture-list", shadowSelector, " {display: flex;flex-wrap: wrap;gap: 10px;}.review-furniture-item", shadowSelector, " {padding: 10px 14px;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);font-family: var(--font-mono);font-size: 0.78rem;color: var(--wm-ink);}.review-details-grid", shadowSelector, " {display: grid;grid-template-columns:\r\n repeat(2, minmax(0, 1fr));gap: 18px;}.review-detail", shadowSelector, " {display: flex;flex-direction: column;gap: 6px;}.review-label", shadowSelector, " {font-family: var(--font-mono);font-size: 0.68rem;letter-spacing: 0.04em;text-transform: uppercase;color: var(--wm-ink-soft);}.review-detail", shadowSelector, " strong", shadowSelector, " {font-size: 0.95rem;font-weight: 500;color: var(--wm-ink);word-break: break-word;}.review-note", shadowSelector, " {display: flex;align-items: flex-start;gap: 12px;padding: 16px 18px;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);}.review-note-icon", shadowSelector, " {width: 22px;height: 22px;display: flex;align-items: center;justify-content: center;flex: none;border-radius: 50%;background: var(--wm-copper);color: #ffffff;font-size: 0.68rem;}.review-note", shadowSelector, " p", shadowSelector, " {margin: 0;font-size: 0.8rem;line-height: 1.5;color: var(--wm-ink-soft);}@media (max-width: 520px) {.review-details-grid", shadowSelector, " {grid-template-columns: 1fr;}}.success-content", shadowSelector, " {max-width: 620px;margin: 0 auto;display: flex;flex-direction: column;align-items: center;text-align: center;}.success-icon", shadowSelector, " {width: 64px;height: 64px;display: flex;align-items: center;justify-content: center;margin-bottom: 24px;border-radius: 50%;background: var(--wm-copper);color: #ffffff;font-size: 1.5rem;}.success-header", shadowSelector, " {max-width: 520px;margin-bottom: 36px;}.success-header", shadowSelector, " h2", shadowSelector, " {margin: 0 0 14px;font-family: var(--font-display);font-size: 2.2rem;font-weight: 600;color: var(--wm-ink);}.success-header", shadowSelector, " p", shadowSelector, " {margin: 0;font-size: 0.98rem;line-height: 1.65;color: var(--wm-ink-soft);}.success-summary", shadowSelector, " {width: 100%;display: grid;grid-template-columns:\r\n minmax(0, 1fr)\r\n minmax(0, 1fr);gap: 18px;padding: 24px;margin-bottom: 20px;box-sizing: border-box;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);text-align: left;}.success-detail", shadowSelector, " {display: flex;flex-direction: column;gap: 8px;}.success-label", shadowSelector, " {font-family: var(--font-mono);font-size: 0.68rem;letter-spacing: 0.05em;text-transform: uppercase;color: var(--wm-ink-soft);}.success-detail", shadowSelector, " strong", shadowSelector, " {font-size: 0.92rem;font-weight: 500;color: var(--wm-ink);}.success-furniture-list", shadowSelector, " {display: flex;flex-wrap: wrap;gap: 6px;}.success-furniture-item", shadowSelector, " {padding: 6px 9px;border: 1px solid var(--wm-line);border-radius: 999px;font-size: 0.76rem;color: var(--wm-ink);}.success-note", shadowSelector, " {width: 100%;display: flex;align-items: flex-start;gap: 12px;padding: 16px 18px;margin-bottom: 28px;box-sizing: border-box;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);text-align: left;}.success-note-icon", shadowSelector, " {width: 22px;height: 22px;display: flex;align-items: center;justify-content: center;flex: none;border-radius: 50%;background: var(--wm-copper);color: #ffffff;font-size: 0.68rem;}.success-note", shadowSelector, " p", shadowSelector, " {margin: 0;font-size: 0.78rem;line-height: 1.5;color: var(--wm-ink-soft);}.home-button", shadowSelector, " {display: inline-flex;align-items: center;gap: 8px;padding: 13px 22px;background: var(--wm-walnut-dark);border: 1px solid var(--wm-walnut-dark);border-radius: var(--wm-radius);color: var(--wm-on-dark);font-family: var(--font-mono);font-size: 0.82rem;letter-spacing: 0.02em;cursor: pointer;}.home-button:hover", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);}@media (max-width: 520px) {.success-summary", shadowSelector, " {grid-template-columns: 1fr;}}.page-exit", shadowSelector, " {margin-bottom: 28px;}.back-home-button", shadowSelector, " {padding: 0;background: transparent;border: none;color: #9c5b18;cursor: pointer;font-family: inherit;font-size: inherit;font-weight: 600;transition: 0.3s;}.back-home-button:hover", shadowSelector, " {color: #603813;}.back-home-button:focus-visible", shadowSelector, " {outline: 2px solid #9c5b18;outline-offset: 4px;}"].join('');
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
@@ -1224,12 +1233,47 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="page-header${0}"${2}><p class="eyebrow${0}"${2}>CUSTOM WOODWORKING</p><h1${3}>Plan Your Furniture</h1><p class="intro${0}"${2}>Tell us what you&#x27;d like to build. We&#x27;ll help you turn your idea into furniture made for your space.</p></div>`;
-const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="progress-wrapper${0}"${2}><div class="progress-step active${0}"${2}><span class="step-number${0}"${2}>01</span><span class="step-label${0}"${2}>What do you need?</span></div><div class="progress-line${0}"${2}></div><div class="progress-step${0}"${2}><span class="step-number${0}"${2}>02</span><span class="step-label${0}"${2}>Your space</span></div><div class="progress-line${0}"${2}></div><div class="progress-step${0}"${2}><span class="step-number${0}"${2}>03</span><span class="step-label${0}"${2}>Your details</span></div></div>`;
-const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="step-header${0}"${2}><span class="step-count${0}"${2}>STEP 01 OF 03</span><h2${3}>What would you like us to build?</h2><p${3}>Select one or more options. Don&#x27;t worry if you&#x27;re not sure yet.</p></div>`;
-const $fragment4 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="furniture-name${0}"${2}>${"t1"}</span>`;
-const $fragment5 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="furniture-description${0}"${2}>${"t1"}</span>`;
-const $fragment6 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="form-navigation${0}"${2}><button class="back-button${0}" disabled${2}>← Back</button><button class="next-button${0}"${2}>Next<span${3}>→</span></button></div>`;
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="page-exit${0}"${2}><button class="back-home-button${0}"${2}>← Back to Home</button></div>`;
+const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="page-header${0}"${2}><p class="eyebrow${0}"${2}>CUSTOM WOODWORKING</p><h1${3}>Plan Your Furniture</h1><p class="intro${0}"${2}>Tell us what you&#x27;d like to build. We&#x27;ll help you turn your idea into furniture made for your space.</p></div>`;
+const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="progress-wrapper${0}"${2}><div${"c1"}${2}><span class="step-number${0}"${2}>01</span><span class="step-label${0}"${2}>What do you need?</span></div><div class="progress-line${0}"${2}></div><div${"c7"}${2}><span class="step-number${0}"${2}>02</span><span class="step-label${0}"${2}>Your space</span></div><div class="progress-line${0}"${2}></div><div${"c13"}${2}><span class="step-number${0}"${2}>03</span><span class="step-label${0}"${2}>Your details</span></div><div class="progress-line${0}"${2}></div><div${"c19"}${2}><span class="step-number${0}"${2}>04</span><span class="step-label${0}"${2}>Review</span></div></div>`;
+const $fragment4 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 01 OF 03</span>`;
+const $fragment5 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<h2${3}>What would you like us to build?</h2>`;
+const $fragment6 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p${3}>Select one or more options. Don&#x27;t worry if you&#x27;re not sure yet.</p>`;
+const $fragment7 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 02 OF 03</span>`;
+const $fragment8 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<h2${3}>Tell us about your space</h2>`;
+const $fragment9 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p${3}>A few simple details will help us understand where your furniture will be made.</p>`;
+const $fragment10 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 03 OF 03</span>`;
+const $fragment11 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<h2${3}>How can we reach you?</h2>`;
+const $fragment12 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p${3}>We&#x27;ll contact you during your selected time slot to understand your project.</p>`;
+const $fragment13 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 04 OF 04</span>`;
+const $fragment14 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<h2${3}>Review Your Request</h2>`;
+const $fragment15 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p${3}>Please check your details before sending your request.</p>`;
+const $fragment16 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="furniture-name${0}"${2}>${"t1"}</span>`;
+const $fragment17 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="furniture-description${0}"${2}>${"t1"}</span>`;
+const $fragment18 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Where is the work?</label>`;
+const $fragment19 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="field-help${0}"${2}>${"t1"}</span>`;
+const $fragment20 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="field-group${0}"${2}><label${"a1:for"}${3}>When can we contact you?</label><select${"a3:id"}${3}><option value${3}>Select a time slot</option><option value="10:00 AM - 11:00 AM"${3}>10:00 AM – 11:00 AM</option><option value="2:00 PM - 3:00 PM"${3}>2:00 PM – 3:00 PM</option><option value="6:00 PM - 7:00 PM"${3}>6:00 PM – 7:00 PM</option></select><span class="field-help${0}"${2}>We&#x27;ll contact you during this time.</span></div>`;
+const $fragment21 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Full Name<span class="required${0}"${2}>*</span></label>`;
+const $fragment22 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Phone Number<span class="required${0}"${2}>*</span></label>`;
+const $fragment23 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Email<span class="optional${0}"${2}>Optional</span></label>`;
+const $fragment24 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<label${3}>How would you prefer we contact you?<span class="required${0}"${2}>*</span></label>`;
+const $fragment25 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span${3}>Call</span>`;
+const $fragment26 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span${3}>WhatsApp</span>`;
+const $fragment27 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="review-section-header${0}"${2}><span class="review-number${0}"${2}>01</span><div${3}><h3${3}>What you want</h3><p${3}>Furniture you&#x27;re interested in</p></div></div>`;
+const $fragment28 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="review-furniture-item${0}"${2}>${"t1"}</div>`;
+const $fragment29 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="review-section${0}"${2}><div class="review-section-header${0}"${2}><span class="review-number${0}"${2}>02</span><div${3}><h3${3}>Your space</h3><p${3}>Where and when we can contact you</p></div></div><div class="review-details-grid${0}"${2}><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Location</span><strong${3}>${"t14"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Preferred time</span><strong${3}>${"t19"}</strong></div></div></div>`;
+const $fragment30 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="review-section${0}"${2}><div class="review-section-header${0}"${2}><span class="review-number${0}"${2}>03</span><div${3}><h3${3}>Your details</h3><p${3}>How we can reach you</p></div></div><div class="review-details-grid${0}"${2}><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Name</span><strong${3}>${"t14"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Phone</span><strong${3}>${"t19"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Email</span><strong${3}>${"t24"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Contact by</span><strong${3}>${"t29"}</strong></div></div></div>`;
+const $fragment31 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="review-note${0}"${2}><span class="review-note-icon${0}"${2}>✓</span><p${3}>Once you submit your request, we&#x27;ll contact you during your selected time slot to discuss your furniture requirements.</p></div>`;
+const $fragment32 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="success-icon${0}"${2}>✓</div>`;
+const $fragment33 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="success-header${0}"${2}><span class="step-count${0}"${2}>REQUEST RECEIVED</span><h2${3}>${"t4"}</h2><p${3}>We&#x27;ve received your furniture enquiry. We&#x27;ll contact you during your selected time slot to discuss your project.</p></div>`;
+const $fragment34 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="success-label${0}"${2}>Your request</span>`;
+const $fragment35 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="success-furniture-item${0}"${2}>${"t1"}</span>`;
+const $fragment36 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="success-detail${0}"${2}><span class="success-label${0}"${2}>Preferred time</span><strong${3}>${"t4"}</strong></div>`;
+const $fragment37 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="success-note${0}"${2}><span class="success-note-icon${0}"${2}>✓</span><p${3}>Our team will contact you during your selected time slot. You can discuss measurements, design, materials and other project details directly with us.</p></div>`;
+const $fragment38 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<button class="home-button${0}"${2}>Back to Home<span${3}>→</span></button>`;
+const $fragment39 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<button class="back-button${0}"${"a0:disabled"}${2}>← Back</button>`;
+const $fragment40 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<button class="next-button${0}"${"a0:disabled"}${2}>Next<span${3}>→</span></button>`;
+const $fragment41 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<button class="next-button${0}"${2}>Submit Request<span${3}>→</span></button>`;
 const stc0 = {
   classMap: {
     "plan-page": true
@@ -1246,41 +1290,298 @@ const stc2 = {
   classMap: {
     "form-card": true
   },
-  key: 6
+  key: 8
 };
 const stc3 = {
   classMap: {
-    "step-content": true
+    "step-header": true
   },
   key: 9
 };
 const stc4 = {
   classMap: {
-    "furniture-grid": true
+    "step-content": true
   },
-  key: 10
+  key: 34
 };
 const stc5 = {
   classMap: {
+    "furniture-grid": true
+  },
+  key: 35
+};
+const stc6 = {
+  classMap: {
     "selection-mark": true
   },
-  key: 12
+  key: 37
+};
+const stc7 = {
+  classMap: {
+    "space-form": true
+  },
+  key: 42
+};
+const stc8 = {
+  classMap: {
+    "field-group": true
+  },
+  key: 43
+};
+const stc9 = {
+  classMap: {
+    "details-form": true
+  },
+  key: 51
+};
+const stc10 = {
+  classMap: {
+    "field-group": true
+  },
+  key: 52
+};
+const stc11 = {
+  classMap: {
+    "field-group": true
+  },
+  key: 56
+};
+const stc12 = {
+  classMap: {
+    "field-group": true
+  },
+  key: 60
+};
+const stc13 = {
+  classMap: {
+    "field-group": true
+  },
+  key: 64
+};
+const stc14 = {
+  classMap: {
+    "contact-options": true
+  },
+  key: 67
+};
+const stc15 = {
+  "type": "button",
+  "data-value": "Call"
+};
+const stc16 = {
+  classMap: {
+    "contact-radio": true
+  },
+  key: 69
+};
+const stc17 = {
+  "type": "button",
+  "data-value": "WhatsApp"
+};
+const stc18 = {
+  classMap: {
+    "contact-radio": true
+  },
+  key: 73
+};
+const stc19 = {
+  classMap: {
+    "review-content": true
+  },
+  key: 76
+};
+const stc20 = {
+  classMap: {
+    "review-section": true
+  },
+  key: 77
+};
+const stc21 = {
+  classMap: {
+    "review-furniture-list": true
+  },
+  key: 80
+};
+const stc22 = {
+  classMap: {
+    "success-content": true
+  },
+  key: 89
+};
+const stc23 = {
+  classMap: {
+    "success-summary": true
+  },
+  key: 94
+};
+const stc24 = {
+  classMap: {
+    "success-detail": true
+  },
+  key: 95
+};
+const stc25 = {
+  classMap: {
+    "success-furniture-list": true
+  },
+  key: 98
+};
+const stc26 = {
+  classMap: {
+    "form-navigation": true
+  },
+  key: 107
 };
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {st: api_static_fragment, ncls: api_normalize_class_name, k: api_key, b: api_bind, t: api_text, h: api_element, d: api_dynamic_text, sp: api_static_part, i: api_iterator} = $api;
-  const {_m0} = $ctx;
-  return [api_element("section", stc0, [api_element("div", stc1, [api_static_fragment($fragment1, 3), api_static_fragment($fragment2, 5), api_element("div", stc2, [api_static_fragment($fragment3, 8), api_element("div", stc3, [api_element("div", stc4, api_iterator($cmp.furnitureOptionsWithState, function (option) {
+  const {b: api_bind, sp: api_static_part, st: api_static_fragment, ncls: api_normalize_class_name, h: api_element, k: api_key, t: api_text, d: api_dynamic_text, i: api_iterator, gid: api_scoped_id} = $api;
+  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6, _m7, _m8, _m9, _m10, _m11, _m12, _m13, _m14, _m15, _m16} = $ctx;
+  return [api_element("section", stc0, [api_element("div", stc1, [api_static_fragment($fragment1, 3, [api_static_part(1, {
+    on: _m0 || ($ctx._m0 = {
+      "click": api_bind($cmp.handleExitToHome)
+    })
+  }, null)]), api_static_fragment($fragment2, 5), !$cmp.isStepFive ? api_static_fragment($fragment3, 7, [api_static_part(1, {
+    className: api_normalize_class_name($cmp.stepOneClass)
+  }, null), api_static_part(7, {
+    className: api_normalize_class_name($cmp.stepTwoClass)
+  }, null), api_static_part(13, {
+    className: api_normalize_class_name($cmp.stepThreeClass)
+  }, null), api_static_part(19, {
+    className: api_normalize_class_name($cmp.stepFourClass)
+  }, null)]) : null, api_element("div", stc2, [api_element("div", stc3, [$cmp.isStepOne ? api_static_fragment($fragment4, 11) : null, $cmp.isStepOne ? api_static_fragment($fragment5, 13) : null, $cmp.isStepOne ? api_static_fragment($fragment6, 15) : null, $cmp.isStepTwo ? api_static_fragment($fragment7, 17) : null, $cmp.isStepTwo ? api_static_fragment($fragment8, 19) : null, $cmp.isStepTwo ? api_static_fragment($fragment9, 21) : null, $cmp.isStepThree ? api_static_fragment($fragment10, 23) : null, $cmp.isStepThree ? api_static_fragment($fragment11, 25) : null, $cmp.isStepThree ? api_static_fragment($fragment12, 27) : null, $cmp.isStepFour ? api_static_fragment($fragment13, 29) : null, $cmp.isStepFour ? api_static_fragment($fragment14, 31) : null, $cmp.isStepFour ? api_static_fragment($fragment15, 33) : null]), api_element("div", stc4, [$cmp.isStepOne ? api_element("div", stc5, api_iterator($cmp.furnitureOptionsWithState, function (option) {
     return api_element("button", {
       className: api_normalize_class_name(option.cardClass),
       attrs: {
         "data-id": option.id
       },
-      key: api_key(11, option.id),
-      on: _m0 || ($ctx._m0 = {
+      key: api_key(36, option.id),
+      on: _m1 || ($ctx._m1 = {
         "click": api_bind($cmp.handleFurnitureSelect)
       })
-    }, [api_element("span", stc5, [option.isSelected ? api_text("✓") : null]), api_static_fragment($fragment4, 14, [api_static_part(1, null, api_dynamic_text(option.name))]), api_static_fragment($fragment5, 16, [api_static_part(1, null, api_dynamic_text(option.description))])]);
-  }))]), api_static_fragment($fragment6, 18)])])])];
+    }, [api_element("span", stc6, [option.isSelected ? api_text("✓") : null]), api_static_fragment($fragment16, 39, [api_static_part(1, null, api_dynamic_text(option.name))]), api_static_fragment($fragment17, 41, [api_static_part(1, null, api_dynamic_text(option.description))])]);
+  })) : null, $cmp.isStepTwo ? api_element("div", stc7, [api_element("div", stc8, [api_static_fragment($fragment18, 45, [api_static_part(0, {
+    attrs: {
+      "for": api_scoped_id("location")
+    }
+  }, null)]), api_element("input", {
+    attrs: {
+      "id": api_scoped_id("location"),
+      "type": "text",
+      "placeholder": "Example: Sector 62, Noida",
+      "maxlength": "150"
+    },
+    props: {
+      "value": $cmp.location
+    },
+    key: 46,
+    on: _m2 || ($ctx._m2 = {
+      "input": api_bind($cmp.handleLocationChange)
+    })
+  }), api_static_fragment($fragment19, 48, [api_static_part(1, null, api_dynamic_text($cmp.location.length) + "/150 characters")])]), api_static_fragment($fragment20, 50, [api_static_part(1, {
+    attrs: {
+      "for": api_scoped_id("preferredTime")
+    }
+  }, null), api_static_part(3, {
+    on: _m3 || ($ctx._m3 = {
+      "change": api_bind($cmp.handleTimeChange)
+    }),
+    attrs: {
+      "id": api_scoped_id("preferredTime")
+    }
+  }, null)])]) : null, $cmp.isStepThree ? api_element("div", stc9, [api_element("div", stc10, [api_static_fragment($fragment21, 54, [api_static_part(0, {
+    attrs: {
+      "for": api_scoped_id("customerName")
+    }
+  }, null)]), api_element("input", {
+    attrs: {
+      "id": api_scoped_id("customerName"),
+      "type": "text",
+      "placeholder": "Enter your name",
+      "maxlength": "80"
+    },
+    props: {
+      "value": $cmp.customerName
+    },
+    key: 55,
+    on: _m4 || ($ctx._m4 = {
+      "input": api_bind($cmp.handleCustomerNameChange)
+    })
+  })]), api_element("div", stc11, [api_static_fragment($fragment22, 58, [api_static_part(0, {
+    attrs: {
+      "for": api_scoped_id("phone")
+    }
+  }, null)]), api_element("input", {
+    attrs: {
+      "id": api_scoped_id("phone"),
+      "type": "tel",
+      "inputmode": "numeric",
+      "placeholder": "Enter your 10-digit phone number",
+      "maxlength": "10"
+    },
+    props: {
+      "value": $cmp.phone
+    },
+    key: 59,
+    on: _m5 || ($ctx._m5 = {
+      "input": api_bind($cmp.handlePhoneChange)
+    })
+  })]), api_element("div", stc12, [api_static_fragment($fragment23, 62, [api_static_part(0, {
+    attrs: {
+      "for": api_scoped_id("email")
+    }
+  }, null)]), api_element("input", {
+    attrs: {
+      "id": api_scoped_id("email"),
+      "type": "email",
+      "placeholder": "Enter your email address"
+    },
+    props: {
+      "value": $cmp.email
+    },
+    key: 63,
+    on: _m6 || ($ctx._m6 = {
+      "input": api_bind($cmp.handleEmailChange)
+    })
+  })]), api_element("div", stc13, [api_static_fragment($fragment24, 66), api_element("div", stc14, [api_element("button", {
+    className: api_normalize_class_name($cmp.callOptionClass),
+    attrs: stc15,
+    key: 68,
+    on: _m7 || ($ctx._m7 = {
+      "click": api_bind($cmp.handleContactMethodChange)
+    })
+  }, [api_element("span", stc16, [$cmp.isCallSelected ? api_text("✓") : null]), api_static_fragment($fragment25, 71)]), api_element("button", {
+    className: api_normalize_class_name($cmp.whatsappOptionClass),
+    attrs: stc17,
+    key: 72,
+    on: _m8 || ($ctx._m8 = {
+      "click": api_bind($cmp.handleContactMethodChange)
+    })
+  }, [api_element("span", stc18, [$cmp.isWhatsAppSelected ? api_text("✓") : null]), api_static_fragment($fragment26, 75)])])])]) : null, $cmp.isStepFour ? api_element("div", stc19, [api_element("div", stc20, [api_static_fragment($fragment27, 79), api_element("div", stc21, api_iterator($cmp.selectedFurnitureDetails, function (item) {
+    return api_static_fragment($fragment28, api_key(82, item.id), [api_static_part(1, null, api_dynamic_text(item.name))]);
+  }))]), api_static_fragment($fragment29, 84, [api_static_part(14, null, api_dynamic_text($cmp.location)), api_static_part(19, null, api_dynamic_text($cmp.preferredTime))]), api_static_fragment($fragment30, 86, [api_static_part(14, null, api_dynamic_text($cmp.customerName)), api_static_part(19, null, api_dynamic_text($cmp.phone)), api_static_part(24, null, api_dynamic_text($cmp.displayEmail)), api_static_part(29, null, api_dynamic_text($cmp.contactMethod))]), api_static_fragment($fragment31, 88)]) : null, $cmp.isStepFive ? api_element("div", stc22, [api_static_fragment($fragment32, 91), api_static_fragment($fragment33, 93, [api_static_part(4, null, "Thanks, " + api_dynamic_text($cmp.customerName) + ".")]), api_element("div", stc23, [api_element("div", stc24, [api_static_fragment($fragment34, 97), api_element("div", stc25, api_iterator($cmp.selectedFurnitureDetails, function (item) {
+    return api_static_fragment($fragment35, api_key(100, item.id), [api_static_part(1, null, api_dynamic_text(item.name))]);
+  }))]), api_static_fragment($fragment36, 102, [api_static_part(4, null, api_dynamic_text($cmp.preferredTime))])]), api_static_fragment($fragment37, 104), api_static_fragment($fragment38, 106, [api_static_part(0, {
+    on: _m10 || ($ctx._m10 = {
+      "click": api_bind($cmp.handleBackToHome)
+    })
+  }, null)])]) : null]), !$cmp.isStepFive ? api_element("div", stc26, [api_static_fragment($fragment39, 109, [api_static_part(0, {
+    on: _m12 || ($ctx._m12 = {
+      "click": api_bind($cmp.handleBack)
+    }),
+    attrs: {
+      "disabled": $cmp.isStepOne ? "" : null
+    }
+  }, null)]), !$cmp.isStepFour ? api_static_fragment($fragment40, 111, [api_static_part(0, {
+    on: _m14 || ($ctx._m14 = {
+      "click": api_bind($cmp.handleNext)
+    }),
+    attrs: {
+      "disabled": $cmp.isNextDisabled ? "" : null
+    }
+  }, null)]) : null, $cmp.isStepFour ? api_static_fragment($fragment41, 113, [api_static_part(0, {
+    on: _m16 || ($ctx._m16 = {
+      "click": api_bind($cmp.handleSubmit)
+    })
+  }, null)]) : null]) : null])])])];
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .registerTemplate */ .cI)(tmpl));
@@ -1314,6 +1615,13 @@ class PlanFurniture extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement
   constructor(...args) {
     super(...args);
     this.currentStep = 1;
+    this.selectedFurniture = [];
+    this.location = '';
+    this.preferredTime = '';
+    this.customerName = '';
+    this.phone = '';
+    this.email = '';
+    this.contactMethod = '';
     this.furnitureOptions = [{
       id: 'tv-panel',
       name: 'TV Panel',
@@ -1351,7 +1659,27 @@ class PlanFurniture extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement
       name: 'Others',
       description: 'Tell us what you have in mind'
     }];
-    this.selectedFurniture = [];
+  }
+  renderedCallback() {
+    const select = this.template.querySelector('#preferredTime');
+    if (select && this.preferredTime) {
+      select.value = this.preferredTime;
+    }
+  }
+  get isStepOne() {
+    return this.currentStep === 1;
+  }
+  get isStepTwo() {
+    return this.currentStep === 2;
+  }
+  get isStepThree() {
+    return this.currentStep === 3;
+  }
+  get isStepFour() {
+    return this.currentStep === 4;
+  }
+  get isStepFive() {
+    return this.currentStep === 5;
   }
   get furnitureOptionsWithState() {
     return this.furnitureOptions.map(option => {
@@ -1363,6 +1691,29 @@ class PlanFurniture extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement
       };
     });
   }
+  get isNextDisabled() {
+    if (this.isStepOne) {
+      return this.selectedFurniture.length === 0;
+    }
+    if (this.isStepTwo) {
+      return this.isStepTwoInvalid;
+    }
+    if (this.isStepThree) {
+      return this.isStepThreeInvalid;
+    }
+    return false;
+  }
+  get displayEmail() {
+    return this.email ? this.email : 'Not provided';
+  }
+  get selectedFurnitureDetails() {
+    return this.furnitureOptions.filter(option => this.selectedFurniture.includes(option.id));
+  }
+  handleBack() {
+    if (this.currentStep > 1) {
+      this.currentStep -= 1;
+    }
+  }
   handleFurnitureSelect(event) {
     const furnitureId = event.currentTarget.dataset.id;
     if (this.selectedFurniture.includes(furnitureId)) {
@@ -1372,10 +1723,134 @@ class PlanFurniture extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement
     }
     console.log('Selected Furniture:', this.selectedFurniture);
   }
+  handleNext() {
+    if (this.isNextDisabled) {
+      return;
+    }
+    if (this.currentStep === 1) {
+      this.currentStep = 2;
+      console.log('Selected Furniture:', this.selectedFurniture);
+      return;
+    }
+    if (this.currentStep === 2) {
+      this.currentStep = 3;
+      console.log('Location:', this.location);
+      console.log('Preferred Time:', this.preferredTime);
+      return;
+    }
+    if (this.currentStep === 3) {
+      this.currentStep = 4;
+      console.log('Customer Name:', this.customerName);
+      console.log('Phone:', this.phone);
+      console.log('Email:', this.email);
+      console.log('Contact Method:', this.contactMethod);
+      return;
+    }
+  }
+  get isStepTwoInvalid() {
+    return !this.location.trim() || !this.preferredTime;
+  }
+  handleLocationChange(event) {
+    this.location = event.target.value.slice(0, 150);
+  }
+  handleTimeChange(event) {
+    this.preferredTime = event.target.value;
+  }
+  handleCustomerNameChange(event) {
+    let value = event.target.value;
+
+    // Allow letters and spaces only
+    value = value.replace(/[^a-zA-Z\s]/g, '');
+    this.customerName = value;
+  }
+  handlePhoneChange(event) {
+    let value = event.target.value;
+
+    // Numbers only
+    value = value.replace(/\D/g, '');
+
+    // Maximum 10 digits
+    value = value.slice(0, 10);
+    this.phone = value;
+  }
+  handleEmailChange(event) {
+    this.email = event.target.value;
+  }
+  handleContactMethodChange(event) {
+    this.contactMethod = event.currentTarget.dataset.value;
+  }
+  get isCallSelected() {
+    return this.contactMethod === 'Call';
+  }
+  get isWhatsAppSelected() {
+    return this.contactMethod === 'WhatsApp';
+  }
+  get callOptionClass() {
+    return this.isCallSelected ? 'contact-option selected' : 'contact-option';
+  }
+  get whatsappOptionClass() {
+    return this.isWhatsAppSelected ? 'contact-option selected' : 'contact-option';
+  }
+  get stepOneClass() {
+    if (this.currentStep === 1) {
+      return 'progress-step active';
+    }
+    return 'progress-step completed';
+  }
+  get stepTwoClass() {
+    if (this.currentStep === 2) {
+      return 'progress-step active';
+    }
+    return 'progress-step';
+  }
+  get stepThreeClass() {
+    if (this.currentStep === 3) {
+      return 'progress-step active';
+    }
+    return 'progress-step';
+  }
+  get stepFourClass() {
+    if (this.currentStep === 4) {
+      return 'progress-step active';
+    }
+    return 'progress-step';
+  }
+  handleSubmit() {
+    const requestData = {
+      furniture: this.selectedFurniture,
+      location: this.location,
+      preferredTime: this.preferredTime,
+      customerName: this.customerName,
+      phone: this.phone,
+      email: this.email,
+      contactMethod: this.contactMethod
+    };
+    console.log('Furniture Request:', JSON.stringify(requestData, null, 2));
+    this.currentStep = 5;
+  }
+  handleBackToHome() {
+    this.currentStep = 1;
+    this.selectedFurniture = [];
+    this.location = '';
+    this.preferredTime = '';
+    this.customerName = '';
+    this.phone = '';
+    this.email = '';
+    this.contactMethod = '';
+  }
+  handleExitToHome() {
+    console.log('PlanFurniture: Back to Home clicked');
+    this.dispatchEvent(new CustomEvent('backtohome'));
+  }
+  get isStepThreeInvalid() {
+    const validPhone = /^\d{10}$/.test(this.phone);
+    const validEmail = !this.email || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.email);
+    return !this.customerName.trim() || !validPhone || !validEmail || !this.contactMethod;
+  }
   /*LWC compiler v9.3.6*/
 }
 ;(0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerDecorators */ .CF)(PlanFurniture, {
-  fields: ["currentStep", "furnitureOptions", "selectedFurniture"]
+  fields: ["currentStep", "selectedFurniture", "location", "preferredTime", "customerName", "phone", "email", "contactMethod", "furnitureOptions"]
 });
 const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerComponent */ .Nj)(PlanFurniture, {
   tmpl: _planFurniture_html__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A,
