@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 727
+/***/ 1727
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -20,12 +20,12 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 793
+/***/ 9793
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _about_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(727);
-/* harmony import */ var _about_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
+/* harmony import */ var _about_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1727);
+/* harmony import */ var _about_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
 
 
 
@@ -58,11 +58,11 @@ if (_about_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ 
 
 /***/ },
 
-/***/ 932
+/***/ 7551
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _about_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(793);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(565);
+/* harmony import */ var _about_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9793);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9565);
 
 
 class About extends lwc__WEBPACK_IMPORTED_MODULE_1__/* .LightningElement */ .xv {
@@ -81,7 +81,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_1__/* .re
 
 /***/ },
 
-/***/ 311
+/***/ 2311
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -99,24 +99,24 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 73
+/***/ 8073
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(311);
-/* harmony import */ var _app_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
-/* harmony import */ var wm_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(415);
-/* harmony import */ var wm_hero__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(717);
+/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2311);
+/* harmony import */ var _app_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
+/* harmony import */ var wm_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3415);
+/* harmony import */ var wm_hero__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1717);
 /* harmony import */ var wm_services__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(389);
-/* harmony import */ var wm_process__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(787);
-/* harmony import */ var wm_gallery__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(927);
-/* harmony import */ var wm_testimonials__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(1);
-/* harmony import */ var wm_about__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(932);
-/* harmony import */ var wm_contact__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(863);
-/* harmony import */ var wm_footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(707);
-/* harmony import */ var wm_productDetails__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(595);
+/* harmony import */ var wm_process__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8787);
+/* harmony import */ var wm_gallery__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(9927);
+/* harmony import */ var wm_testimonials__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(7001);
+/* harmony import */ var wm_about__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(7551);
+/* harmony import */ var wm_contact__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(5863);
+/* harmony import */ var wm_footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(5707);
+/* harmony import */ var wm_productDetails__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(5595);
 /* harmony import */ var wm_cart__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(745);
-/* harmony import */ var wm_planFurniture__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(127);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(565);
+/* harmony import */ var wm_planFurniture__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(3127);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(9565);
 
 
 
@@ -159,7 +159,8 @@ function tmpl($api, $cmp, $slotset, $ctx) {
   return [$cmp.isHomePage ? api_custom_element("wm-header", wm_header__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
     key: 0,
     on: _m0 || ($ctx._m0 = {
-      "cartclick": api_bind($cmp.handleCartClick)
+      "cartclick": api_bind($cmp.handleCartClick),
+      "planfurniture": api_bind($cmp.handlePlanFurniture)
     })
   }) : null, $cmp.isHomePage ? api_element("main", stc0, [api_custom_element("wm-hero", wm_hero__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
     key: 2,
@@ -212,12 +213,12 @@ if (_app_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A
 
 /***/ },
 
-/***/ 655
+/***/ 5655
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var _app_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(73);
-/* harmony import */ var _data_products__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(505);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
+/* harmony import */ var _app_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8073);
+/* harmony import */ var _data_products__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1505);
 
 
 
@@ -310,7 +311,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 886
+/***/ 7505
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -328,12 +329,12 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 648
+/***/ 4267
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _cart_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(886);
-/* harmony import */ var _cart_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
+/* harmony import */ var _cart_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7505);
+/* harmony import */ var _cart_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
 
 
 
@@ -421,9 +422,9 @@ if (_cart_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .
 /***/ 745
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var _cart_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(648);
-/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(192);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
+/* harmony import */ var _cart_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4267);
+/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9192);
 
 
 
@@ -507,7 +508,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 15
+/***/ 5015
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -525,12 +526,12 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 233
+/***/ 2233
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _contact_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
-/* harmony import */ var _contact_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
+/* harmony import */ var _contact_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5015);
+/* harmony import */ var _contact_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
 
 
 
@@ -659,11 +660,11 @@ if (_contact_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] *
 
 /***/ },
 
-/***/ 863
+/***/ 5863
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var _contact_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(233);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
+/* harmony import */ var _contact_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2233);
 
 
 
@@ -718,7 +719,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 131
+/***/ 6131
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -736,12 +737,12 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 293
+/***/ 2293
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(131);
-/* harmony import */ var _footer_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
+/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6131);
+/* harmony import */ var _footer_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
 
 
 
@@ -770,11 +771,11 @@ if (_footer_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */
 
 /***/ },
 
-/***/ 707
+/***/ 5707
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var _footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(293);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
+/* harmony import */ var _footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2293);
 
 
 
@@ -801,7 +802,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 551
+/***/ 2551
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -819,12 +820,12 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 177
+/***/ 1177
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _gallery_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(551);
-/* harmony import */ var _gallery_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
+/* harmony import */ var _gallery_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2551);
+/* harmony import */ var _gallery_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
 
 
 
@@ -884,17 +885,17 @@ if (_gallery_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] *
 
 /***/ },
 
-/***/ 927
+/***/ 9927
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var _gallery_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(177);
-/* harmony import */ var _assets_gallery_Almirah_webp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(725);
-/* harmony import */ var _assets_gallery_SheeshamTable_webp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(855);
-/* harmony import */ var _assets_gallery_PanelDoor_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(516);
-/* harmony import */ var _assets_gallery_DiningTable_webp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(172);
-/* harmony import */ var _assets_gallery_ChairSet_webp__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(558);
-/* harmony import */ var _assets_gallery_PoojaUnit_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(949);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
+/* harmony import */ var _gallery_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1177);
+/* harmony import */ var _assets_gallery_Almirah_webp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7725);
+/* harmony import */ var _assets_gallery_SheeshamTable_webp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2855);
+/* harmony import */ var _assets_gallery_PanelDoor_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2516);
+/* harmony import */ var _assets_gallery_DiningTable_webp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6172);
+/* harmony import */ var _assets_gallery_ChairSet_webp__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1558);
+/* harmony import */ var _assets_gallery_PoojaUnit_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(9949);
 
 
 
@@ -957,14 +958,14 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 36
+/***/ 1655
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
   var shadowSelector = token ? ("[" + token + "]") : "";
   var hostSelector = token ? ("[" + token + "-host]") : "";
   var suffixToken = token ? ("-" + token) : "";
-  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "position: sticky;top: 0;z-index: 100;display: block;}.bar" + shadowSelector + " {background: rgba(247, 241, 230, 0.92);backdrop-filter: saturate(140%) blur(8px);border-bottom: 1px solid var(--wm-line);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 14px 24px;display: flex;align-items: center;justify-content: space-between;gap: 16px;}.brand" + shadowSelector + " {display: flex;align-items: center;gap: 10px;text-decoration: none;color: var(--wm-ink);}.mark" + shadowSelector + " {width: 30px;height: 30px;flex: none;}.wordmark" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: 1.25rem;letter-spacing: 0.01em;}.links" + shadowSelector + " {display: flex;align-items: center;gap: 28px;}.links" + shadowSelector + " a" + shadowSelector + " {color: var(--wm-ink-soft);text-decoration: none;font-size: 0.95rem;font-weight: 500;}.links" + shadowSelector + " a:hover" + shadowSelector + ",\r.links" + shadowSelector + " a:focus-visible" + shadowSelector + " {color: var(--wm-copper);}.nav-cta" + shadowSelector + " {border: 1px solid var(--wm-walnut-dark);color: var(--wm-walnut-dark) !important;padding: 8px 16px;border-radius: var(--wm-radius);font-family: var(--font-mono);font-size: 0.82rem !important;letter-spacing: 0.03em;background: transparent;cursor: pointer;}.nav-cta:hover" + shadowSelector + ",\r.nav-cta:focus-visible" + shadowSelector + " {background: var(--wm-walnut-dark);color: var(--wm-on-dark) !important;}.burger" + shadowSelector + " {display: none;flex-direction: column;gap: 5px;background: none;border: none;cursor: pointer;padding: 8px;}.burger" + shadowSelector + " span" + shadowSelector + " {width: 22px;height: 2px;background: var(--wm-ink);display: block;}@media (max-width: 860px) {.links" + shadowSelector + " {position: fixed;top: 62px;right: 0;left: 0;background: var(--wm-bg-panel);border-bottom: 1px solid var(--wm-line);flex-direction: column;align-items: flex-start;gap: 0;max-height: 0;overflow: hidden;transition: max-height 0.25s ease;}.links.open" + shadowSelector + " {max-height: 320px;}.links" + shadowSelector + " a" + shadowSelector + " {width: 100%;padding: 16px 24px;border-bottom: 1px solid var(--wm-line);}.nav-cta" + shadowSelector + " {border: none;color: var(--wm-copper) !important;}.burger" + shadowSelector + " {display: flex;}}a:focus-visible" + shadowSelector + ",\rbutton:focus-visible" + shadowSelector + " {outline: 2px solid var(--wm-copper);outline-offset: 2px;}.cart-button" + shadowSelector + " {position: relative;display: inline-flex;align-items: center;justify-content: center;width: 36px;height: 36px;padding: 0;border: none;background: transparent;cursor: pointer;font-size: 20px;margin-left: 14px;}.cart-button:hover" + shadowSelector + " {transform: translateY(-1px);}.cart-button" + shadowSelector + " .cart-count" + shadowSelector + " {position: absolute;top: -5px;right: -7px;min-width: 18px;height: 18px;padding: 0 4px;display: flex;align-items: center;justify-content: center;box-sizing: border-box;border-radius: 50%;background: #c26d19 !important;color: #ffffff !important;font-size: 10px !important;font-weight: 700 !important;line-height: 18px !important;z-index: 10;}";
+  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "position: sticky;top: 0;z-index: 100;display: block;}.bar" + shadowSelector + " {background: rgba(247, 241, 230, 0.92);backdrop-filter: saturate(140%) blur(8px);border-bottom: 1px solid var(--wm-line);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 14px 24px;display: flex;align-items: center;justify-content: space-between;gap: 16px;}.brand" + shadowSelector + " {display: flex;align-items: center;gap: 10px;text-decoration: none;color: var(--wm-ink);}.mark" + shadowSelector + " {width: 30px;height: 30px;flex: none;}.wordmark" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: 1.25rem;letter-spacing: 0.01em;}.links" + shadowSelector + " {display: flex;align-items: center;gap: 28px;}.links" + shadowSelector + " a" + shadowSelector + " {color: var(--wm-ink-soft);text-decoration: none;font-size: 0.95rem;font-weight: 500;}.links" + shadowSelector + " a:hover" + shadowSelector + ",\r.links" + shadowSelector + " a:focus-visible" + shadowSelector + " {color: var(--wm-copper);}.nav-cta" + shadowSelector + " {position: relative;padding: 0;background: transparent;border: none;color: var(--wm-ink);font-family: var(--font-mono);font-size: 0.82rem;letter-spacing: 0.02em;font-weight: 500;cursor: pointer;transition: color 0.2s ease;}.nav-cta" + shadowSelector + "::after {content: \"→\";margin-left: 6px;transition:\r\n margin-left 0.2s ease;}.nav-cta:hover" + shadowSelector + " {color: var(--wm-copper);}.nav-cta:hover" + shadowSelector + "::after {margin-left: 9px;}.burger" + shadowSelector + " {display: none;flex-direction: column;gap: 5px;background: none;border: none;cursor: pointer;padding: 8px;}.burger" + shadowSelector + " span" + shadowSelector + " {width: 22px;height: 2px;background: var(--wm-ink);display: block;}@media (max-width: 860px) {.links" + shadowSelector + " {position: fixed;top: 62px;right: 0;left: 0;background: var(--wm-bg-panel);border-bottom: 1px solid var(--wm-line);flex-direction: column;align-items: flex-start;gap: 0;max-height: 0;overflow: hidden;transition: max-height 0.25s ease;}.links.open" + shadowSelector + " {max-height: 320px;}.links" + shadowSelector + " a" + shadowSelector + " {width: 100%;padding: 16px 24px;border-bottom: 1px solid var(--wm-line);}.nav-cta" + shadowSelector + " {border: none;color: var(--wm-copper) !important;}.burger" + shadowSelector + " {display: flex;}}a:focus-visible" + shadowSelector + ",\rbutton:focus-visible" + shadowSelector + " {outline: 2px solid var(--wm-copper);outline-offset: 2px;}.cart-button" + shadowSelector + " {position: relative;display: inline-flex;align-items: center;justify-content: center;width: 36px;height: 36px;padding: 0;border: none;background: transparent;cursor: pointer;font-size: 20px;margin-left: 14px;}.cart-button:hover" + shadowSelector + " {transform: translateY(-1px);}.cart-button" + shadowSelector + " .cart-count" + shadowSelector + " {position: absolute;top: -5px;right: -7px;min-width: 18px;height: 18px;padding: 0 4px;display: flex;align-items: center;justify-content: center;box-sizing: border-box;border-radius: 50%;background: #c26d19 !important;color: #ffffff !important;font-size: 10px !important;font-weight: 700 !important;line-height: 18px !important;z-index: 10;}";
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
@@ -975,12 +976,12 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 873
+/***/ 6873
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _header_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(36);
-/* harmony import */ var _header_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
+/* harmony import */ var _header_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1655);
+/* harmony import */ var _header_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
 
 
 
@@ -1043,12 +1044,12 @@ if (_header_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */
 
 /***/ },
 
-/***/ 415
+/***/ 3415
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var _header_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(873);
-/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(192);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
+/* harmony import */ var _header_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6873);
+/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9192);
 
 
 
@@ -1089,7 +1090,6 @@ class Header extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv
     return this.menuOpen ? 'links open' : 'links';
   }
   handlePlanFurniture() {
-    this.closeMenu();
     this.dispatchEvent(new CustomEvent('planfurniture'));
   }
   /*LWC compiler v9.3.6*/
@@ -1114,7 +1114,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 229
+/***/ 4229
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -1132,12 +1132,12 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 519
+/***/ 7519
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _hero_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(229);
-/* harmony import */ var _hero_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
+/* harmony import */ var _hero_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4229);
+/* harmony import */ var _hero_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
 
 
 
@@ -1179,11 +1179,11 @@ if (_hero_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .
 
 /***/ },
 
-/***/ 717
+/***/ 1717
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _hero_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(519);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(565);
+/* harmony import */ var _hero_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7519);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9565);
 
 
 class Hero extends lwc__WEBPACK_IMPORTED_MODULE_1__/* .LightningElement */ .xv {
@@ -1224,56 +1224,58 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 425
+/***/ 2425
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var _planFurniture_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(263);
-/* harmony import */ var _planFurniture_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
+/* harmony import */ var _planFurniture_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
+/* harmony import */ var wm_referenceDesigns__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8465);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9565);
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="page-exit${0}"${2}><button class="back-home-button${0}"${2}>← Back to Home</button></div>`;
-const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="page-header${0}"${2}><p class="eyebrow${0}"${2}>CUSTOM WOODWORKING</p><h1${3}>Plan Your Furniture</h1><p class="intro${0}"${2}>Tell us what you&#x27;d like to build. We&#x27;ll help you turn your idea into furniture made for your space.</p></div>`;
-const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="progress-wrapper${0}"${2}><div${"c1"}${2}><span class="step-number${0}"${2}>01</span><span class="step-label${0}"${2}>What do you need?</span></div><div class="progress-line${0}"${2}></div><div${"c7"}${2}><span class="step-number${0}"${2}>02</span><span class="step-label${0}"${2}>Your space</span></div><div class="progress-line${0}"${2}></div><div${"c13"}${2}><span class="step-number${0}"${2}>03</span><span class="step-label${0}"${2}>Your details</span></div><div class="progress-line${0}"${2}></div><div${"c19"}${2}><span class="step-number${0}"${2}>04</span><span class="step-label${0}"${2}>Review</span></div></div>`;
-const $fragment4 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 01 OF 03</span>`;
-const $fragment5 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<h2${3}>What would you like us to build?</h2>`;
-const $fragment6 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p${3}>Select one or more options. Don&#x27;t worry if you&#x27;re not sure yet.</p>`;
-const $fragment7 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 02 OF 03</span>`;
-const $fragment8 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<h2${3}>Tell us about your space</h2>`;
-const $fragment9 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p${3}>A few simple details will help us understand where your furniture will be made.</p>`;
-const $fragment10 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 03 OF 03</span>`;
-const $fragment11 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<h2${3}>How can we reach you?</h2>`;
-const $fragment12 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p${3}>We&#x27;ll contact you during your selected time slot to understand your project.</p>`;
-const $fragment13 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 04 OF 04</span>`;
-const $fragment14 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<h2${3}>Review Your Request</h2>`;
-const $fragment15 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p${3}>Please check your details before sending your request.</p>`;
-const $fragment16 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="furniture-name${0}"${2}>${"t1"}</span>`;
-const $fragment17 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="furniture-description${0}"${2}>${"t1"}</span>`;
-const $fragment18 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Where is the work?</label>`;
-const $fragment19 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="field-help${0}"${2}>${"t1"}</span>`;
-const $fragment20 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="field-group${0}"${2}><label${"a1:for"}${3}>When can we contact you?</label><select${"a3:id"}${3}><option value${3}>Select a time slot</option><option value="10:00 AM - 11:00 AM"${3}>10:00 AM – 11:00 AM</option><option value="2:00 PM - 3:00 PM"${3}>2:00 PM – 3:00 PM</option><option value="6:00 PM - 7:00 PM"${3}>6:00 PM – 7:00 PM</option></select><span class="field-help${0}"${2}>We&#x27;ll contact you during this time.</span></div>`;
-const $fragment21 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Full Name<span class="required${0}"${2}>*</span></label>`;
-const $fragment22 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Phone Number<span class="required${0}"${2}>*</span></label>`;
-const $fragment23 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Email<span class="optional${0}"${2}>Optional</span></label>`;
-const $fragment24 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<label${3}>How would you prefer we contact you?<span class="required${0}"${2}>*</span></label>`;
-const $fragment25 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span${3}>Call</span>`;
-const $fragment26 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span${3}>WhatsApp</span>`;
-const $fragment27 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="review-section-header${0}"${2}><span class="review-number${0}"${2}>01</span><div${3}><h3${3}>What you want</h3><p${3}>Furniture you&#x27;re interested in</p></div></div>`;
-const $fragment28 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="review-furniture-item${0}"${2}>${"t1"}</div>`;
-const $fragment29 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="review-section${0}"${2}><div class="review-section-header${0}"${2}><span class="review-number${0}"${2}>02</span><div${3}><h3${3}>Your space</h3><p${3}>Where and when we can contact you</p></div></div><div class="review-details-grid${0}"${2}><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Location</span><strong${3}>${"t14"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Preferred time</span><strong${3}>${"t19"}</strong></div></div></div>`;
-const $fragment30 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="review-section${0}"${2}><div class="review-section-header${0}"${2}><span class="review-number${0}"${2}>03</span><div${3}><h3${3}>Your details</h3><p${3}>How we can reach you</p></div></div><div class="review-details-grid${0}"${2}><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Name</span><strong${3}>${"t14"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Phone</span><strong${3}>${"t19"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Email</span><strong${3}>${"t24"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Contact by</span><strong${3}>${"t29"}</strong></div></div></div>`;
-const $fragment31 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="review-note${0}"${2}><span class="review-note-icon${0}"${2}>✓</span><p${3}>Once you submit your request, we&#x27;ll contact you during your selected time slot to discuss your furniture requirements.</p></div>`;
-const $fragment32 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="success-icon${0}"${2}>✓</div>`;
-const $fragment33 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="success-header${0}"${2}><span class="step-count${0}"${2}>REQUEST RECEIVED</span><h2${3}>${"t4"}</h2><p${3}>We&#x27;ve received your furniture enquiry. We&#x27;ll contact you during your selected time slot to discuss your project.</p></div>`;
-const $fragment34 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="success-label${0}"${2}>Your request</span>`;
-const $fragment35 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span class="success-furniture-item${0}"${2}>${"t1"}</span>`;
-const $fragment36 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="success-detail${0}"${2}><span class="success-label${0}"${2}>Preferred time</span><strong${3}>${"t4"}</strong></div>`;
-const $fragment37 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="success-note${0}"${2}><span class="success-note-icon${0}"${2}>✓</span><p${3}>Our team will contact you during your selected time slot. You can discuss measurements, design, materials and other project details directly with us.</p></div>`;
-const $fragment38 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<button class="home-button${0}"${2}>Back to Home<span${3}>→</span></button>`;
-const $fragment39 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<button class="back-button${0}"${"a0:disabled"}${2}>← Back</button>`;
-const $fragment40 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<button class="next-button${0}"${"a0:disabled"}${2}>Next<span${3}>→</span></button>`;
-const $fragment41 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<button class="next-button${0}"${2}>Submit Request<span${3}>→</span></button>`;
+
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="page-exit${0}"${2}><button class="back-home-button${0}"${2}>← Back to Home</button></div>`;
+const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="page-header${0}"${2}><p class="eyebrow${0}"${2}>CUSTOM WOODWORKING</p><h1${3}>Plan Your Furniture</h1><p class="intro${0}"${2}>Tell us what you&#x27;d like to build. We&#x27;ll help you turn your idea into furniture made for your space.</p></div>`;
+const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="progress-wrapper${0}"${2}><div${"c1"}${2}><span class="step-number${0}"${2}>01</span><span class="step-label${0}"${2}>What do you need?</span></div><div class="progress-line${0}"${2}></div><div${"c7"}${2}><span class="step-number${0}"${2}>02</span><span class="step-label${0}"${2}>Your space</span></div><div class="progress-line${0}"${2}></div><div${"c13"}${2}><span class="step-number${0}"${2}>03</span><span class="step-label${0}"${2}>Your details</span></div><div class="progress-line${0}"${2}></div><div${"c19"}${2}><span class="step-number${0}"${2}>04</span><span class="step-label${0}"${2}>Review</span></div></div>`;
+const $fragment4 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 01 OF 03</span>`;
+const $fragment5 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<h2${3}>What would you like us to build?</h2>`;
+const $fragment6 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<p${3}>Select one or more options. Don&#x27;t worry if you&#x27;re not sure yet.</p>`;
+const $fragment7 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 02 OF 03</span>`;
+const $fragment8 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<h2${3}>Tell us about your space</h2>`;
+const $fragment9 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<p${3}>A few simple details will help us understand where your furniture will be made.</p>`;
+const $fragment10 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 03 OF 03</span>`;
+const $fragment11 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<h2${3}>How can we reach you?</h2>`;
+const $fragment12 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<p${3}>We&#x27;ll contact you during your selected time slot to understand your project.</p>`;
+const $fragment13 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 04 OF 04</span>`;
+const $fragment14 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<h2${3}>Review Your Request</h2>`;
+const $fragment15 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<p${3}>Please check your details before sending your request.</p>`;
+const $fragment16 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="furniture-name${0}"${2}>${"t1"}</span>`;
+const $fragment17 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="furniture-description${0}"${2}>${"t1"}</span>`;
+const $fragment18 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Where is the work?</label>`;
+const $fragment19 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="field-help${0}"${2}>${"t1"}</span>`;
+const $fragment20 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="field-group${0}"${2}><label${"a1:for"}${3}>When can we contact you?</label><select${"a3:id"}${3}><option value${3}>Select a time slot</option><option value="10:00 AM - 11:00 AM"${3}>10:00 AM – 11:00 AM</option><option value="2:00 PM - 3:00 PM"${3}>2:00 PM – 3:00 PM</option><option value="6:00 PM - 7:00 PM"${3}>6:00 PM – 7:00 PM</option></select><span class="field-help${0}"${2}>We&#x27;ll contact you during this time.</span></div>`;
+const $fragment21 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Full Name<span class="required${0}"${2}>*</span></label>`;
+const $fragment22 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Phone Number<span class="required${0}"${2}>*</span></label>`;
+const $fragment23 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Email<span class="optional${0}"${2}>Optional</span></label>`;
+const $fragment24 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<label${3}>How would you prefer we contact you?<span class="required${0}"${2}>*</span></label>`;
+const $fragment25 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span${3}>Call</span>`;
+const $fragment26 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span${3}>WhatsApp</span>`;
+const $fragment27 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="review-section-header${0}"${2}><span class="review-number${0}"${2}>01</span><div${3}><h3${3}>What you want</h3><p${3}>Furniture you&#x27;re interested in</p></div></div>`;
+const $fragment28 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="review-furniture-item${0}"${2}>${"t1"}</div>`;
+const $fragment29 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="review-section${0}"${2}><div class="review-section-header${0}"${2}><span class="review-number${0}"${2}>02</span><div${3}><h3${3}>Your space</h3><p${3}>Where and when we can contact you</p></div></div><div class="review-details-grid${0}"${2}><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Location</span><strong${3}>${"t14"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Preferred time</span><strong${3}>${"t19"}</strong></div></div></div>`;
+const $fragment30 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="review-section${0}"${2}><div class="review-section-header${0}"${2}><span class="review-number${0}"${2}>03</span><div${3}><h3${3}>Your details</h3><p${3}>How we can reach you</p></div></div><div class="review-details-grid${0}"${2}><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Name</span><strong${3}>${"t14"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Phone</span><strong${3}>${"t19"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Email</span><strong${3}>${"t24"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Contact by</span><strong${3}>${"t29"}</strong></div></div></div>`;
+const $fragment31 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="review-note${0}"${2}><span class="review-note-icon${0}"${2}>✓</span><p${3}>Once you submit your request, we&#x27;ll contact you during your selected time slot to discuss your furniture requirements.</p></div>`;
+const $fragment32 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="success-icon${0}"${2}>✓</div>`;
+const $fragment33 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="success-header${0}"${2}><span class="step-count${0}"${2}>REQUEST RECEIVED</span><h2${3}>${"t4"}</h2><p${3}>We&#x27;ve received your furniture enquiry. We&#x27;ll contact you during your selected time slot to discuss your project.</p></div>`;
+const $fragment34 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="success-label${0}"${2}>Your request</span>`;
+const $fragment35 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="success-furniture-item${0}"${2}>${"t1"}</span>`;
+const $fragment36 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="success-detail${0}"${2}><span class="success-label${0}"${2}>Preferred time</span><strong${3}>${"t4"}</strong></div>`;
+const $fragment37 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="success-note${0}"${2}><span class="success-note-icon${0}"${2}>✓</span><p${3}>Our team will contact you during your selected time slot. You can discuss measurements, design, materials and other project details directly with us.</p></div>`;
+const $fragment38 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<button class="home-button${0}"${2}>Back to Home<span${3}>→</span></button>`;
+const $fragment39 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<button class="back-button${0}"${"a0:disabled"}${2}>← Back</button>`;
+const $fragment40 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<button class="next-button${0}"${"a0:disabled"}${2}>Next<span${3}>→</span></button>`;
+const $fragment41 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<button class="next-button${0}"${2}>Submit Request<span${3}>→</span></button>`;
 const stc0 = {
   classMap: {
     "plan-page": true
@@ -1412,29 +1414,29 @@ const stc23 = {
   classMap: {
     "success-summary": true
   },
-  key: 94
+  key: 95
 };
 const stc24 = {
   classMap: {
     "success-detail": true
   },
-  key: 95
+  key: 96
 };
 const stc25 = {
   classMap: {
     "success-furniture-list": true
   },
-  key: 98
+  key: 99
 };
 const stc26 = {
   classMap: {
     "form-navigation": true
   },
-  key: 107
+  key: 108
 };
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {b: api_bind, sp: api_static_part, st: api_static_fragment, ncls: api_normalize_class_name, h: api_element, k: api_key, t: api_text, d: api_dynamic_text, i: api_iterator, gid: api_scoped_id} = $api;
-  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6, _m7, _m8, _m9, _m10, _m11, _m12, _m13, _m14, _m15, _m16} = $ctx;
+  const {b: api_bind, sp: api_static_part, st: api_static_fragment, ncls: api_normalize_class_name, h: api_element, k: api_key, t: api_text, d: api_dynamic_text, i: api_iterator, gid: api_scoped_id, c: api_custom_element} = $api;
+  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6, _m7, _m8, _m9, _m10, _m11, _m12, _m13, _m14, _m15, _m16, _m17} = $ctx;
   return [api_element("section", stc0, [api_element("div", stc1, [api_static_fragment($fragment1, 3, [api_static_part(1, {
     on: _m0 || ($ctx._m0 = {
       "click": api_bind($cmp.handleExitToHome)
@@ -1557,34 +1559,42 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     })
   }, [api_element("span", stc18, [$cmp.isWhatsAppSelected ? api_text("✓") : null]), api_static_fragment($fragment26, 75)])])])]) : null, $cmp.isStepFour ? api_element("div", stc19, [api_element("div", stc20, [api_static_fragment($fragment27, 79), api_element("div", stc21, api_iterator($cmp.selectedFurnitureDetails, function (item) {
     return api_static_fragment($fragment28, api_key(82, item.id), [api_static_part(1, null, api_dynamic_text(item.name))]);
-  }))]), api_static_fragment($fragment29, 84, [api_static_part(14, null, api_dynamic_text($cmp.location)), api_static_part(19, null, api_dynamic_text($cmp.preferredTime))]), api_static_fragment($fragment30, 86, [api_static_part(14, null, api_dynamic_text($cmp.customerName)), api_static_part(19, null, api_dynamic_text($cmp.phone)), api_static_part(24, null, api_dynamic_text($cmp.displayEmail)), api_static_part(29, null, api_dynamic_text($cmp.contactMethod))]), api_static_fragment($fragment31, 88)]) : null, $cmp.isStepFive ? api_element("div", stc22, [api_static_fragment($fragment32, 91), api_static_fragment($fragment33, 93, [api_static_part(4, null, "Thanks, " + api_dynamic_text($cmp.customerName) + ".")]), api_element("div", stc23, [api_element("div", stc24, [api_static_fragment($fragment34, 97), api_element("div", stc25, api_iterator($cmp.selectedFurnitureDetails, function (item) {
-    return api_static_fragment($fragment35, api_key(100, item.id), [api_static_part(1, null, api_dynamic_text(item.name))]);
-  }))]), api_static_fragment($fragment36, 102, [api_static_part(4, null, api_dynamic_text($cmp.preferredTime))])]), api_static_fragment($fragment37, 104), api_static_fragment($fragment38, 106, [api_static_part(0, {
-    on: _m10 || ($ctx._m10 = {
+  }))]), api_static_fragment($fragment29, 84, [api_static_part(14, null, api_dynamic_text($cmp.location)), api_static_part(19, null, api_dynamic_text($cmp.preferredTime))]), api_static_fragment($fragment30, 86, [api_static_part(14, null, api_dynamic_text($cmp.customerName)), api_static_part(19, null, api_dynamic_text($cmp.phone)), api_static_part(24, null, api_dynamic_text($cmp.displayEmail)), api_static_part(29, null, api_dynamic_text($cmp.contactMethod))]), api_static_fragment($fragment31, 88)]) : null, $cmp.isStepFive ? api_element("div", stc22, [api_static_fragment($fragment32, 91), api_static_fragment($fragment33, 93, [api_static_part(4, null, "Thanks, " + api_dynamic_text($cmp.customerName) + ".")]), $cmp.showReferenceDesigns ? api_custom_element("wm-reference-designs", wm_referenceDesigns__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+    props: {
+      "selectedFurniture": $cmp.selectedFurniture
+    },
+    key: 94,
+    on: _m9 || ($ctx._m9 = {
+      "continuewithoutinspiration": api_bind($cmp.handleContinueWithoutChoosing)
+    })
+  }) : null, api_element("div", stc23, [api_element("div", stc24, [api_static_fragment($fragment34, 98), api_element("div", stc25, api_iterator($cmp.selectedFurnitureDetails, function (item) {
+    return api_static_fragment($fragment35, api_key(101, item.id), [api_static_part(1, null, api_dynamic_text(item.name))]);
+  }))]), api_static_fragment($fragment36, 103, [api_static_part(4, null, api_dynamic_text($cmp.preferredTime))])]), api_static_fragment($fragment37, 105), api_static_fragment($fragment38, 107, [api_static_part(0, {
+    on: _m11 || ($ctx._m11 = {
       "click": api_bind($cmp.handleBackToHome)
     })
-  }, null)])]) : null]), !$cmp.isStepFive ? api_element("div", stc26, [api_static_fragment($fragment39, 109, [api_static_part(0, {
-    on: _m12 || ($ctx._m12 = {
+  }, null)])]) : null]), !$cmp.isStepFive ? api_element("div", stc26, [api_static_fragment($fragment39, 110, [api_static_part(0, {
+    on: _m13 || ($ctx._m13 = {
       "click": api_bind($cmp.handleBack)
     }),
     attrs: {
       "disabled": $cmp.isStepOne ? "" : null
     }
-  }, null)]), !$cmp.isStepFour ? api_static_fragment($fragment40, 111, [api_static_part(0, {
-    on: _m14 || ($ctx._m14 = {
+  }, null)]), !$cmp.isStepFour ? api_static_fragment($fragment40, 112, [api_static_part(0, {
+    on: _m15 || ($ctx._m15 = {
       "click": api_bind($cmp.handleNext)
     }),
     attrs: {
       "disabled": $cmp.isNextDisabled ? "" : null
     }
-  }, null)]) : null, $cmp.isStepFour ? api_static_fragment($fragment41, 113, [api_static_part(0, {
-    on: _m16 || ($ctx._m16 = {
+  }, null)]) : null, $cmp.isStepFour ? api_static_fragment($fragment41, 114, [api_static_part(0, {
+    on: _m17 || ($ctx._m17 = {
       "click": api_bind($cmp.handleSubmit)
     })
   }, null)]) : null]) : null])])])];
   /*LWC compiler v9.3.6*/
 }
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .registerTemplate */ .cI)(tmpl));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .registerTemplate */ .cI)(tmpl));
 tmpl.stylesheets = [];
 tmpl.stylesheetToken = "lwc-3ov0ihsdcqi";
 tmpl.legacyStylesheetToken = "wm-planFurniture_planFurniture";
@@ -1594,7 +1604,7 @@ if (_planFurniture_css__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A) {
 if (_planFurniture_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A) {
   tmpl.stylesheets.push.apply(tmpl.stylesheets, _planFurniture_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A);
 }
-;(0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .freezeTemplate */ .iU)(tmpl);
+;(0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .freezeTemplate */ .iU)(tmpl);
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, [
 /* harmony export */   "A", 0, /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
@@ -1603,11 +1613,11 @@ if (_planFurniture_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["defau
 
 /***/ },
 
-/***/ 127
+/***/ 3127
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var _planFurniture_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(425);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
+/* harmony import */ var _planFurniture_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2425);
 
 
 
@@ -1622,6 +1632,7 @@ class PlanFurniture extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement
     this.phone = '';
     this.email = '';
     this.contactMethod = '';
+    this.showReferenceDesigns = true;
     this.furnitureOptions = [{
       id: 'tv-panel',
       name: 'TV Panel',
@@ -1847,10 +1858,15 @@ class PlanFurniture extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement
     const validEmail = !this.email || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.email);
     return !this.customerName.trim() || !validPhone || !validEmail || !this.contactMethod;
   }
+  handleContinueWithoutChoosing() {
+    console.log('PLAN FURNITURE: Continue Without Inspiration received');
+    this.showReferenceDesigns = false;
+    console.log('Current Step:', this.currentStep);
+  }
   /*LWC compiler v9.3.6*/
 }
 ;(0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerDecorators */ .CF)(PlanFurniture, {
-  fields: ["currentStep", "selectedFurniture", "location", "preferredTime", "customerName", "phone", "email", "contactMethod", "furnitureOptions"]
+  fields: ["currentStep", "selectedFurniture", "location", "preferredTime", "customerName", "phone", "email", "contactMethod", "showReferenceDesigns", "furnitureOptions"]
 });
 const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerComponent */ .Nj)(PlanFurniture, {
   tmpl: _planFurniture_html__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A,
@@ -1865,7 +1881,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 227
+/***/ 9227
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -1883,12 +1899,12 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 461
+/***/ 8461
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _process_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(227);
-/* harmony import */ var _process_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
+/* harmony import */ var _process_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9227);
+/* harmony import */ var _process_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
 
 
 
@@ -1942,11 +1958,11 @@ if (_process_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] *
 
 /***/ },
 
-/***/ 787
+/***/ 8787
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var _process_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(461);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
+/* harmony import */ var _process_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8461);
 
 
 
@@ -1993,7 +2009,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 171
+/***/ 7171
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -2011,12 +2027,12 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 98
+/***/ 4098
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _productDetails_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(171);
-/* harmony import */ var _productDetails_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
+/* harmony import */ var _productDetails_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7171);
+/* harmony import */ var _productDetails_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
 
 
 
@@ -2066,12 +2082,12 @@ if (_productDetails_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["defa
 
 /***/ },
 
-/***/ 595
+/***/ 5595
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var _productDetails_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(98);
-/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(192);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
+/* harmony import */ var _productDetails_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4098);
+/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9192);
 
 
 
@@ -2157,6 +2173,426 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
+/***/ 9081
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
+  var shadowSelector = token ? ("[" + token + "]") : "";
+  var hostSelector = token ? ("[" + token + "-host]") : "";
+  var suffixToken = token ? ("-" + token) : "";
+  return [((useActualHostSelector ? ":host {" : hostSelector + " {")), "display: block;}.references", shadowSelector, " {padding: 48px 0 20px;}.references-header", shadowSelector, " {max-width: 700px;margin: 0 auto 38px;text-align: center;}.eyebrow", shadowSelector, " {margin: 0 0 12px;font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.08em;color: var(--wm-copper);}.references-header", shadowSelector, " h2", shadowSelector, " {margin: 0 0 14px;font-family: var(--font-display);font-size: clamp(2rem, 3vw, 2.6rem);line-height: 1.1;font-weight: 600;color: var(--wm-ink);}.intro", shadowSelector, " {max-width: 62ch;margin: 0 auto;font-size: 0.98rem;line-height: 1.65;color: var(--wm-ink-soft);}.design-grid", shadowSelector, " {display: grid;grid-template-columns:\r\n repeat(3, minmax(0, 1fr));gap: 18px;width: 100%;}.design-card", shadowSelector, " {position: relative;width: 100%;min-width: 0;overflow: hidden;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);cursor: pointer;box-sizing: border-box;transition:\r\n border-color 0.2s ease,\r\n transform 0.2s ease,\r\n box-shadow 0.2s ease;}.design-card:hover", shadowSelector, " {border-color: var(--wm-copper);transform: translateY(-3px);box-shadow:\r\n 0 8px 24px rgba(0, 0, 0, 0.06);}.design-card.selected", shadowSelector, " {border-color: var(--wm-copper);box-shadow:\r\n 0 0 0 1px var(--wm-copper);}.design-image", shadowSelector, " {width: 100%;aspect-ratio: 4 / 3;overflow: hidden;background: var(--wm-bg-panel);}.design-image", shadowSelector, " img", shadowSelector, " {width: 100%;height: 100%;display: block;object-fit: cover;transition: transform 0.35s ease;}.design-card:hover", shadowSelector, " .design-image", shadowSelector, " img", shadowSelector, " {transform: scale(1.03);}.image-placeholder", shadowSelector, " {width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;background:\r\n linear-gradient(\r\n 135deg,\r\n var(--wm-bg-panel),\r\n var(--wm-bg)\r\n );color: var(--wm-ink-soft);font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.08em;}.design-content", shadowSelector, " {padding: 20px;}.design-content", shadowSelector, " h3", shadowSelector, " {margin: 0 0 7px;font-family: var(--font-display);font-size: 1.2rem;line-height: 1.2;font-weight: 600;color: var(--wm-ink);}.design-description", shadowSelector, " {margin: 0 0 12px;font-size: 0.84rem;line-height: 1.5;color: var(--wm-ink-soft);}.price-range", shadowSelector, " {margin: 0 0 14px;font-family: var(--font-mono);font-size: 0.76rem;color: var(--wm-copper);}.view-design", shadowSelector, " {display: inline-block;margin-top: 2px;font-family: var(--font-mono);font-size: 0.76rem;color: var(--wm-copper);}.design-card:hover", shadowSelector, " .view-design", shadowSelector, " {color: var(--wm-ink);}.continue-section", shadowSelector, " {display: flex;justify-content: center;margin-top: 34px;}.continue-button", shadowSelector, " {padding: 0;background: transparent;border: none;color: var(--wm-copper);font-family: inherit;font-size: 0.88rem;font-weight: 600;cursor: pointer;transition: color 0.2s ease;}.continue-button", shadowSelector, " span", shadowSelector, " {display: inline-block;margin-left: 6px;transition: margin-left 0.2s ease;}.continue-button:hover", shadowSelector, " {color: var(--wm-ink);}.continue-button:hover", shadowSelector, " span", shadowSelector, " {margin-left: 10px;}.price-note", shadowSelector, " {max-width: 700px;margin: 22px auto 0;text-align: center;font-size: 0.74rem;line-height: 1.55;color: var(--wm-ink-soft);}.modal-overlay", shadowSelector, " {position: fixed;inset: 0;z-index: 1000;display: flex;align-items: center;justify-content: center;padding: 30px;background: rgba(28, 20, 15, 0.72);}.design-modal", shadowSelector, " {position: relative;width: min(900px, 100%);max-height: 92vh;overflow-y: auto;background: var(--wm-bg-panel);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);padding: 26px;box-sizing: border-box;box-shadow:\r\n 0 20px 60px rgba(0, 0, 0, 0.22);}.close-button", shadowSelector, " {position: absolute;top: 14px;right: 14px;z-index: 2;width: 36px;height: 36px;display: flex;align-items: center;justify-content: center;background: var(--wm-bg-panel);border: 1px solid var(--wm-line-strong);border-radius: 50%;color: var(--wm-ink);font-size: 1.3rem;cursor: pointer;}.close-button:hover", shadowSelector, " {background: var(--wm-walnut-dark);border-color: var(--wm-walnut-dark);color: var(--wm-on-dark);}.modal-main-image", shadowSelector, " {width: 100%;aspect-ratio: 16 / 9;overflow: hidden;background: var(--wm-bg);border-radius: var(--wm-radius);}.modal-main-image", shadowSelector, " img", shadowSelector, " {width: 100%;height: 100%;display: block;object-fit: cover;}.modal-image-placeholder", shadowSelector, " {width: 100%;height: 100%;display: flex;align-items: center;justify-content: center;color: var(--wm-ink-soft);font-family: var(--font-mono);font-size: 0.8rem;letter-spacing: 0.08em;}.thumbnail-row", shadowSelector, " {display: flex;gap: 10px;margin-top: 12px;overflow-x: auto;}.thumbnail", shadowSelector, " {flex: 0 0 82px;width: 82px;height: 62px;padding: 0;overflow: hidden;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: 4px;cursor: pointer;}.thumbnail", shadowSelector, " img", shadowSelector, " {width: 100%;height: 100%;display: block;object-fit: cover;}.thumbnail.active", shadowSelector, " {border-color: var(--wm-copper);box-shadow:\r\n 0 0 0 1px var(--wm-copper);}.modal-details", shadowSelector, " {padding: 24px 4px 4px;}.modal-details", shadowSelector, " h2", shadowSelector, " {margin: 0 0 8px;font-family: var(--font-display);font-size: 2rem;font-weight: 600;color: var(--wm-ink);}.modal-description", shadowSelector, " {margin: 0 0 10px;color: var(--wm-ink-soft);}.modal-price", shadowSelector, " {margin: 0;font-family: var(--font-mono);font-size: 0.82rem;color: var(--wm-copper);}.reference-message", shadowSelector, " {display: flex;flex-direction: column;gap: 5px;margin-top: 22px;margin-bottom: 18px;padding: 16px;background: var(--wm-bg);border-left: 3px solid var(--wm-copper);}.reference-message", shadowSelector, " strong", shadowSelector, " {font-family: var(--font-display);font-size: 1.05rem;color: var(--wm-ink);}.reference-message", shadowSelector, " span", shadowSelector, " {font-size: 0.86rem;line-height: 1.5;color: var(--wm-ink-soft);}.select-reference-button", shadowSelector, " {width: 100%;padding: 14px 20px;background: var(--wm-walnut-dark);border: 1px solid var(--wm-walnut-dark);border-radius: var(--wm-radius);color: var(--wm-on-dark);font-family: var(--font-mono);font-size: 0.8rem;cursor: pointer;transition:\r\n background 0.2s ease,\r\n border-color 0.2s ease;}.select-reference-button:hover", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);}@media (max-width: 850px) {.design-grid", shadowSelector, " {grid-template-columns:\r\n repeat(2, minmax(0, 1fr));}}@media (max-width: 600px) {.references", shadowSelector, " {padding: 36px 0 16px;}.design-grid", shadowSelector, " {grid-template-columns: 1fr;gap: 16px;}.design-content", shadowSelector, " {padding: 18px;}.modal-overlay", shadowSelector, " {padding: 12px;}.design-modal", shadowSelector, " {padding: 16px;}.modal-details", shadowSelector, " h2", shadowSelector, " {font-size: 1.65rem;}.thumbnail", shadowSelector, " {flex-basis: 68px;width: 68px;height: 52px;}}"].join('');
+  /*LWC compiler v9.3.6*/
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, [
+/* harmony export */   "A", 0, /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ ]);
+
+
+/***/ },
+
+/***/ 7139
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+/* harmony import */ var _referenceDesigns_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9081);
+/* harmony import */ var _referenceDesigns_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
+
+
+
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="references-header${0}"${2}><p class="eyebrow${0}"${2}>GET SOME INSPIRATION</p><h2${3}>Ideas for Your Project</h2><p class="intro${0}"${2}>Explore some of our existing designs. Click any design to see more photos and use it as a reference for your project.</p></div>`;
+const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<img${"a0:src"}${"a0:alt"}${3}>`;
+const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="image-placeholder${0}"${2}>WOODMASTER</div>`;
+const $fragment4 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<h3${3}>${"t1"}</h3>`;
+const $fragment5 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p class="design-description${0}"${2}>${"t1"}</p>`;
+const $fragment6 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p class="price-range${0}"${2}>${"t1"}</p>`;
+const $fragment7 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="continue-section${0}"${2}><button class="continue-button${0}"${2}>Continue Without Inspiration<span${3}>→</span></button></div>`;
+const $fragment8 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<button class="close-button${0}" aria-label="Close"${2}>×</button>`;
+const $fragment9 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<img${"a0:src"}${"a0:alt"}${3}>`;
+const $fragment10 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="modal-image-placeholder${0}"${2}>WOODMASTER</div>`;
+const $fragment11 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<img${"a0:src"} alt="Design view"${3}>`;
+const $fragment12 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<span${3}>${"t1"}</span>`;
+const $fragment13 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="modal-details${0}"${2}><h2${3}>${"t2"}</h2><p class="modal-description${0}"${2}>${"t4"}</p><p class="modal-price${0}"${2}>${"t6"}</p><div class="reference-message${0}"${2}><strong${3}>Love this design?</strong><span${3}>Use it as a reference when we discuss your project.</span></div><button class="select-reference-button${0}"${2}>Use This Design as Reference</button></div>`;
+const $fragment14 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p class="price-note${0}"${2}>Prices shown are indicative only. Final pricing depends on size, material, finish, customization, installation and other project-specific requirements.</p>`;
+const stc0 = {
+  classMap: {
+    "references": true
+  },
+  key: 0
+};
+const stc1 = {
+  classMap: {
+    "design-grid": true
+  },
+  key: 3
+};
+const stc2 = {
+  classMap: {
+    "design-image": true
+  },
+  key: 5
+};
+const stc3 = {
+  classMap: {
+    "design-content": true
+  },
+  key: 10
+};
+const stc4 = {
+  classMap: {
+    "view-design": true
+  },
+  key: 17
+};
+const stc5 = {
+  "modal-overlay": true
+};
+const stc6 = {
+  "design-modal": true
+};
+const stc7 = {
+  "role": "dialog",
+  "aria-modal": "true"
+};
+const stc8 = {
+  classMap: {
+    "modal-main-image": true
+  },
+  key: 24
+};
+const stc9 = {
+  classMap: {
+    "thumbnail-row": true
+  },
+  key: 29
+};
+function tmpl($api, $cmp, $slotset, $ctx) {
+  const {st: api_static_fragment, ncls: api_normalize_class_name, k: api_key, b: api_bind, sp: api_static_part, h: api_element, d: api_dynamic_text, t: api_text, i: api_iterator} = $api;
+  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6, _m7} = $ctx;
+  return [api_element("section", stc0, [api_static_fragment($fragment1, 2), api_element("div", stc1, api_iterator($cmp.relevantInspirations, function (design) {
+    return api_element("article", {
+      className: api_normalize_class_name(design.cardClass),
+      attrs: {
+        "data-id": design.id
+      },
+      key: api_key(4, design.id),
+      on: _m0 || ($ctx._m0 = {
+        "click": api_bind($cmp.handleDesignClick)
+      })
+    }, [api_element("div", stc2, [design.cardImage ? api_static_fragment($fragment2, 7, [api_static_part(0, {
+      attrs: {
+        "src": design.cardImage,
+        "alt": design.name
+      }
+    }, null)]) : null, !design.cardImage ? api_static_fragment($fragment3, 9) : null]), api_element("div", stc3, [api_static_fragment($fragment4, 12, [api_static_part(1, null, api_dynamic_text(design.name))]), api_static_fragment($fragment5, 14, [api_static_part(1, null, api_dynamic_text(design.description))]), api_static_fragment($fragment6, 16, [api_static_part(1, null, "Approx. ₹" + api_dynamic_text(design.minimumPrice) + " – ₹" + api_dynamic_text(design.maximumPrice))]), api_element("span", stc4, [design.isSelected ? api_text("✓ Selected · View Design") : null, !design.isSelected ? api_text("View Design →") : null])])]);
+  })), api_static_fragment($fragment7, 19, [api_static_part(1, {
+    on: _m1 || ($ctx._m1 = {
+      "click": api_bind($cmp.handleContinueWithoutChoosing)
+    })
+  }, null)]), $cmp.selectedDesign ? api_element("div", {
+    classMap: stc5,
+    key: 20,
+    on: _m2 || ($ctx._m2 = {
+      "click": api_bind($cmp.handleCloseModal)
+    })
+  }, [api_element("div", {
+    classMap: stc6,
+    attrs: stc7,
+    key: 21,
+    on: _m3 || ($ctx._m3 = {
+      "click": api_bind($cmp.handleModalContentClick)
+    })
+  }, [api_static_fragment($fragment8, 23, [api_static_part(0, {
+    on: _m5 || ($ctx._m5 = {
+      "click": api_bind($cmp.handleCloseModal)
+    })
+  }, null)]), api_element("div", stc8, [$cmp.activeImageUrl ? api_static_fragment($fragment9, 26, [api_static_part(0, {
+    attrs: {
+      "src": $cmp.activeImageUrl,
+      "alt": $cmp.selectedDesign.name
+    }
+  }, null)]) : null, !$cmp.activeImageUrl ? api_static_fragment($fragment10, 28) : null]), api_element("div", stc9, api_iterator($cmp.modalImages, function (image) {
+    return api_element("button", {
+      className: api_normalize_class_name(image.className),
+      attrs: {
+        "data-index": image.index
+      },
+      key: api_key(30, image.index),
+      on: _m6 || ($ctx._m6 = {
+        "click": api_bind($cmp.handleImageSelect)
+      })
+    }, [image.url ? api_static_fragment($fragment11, 32, [api_static_part(0, {
+      attrs: {
+        "src": image.url
+      }
+    }, null)]) : null, !image.url ? api_static_fragment($fragment12, 34, [api_static_part(1, null, api_dynamic_text(image.displayNumber))]) : null]);
+  })), api_static_fragment($fragment13, 36, [api_static_part(2, null, api_dynamic_text($cmp.selectedDesign.name)), api_static_part(4, null, api_dynamic_text($cmp.selectedDesign.description)), api_static_part(6, null, "Approx. ₹" + api_dynamic_text($cmp.selectedDesign.minimumPrice) + " – ₹" + api_dynamic_text($cmp.selectedDesign.maximumPrice)), api_static_part(12, {
+    on: _m7 || ($ctx._m7 = {
+      "click": api_bind($cmp.handleSelectReference)
+    })
+  }, null)])])]) : null, api_static_fragment($fragment14, 38)])];
+  /*LWC compiler v9.3.6*/
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .registerTemplate */ .cI)(tmpl));
+tmpl.stylesheets = [];
+tmpl.stylesheetToken = "lwc-36asucrvaq6";
+tmpl.legacyStylesheetToken = "wm-referenceDesigns_referenceDesigns";
+if (_referenceDesigns_css__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A) {
+  tmpl.stylesheets.push.apply(tmpl.stylesheets, _referenceDesigns_css__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A);
+}
+if (_referenceDesigns_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A) {
+  tmpl.stylesheets.push.apply(tmpl.stylesheets, _referenceDesigns_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A);
+}
+;(0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .freezeTemplate */ .iU)(tmpl);
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, [
+/* harmony export */   "A", 0, /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ ]);
+
+
+/***/ },
+
+/***/ 8465
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
+/* harmony import */ var _referenceDesigns_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7139);
+
+
+
+class ReferenceDesigns extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv {
+  constructor(...args) {
+    super(...args);
+    this.selectedFurniture = [];
+    this.selectedInspirations = [];
+    // Currently opened design in the modal
+    this.selectedDesign = null;
+    // Currently displayed image in the modal
+    this.activeImageIndex = 0;
+    /*
+     * Temporary inspiration data.
+     *
+     * Later these records will come from Salesforce.
+     */
+    this.inspirationDesigns = [{
+      id: 'INS-001',
+      name: 'Modern 6-Seater',
+      description: 'Solid Wood',
+      minimumPrice: 25000,
+      maximumPrice: 35000,
+      categoryIds: ['dining-table'],
+      images: ['', '', '', '', '']
+    }, {
+      id: 'INS-002',
+      name: 'Premium 8-Seater',
+      description: 'Premium Finish',
+      minimumPrice: 35000,
+      maximumPrice: 50000,
+      categoryIds: ['dining-table'],
+      images: ['', '', '', '', '']
+    }, {
+      id: 'INS-003',
+      name: 'Rustic Dining',
+      description: 'Custom Finish',
+      minimumPrice: 40000,
+      maximumPrice: 55000,
+      categoryIds: ['dining-table'],
+      images: ['', '', '', '', '']
+    }, {
+      id: 'INS-004',
+      name: 'Floating TV Unit',
+      description: 'Modern Wall Panel',
+      minimumPrice: 25000,
+      maximumPrice: 40000,
+      categoryIds: ['tv-panel'],
+      images: ['', '', '', '', '']
+    }, {
+      id: 'INS-005',
+      name: 'Full Wall TV Unit',
+      description: 'Storage & Media Unit',
+      minimumPrice: 40000,
+      maximumPrice: 65000,
+      categoryIds: ['tv-panel'],
+      images: ['', '', '', '', '']
+    }, {
+      id: 'INS-006',
+      name: 'Minimal Wooden Wardrobe',
+      description: 'Full Height Storage',
+      minimumPrice: 55000,
+      maximumPrice: 90000,
+      categoryIds: ['almirah'],
+      images: ['', '', '', '', '']
+    }, {
+      id: 'INS-007',
+      name: 'Classic Wooden Bed',
+      description: 'Solid Wood Frame',
+      minimumPrice: 45000,
+      maximumPrice: 70000,
+      categoryIds: ['bed'],
+      images: ['', '', '', '', '']
+    }, {
+      id: 'INS-008',
+      name: 'Modern Storage Cabinet',
+      description: 'Custom Storage',
+      minimumPrice: 20000,
+      maximumPrice: 35000,
+      categoryIds: ['storage'],
+      images: ['', '', '', '', '']
+    }, {
+      id: 'INS-009',
+      name: 'Classic Wooden Chair',
+      description: 'Solid Wood Chair',
+      minimumPrice: 5000,
+      maximumPrice: 9000,
+      categoryIds: ['chairs'],
+      images: ['', '', '', '', '']
+    }];
+  }
+  /*
+   * Only show inspirations related to
+   * the furniture selected by the customer.
+   */
+
+  get relevantInspirations() {
+    if (!this.selectedFurniture || this.selectedFurniture.length === 0) {
+      return [];
+    }
+    return this.inspirationDesigns.filter(design => design.categoryIds.some(categoryId => this.selectedFurniture.includes(categoryId))).map(design => {
+      const isSelected = this.selectedInspirations.includes(design.id);
+      return {
+        ...design,
+        isSelected,
+        cardImage: design.images && design.images.length ? design.images[0] : '',
+        cardClass: isSelected ? 'design-card selected' : 'design-card'
+      };
+    });
+  }
+
+  /*
+   * Open design preview.
+   */
+
+  handleDesignClick(event) {
+    const designId = event.currentTarget.dataset.id;
+    const design = this.inspirationDesigns.find(item => item.id === designId);
+    if (!design) {
+      return;
+    }
+    this.selectedDesign = design;
+    this.activeImageIndex = 0;
+  }
+
+  /*
+   * Close design preview.
+   */
+
+  handleCloseModal() {
+    this.selectedDesign = null;
+    this.activeImageIndex = 0;
+  }
+
+  /*
+   * Prevent modal clicks from bubbling
+   * to the overlay.
+   */
+
+  handleModalContentClick(event) {
+    event.stopPropagation();
+  }
+
+  /*
+   * Change active gallery image.
+   */
+
+  handleImageSelect(event) {
+    this.activeImageIndex = Number(event.currentTarget.dataset.index);
+  }
+
+  /*
+   * Currently displayed image.
+   */
+
+  get activeImageUrl() {
+    if (!this.selectedDesign) {
+      return '';
+    }
+    return this.selectedDesign.images[this.activeImageIndex];
+  }
+
+  /*
+   * Prepare thumbnail state.
+   */
+
+  get modalImages() {
+    if (!this.selectedDesign) {
+      return [];
+    }
+    return this.selectedDesign.images.map((image, index) => {
+      return {
+        url: image,
+        // Internal array index remains 0-4
+        index: index,
+        // Display number becomes 1-5
+        displayNumber: index + 1,
+        isActive: index === this.activeImageIndex,
+        className: index === this.activeImageIndex ? 'thumbnail active' : 'thumbnail'
+      };
+    });
+  }
+
+  /*
+   * Select the current design as
+   * a reference.
+   */
+
+  handleSelectReference(event) {
+    event.stopPropagation();
+    if (!this.selectedDesign) {
+      return;
+    }
+    const designId = this.selectedDesign.id;
+    if (!this.selectedInspirations.includes(designId)) {
+      this.selectedInspirations = [...this.selectedInspirations, designId];
+    }
+    console.log('Selected Inspirations:', this.selectedInspirations);
+    this.handleCloseModal();
+  }
+
+  /*
+   * Customer does not want to select
+   * an inspiration.
+   */
+
+  handleContinueWithoutChoosing() {
+    console.log('REFERENCE DESIGNS: Continue Without Inspiration clicked');
+    this.dispatchEvent(new CustomEvent('continuewithoutinspiration', {
+      bubbles: true,
+      composed: true
+    }));
+  }
+  /*LWC compiler v9.3.6*/
+}
+;(0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerDecorators */ .CF)(ReferenceDesigns, {
+  publicProps: {
+    selectedFurniture: {
+      config: 0
+    }
+  },
+  fields: ["selectedInspirations", "selectedDesign", "activeImageIndex", "inspirationDesigns"]
+});
+const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerComponent */ .Nj)(ReferenceDesigns, {
+  tmpl: _referenceDesigns_html__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A,
+  sel: "wm-reference-designs",
+  apiVersion: 66
+});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__lwc_component_class_internal);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, [
+/* harmony export */   "A", 0, /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
+/* harmony export */ ]);
+
+
+/***/ },
+
 /***/ 693
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -2175,12 +2611,12 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 287
+/***/ 8287
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var _services_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(693);
-/* harmony import */ var _services_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
+/* harmony import */ var _services_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
 
 
 
@@ -2252,10 +2688,10 @@ if (_services_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] 
 /***/ 389
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var _services_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(287);
-/* harmony import */ var _data_products__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(505);
-/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(192);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
+/* harmony import */ var _services_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8287);
+/* harmony import */ var _data_products__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1505);
+/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9192);
 
 
 
@@ -2307,7 +2743,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 697
+/***/ 7697
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -2325,12 +2761,12 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 267
+/***/ 6267
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _testimonials_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(697);
-/* harmony import */ var _testimonials_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
+/* harmony import */ var _testimonials_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7697);
+/* harmony import */ var _testimonials_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
 
 
 
@@ -2380,11 +2816,11 @@ if (_testimonials_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["defaul
 
 /***/ },
 
-/***/ 1
+/***/ 7001
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var _testimonials_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(267);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
+/* harmony import */ var _testimonials_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6267);
 
 
 
@@ -2426,7 +2862,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 699
+/***/ 9699
 (__unused_webpack_module, exports) {
 
 var __webpack_unused_export__;
@@ -2443,7 +2879,7 @@ exports.A = undefined;
 
 /***/ },
 
-/***/ 505
+/***/ 1505
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 const products = [
@@ -2544,7 +2980,7 @@ const products = [
 
 /***/ },
 
-/***/ 192
+/***/ 9192
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 class CartService {
@@ -2745,49 +3181,49 @@ const cartService = new CartService();
 
 /***/ },
 
-/***/ 725
+/***/ 7725
 (module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "338aa66afcd46480f4ce.webp";
 
 /***/ },
 
-/***/ 558
+/***/ 1558
 (module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "3864cc43885e46fc0eea.webp";
 
 /***/ },
 
-/***/ 172
+/***/ 6172
 (module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "dc38bf5abc1825a1627b.webp";
 
 /***/ },
 
-/***/ 516
+/***/ 2516
 (module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "7338b52b82b754460d42.jpg";
 
 /***/ },
 
-/***/ 949
+/***/ 9949
 (module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "a0210b9c36db3cac7b1c.jpg";
 
 /***/ },
 
-/***/ 855
+/***/ 2855
 (module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "9a6708ded0254f9f1678.webp";
 
 /***/ },
 
-/***/ 565
+/***/ 9565
 (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -12618,8 +13054,8 @@ function registerContextProvider(elm, adapterContextToken, onContextSubscription
 /******/ 	
 /************************************************************************/
 let __webpack_exports__ = {};
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
-/* harmony import */ var wm_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(655);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
+/* harmony import */ var wm_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5655);
 
 
 
