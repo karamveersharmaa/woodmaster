@@ -61,13 +61,18 @@
 }
 
 .nav-cta {
-  border: 1px solid var(--wm-walnut-dark);
-  color: var(--wm-walnut-dark) !important;
-  padding: 8px 16px;
-  border-radius: var(--wm-radius);
-  font-family: var(--font-mono);
-  font-size: 0.82rem !important;
-  letter-spacing: 0.03em;
+    border: 1px solid var(--wm-walnut-dark);
+    color: var(--wm-walnut-dark) !important;
+
+    padding: 8px 16px;
+    border-radius: var(--wm-radius);
+
+    font-family: var(--font-mono);
+    font-size: 0.82rem !important;
+    letter-spacing: 0.03em;
+
+    background: transparent;
+    cursor: pointer;
 }
 
 .nav-cta:hover,

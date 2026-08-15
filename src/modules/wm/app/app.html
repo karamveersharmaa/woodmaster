@@ -10,11 +10,9 @@
 
         <main>
 
-            <wm-hero></wm-hero>
+           <wm-hero onplanfurniture={handlePlanFurniture}> </wm-hero>
 
-            <wm-services
-                onproductclick={handleProductClick}>
-            </wm-services>
+            <wm-services onproductclick={handleProductClick}> </wm-services>
 
             <wm-process></wm-process>
 
@@ -25,10 +23,7 @@
             <wm-about></wm-about>
 
             <wm-contact></wm-contact>
-            <!-- TEMPORARY TEST -->
-    <button onclick={handleTestPlanFurniture}>
-        Test Plan Your Furniture
-    </button>
+
         </main>
 
         <wm-footer></wm-footer>
@@ -63,7 +58,7 @@
 
 <template if:true={isPlanFurniturePage}>
 
-    <wm-plan-furniture></wm-plan-furniture>
+    <wm-plan-furniture onbacktohome={handleBackToHome}></wm-plan-furniture>
 
 </template>
 

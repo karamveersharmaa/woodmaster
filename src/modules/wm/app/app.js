@@ -109,7 +109,9 @@ export default class App extends LightningElement {
 
     }
 
-    handleTestPlanFurniture() {
+    handlePlanFurniture() {
+
+        console.log('Plan Furniture event received');
 
         this.currentPage = 'planFurniture';
 

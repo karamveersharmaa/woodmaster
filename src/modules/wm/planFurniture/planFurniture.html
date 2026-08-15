@@ -4,6 +4,18 @@
 
         <div class="container">
 
+            <div class="page-exit">
+
+                <button
+                    class="back-home-button"
+                    onclick={handleExitToHome}>
+
+                    ← Back to Home
+
+                </button>
+
+            </div>
+
             <!-- =========================
                  PAGE HEADER
             ========================== -->
@@ -30,54 +42,69 @@
             <!-- =========================
                  PROGRESS INDICATOR
             ========================== -->
+            <template if:false={isStepFive}>
+                <div class="progress-wrapper">
 
-            <div class="progress-wrapper">
+                    <div class={stepOneClass}>
 
-                <div class="progress-step active">
+                        <span class="step-number">
+                            01
+                        </span>
 
-                    <span class="step-number">
-                        01
-                    </span>
+                        <span class="step-label">
+                            What do you need?
+                        </span>
 
-                    <span class="step-label">
-                        What do you need?
-                    </span>
+                    </div>
+
+
+                    <div class="progress-line"></div>
+
+
+                    <div class={stepTwoClass}>
+
+                        <span class="step-number">
+                            02
+                        </span>
+
+                        <span class="step-label">
+                            Your space
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress-line"></div>
+
+
+                    <div class={stepThreeClass}>
+
+                        <span class="step-number">
+                            03
+                        </span>
+
+                        <span class="step-label">
+                            Your details
+                        </span>
+
+                    </div>
+
+                    <div class="progress-line"></div>
+
+                    <div class={stepFourClass}>
+
+                        <span class="step-number">
+                            04
+                        </span>
+
+                        <span class="step-label">
+                            Review
+                        </span>
+
+                    </div>
 
                 </div>
-
-
-                <div class="progress-line"></div>
-
-
-                <div class="progress-step">
-
-                    <span class="step-number">
-                        02
-                    </span>
-
-                    <span class="step-label">
-                        Your space
-                    </span>
-
-                </div>
-
-
-                <div class="progress-line"></div>
-
-
-                <div class="progress-step">
-
-                    <span class="step-number">
-                        03
-                    </span>
-
-                    <span class="step-label">
-                        Your details
-                    </span>
-
-                </div>
-
-            </div>
+            </template>
 
 
             <!-- =========================
@@ -90,18 +117,78 @@
 
                 <div class="step-header">
 
+                    <!-- STEP 1 HEADER -->
+                    <template if:true={isStepOne}>
+
+                        <span class="step-count">
+                            STEP 01 OF 03
+                        </span>
+
+                        <h2>
+                            What would you like us to build?
+                        </h2>
+
+                        <p>
+                            Select one or more options.
+                            Don't worry if you're not sure yet.
+                        </p>
+
+                    </template>
+
+
+                    <!-- STEP 2 HEADER -->
+                    <template if:true={isStepTwo}>
+
+                        <span class="step-count">
+                            STEP 02 OF 03
+                        </span>
+
+                        <h2>
+                            Tell us about your space
+                        </h2>
+
+                        <p>
+                            A few simple details will help us understand
+                            where your furniture will be made.
+                        </p>
+
+                    </template>
+
+
+                    <!-- STEP 3 HEADER -->
+                    <template if:true={isStepThree}>
+
+                        <span class="step-count">
+                            STEP 03 OF 03
+                        </span>
+
+                        <h2>
+                            How can we reach you?
+                        </h2>
+
+                        <p>
+                            We'll contact you during your selected time slot
+                            to understand your project.
+                        </p>
+
+                    </template>
+
+                    <!-- STEP 4 HEADER -->
+                    <template if:true={isStepFour}>
+
                     <span class="step-count">
-                        STEP 01 OF 03
+                        STEP 04 OF 04
                     </span>
 
                     <h2>
-                        What would you like us to build?
+                        Review Your Request
                     </h2>
 
                     <p>
-                        Select one or more options.
-                        Don't worry if you're not sure yet.
+                        Please check your details before sending your request.
                     </p>
+
+                </template>
 
                 </div>
 
@@ -110,41 +197,594 @@
 
                 <div class="step-content">
 
-                    <!-- Placeholder for Step 1 -->
+                    <!-- =========================
+                        STEP 1
+                    ========================== -->
 
-                    <div class="furniture-grid">
+                    <template if:true={isStepOne}>
 
-                        <template
-                            for:each={furnitureOptionsWithState}
-                            for:item="option">
+                        <div class="furniture-grid">
 
-                            <button
-                                key={option.id}
-                                class={option.cardClass}
-                                data-id={option.id}
-                                onclick={handleFurnitureSelect}>
+                            <template
+                                for:each={furnitureOptionsWithState}
+                                for:item="option">
 
-                                <span class="selection-mark">
+                                <button
+                                    key={option.id}
+                                    class={option.cardClass}
+                                    data-id={option.id}
+                                    onclick={handleFurnitureSelect}>
 
-                                    <template if:true={option.isSelected}>
-                                        ✓
+                                    <span class="selection-mark">
+
+                                        <template if:true={option.isSelected}>
+                                            ✓
+                                        </template>
+
+                                    </span>
+
+                                    <span class="furniture-name">
+                                        {option.name}
+                                    </span>
+
+                                    <span class="furniture-description">
+                                        {option.description}
+                                    </span>
+
+                                </button>
+
+                            </template>
+
+                        </div>
+
+                    </template>
+
+
+                    <!-- =========================
+                        STEP 2
+                    ========================== -->
+
+                    <template if:true={isStepTwo}>
+
+                        <div class="space-form">
+
+                            <div class="field-group">
+
+                                <label for="location">
+                                    Where is the work?
+                                </label>
+
+                                <input
+                                    id="location"
+                                    type="text"
+                                    placeholder="Example: Sector 62, Noida"
+                                    value={location}
+                                    maxlength="150"
+                                    oninput={handleLocationChange}
+                                />
+
+                                <span class="field-help">
+                                    {location.length}/150 characters
+                                </span>
+
+                            </div>
+
+
+                            <div class="field-group">
+
+                                <label for="preferredTime">
+                                    When can we contact you?
+                                </label>
+
+                                <select
+                                    id="preferredTime"
+                                    onchange={handleTimeChange}>
+
+                                    <option value="">
+                                        Select a time slot
+                                    </option>
+
+                                    <option value="10:00 AM - 11:00 AM">
+                                        10:00 AM – 11:00 AM
+                                    </option>
+
+                                    <option value="2:00 PM - 3:00 PM">
+                                        2:00 PM – 3:00 PM
+                                    </option>
+
+                                    <option value="6:00 PM - 7:00 PM">
+                                        6:00 PM – 7:00 PM
+                                    </option>
+
+                                </select>
+
+                                <span class="field-help">
+                                    We'll contact you during this time.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </template>
+
+                    <!-- =========================
+                        STEP 3
+                    ========================= -->
+
+                    <template if:true={isStepThree}>
+
+                        <div class="details-form">
+
+                            <!-- NAME -->
+
+                            <div class="field-group">
+
+                                <label for="customerName">
+                                    Full Name
+                                    <span class="required">*</span>
+                                </label>
+
+                                <input
+                                    id="customerName"
+                                    type="text"
+                                    placeholder="Enter your name"
+                                    value={customerName}
+                                    maxlength="80"
+                                    oninput={handleCustomerNameChange}
+                                />
+
+                            </div>
+
+
+                            <!-- PHONE -->
+
+                            <div class="field-group">
+
+                                <label for="phone">
+                                    Phone Number
+                                    <span class="required">*</span>
+                                </label>
+
+                                <input
+                                    id="phone"
+                                    type="tel"
+                                    inputmode="numeric"
+                                    placeholder="Enter your 10-digit phone number"
+                                    value={phone}
+                                    maxlength="10"
+                                    oninput={handlePhoneChange}
+                                />
+
+                            </div>
+
+
+                            <!-- EMAIL -->
+
+                            <div class="field-group">
+
+                                <label for="email">
+                                    Email
+                                    <span class="optional">
+                                        Optional
+                                    </span>
+                                </label>
+
+                                <input
+                                    id="email"
+                                    type="email"
+                                    placeholder="Enter your email address"
+                                    value={email}
+                                    oninput={handleEmailChange}
+                                />
+
+                            </div>
+
+
+                            <!-- CONTACT METHOD -->
+
+                            <div class="field-group">
+
+                                <label>
+                                    How would you prefer we contact you?
+                                    <span class="required">*</span>
+                                </label>
+
+
+                                <div class="contact-options">
+
+                                    <button
+                                        type="button"
+                                        class={callOptionClass}
+                                        data-value="Call"
+                                        onclick={handleContactMethodChange}>
+
+                                        <span class="contact-radio">
+
+                                            <template if:true={isCallSelected}>
+                                                ✓
+                                            </template>
+
+                                        </span>
+
+                                        <span>
+                                            Call
+                                        </span>
+
+                                    </button>
+
+
+                                    <button
+                                        type="button"
+                                        class={whatsappOptionClass}
+                                        data-value="WhatsApp"
+                                        onclick={handleContactMethodChange}>
+
+                                        <span class="contact-radio">
+
+                                            <template if:true={isWhatsAppSelected}>
+                                                ✓
+                                            </template>
+
+                                        </span>
+
+                                        <span>
+                                            WhatsApp
+                                        </span>
+
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </template>
+
+                    <!-- =========================
+                        STEP 4 — REVIEW
+                    ========================= -->
+
+                    <template if:true={isStepFour}>
+
+                        <div class="review-content">
+
+
+                            <!-- =========================
+                                WHAT YOU WANT
+                            ========================== -->
+
+                            <div class="review-section">
+
+                                <div class="review-section-header">
+
+                                    <span class="review-number">
+                                        01
+                                    </span>
+
+                                    <div>
+
+                                        <h3>
+                                            What you want
+                                        </h3>
+
+                                        <p>
+                                            Furniture you're interested in
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="review-furniture-list">
+
+                                    <template
+                                        for:each={selectedFurnitureDetails}
+                                        for:item="item">
+
+                                        <div
+                                            key={item.id}
+                                            class="review-furniture-item">
+
+                                            {item.name}
+
+                                        </div>
+
                                     </template>
 
+                                </div>
+
+                            </div>
+
+
+                            <!-- =========================
+                                YOUR SPACE
+                            ========================== -->
+
+                            <div class="review-section">
+
+                                <div class="review-section-header">
+
+                                    <span class="review-number">
+                                        02
+                                    </span>
+
+                                    <div>
+
+                                        <h3>
+                                            Your space
+                                        </h3>
+
+                                        <p>
+                                            Where and when we can contact you
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="review-details-grid">
+
+                                    <div class="review-detail">
+
+                                        <span class="review-label">
+                                            Location
+                                        </span>
+
+                                        <strong>
+                                            {location}
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="review-detail">
+
+                                        <span class="review-label">
+                                            Preferred time
+                                        </span>
+
+                                        <strong>
+                                            {preferredTime}
+                                        </strong>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- =========================
+                                YOUR DETAILS
+                            ========================== -->
+
+                            <div class="review-section">
+
+                                <div class="review-section-header">
+
+                                    <span class="review-number">
+                                        03
+                                    </span>
+
+                                    <div>
+
+                                        <h3>
+                                            Your details
+                                        </h3>
+
+                                        <p>
+                                            How we can reach you
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="review-details-grid">
+
+                                    <div class="review-detail">
+
+                                        <span class="review-label">
+                                            Name
+                                        </span>
+
+                                        <strong>
+                                            {customerName}
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="review-detail">
+
+                                        <span class="review-label">
+                                            Phone
+                                        </span>
+
+                                        <strong>
+                                            {phone}
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="review-detail">
+
+                                        <span class="review-label">
+                                            Email
+                                        </span>
+
+                                        <strong>
+                                            {displayEmail}
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="review-detail">
+
+                                        <span class="review-label">
+                                            Contact by
+                                        </span>
+
+                                        <strong>
+                                            {contactMethod}
+                                        </strong>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- =========================
+                                REVIEW NOTE
+                            ========================== -->
+
+                            <div class="review-note">
+
+                                <span class="review-note-icon">
+                                    ✓
                                 </span>
 
-                                <span class="furniture-name">
-                                    {option.name}
+                                <p>
+                                    Once you submit your request, we'll contact you
+                                    during your selected time slot to discuss your
+                                    furniture requirements.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </template>
+
+                    <!-- =========================
+                        STEP 5 — SUCCESS
+                    ========================= -->
+
+                    <template if:true={isStepFive}>
+
+                        <div class="success-content">
+
+                            <!-- SUCCESS ICON -->
+
+                            <div class="success-icon">
+                                ✓
+                            </div>
+
+
+                            <!-- SUCCESS MESSAGE -->
+
+                            <div class="success-header">
+
+                                <span class="step-count">
+                                    REQUEST RECEIVED
                                 </span>
 
-                                <span class="furniture-description">
-                                    {option.description}
+                                <h2>
+                                    Thanks, {customerName}.
+                                </h2>
+
+                                <p>
+                                    We've received your furniture enquiry.
+                                    We'll contact you during your selected
+                                    time slot to discuss your project.
+                                </p>
+
+                            </div>
+
+
+                            <!-- REQUEST SUMMARY -->
+
+                            <div class="success-summary">
+
+                                <!-- Furniture -->
+
+                                <div class="success-detail">
+
+                                    <span class="success-label">
+                                        Your request
+                                    </span>
+
+                                    <div class="success-furniture-list">
+
+                                        <template
+                                            for:each={selectedFurnitureDetails}
+                                            for:item="item">
+
+                                            <span
+                                                key={item.id}
+                                                class="success-furniture-item">
+
+                                                {item.name}
+
+                                            </span>
+
+                                        </template>
+
+                                    </div>
+
+                                </div>
+
+
+                                <!-- Preferred Time -->
+
+                                <div class="success-detail">
+
+                                    <span class="success-label">
+                                        Preferred time
+                                    </span>
+
+                                    <strong>
+                                        {preferredTime}
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- SUCCESS NOTE -->
+
+                            <div class="success-note">
+
+                                <span class="success-note-icon">
+                                    ✓
+                                </span>
+
+                                <p>
+                                    Our team will contact you during your selected
+                                    time slot. You can discuss measurements, design,
+                                    materials and other project details directly with us.
+                                </p>
+
+                            </div>
+
+
+                            <!-- BACK HOME -->
+
+                            <button
+                                class="home-button"
+                                onclick={handleBackToHome}>
+
+                                Back to Home
+
+                                <span>
+                                    →
                                 </span>
 
                             </button>
 
-                        </template>
+                        </div>
 
-                    </div>
+                    </template>
 
                 </div>
 
@@ -152,30 +792,55 @@
                 <!-- =========================
                      NAVIGATION
                 ========================== -->
+                <template if:false={isStepFive}>
+                    <div class="form-navigation">
 
-                <div class="form-navigation">
+                        <button
+                            class="back-button"
+                            disabled={isStepOne}
+                            onclick={handleBack}>
 
-                    <button
-                        class="back-button"
-                        disabled>
+                            ← Back
 
-                        ← Back
-
-                    </button>
+                        </button>
 
 
-                    <button
-                        class="next-button">
+                        <template if:false={isStepFour}>
 
-                        Next
+                            <button
+                                class="next-button"
+                                disabled={isNextDisabled}
+                                onclick={handleNext}>
 
-                        <span>
-                            →
-                        </span>
+                                Next
 
-                    </button>
+                                <span>
+                                    →
+                                </span>
 
-                </div>
+                            </button>
+
+                        </template>
+
+
+                        <template if:true={isStepFour}>
+
+                            <button
+                                class="next-button"
+                                onclick={handleSubmit}>
+
+                                Submit Request
+
+                                <span>
+                                    →
+                                </span>
+
+                            </button>
+
+                        </template>
+
+                    </div>
+                </template>
 
             </div>
 

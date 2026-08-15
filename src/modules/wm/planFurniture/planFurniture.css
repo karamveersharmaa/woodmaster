@@ -464,3 +464,719 @@ h1 {
 
 }
 
+.next-button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.next-button:disabled:hover {
+    background: var(--wm-walnut-dark);
+    border-color: var(--wm-walnut-dark);
+}
+
+/* =========================
+   STEP 2 — YOUR SPACE
+========================= */
+
+.space-form {
+    max-width: 620px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.field-group label {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--wm-ink);
+}
+
+
+.field-group input,
+.field-group select {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 14px 16px;
+
+    background: var(--wm-bg);
+
+    border: 1px solid var(--wm-line-strong);
+    border-radius: var(--wm-radius);
+
+    color: var(--wm-ink);
+
+    font-family: inherit;
+    font-size: 0.95rem;
+
+    outline: none;
+}
+
+
+.field-group input:focus,
+.field-group select:focus {
+    border-color: var(--wm-copper);
+}
+
+
+.field-help {
+    font-size: 0.78rem;
+    line-height: 1.4;
+    color: var(--wm-ink-soft);
+}
+
+/* =========================
+   STEP 3 — CUSTOMER DETAILS
+========================= */
+
+.details-form {
+    max-width: 620px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+
+.details-intro {
+    margin-bottom: 4px;
+}
+
+
+.details-intro h3 {
+    margin: 0 0 8px;
+
+    font-family: var(--font-display);
+
+    font-size: 1.25rem;
+
+    font-weight: 600;
+
+    color: var(--wm-ink);
+}
+
+
+.details-intro p {
+    margin: 0;
+
+    font-size: 0.88rem;
+
+    line-height: 1.5;
+
+    color: var(--wm-ink-soft);
+}
+
+
+.required {
+    color: var(--wm-copper);
+}
+
+
+.optional {
+    margin-left: 6px;
+
+    font-family: var(--font-mono);
+
+    font-size: 0.65rem;
+
+    font-weight: 400;
+
+    color: var(--wm-ink-soft);
+}
+
+
+/* =========================
+   CONTACT OPTIONS
+========================= */
+
+.contact-options {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+}
+
+
+.contact-option {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px 18px;
+
+    background: var(--wm-bg);
+
+    border: 1px solid var(--wm-line-strong);
+
+    border-radius: var(--wm-radius);
+
+    color: var(--wm-ink);
+
+    font-family: inherit;
+
+    font-size: 0.9rem;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.contact-option:hover {
+    border-color: var(--wm-copper);
+}
+
+
+.contact-option.selected {
+    background: var(--wm-walnut-dark);
+
+    border-color: var(--wm-walnut-dark);
+
+    color: var(--wm-on-dark);
+}
+
+
+.contact-radio {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex: none;
+
+    border: 1px solid var(--wm-line-strong);
+
+    border-radius: 50%;
+
+    font-size: 0.7rem;
+}
+
+
+.contact-option.selected .contact-radio {
+    background: var(--wm-copper);
+
+    border-color: var(--wm-copper);
+
+    color: #ffffff;
+}
+
+/* =========================
+   STEP 4 — REVIEW
+========================= */
+
+.review-content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+
+.review-section {
+    padding-bottom: 28px;
+
+    border-bottom: 1px solid var(--wm-line);
+}
+
+
+.review-section:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+
+.review-section-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+
+    margin-bottom: 20px;
+}
+
+
+.review-number {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: none;
+
+    border: 1px solid var(--wm-line-strong);
+    border-radius: 50%;
+
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+
+    color: var(--wm-copper);
+}
+
+
+.review-section-header h3 {
+    margin: 0 0 4px;
+
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 600;
+
+    color: var(--wm-ink);
+}
+
+
+.review-section-header p {
+    margin: 0;
+
+    font-size: 0.8rem;
+
+    color: var(--wm-ink-soft);
+}
+
+
+/* =========================
+   FURNITURE LIST
+========================= */
+
+.review-furniture-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.review-furniture-item {
+    padding: 10px 14px;
+
+    background: var(--wm-bg);
+
+    border: 1px solid var(--wm-line);
+
+    border-radius: var(--wm-radius);
+
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+
+    color: var(--wm-ink);
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.review-details-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+
+.review-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+.review-label {
+    font-family: var(--font-mono);
+
+    font-size: 0.68rem;
+
+    letter-spacing: 0.04em;
+
+    text-transform: uppercase;
+
+    color: var(--wm-ink-soft);
+}
+
+
+.review-detail strong {
+    font-size: 0.95rem;
+
+    font-weight: 500;
+
+    color: var(--wm-ink);
+
+    word-break: break-word;
+}
+
+
+/* =========================
+   REVIEW NOTE
+========================= */
+
+.review-note {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 16px 18px;
+
+    background: var(--wm-bg);
+
+    border: 1px solid var(--wm-line);
+
+    border-radius: var(--wm-radius);
+}
+
+
+.review-note-icon {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex: none;
+
+    border-radius: 50%;
+
+    background: var(--wm-copper);
+
+    color: #ffffff;
+
+    font-size: 0.68rem;
+}
+
+
+.review-note p {
+    margin: 0;
+
+    font-size: 0.8rem;
+
+    line-height: 1.5;
+
+    color: var(--wm-ink-soft);
+}
+
+@media (max-width: 520px) {
+
+    .review-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================
+   STEP 5 — SUCCESS
+========================= */
+
+.success-content {
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================
+   SUCCESS ICON
+========================= */
+
+.success-icon {
+    width: 64px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 24px;
+
+    border-radius: 50%;
+
+    background: var(--wm-copper);
+
+    color: #ffffff;
+
+    font-size: 1.5rem;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.success-header {
+    max-width: 520px;
+
+    margin-bottom: 36px;
+}
+
+
+.success-header h2 {
+    margin: 0 0 14px;
+
+    font-family: var(--font-display);
+
+    font-size: 2.2rem;
+
+    font-weight: 600;
+
+    color: var(--wm-ink);
+}
+
+
+.success-header p {
+    margin: 0;
+
+    font-size: 0.98rem;
+
+    line-height: 1.65;
+
+    color: var(--wm-ink-soft);
+}
+
+
+/* =========================
+   SUMMARY
+========================= */
+
+.success-summary {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    gap: 18px;
+
+    padding: 24px;
+
+    margin-bottom: 20px;
+
+    box-sizing: border-box;
+
+    background: var(--wm-bg);
+
+    border: 1px solid var(--wm-line);
+
+    border-radius: var(--wm-radius);
+
+    text-align: left;
+}
+
+
+.success-detail {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.success-label {
+    font-family: var(--font-mono);
+
+    font-size: 0.68rem;
+
+    letter-spacing: 0.05em;
+
+    text-transform: uppercase;
+
+    color: var(--wm-ink-soft);
+}
+
+
+.success-detail strong {
+    font-size: 0.92rem;
+
+    font-weight: 500;
+
+    color: var(--wm-ink);
+}
+
+
+/* =========================
+   FURNITURE LIST
+========================= */
+
+.success-furniture-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 6px;
+}
+
+
+.success-furniture-item {
+    padding: 6px 9px;
+
+    border: 1px solid var(--wm-line);
+
+    border-radius: 999px;
+
+    font-size: 0.76rem;
+
+    color: var(--wm-ink);
+}
+
+
+/* =========================
+   NOTE
+========================= */
+
+.success-note {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 16px 18px;
+
+    margin-bottom: 28px;
+
+    box-sizing: border-box;
+
+    background: var(--wm-bg);
+
+    border: 1px solid var(--wm-line);
+
+    border-radius: var(--wm-radius);
+
+    text-align: left;
+}
+
+
+.success-note-icon {
+    width: 22px;
+    height: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: none;
+
+    border-radius: 50%;
+
+    background: var(--wm-copper);
+
+    color: #ffffff;
+
+    font-size: 0.68rem;
+}
+
+
+.success-note p {
+    margin: 0;
+
+    font-size: 0.78rem;
+
+    line-height: 1.5;
+
+    color: var(--wm-ink-soft);
+}
+
+
+/* =========================
+   HOME BUTTON
+========================= */
+
+.home-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 13px 22px;
+
+    background: var(--wm-walnut-dark);
+
+    border: 1px solid var(--wm-walnut-dark);
+
+    border-radius: var(--wm-radius);
+
+    color: var(--wm-on-dark);
+
+    font-family: var(--font-mono);
+
+    font-size: 0.82rem;
+
+    letter-spacing: 0.02em;
+
+    cursor: pointer;
+}
+
+
+.home-button:hover {
+    background: var(--wm-copper);
+
+    border-color: var(--wm-copper);
+}
+
+@media (max-width: 520px) {
+
+    .success-summary {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =========================
+   BACK TO HOME
+========================= */
+
+.page-exit {
+    margin-bottom: 28px;
+}
+
+.back-home-button {
+    padding: 0;
+
+    background: transparent;
+    border: none;
+
+    color: #9c5b18;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.back-home-button:hover {
+    color: #603813;
+}
+
+.back-home-button:focus-visible {
+    outline: 2px solid #9c5b18;
+    outline-offset: 4px;
+}

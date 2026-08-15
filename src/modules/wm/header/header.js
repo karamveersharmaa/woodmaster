@@ -54,4 +54,14 @@ export default class Header extends LightningElement {
   get navClass() {
     return this.menuOpen ? 'links open' : 'links';
   }
+
+  handlePlanFurniture() {
+
+      this.closeMenu();
+
+      this.dispatchEvent(
+          new CustomEvent('planfurniture')
+      );
+
+  }
 }
