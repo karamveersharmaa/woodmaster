@@ -2,14 +2,14 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 1727
+/***/ 727
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
   var shadowSelector = token ? ("[" + token + "]") : "";
   var hostSelector = token ? ("[" + token + "-host]") : "";
   var suffixToken = token ? ("-" + token) : "";
-  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;background: var(--wm-bg);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 88px 24px;display: grid;grid-template-columns: 1.3fr 1fr;gap: 56px;align-items: start;}.eyebrow" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.78rem;letter-spacing: 0.06em;color: var(--wm-copper);margin: 0 0 12px;}h2" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: clamp(1.8rem, 2.2vw + 1rem, 2.6rem);margin: 0 0 24px;}.copy" + shadowSelector + " p" + shadowSelector + " {line-height: 1.65;color: var(--wm-ink-soft);font-size: 1rem;margin: 0 0 18px;max-width: 58ch;}.stats" + shadowSelector + " {display: grid;grid-template-columns: 1fr 1fr;gap: 28px;margin: 0;border-top: 1px solid var(--wm-line);padding-top: 28px;}.stats" + shadowSelector + " dt" + shadowSelector + " {font-family: var(--font-display);font-size: 2.1rem;font-weight: 600;color: var(--wm-walnut-dark);}.stats" + shadowSelector + " dd" + shadowSelector + " {margin: 4px 0 0;font-size: 0.85rem;color: var(--wm-ink-soft);}@media (max-width: 900px) {.inner" + shadowSelector + " {grid-template-columns: 1fr;gap: 36px;}}";
+  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;background: var(--wm-bg);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 96px 24px;display: grid;grid-template-columns: 1.05fr 0.95fr;gap: 72px;align-items: start;}.copy" + shadowSelector + " {max-width: 620px;}.eyebrow" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.76rem;letter-spacing: 0.08em;color: var(--wm-copper);margin: 0 0 18px;}h2" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: clamp(\r\n 2rem,\r\n 3vw,\r\n 3.1rem\r\n );line-height: 1.08;letter-spacing: -0.01em;margin: 0 0 28px;max-width: 15ch;}.copy" + shadowSelector + " p" + shadowSelector + " {color: var(--wm-ink-soft);font-size: 0.98rem;line-height: 1.7;max-width: 58ch;margin: 0 0 18px;}.copy" + shadowSelector + " .lead" + shadowSelector + " {color: var(--wm-ink);font-size: 1.05rem;line-height: 1.65;margin-bottom: 22px;}.plan-link" + shadowSelector + " {margin-top: 18px;padding: 0;border: none;background: transparent;color: var(--wm-copper);font-family: var(--font-mono);font-size: 0.82rem;letter-spacing: 0.03em;cursor: pointer;transition:\r\n color 0.2s ease,\r\n transform 0.2s ease;}.plan-link:hover" + shadowSelector + " {color: var(--wm-walnut-dark);transform: translateX(4px);}.plan-link:focus-visible" + shadowSelector + " {outline: 2px solid var(--wm-copper);outline-offset: 4px;}.workshop-panel" + shadowSelector + " {background: var(--wm-bg-panel);border: 1px solid var(--wm-line);padding: 30px;}.panel-heading" + shadowSelector + " {display: flex;justify-content: space-between;align-items: center;padding-bottom: 18px;border-bottom: 1px solid var(--wm-line);}.panel-heading" + shadowSelector + " span" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.68rem;letter-spacing: 0.08em;color: var(--wm-copper);}.stats" + shadowSelector + " {display: grid;grid-template-columns: 1fr 1fr;gap: 0;margin: 0;border-bottom: 1px solid var(--wm-line);}.stat" + shadowSelector + " {padding: 28px 18px 28px 0;}.stat:nth-child(2)" + shadowSelector + ",\r.stat:nth-child(4)" + shadowSelector + " {padding-left: 18px;border-left: 1px solid var(--wm-line);}.stat:nth-child(3)" + shadowSelector + ",\r.stat:nth-child(4)" + shadowSelector + " {border-top: 1px solid var(--wm-line);}.number" + shadowSelector + " {display: block;font-family: var(--font-display);font-size: 2.25rem;line-height: 1;font-weight: 600;color: var(--wm-walnut-dark);margin-bottom: 8px;}.label" + shadowSelector + " {display: block;color: var(--wm-ink-soft);font-size: 0.78rem;line-height: 1.45;max-width: 18ch;}.principles" + shadowSelector + " {padding-top: 8px;}.principle" + shadowSelector + " {display: grid;grid-template-columns: 42px 1fr;gap: 14px;padding: 20px 0;border-bottom: 1px solid var(--wm-line);}.principle:last-child" + shadowSelector + " {border-bottom: none;}.index" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.68rem;color: var(--wm-copper);padding-top: 3px;}.principle" + shadowSelector + " h3" + shadowSelector + " {font-family: var(--font-display);font-size: 1rem;font-weight: 600;margin: 0 0 5px;color: var(--wm-ink);}.principle" + shadowSelector + " p" + shadowSelector + " {font-size: 0.8rem;line-height: 1.5;color: var(--wm-ink-soft);margin: 0;max-width: 42ch;}@media (max-width: 900px) {.inner" + shadowSelector + " {grid-template-columns: 1fr;gap: 48px;padding: 80px 24px;}.copy" + shadowSelector + " {max-width: 680px;}h2" + shadowSelector + " {max-width: 18ch;}.workshop-panel" + shadowSelector + " {max-width: 680px;width: 100%;}}@media (max-width: 600px) {.inner" + shadowSelector + " {padding: 68px 20px;gap: 40px;}h2" + shadowSelector + " {font-size: 2rem;max-width: 16ch;}.copy" + shadowSelector + " .lead" + shadowSelector + " {font-size: 1rem;}.workshop-panel" + shadowSelector + " {padding: 22px;}.panel-heading" + shadowSelector + " {flex-direction: column;align-items: flex-start;gap: 6px;}.stat" + shadowSelector + " {padding: 22px 12px 22px 0;}.stat:nth-child(2)" + shadowSelector + ",\r .stat:nth-child(4)" + shadowSelector + " {padding-left: 12px;}.number" + shadowSelector + " {font-size: 1.9rem;}}";
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
@@ -20,22 +20,27 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 9793
+/***/ 793
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _about_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1727);
-/* harmony import */ var _about_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
+/* harmony import */ var _about_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(727);
+/* harmony import */ var _about_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<section class="about${0}"${"a0:id"}${2}><div class="inner${0}"${2}><div class="copy${0}"${2}><p class="eyebrow${0}"${2}>⊢— The Workshop —⊣</p><h2${3}>Wood first. Screws second.</h2><p${3}>WoodMaster is run out of a small workshop in the Delhi NCR area, building furniture and fittings the way it was done before flat-pack: seasoned solid wood, cut and joined by hand, finished on site. No MDF, no laminate shortcuts on load-bearing joints — if a piece is going to hold your clothes, your books or your dinner for the next twenty years, it&#x27;s built like it has to.</p><p${3}>Every job starts with a site visit and a hand-drawn sketch, not a catalogue page, because your almirah has to fit your wall, not the other way round.</p></div><dl class="stats${0}"${2}><div${3}><dt${3}>25+</dt><dd${3}>Years at the bench</dd></div><div${3}><dt${3}>300+</dt><dd${3}>Pieces delivered</dd></div><div${3}><dt${3}>4</dt><dd${3}>Timbers worked regularly</dd></div><div${3}><dt${3}>100%</dt><dd${3}>Site-measured, not guessed</dd></div></dl></div></section>`;
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<section class="about${0}"${"a0:id"}${2}><div class="inner${0}"${2}><div class="copy${0}"${2}><p class="eyebrow${0}"${2}>⊢— The WoodMaster Approach —⊣</p><h2${3}>Built for your space, not picked from a catalogue.</h2><p class="lead${0}"${2}>Every piece we build starts with the space it needs to live in. We measure, understand how you use the room, discuss your requirements and then build around them.</p><p${3}>From wardrobes and TV units to dining tables, doors and complete custom furniture, our work is made to fit your dimensions, style and everyday needs.</p><p${3}>We believe good furniture should last. That&#x27;s why we focus on solid construction, carefully selected timber and proper finishing rather than shortcuts.</p><button class="plan-link${0}"${2}>Start Planning Your Furniture →</button></div><div class="workshop-panel${0}"${2}><div class="panel-heading${0}"${2}><span${3}>WOODMASTER</span><span${3}>CRAFTSMANSHIP</span></div><div class="stats${0}"${2}><div class="stat${0}"${2}><span class="number${0}"${2}>25+</span><span class="label${0}"${2}>Years of woodworking experience</span></div><div class="stat${0}"${2}><span class="number${0}"${2}>300+</span><span class="label${0}"${2}>Pieces delivered</span></div><div class="stat${0}"${2}><span class="number${0}"${2}>4</span><span class="label${0}"${2}>Timbers worked regularly</span></div><div class="stat${0}"${2}><span class="number${0}"${2}>100%</span><span class="label${0}"${2}>Measured around your space</span></div></div><div class="principles${0}"${2}><div class="principle${0}"${2}><span class="index${0}"${2}>01</span><div${3}><h3${3}>Measure First</h3><p${3}>Your furniture starts with the actual dimensions of your space.</p></div></div><div class="principle${0}"${2}><span class="index${0}"${2}>02</span><div${3}><h3${3}>Build Properly</h3><p${3}>Construction is designed for everyday use, durability and long-term strength.</p></div></div><div class="principle${0}"${2}><span class="index${0}"${2}>03</span><div${3}><h3${3}>Finish Carefully</h3><p${3}>Every piece is finished with attention to material, detail and the final space.</p></div></div></div></div></div></section>`;
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {gid: api_scoped_id, sp: api_static_part, st: api_static_fragment} = $api;
+  const {gid: api_scoped_id, b: api_bind, sp: api_static_part, st: api_static_fragment} = $api;
+  const {_m0} = $ctx;
   return [api_static_fragment($fragment1, 1, [api_static_part(0, {
     attrs: {
       "id": api_scoped_id("about")
     }
+  }, null), api_static_part(13, {
+    on: _m0 || ($ctx._m0 = {
+      "click": api_bind($cmp.handlePlanFurniture)
+    })
   }, null)])];
   /*LWC compiler v9.3.6*/
 }
@@ -58,14 +63,20 @@ if (_about_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ 
 
 /***/ },
 
-/***/ 7551
+/***/ 932
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _about_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9793);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9565);
+/* harmony import */ var _about_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(793);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(565);
 
 
 class About extends lwc__WEBPACK_IMPORTED_MODULE_1__/* .LightningElement */ .xv {
+  handlePlanFurniture() {
+    this.dispatchEvent(new CustomEvent('planfurniture', {
+      bubbles: true,
+      composed: true
+    }));
+  }
   /*LWC compiler v9.3.6*/
 }
 const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_1__/* .registerComponent */ .Nj)(About, {
@@ -81,14 +92,14 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_1__/* .re
 
 /***/ },
 
-/***/ 2311
+/***/ 311
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
   var shadowSelector = token ? ("[" + token + "]") : "";
   var hostSelector = token ? ("[" + token + "-host]") : "";
   var suffixToken = token ? ("-" + token) : "";
-  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;--wm-bg: #F7F1E6;--wm-bg-soft: #EFE4D0;--wm-bg-panel: #FBF7EF;--wm-ink: #241A12;--wm-ink-soft: #5B4A3D;--wm-walnut: #4A2E1E;--wm-walnut-dark: #2B1B12;--wm-copper: #B5651D;--wm-copper-light: #D98A4B;--wm-sage: #6E7A5F;--wm-line: rgba(36, 26, 18, 0.18);--wm-line-strong: rgba(36, 26, 18, 0.34);--wm-on-dark: #F3E9D8;--wm-on-dark-soft: rgba(243, 233, 216, 0.7);--font-display: 'Fraunces', Georgia, serif;--font-body: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;--font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;--wm-max: 1180px;--wm-radius: 2px;font-family: var(--font-body);color: var(--wm-ink);background: var(--wm-bg);}main" + shadowSelector + " {display: block;}";
+  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;--wm-bg: #F7F1E6;--wm-bg-soft: #EFE4D0;--wm-bg-panel: #FBF7EF;--wm-ink: #241A12;--wm-ink-soft: #5B4A3D;--wm-walnut: #4A2E1E;--wm-walnut-dark: #2B1B12;--wm-copper: #B5651D;--wm-copper-light: #D98A4B;--wm-sage: #6E7A5F;--wm-line: rgba(36, 26, 18, 0.18);--wm-line-strong: rgba(36, 26, 18, 0.34);--wm-on-dark: #F3E9D8;--wm-on-dark-soft: rgba(243, 233, 216, 0.7);--font-display: 'Fraunces', Georgia, serif;--font-body: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;--font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;--wm-max: 1180px;--wm-radius: 2px;font-family: var(--font-body);color: var(--wm-ink);background: var(--wm-bg);}main" + shadowSelector + " {display: block;}.explore-products" + shadowSelector + " {display: block;background: var(--wm-bg-soft);padding: 0 24px 88px;}.explore-inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 34px 40px;display: flex;align-items: center;justify-content: space-between;gap: 32px;background: var(--wm-bg-panel);border: 1px solid var(--wm-line);}.explore-copy" + shadowSelector + " {max-width: 620px;}.explore-eyebrow" + shadowSelector + " {margin: 0 0 10px;font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.06em;color: var(--wm-copper);}.explore-copy" + shadowSelector + " h2" + shadowSelector + " {margin: 0 0 8px;font-family: var(--font-display);font-size: 1.55rem;line-height: 1.2;font-weight: 600;color: var(--wm-ink);}.explore-copy" + shadowSelector + " p" + shadowSelector + " {margin: 0;font-size: 0.9rem;line-height: 1.5;color: var(--wm-ink-soft);}.explore-btn" + shadowSelector + " {flex: none;padding: 15px 24px;border: 1px solid var(--wm-walnut-dark);border-radius: var(--wm-radius);background: var(--wm-walnut-dark);color: var(--wm-on-dark);font-family: var(--font-mono);font-size: 0.82rem;letter-spacing: 0.02em;cursor: pointer;transition:\r\n background 0.25s ease,\r\n transform 0.25s ease;}.explore-btn:hover" + shadowSelector + " {background: var(--wm-copper);border-color: var(--wm-copper);transform: translateY(-2px);}.explore-btn:focus-visible" + shadowSelector + " {outline: 2px solid var(--wm-copper);outline-offset: 3px;}@media (max-width: 700px) {.explore-products" + shadowSelector + " {padding: 0 20px 64px;}.explore-inner" + shadowSelector + " {padding: 28px 24px;flex-direction: column;align-items: flex-start;}.explore-btn" + shadowSelector + " {width: 100%;}}";
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
@@ -99,25 +110,23 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 8073
+/***/ 73
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2311);
-/* harmony import */ var _app_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
-/* harmony import */ var wm_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3415);
-/* harmony import */ var wm_hero__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1717);
-/* harmony import */ var wm_services__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(389);
-/* harmony import */ var wm_process__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8787);
-/* harmony import */ var wm_gallery__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(9927);
-/* harmony import */ var wm_testimonials__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(7001);
-/* harmony import */ var wm_about__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(7551);
-/* harmony import */ var wm_contact__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(5863);
-/* harmony import */ var wm_footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(5707);
-/* harmony import */ var wm_productDetails__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(5595);
+/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(311);
+/* harmony import */ var _app_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
+/* harmony import */ var wm_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(415);
+/* harmony import */ var wm_hero__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(717);
+/* harmony import */ var wm_planFurniture__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(127);
+/* harmony import */ var wm_process__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(787);
+/* harmony import */ var wm_gallery__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(927);
+/* harmony import */ var wm_testimonials__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(1);
+/* harmony import */ var wm_about__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(932);
+/* harmony import */ var wm_footer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(707);
+/* harmony import */ var wm_services__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(389);
+/* harmony import */ var wm_productDetails__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(595);
 /* harmony import */ var wm_cart__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(745);
-/* harmony import */ var wm_planFurniture__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(3127);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(9565);
-
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(565);
 
 
 
@@ -151,50 +160,59 @@ const stc5 = {
   key: 8
 };
 const stc6 = {
-  key: 9
+  key: 10
+};
+const stc7 = {
+  key: 12
 };
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {b: api_bind, c: api_custom_element, h: api_element} = $api;
-  const {_m0, _m1, _m2, _m3, _m4, _m5} = $ctx;
+  const {_m0, _m1, _m2, _m3, _m4, _m5, _m6} = $ctx;
   return [$cmp.isHomePage ? api_custom_element("wm-header", wm_header__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
     key: 0,
     on: _m0 || ($ctx._m0 = {
       "cartclick": api_bind($cmp.handleCartClick),
-      "planfurniture": api_bind($cmp.handlePlanFurniture)
+      "exploreproducts": api_bind($cmp.handleExploreProducts)
     })
   }) : null, $cmp.isHomePage ? api_element("main", stc0, [api_custom_element("wm-hero", wm_hero__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, {
     key: 2,
     on: _m1 || ($ctx._m1 = {
       "planfurniture": api_bind($cmp.handlePlanFurniture)
     })
-  }), api_custom_element("wm-services", wm_services__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A, {
+  }), api_custom_element("wm-plan-furniture", wm_planFurniture__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .A, {
     key: 3,
     on: _m2 || ($ctx._m2 = {
+      "backtohome": api_bind($cmp.handleBackToHome),
+      "exploreproducts": api_bind($cmp.handleExploreProducts)
+    })
+  }), api_custom_element("wm-process", wm_process__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A, stc1), api_custom_element("wm-gallery", wm_gallery__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .A, stc2), api_custom_element("wm-testimonials", wm_testimonials__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A, stc3), api_custom_element("wm-about", wm_about__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .A, stc4)]) : null, $cmp.isHomePage ? api_custom_element("wm-footer", wm_footer__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .A, stc5) : null, $cmp.isProductsPage ? api_custom_element("wm-header", wm_header__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+    key: 9,
+    on: _m3 || ($ctx._m3 = {
+      "cartclick": api_bind($cmp.handleCartClick)
+    })
+  }) : null, $cmp.isProductsPage ? api_element("main", stc6, [api_custom_element("wm-services", wm_services__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .A, {
+    key: 11,
+    on: _m4 || ($ctx._m4 = {
       "productclick": api_bind($cmp.handleProductClick)
     })
-  }), api_custom_element("wm-process", wm_process__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A, stc1), api_custom_element("wm-gallery", wm_gallery__WEBPACK_IMPORTED_MODULE_6__/* ["default"] */ .A, stc2), api_custom_element("wm-testimonials", wm_testimonials__WEBPACK_IMPORTED_MODULE_7__/* ["default"] */ .A, stc3), api_custom_element("wm-about", wm_about__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .A, stc4), api_custom_element("wm-contact", wm_contact__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .A, stc5)]) : null, $cmp.isHomePage ? api_custom_element("wm-footer", wm_footer__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .A, stc6) : null, $cmp.isProductDetailsPage ? api_custom_element("wm-product-details", wm_productDetails__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A, {
+  })]) : null, $cmp.isProductsPage ? api_custom_element("wm-footer", wm_footer__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .A, stc7) : null, $cmp.isProductDetailsPage ? api_custom_element("wm-product-details", wm_productDetails__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A, {
     props: {
       "product": $cmp.selectedProduct
     },
-    key: 10,
-    on: _m3 || ($ctx._m3 = {
-      "back": api_bind($cmp.handleBackToHome),
+    key: 13,
+    on: _m5 || ($ctx._m5 = {
+      "back": api_bind($cmp.handleBackToProducts),
       "opencart": api_bind($cmp.handleOpenCart)
     })
   }) : null, $cmp.isCartPage ? api_custom_element("wm-cart", wm_cart__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A, {
-    key: 11,
-    on: _m4 || ($ctx._m4 = {
+    key: 14,
+    on: _m6 || ($ctx._m6 = {
       "backtohome": api_bind($cmp.handleContinueShopping)
-    })
-  }) : null, $cmp.isPlanFurniturePage ? api_custom_element("wm-plan-furniture", wm_planFurniture__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .A, {
-    key: 12,
-    on: _m5 || ($ctx._m5 = {
-      "backtohome": api_bind($cmp.handleBackToHome)
     })
   }) : null];
   /*LWC compiler v9.3.6*/
 }
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,lwc__WEBPACK_IMPORTED_MODULE_14__/* .registerTemplate */ .cI)(tmpl));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,lwc__WEBPACK_IMPORTED_MODULE_13__/* .registerTemplate */ .cI)(tmpl));
 tmpl.stylesheets = [];
 tmpl.stylesheetToken = "lwc-7svu88ro565";
 tmpl.legacyStylesheetToken = "wm-app_app";
@@ -204,7 +222,7 @@ if (_app_css__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A) {
 if (_app_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A) {
   tmpl.stylesheets.push.apply(tmpl.stylesheets, _app_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A);
 }
-;(0,lwc__WEBPACK_IMPORTED_MODULE_14__/* .freezeTemplate */ .iU)(tmpl);
+;(0,lwc__WEBPACK_IMPORTED_MODULE_13__/* .freezeTemplate */ .iU)(tmpl);
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, [
 /* harmony export */   "A", 0, /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
@@ -213,12 +231,12 @@ if (_app_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A
 
 /***/ },
 
-/***/ 5655
+/***/ 655
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
-/* harmony import */ var _app_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8073);
-/* harmony import */ var _data_products__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1505);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
+/* harmony import */ var _app_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(73);
+/* harmony import */ var _data_products__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(505);
 
 
 
@@ -228,25 +246,45 @@ class App extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv {
     super(...args);
     this.currentPage = 'home';
     this.selectedProduct = null;
+    // =========================================
+    // Browser Navigation
+    // =========================================
     this.handleBrowserNavigation = event => {
-      if (event.state && event.state.page === 'productDetails') {
+      const page = event.state?.page || 'home';
+      if (page === 'productDetails') {
         this.currentPage = 'productDetails';
         this.selectedProduct = event.state.product;
-      } else {
-        this.currentPage = 'home';
-        this.selectedProduct = null;
+        return;
       }
+      if (page === 'products') {
+        this.currentPage = 'products';
+        this.selectedProduct = null;
+        return;
+      }
+      if (page === 'cart') {
+        this.currentPage = 'cart';
+        this.selectedProduct = null;
+        return;
+      }
+      this.currentPage = 'home';
+      this.selectedProduct = null;
     };
   }
   connectedCallback() {
-    // Handle Browser Back / Forward
     window.addEventListener('popstate', this.handleBrowserNavigation);
   }
   disconnectedCallback() {
     window.removeEventListener('popstate', this.handleBrowserNavigation);
   }
+  // =========================================
+  // Page Getters
+  // =========================================
+
   get isHomePage() {
     return this.currentPage === 'home';
+  }
+  get isProductsPage() {
+    return this.currentPage === 'products';
   }
   get isProductDetailsPage() {
     return this.currentPage === 'productDetails';
@@ -254,9 +292,38 @@ class App extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv {
   get isCartPage() {
     return this.currentPage === 'cart';
   }
-  handleOpenCart() {
-    this.currentPage = 'cart';
+  get isPlanFurniturePage() {
+    return this.currentPage === 'planFurniture';
   }
+
+  // =========================================
+  // Plan Your Furniture
+  // =========================================
+
+  handlePlanFurniture() {
+    console.log('Plan Furniture event received');
+    const planFurniture = this.template.querySelector('wm-plan-furniture');
+    if (planFurniture) {
+      planFurniture.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
+
+  // =========================================
+  // Explore Products
+  // =========================================
+
+  handleExploreProducts() {
+    console.log('Explore Products event received');
+    this.currentPage = 'products';
+  }
+
+  // =========================================
+  // Product Click
+  // =========================================
+
   handleProductClick(event) {
     const productId = event.detail.productId;
     const selectedProduct = _data_products__WEBPACK_IMPORTED_MODULE_2__/* .products */ .Z.find(product => product.id === productId);
@@ -266,32 +333,48 @@ class App extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv {
     }
     this.selectedProduct = selectedProduct;
     this.currentPage = 'productDetails';
-    console.log('Selected Product');
-    console.log(this.selectedProduct);
   }
-  handleBackToHome() {
-    console.log('Back event received');
-    this.currentPage = 'home';
+
+  // =========================================
+  // Back From Product Details
+  // =========================================
+
+  handleBackToProducts() {
+    console.log('Back to Products clicked');
+    this.currentPage = 'products';
     this.selectedProduct = null;
+  }
+
+  // =========================================
+  // Cart
+  // =========================================
+
+  handleOpenCart() {
+    this.currentPage = 'cart';
   }
   handleCartClick() {
     console.log('Cart event received');
     this.currentPage = 'cart';
   }
+
+  // =========================================
+  // Continue Shopping
+  // =========================================
+
   handleContinueShopping() {
     console.log('Continue Shopping event received');
     this.currentPage = 'home';
-    window.history.pushState({
-      page: 'home'
-    }, '', '/');
+    this.selectedProduct = null;
   }
-  handlePlanFurniture() {
-    console.log('Plan Furniture event received');
-    this.currentPage = 'planFurniture';
-  }
-  get isPlanFurniturePage() {
-    console.log('isPlanFurniturePage called');
-    return this.currentPage === 'planFurniture';
+
+  // =========================================
+  // Back To Home
+  // =========================================
+
+  handleBackToHome() {
+    console.log('Back event received');
+    this.currentPage = 'home';
+    this.selectedProduct = null;
   }
   /*LWC compiler v9.3.6*/
 }
@@ -311,7 +394,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 7505
+/***/ 886
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -329,12 +412,12 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 4267
+/***/ 648
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _cart_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7505);
-/* harmony import */ var _cart_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
+/* harmony import */ var _cart_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(886);
+/* harmony import */ var _cart_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
 
 
@@ -422,9 +505,9 @@ if (_cart_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .
 /***/ 745
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
-/* harmony import */ var _cart_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4267);
-/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9192);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
+/* harmony import */ var _cart_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(648);
+/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(192);
 
 
 
@@ -508,218 +591,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 5015
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
-  var shadowSelector = token ? ("[" + token + "]") : "";
-  var hostSelector = token ? ("[" + token + "-host]") : "";
-  var suffixToken = token ? ("-" + token) : "";
-  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;background: var(--wm-bg-soft);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 88px 24px;display: grid;grid-template-columns: 0.85fr 1.15fr;gap: 56px;}.eyebrow" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.78rem;letter-spacing: 0.06em;color: var(--wm-copper);margin: 0 0 12px;}h2" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: clamp(1.7rem, 2.2vw + 1rem, 2.3rem);margin: 0 0 16px;}.sub" + shadowSelector + " {color: var(--wm-ink-soft);line-height: 1.6;margin: 0 0 32px;max-width: 42ch;}.details" + shadowSelector + " {list-style: none;margin: 0;padding: 24px 0 0;border-top: 1px solid var(--wm-line-strong);display: flex;flex-direction: column;gap: 16px;}.details" + shadowSelector + " li" + shadowSelector + " {display: flex;flex-direction: column;gap: 2px;}.k" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.04em;color: var(--wm-copper);text-transform: uppercase;}.v" + shadowSelector + " {font-size: 0.98rem;}.right" + shadowSelector + " {background: var(--wm-bg-panel);border: 1px solid var(--wm-line);padding: 32px;}form" + shadowSelector + " {display: flex;flex-direction: column;gap: 6px;}label" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.76rem;letter-spacing: 0.03em;color: var(--wm-ink-soft);margin-top: 14px;}input" + shadowSelector + ",\rselect" + shadowSelector + ",\rtextarea" + shadowSelector + " {font-family: var(--font-body);font-size: 0.98rem;padding: 11px 12px;border: 1px solid var(--wm-line-strong);background: var(--wm-bg);color: var(--wm-ink);border-radius: var(--wm-radius);}input:focus-visible" + shadowSelector + ",\rselect:focus-visible" + shadowSelector + ",\rtextarea:focus-visible" + shadowSelector + " {outline: 2px solid var(--wm-copper);outline-offset: 1px;}textarea" + shadowSelector + " {resize: vertical;}.btn-primary" + shadowSelector + " {margin-top: 24px;font-family: var(--font-mono);font-size: 0.9rem;padding: 14px 20px;background: var(--wm-walnut-dark);color: var(--wm-on-dark);border: none;border-radius: var(--wm-radius);cursor: pointer;}.btn-primary:hover" + shadowSelector + ",\r.btn-primary:focus-visible" + shadowSelector + " {background: var(--wm-copper);}.thanks-title" + shadowSelector + " {font-family: var(--font-display);font-size: 1.3rem;font-weight: 600;margin: 0 0 10px;}.thanks" + shadowSelector + " p" + shadowSelector + " {color: var(--wm-ink-soft);line-height: 1.6;}@media (max-width: 900px) {.inner" + shadowSelector + " {grid-template-columns: 1fr;gap: 40px;}}";
-  /*LWC compiler v9.3.6*/
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, [
-/* harmony export */   "A", 0, /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ ]);
-
-
-/***/ },
-
-/***/ 2233
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-/* harmony import */ var _contact_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5015);
-/* harmony import */ var _contact_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
-
-
-
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="left${0}"${2}><p class="eyebrow${0}"${2}>⊢— Start A Project —⊣</p><h2${3}>Tell us what you need built.</h2><p class="sub${0}"${2}>Free on-site measurement across Delhi NCR. Share a few details and we&#x27;ll call back within a day with a rough estimate.</p><ul class="details${0}"${2}><li${3}><span class="k${0}"${2}>Phone / WhatsApp</span><span class="v${0}"${2}>+91 90000 00000</span></li><li${3}><span class="k${0}"${2}>Email</span><span class="v${0}"${2}>LuckySharma@woodmaster.example</span></li><li${3}><span class="k${0}"${2}>Workshop</span><span class="v${0}"${2}>Sorkha, Sector-115, Noida, Uttar Pradesh</span></li><li${3}><span class="k${0}"${2}>Hours</span><span class="v${0}"${2}>Mon–Sat, 10am–7pm</span></li></ul></div>`;
-const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Name</label>`;
-const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Phone</label>`;
-const $fragment4 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>What do you need?</label>`;
-const $fragment5 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<option${"a0:value"}${3}>${"t1"}</option>`;
-const $fragment6 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Tell us about the space</label>`;
-const $fragment7 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<textarea${"a0:id"} rows="4" required${"a0:value"}${3}></textarea>`;
-const $fragment8 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<button type="submit" class="btn-primary${0}"${2}>Request a Callback</button>`;
-const $fragment9 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="thanks${0}"${2}><p class="thanks-title${0}"${2}>Request received.</p><p${3}>${"t4"}</p></div>`;
-const stc0 = {
-  "contact": true
-};
-const stc1 = {
-  classMap: {
-    "inner": true
-  },
-  key: 1
-};
-const stc2 = {
-  classMap: {
-    "right": true
-  },
-  key: 4
-};
-function tmpl($api, $cmp, $slotset, $ctx) {
-  const {gid: api_scoped_id, st: api_static_fragment, b: api_bind, sp: api_static_part, h: api_element, k: api_key, d: api_dynamic_text, i: api_iterator} = $api;
-  const {_m0, _m1, _m2, _m3, _m4, _m5} = $ctx;
-  return [api_element("section", {
-    classMap: stc0,
-    attrs: {
-      "id": api_scoped_id("contact")
-    },
-    key: 0
-  }, [api_element("div", stc1, [api_static_fragment($fragment1, 3), api_element("div", stc2, [!$cmp.submitted ? api_element("form", {
-    key: 5,
-    on: _m0 || ($ctx._m0 = {
-      "submit": api_bind($cmp.handleSubmit)
-    })
-  }, [api_static_fragment($fragment2, 7, [api_static_part(0, {
-    attrs: {
-      "for": api_scoped_id("name")
-    }
-  }, null)]), api_element("input", {
-    attrs: {
-      "type": "text",
-      "id": api_scoped_id("name"),
-      "required": ""
-    },
-    props: {
-      "value": $cmp.formName
-    },
-    key: 8,
-    on: _m1 || ($ctx._m1 = {
-      "change": api_bind($cmp.handleNameChange)
-    })
-  }), api_static_fragment($fragment3, 10, [api_static_part(0, {
-    attrs: {
-      "for": api_scoped_id("phone")
-    }
-  }, null)]), api_element("input", {
-    attrs: {
-      "type": "tel",
-      "id": api_scoped_id("phone"),
-      "required": ""
-    },
-    props: {
-      "value": $cmp.formPhone
-    },
-    key: 11,
-    on: _m2 || ($ctx._m2 = {
-      "change": api_bind($cmp.handlePhoneChange)
-    })
-  }), api_static_fragment($fragment4, 13, [api_static_part(0, {
-    attrs: {
-      "for": api_scoped_id("piece")
-    }
-  }, null)]), api_element("select", {
-    attrs: {
-      "id": api_scoped_id("piece"),
-      "value": $cmp.formPiece
-    },
-    key: 14,
-    on: _m3 || ($ctx._m3 = {
-      "change": api_bind($cmp.handlePieceChange)
-    })
-  }, api_iterator($cmp.pieceOptions, function (opt) {
-    return api_static_fragment($fragment5, api_key(16, opt), [api_static_part(0, {
-      attrs: {
-        "value": opt
-      }
-    }, null), api_static_part(1, null, api_dynamic_text(opt))]);
-  })), api_static_fragment($fragment6, 18, [api_static_part(0, {
-    attrs: {
-      "for": api_scoped_id("message")
-    }
-  }, null)]), api_static_fragment($fragment7, 20, [api_static_part(0, {
-    on: _m5 || ($ctx._m5 = {
-      "change": api_bind($cmp.handleMessageChange)
-    }),
-    attrs: {
-      "id": api_scoped_id("message"),
-      "value": $cmp.formMessage
-    }
-  }, null)]), api_static_fragment($fragment8, 22)]) : null, $cmp.submitted ? api_static_fragment($fragment9, 24, [api_static_part(4, null, "We'll call " + api_dynamic_text($cmp.formName) + " on " + api_dynamic_text($cmp.formPhone) + " within a day to talk through the " + api_dynamic_text($cmp.formPiece) + ".")]) : null])])])];
-  /*LWC compiler v9.3.6*/
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .registerTemplate */ .cI)(tmpl));
-tmpl.stylesheets = [];
-tmpl.stylesheetToken = "lwc-47qf142b33c";
-tmpl.legacyStylesheetToken = "wm-contact_contact";
-if (_contact_css__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A) {
-  tmpl.stylesheets.push.apply(tmpl.stylesheets, _contact_css__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .A);
-}
-if (_contact_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A) {
-  tmpl.stylesheets.push.apply(tmpl.stylesheets, _contact_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A);
-}
-;(0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .freezeTemplate */ .iU)(tmpl);
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, [
-/* harmony export */   "A", 0, /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ ]);
-
-
-/***/ },
-
-/***/ 5863
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
-/* harmony import */ var _contact_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2233);
-
-
-
-class Contact extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv {
-  constructor(...args) {
-    super(...args);
-    this.pieceOptions = ['Almirah', 'Door', 'Table', 'Chair', 'Study Table', 'Custom Piece'];
-    this.formName = '';
-    this.formPhone = '';
-    this.formPiece = 'Almirah';
-    this.formMessage = '';
-    this.submitted = false;
-  }
-  handleNameChange(event) {
-    this.formName = event.target.value;
-  }
-  handlePhoneChange(event) {
-    this.formPhone = event.target.value;
-  }
-  handlePieceChange(event) {
-    this.formPiece = event.target.value;
-  }
-  handleMessageChange(event) {
-    this.formMessage = event.target.value;
-  }
-  handleSubmit(event) {
-    event.preventDefault();
-    this.submitted = true;
-  }
-  /*LWC compiler v9.3.6*/
-}
-;(0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerDecorators */ .CF)(Contact, {
-  track: {
-    formName: 1,
-    formPhone: 1,
-    formPiece: 1,
-    formMessage: 1,
-    submitted: 1
-  },
-  fields: ["pieceOptions"]
-});
-const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerComponent */ .Nj)(Contact, {
-  tmpl: _contact_html__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .A,
-  sel: "wm-contact",
-  apiVersion: 66
-});
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__lwc_component_class_internal);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, [
-/* harmony export */   "A", 0, /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
-/* harmony export */ ]);
-
-
-/***/ },
-
-/***/ 6131
+/***/ 131
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -737,12 +609,12 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 2293
+/***/ 293
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6131);
-/* harmony import */ var _footer_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
+/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(131);
+/* harmony import */ var _footer_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
 
 
@@ -771,11 +643,11 @@ if (_footer_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */
 
 /***/ },
 
-/***/ 5707
+/***/ 707
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
-/* harmony import */ var _footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2293);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
+/* harmony import */ var _footer_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(293);
 
 
 
@@ -802,14 +674,14 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 2551
+/***/ 551
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
   var shadowSelector = token ? ("[" + token + "]") : "";
   var hostSelector = token ? ("[" + token + "-host]") : "";
   var suffixToken = token ? ("-" + token) : "";
-  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;background: var(--wm-bg);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 88px 24px 56px;}.eyebrow" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.78rem;letter-spacing: 0.06em;color: var(--wm-copper);margin: 0 0 12px;}h2" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: clamp(1.8rem, 2.2vw + 1rem, 2.6rem);margin: 0 0 40px;max-width: 20ch;}.grid" + shadowSelector + " {display: grid;grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));gap: 30px;}.piece" + shadowSelector + " {margin: 0;cursor: pointer;transition: transform 0.35s ease;}.piece:hover" + shadowSelector + " {transform: translateY(-6px);}.swatch" + shadowSelector + " {aspect-ratio: 4 / 3;overflow: hidden;border-radius: 12px;border: 1px solid var(--wm-line);background: #f7f4ef;transition: box-shadow 0.35s ease;}.piece:hover" + shadowSelector + " .swatch" + shadowSelector + " {box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);}.gallery-image" + shadowSelector + " {width: 100%;height: 100%;object-fit: cover;display: block;transition: transform 0.5s ease;}.piece:hover" + shadowSelector + " .gallery-image" + shadowSelector + " {transform: scale(1.12);}figcaption" + shadowSelector + " {display: flex;flex-direction: column;gap: 6px;padding-top: 14px;}.cap-title" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: 1rem;transition: color 0.3s ease;}.piece:hover" + shadowSelector + " .cap-title" + shadowSelector + " {color: var(--wm-copper);}.cap-meta" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.76rem;color: var(--wm-ink-soft);}.note" + shadowSelector + " {margin-top: 36px;font-size: 0.82rem;color: var(--wm-ink-soft);font-style: italic;}";
+  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;background: var(--wm-bg);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 88px 24px 72px;}.heading" + shadowSelector + " {max-width: 650px;margin-bottom: 48px;}.eyebrow" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.78rem;letter-spacing: 0.06em;color: var(--wm-copper);margin: 0 0 12px;}h2" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: clamp(\r\n 2rem,\r\n 3vw,\r\n 3rem\r\n );line-height: 1.08;margin: 0 0 16px;color: var(--wm-ink);}.intro" + shadowSelector + " {max-width: 58ch;margin: 0;color: var(--wm-ink-soft);font-size: 0.98rem;line-height: 1.65;}.grid" + shadowSelector + " {display: grid;grid-template-columns:\r\n repeat(3, 1fr);gap: 28px;}.piece" + shadowSelector + " {margin: 0;cursor: default;}.swatch" + shadowSelector + " {position: relative;aspect-ratio: 4 / 3;overflow: hidden;border: 1px solid var(--wm-line);background: var(--wm-bg-panel);}.gallery-image" + shadowSelector + " {width: 100%;height: 100%;object-fit: cover;display: block;transition:\r\n transform 0.5s ease;}.image-overlay" + shadowSelector + " {position: absolute;inset: 0;display: flex;align-items: flex-end;justify-content: flex-end;padding: 16px;background:\r\n linear-gradient(\r\n to top,\r\n rgba(36, 26, 18, 0.55),\r\n transparent 45%\r\n );opacity: 0;transition:\r\n opacity 0.3s ease;}.image-overlay" + shadowSelector + " span" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.04em;color: var(--wm-on-dark);transform: translateY(6px);transition:\r\n transform 0.3s ease;}.piece:hover" + shadowSelector + " .gallery-image" + shadowSelector + " {transform: scale(1.05);}.piece:hover" + shadowSelector + " .image-overlay" + shadowSelector + " {opacity: 1;}.piece:hover" + shadowSelector + " .image-overlay" + shadowSelector + " span" + shadowSelector + " {transform: translateY(0);}figcaption" + shadowSelector + " {padding-top: 14px;}.caption-main" + shadowSelector + " {display: flex;flex-direction: column;gap: 5px;}.cap-title" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: 1rem;color: var(--wm-ink);transition:\r\n color 0.25s ease;}.piece:hover" + shadowSelector + " .cap-title" + shadowSelector + " {color: var(--wm-copper);}.cap-meta" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.72rem;color: var(--wm-ink-soft);}.gallery-cta" + shadowSelector + " {margin-top: 56px;padding: 30px 32px;display: flex;align-items: center;justify-content: space-between;gap: 32px;border: 1px solid var(--wm-line);background: var(--wm-bg-soft);}.cta-label" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.06em;color: var(--wm-copper);margin: 0 0 7px;}.cta-text" + shadowSelector + " {max-width: 620px;margin: 0;color: var(--wm-ink-soft);font-size: 0.9rem;line-height: 1.55;}.plan-btn" + shadowSelector + " {flex: none;display: inline-flex;align-items: center;gap: 8px;padding: 14px 20px;background: var(--wm-walnut-dark);border: 1px solid var(--wm-walnut-dark);color: var(--wm-on-dark);font-family: var(--font-mono);font-size: 0.82rem;letter-spacing: 0.02em;cursor: pointer;transition:\r\n background 0.2s ease,\r\n border-color 0.2s ease;}.plan-btn" + shadowSelector + " span" + shadowSelector + " {transition:\r\n transform 0.2s ease;}.plan-btn:hover" + shadowSelector + ",\r.plan-btn:focus-visible" + shadowSelector + " {background: var(--wm-copper);border-color: var(--wm-copper);}.plan-btn:hover" + shadowSelector + " span" + shadowSelector + " {transform: translateX(4px);}.note" + shadowSelector + " {margin: 20px 0 0;font-family: var(--font-mono);font-size: 0.7rem;line-height: 1.5;color: var(--wm-ink-soft);}.plan-btn:focus-visible" + shadowSelector + " {outline: 2px solid var(--wm-copper);outline-offset: 2px;}@media (max-width: 900px) {.grid" + shadowSelector + " {grid-template-columns:\r\n repeat(2, 1fr);}}@media (max-width: 650px) {.inner" + shadowSelector + " {padding: 70px 20px 60px;}.grid" + shadowSelector + " {grid-template-columns: 1fr;gap: 32px;}.gallery-cta" + shadowSelector + " {flex-direction: column;align-items: flex-start;padding: 26px;}.plan-btn" + shadowSelector + " {width: 100%;justify-content: center;}}";
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
@@ -820,19 +692,19 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 1177
+/***/ 177
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _gallery_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2551);
-/* harmony import */ var _gallery_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
+/* harmony import */ var _gallery_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(551);
+/* harmony import */ var _gallery_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p class="eyebrow${0}"${2}>⊢— Recent Work —⊣</p>`;
-const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<h2${3}>A few pieces that left the workshop.</h2>`;
-const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<figure class="piece${0}"${2}><div class="swatch${0}"${2}><img${"a2:src"}${"a2:alt"} class="gallery-image${0}" loading="lazy"${2}></div><figcaption${3}><span class="cap-title${0}"${2}>${"t5"}</span><span class="cap-meta${0}"${2}>${"t7"}</span></figcaption></figure>`;
-const $fragment4 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p class="note${0}"${2}>Photos of your own finished pieces will replace these swatches once the workshop gallery is loaded in.</p>`;
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="heading${0}"${2}><p class="eyebrow${0}"${2}>⊢— Our Work —⊣</p><h2${3}>Built for Real Spaces.</h2><p class="intro${0}"${2}>A look at some of the furniture and woodwork we&#x27;ve built for homes and spaces across Delhi NCR.</p></div>`;
+const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<figure class="piece${0}"${2}><div class="swatch${0}"${2}><img${"a2:src"}${"a2:alt"} class="gallery-image${0}" loading="lazy"${2}><div class="image-overlay${0}"${2}><span${3}>View Work →</span></div></div><figcaption${3}><div class="caption-main${0}"${2}><span class="cap-title${0}"${2}>${"t9"}</span><span class="cap-meta${0}"${2}>${"t11"}</span></div></figcaption></figure>`;
+const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="gallery-cta${0}"${2}><div class="cta-copy${0}"${2}><p class="cta-label${0}"${2}>LIKE SOMETHING YOU SEE?</p><p class="cta-text${0}"${2}>Use any of these projects as a reference. We&#x27;ll help adapt the idea to your space, dimensions and requirements.</p></div><button class="plan-btn${0}"${2}>Plan Your Furniture<span${3}>→</span></button></div>`;
+const $fragment4 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p class="note${0}"${2}>Every project is customised. Final design, materials and pricing depend on your requirements.</p>`;
 const stc0 = {
   "gallery": true
 };
@@ -846,24 +718,29 @@ const stc2 = {
   classMap: {
     "grid": true
   },
-  key: 6
+  key: 4
 };
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {gid: api_scoped_id, st: api_static_fragment, k: api_key, d: api_dynamic_text, sp: api_static_part, i: api_iterator, h: api_element} = $api;
+  const {gid: api_scoped_id, st: api_static_fragment, k: api_key, d: api_dynamic_text, sp: api_static_part, i: api_iterator, h: api_element, b: api_bind} = $api;
+  const {_m0} = $ctx;
   return [api_element("section", {
     classMap: stc0,
     attrs: {
       "id": api_scoped_id("gallery")
     },
     key: 0
-  }, [api_element("div", stc1, [api_static_fragment($fragment1, 3), api_static_fragment($fragment2, 5), api_element("div", stc2, api_iterator($cmp.pieces, function (piece) {
-    return api_static_fragment($fragment3, api_key(8, piece.id), [api_static_part(2, {
+  }, [api_element("div", stc1, [api_static_fragment($fragment1, 3), api_element("div", stc2, api_iterator($cmp.pieces, function (piece) {
+    return api_static_fragment($fragment2, api_key(6, piece.id), [api_static_part(2, {
       attrs: {
         "src": piece.image,
         "alt": piece.title
       }
-    }, null), api_static_part(5, null, api_dynamic_text(piece.title)), api_static_part(7, null, api_dynamic_text(piece.meta))]);
-  })), api_static_fragment($fragment4, 10)])])];
+    }, null), api_static_part(9, null, api_dynamic_text(piece.title)), api_static_part(11, null, api_dynamic_text(piece.meta))]);
+  })), api_static_fragment($fragment3, 8, [api_static_part(6, {
+    on: _m0 || ($ctx._m0 = {
+      "click": api_bind($cmp.handlePlanFurniture)
+    })
+  }, null)]), api_static_fragment($fragment4, 10)])])];
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .registerTemplate */ .cI)(tmpl));
@@ -885,17 +762,17 @@ if (_gallery_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] *
 
 /***/ },
 
-/***/ 9927
+/***/ 927
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
-/* harmony import */ var _gallery_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1177);
-/* harmony import */ var _assets_gallery_Almirah_webp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7725);
-/* harmony import */ var _assets_gallery_SheeshamTable_webp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2855);
-/* harmony import */ var _assets_gallery_PanelDoor_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2516);
-/* harmony import */ var _assets_gallery_DiningTable_webp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6172);
-/* harmony import */ var _assets_gallery_ChairSet_webp__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1558);
-/* harmony import */ var _assets_gallery_PoojaUnit_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(9949);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
+/* harmony import */ var _gallery_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(177);
+/* harmony import */ var _assets_gallery_Almirah_webp__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(725);
+/* harmony import */ var _assets_gallery_SheeshamTable_webp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(855);
+/* harmony import */ var _assets_gallery_PanelDoor_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(516);
+/* harmony import */ var _assets_gallery_DiningTable_webp__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(172);
+/* harmony import */ var _assets_gallery_ChairSet_webp__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(558);
+/* harmony import */ var _assets_gallery_PoojaUnit_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(949);
 
 
 
@@ -940,6 +817,10 @@ class Gallery extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .x
       image: _assets_gallery_PoojaUnit_jpg__WEBPACK_IMPORTED_MODULE_7__
     }];
   }
+  handlePlanFurniture() {
+    console.log('Gallery: Plan Your Furniture clicked');
+    this.dispatchEvent(new CustomEvent('planfurniture'));
+  }
   /*LWC compiler v9.3.6*/
 }
 ;(0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .registerDecorators */ .CF)(Gallery, {
@@ -958,7 +839,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 1655
+/***/ 36
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -976,16 +857,16 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 6873
+/***/ 873
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _header_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1655);
-/* harmony import */ var _header_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
+/* harmony import */ var _header_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(36);
+/* harmony import */ var _header_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<header class="bar${0}"${2}><div class="inner${0}"${2}><a href="#top" class="brand${0}"${2}><svg class="mark${0}" viewBox="0 0 100 100" aria-hidden="true"${2}><rect width="100" height="100" rx="14" fill="var(--wm-walnut-dark)"${3}/><path d="M28 72 L28 28 L58 28 L58 40 L40 40 L40 72 Z" fill="var(--wm-copper-light)"${3}/></svg><span class="wordmark${0}"${2}>WoodMaster</span></a><nav${"c8"} aria-label="Primary"${2}><a href="#services"${3}>Services</a><a href="#collection"${3}>Collection</a><a href="#about"${3}>About</a><button class="nav-cta${0}"${2}>Plan Your Furniture</button></nav><button class="cart-button${0}" aria-label="Shopping Cart"${2}>🛒<span class="cart-count${0}"${2}>${"t20"}</span></button><button class="burger${0}" aria-label="Toggle menu"${"a21:aria-expanded"}${2}><span${3}></span><span${3}></span><span${3}></span></button></div></header>`;
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<header class="bar${0}"${2}><div class="inner${0}"${2}><a href="#top" class="brand${0}"${2}><svg class="mark${0}" viewBox="0 0 100 100" aria-hidden="true"${2}><rect width="100" height="100" rx="14" fill="var(--wm-walnut-dark)"${3}/><path d="M28 72 L28 28 L58 28 L58 40 L40 40 L40 72 Z" fill="var(--wm-copper-light)"${3}/></svg><span class="wordmark${0}"${2}>WoodMaster</span></a><nav${"c8"} aria-label="Primary"${2}><a href="#services"${3}>Services</a><a href="#collection"${3}>Collection</a><a href="#about"${3}>About</a><button class="nav-cta${0}"${2}>Explore Products</button></nav><button class="cart-button${0}" aria-label="Shopping Cart"${2}>🛒<span class="cart-count${0}"${2}>${"t20"}</span></button><button class="burger${0}" aria-label="Toggle menu"${"a21:aria-expanded"}${2}><span${3}></span><span${3}></span><span${3}></span></button></div></header>`;
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {b: api_bind, ncls: api_normalize_class_name, d: api_dynamic_text, sp: api_static_part, st: api_static_fragment} = $api;
   const {_m0, _m1, _m2, _m3, _m4, _m5, _m6} = $ctx;
@@ -1009,7 +890,7 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     })
   }, null), api_static_part(15, {
     on: _m4 || ($ctx._m4 = {
-      "click": api_bind($cmp.handlePlanFurniture)
+      "click": api_bind($cmp.handleExploreProducts)
     })
   }, null), api_static_part(17, {
     on: _m5 || ($ctx._m5 = {
@@ -1044,12 +925,12 @@ if (_header_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */
 
 /***/ },
 
-/***/ 3415
+/***/ 415
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
-/* harmony import */ var _header_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6873);
-/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9192);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
+/* harmony import */ var _header_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(873);
+/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(192);
 
 
 
@@ -1089,8 +970,12 @@ class Header extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .xv
   get navClass() {
     return this.menuOpen ? 'links open' : 'links';
   }
-  handlePlanFurniture() {
-    this.dispatchEvent(new CustomEvent('planfurniture'));
+  handleExploreProducts() {
+    console.log('Header: Explore Products clicked');
+    this.dispatchEvent(new CustomEvent('exploreproducts', {
+      bubbles: true,
+      composed: true
+    }));
   }
   /*LWC compiler v9.3.6*/
 }
@@ -1114,14 +999,14 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 4229
+/***/ 229
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
   var shadowSelector = token ? ("[" + token + "]") : "";
   var hostSelector = token ? ("[" + token + "-host]") : "";
   var suffixToken = token ? ("-" + token) : "";
-  return [((useActualHostSelector ? ":host {" : hostSelector + " {")), "display: block;background: var(--wm-bg);}.hero", shadowSelector, " {max-width: var(--wm-max);margin: 0 auto;padding: 64px 24px 80px;}.inner", shadowSelector, " {display: grid;grid-template-columns: 1.05fr 0.95fr;gap: 56px;align-items: center;}.eyebrow", shadowSelector, " {font-family: var(--font-mono);font-size: 0.78rem;letter-spacing: 0.06em;color: var(--wm-copper);margin: 0 0 18px;}h1", shadowSelector, " {font-family: var(--font-display);font-weight: 600;font-size: clamp(2.35rem, 3.6vw + 1rem, 4rem);line-height: 1.04;margin: 0 0 22px;letter-spacing: -0.01em;}.lede", shadowSelector, " {font-size: 1.08rem;line-height: 1.6;color: var(--wm-ink-soft);max-width: 46ch;margin: 0 0 32px;}.cta-row", shadowSelector, " {display: flex;flex-wrap: wrap;gap: 14px;margin-bottom: 40px;}.btn", shadowSelector, " {font-family: var(--font-mono);font-size: 0.88rem;letter-spacing: 0.02em;text-decoration: none;padding: 14px 24px;border-radius: var(--wm-radius);display: inline-block;}.btn-primary", shadowSelector, " {background: var(--wm-walnut-dark);color: var(--wm-on-dark);border: 1px solid var(--wm-walnut-dark);}.btn-primary:hover", shadowSelector, ",\r.btn-primary:focus-visible", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);}.btn-ghost", shadowSelector, " {color: var(--wm-ink);border: 1px solid var(--wm-line-strong);}.btn-ghost:hover", shadowSelector, ",\r.btn-ghost:focus-visible", shadowSelector, " {border-color: var(--wm-ink);}.trust", shadowSelector, " {list-style: none;margin: 0;padding: 20px 0 0;border-top: 1px solid var(--wm-line);display: flex;gap: 32px;flex-wrap: wrap;font-size: 0.86rem;color: var(--wm-ink-soft);}.trust", shadowSelector, " .num", shadowSelector, " {display: block;font-family: var(--font-display);font-size: 1.4rem;color: var(--wm-ink);font-weight: 600;}.drawing", shadowSelector, " {min-height: 440px;display: flex;flex-direction: column;justify-content: center;position: relative;padding: 20px 10px;}.showcase-label", shadowSelector, " {font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.08em;color: var(--wm-copper);margin-bottom: 24px;}.showcase", shadowSelector, " {position: relative;width: 100%;min-height: 320px;display: grid;grid-template-columns: 1fr 1fr;grid-template-rows: 1fr 1fr;gap: 16px;}.furniture-card", shadowSelector, " {position: relative;min-height: 140px;display: flex;align-items: center;justify-content: center;overflow: hidden;background: var(--wm-bg-panel);border: 1px solid var(--wm-line);padding-bottom: 32px;}.furniture-label", shadowSelector, " {position: absolute;left: 14px;bottom: 9px;font-family: var(--font-mono);font-size: 0.58rem;letter-spacing: 0.08em;color: var(--wm-ink-soft);z-index: 2;}.chair-card", shadowSelector, " .furniture-label", shadowSelector, " {color: var(--wm-copper-light);}.chair-card", shadowSelector, " {background: var(--wm-walnut-dark);}.chair", shadowSelector, " {position: relative;width: 100px;height: 110px;}.chair-back", shadowSelector, " {position: absolute;left: 20px;top: 8px;width: 58px;height: 58px;border: 7px solid var(--wm-copper-light);border-bottom: none;}.chair-seat", shadowSelector, " {position: absolute;left: 10px;top: 62px;width: 78px;height: 15px;background: var(--wm-copper-light);}.chair-leg", shadowSelector, " {position: absolute;top: 76px;width: 8px;height: 32px;background: var(--wm-copper-light);}.chair-leg.left", shadowSelector, " {left: 20px;}.chair-leg.right", shadowSelector, " {right: 20px;}.table", shadowSelector, " {position: relative;width: 150px;height: 110px;}.table-top", shadowSelector, " {position: absolute;top: 25px;left: 0;width: 150px;height: 18px;background: var(--wm-walnut-dark);}.table-leg", shadowSelector, " {position: absolute;top: 43px;width: 10px;height: 65px;background: var(--wm-walnut-dark);}.table-leg.left", shadowSelector, " {left: 18px;}.table-leg.right", shadowSelector, " {right: 18px;}.cabinet-card", shadowSelector, " {grid-column: 1 / 3;background: var(--wm-copper-light);}.cabinet", shadowSelector, " {display: flex;width: 180px;height: 105px;background: var(--wm-walnut-dark);box-shadow:\r\n 12px 12px 0 rgba(60, 35, 23, 0.08);}.cabinet-door", shadowSelector, " {position: relative;flex: 1;border: 1px solid rgba(247, 241, 230, 0.18);}.cabinet-door", shadowSelector, " span", shadowSelector, " {position: absolute;width: 4px;height: 4px;border-radius: 50%;background: var(--wm-copper-light);top: 50%;right: 10px;}.showcase-caption", shadowSelector, " {margin-top: 20px;font-family: var(--font-mono);font-size: 0.68rem;letter-spacing: 0.08em;color: var(--wm-ink-soft);}@media (max-width: 900px) {.inner", shadowSelector, " {grid-template-columns: 1fr;gap: 40px;}.drawing", shadowSelector, " {order: -1;max-width: 520px;margin: 0 auto;width: 100%;}.hero", shadowSelector, " {padding: 40px 20px 56px;}}@media (max-width: 600px) {.drawing", shadowSelector, " {min-height: 360px;padding: 10px 0;}.showcase", shadowSelector, " {min-height: 280px;gap: 10px;}.furniture-card", shadowSelector, " {min-height: 120px;}.chair", shadowSelector, " {transform: scale(0.8);}.table", shadowSelector, " {transform: scale(0.8);}.cabinet", shadowSelector, " {width: 140px;height: 85px;}.showcase-caption", shadowSelector, " {font-size: 0.6rem;}}"].join('');
+  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;}.hero" + shadowSelector + " {position: relative;min-height: 620px;display: flex;align-items: center;justify-content: center;background-image:\r\n linear-gradient(\r\n rgba(30, 18, 11, 0.58),\r\n rgba(30, 18, 11, 0.58)\r\n ),\r\n url('/assets/images/woodmaster-workshop.jpg');background-size: cover;background-position: center;color: #ffffff;overflow: hidden;}.hero-content" + shadowSelector + " {position: relative;z-index: 2;width: min(900px, calc(100% - 48px));text-align: center;display: flex;flex-direction: column;align-items: center;}.eyebrow" + shadowSelector + " {margin: 0 0 20px;font-family: var(--font-mono);font-size: 0.76rem;letter-spacing: 0.08em;color: var(--wm-copper-light);}h1" + shadowSelector + " {margin: 0;max-width: 900px;font-family: var(--font-display);font-weight: 600;font-size: clamp(\r\n 2.7rem,\r\n 5vw,\r\n 5rem\r\n );line-height: 1.02;letter-spacing: -0.02em;color: #ffffff;}.lede" + shadowSelector + " {max-width: 650px;margin: 24px 0 30px;font-size: 1.08rem;line-height: 1.6;color: rgba(255, 255, 255, 0.88);}.hero-cta" + shadowSelector + " {padding: 15px 28px;border: 1px solid var(--wm-copper);background: var(--wm-copper);color: #ffffff;font-family: var(--font-mono);font-size: 0.86rem;letter-spacing: 0.02em;cursor: pointer;border-radius: var(--wm-radius);transition:\r\n background 0.25s ease,\r\n border-color 0.25s ease,\r\n transform 0.25s ease;}.hero-cta:hover" + shadowSelector + " {background: var(--wm-walnut-dark);border-color: var(--wm-walnut-dark);transform: translateY(-2px);}@media (max-width: 768px) {.hero" + shadowSelector + " {min-height: 560px;background-position: center;}h1" + shadowSelector + " {font-size: clamp(\r\n 2.4rem,\r\n 8vw,\r\n 3.8rem\r\n );}.lede" + shadowSelector + " {font-size: 1rem;}}@media (max-width: 480px) {.hero" + shadowSelector + " {min-height: 520px;}.hero-content" + shadowSelector + " {width: calc(100% - 36px);}.eyebrow" + shadowSelector + " {font-size: 0.65rem;}h1" + shadowSelector + " {font-size: 2.35rem;}.lede" + shadowSelector + " {font-size: 0.92rem;}.hero-cta" + shadowSelector + " {padding: 14px 22px;}}";
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
@@ -1132,18 +1017,18 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 7519
+/***/ 519
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _hero_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4229);
-/* harmony import */ var _hero_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
+/* harmony import */ var _hero_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(229);
+/* harmony import */ var _hero_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<section class="hero${0}"${"a0:id"}${2}><div class="inner${0}"${2}><div class="copy${0}"${2}><p class="eyebrow${0}"${2}>⊢— Noida &amp; Delhi NCR —⊣</p><h1${3}>Custom Woodwork, Built for Your Space</h1><p class="lede${0}"${2}>We design and build custom wooden furniture for homes, offices and commercial spaces — made around your requirements, dimensions and style.</p><div class="cta-row${0}"${2}><button class="btn btn-primary${0}"${2}>Plan Your Furniture</button><a${"a12:href"} class="btn btn-ghost${0}"${2}>See Our Work</a></div><ul class="trust${0}"${2}><li${3}><span class="num${0}"${2}>25+</span> years at the bench</li><li${3}><span class="num${0}"${2}>300+</span> pieces delivered</li><li${3}><span class="num${0}"${2}>0%</span> MDF or particle board</li></ul></div><div class="drawing${0}" aria-hidden="true"${2}><div class="showcase-label${0}"${2}>CUSTOM WOODWORKING</div><div class="showcase${0}"${2}><div class="furniture-card chair-card${0}"${2}><div class="chair${0}"${2}><div class="chair-back${0}"${2}></div><div class="chair-seat${0}"${2}></div><div class="chair-leg left${0}"${2}></div><div class="chair-leg right${0}"${2}></div></div><span class="furniture-label${0}"${2}>CUSTOM CHAIRS</span></div><div class="furniture-card table-card${0}"${2}><div class="table${0}"${2}><div class="table-top${0}"${2}></div><div class="table-leg left${0}"${2}></div><div class="table-leg right${0}"${2}></div></div><span class="furniture-label${0}"${2}>DINING TABLES</span></div><div class="furniture-card cabinet-card${0}"${2}><div class="cabinet${0}"${2}><div class="cabinet-door${0}"${2}><span${3}></span></div><div class="cabinet-door${0}"${2}><span${3}></span></div></div><span class="furniture-label${0}"${2}>STORAGE &amp; CABINETS</span></div></div><div class="showcase-caption${0}"${2}>MADE TO YOUR DIMENSIONS · STYLE · SPACE</div></div></div></section>`;
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<section class="hero${0}"${"a0:id"}${2}><div class="hero-content${0}"${2}><p class="eyebrow${0}"${2}>⊢— Delhi NCR · Custom Woodworking —⊣</p><h1${3}>Handcrafted Furniture.<br${3}>Custom Built for Your Space.</h1><p class="lede${0}"${2}>WoodMaster — Custom wooden furniture, built around your space, dimensions and style.</p><button class="hero-cta${0}"${2}>Plan Your Furniture →</button></div></section>`;
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {gid: api_scoped_id, b: api_bind, fid: api_scoped_frag_id, sp: api_static_part, st: api_static_fragment} = $api;
+  const {gid: api_scoped_id, b: api_bind, sp: api_static_part, st: api_static_fragment} = $api;
   const {_m0} = $ctx;
   return [api_static_fragment($fragment1, 1, [api_static_part(0, {
     attrs: {
@@ -1153,10 +1038,6 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     on: _m0 || ($ctx._m0 = {
       "click": api_bind($cmp.handlePlanFurniture)
     })
-  }, null), api_static_part(12, {
-    attrs: {
-      "href": api_scoped_frag_id("#gallery")
-    }
   }, null)])];
   /*LWC compiler v9.3.6*/
 }
@@ -1179,16 +1060,16 @@ if (_hero_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .
 
 /***/ },
 
-/***/ 1717
+/***/ 717
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _hero_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7519);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9565);
+/* harmony import */ var _hero_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(519);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(565);
 
 
 class Hero extends lwc__WEBPACK_IMPORTED_MODULE_1__/* .LightningElement */ .xv {
   handlePlanFurniture() {
-    console.log('Hero: Plan Your Furniture button clicked');
+    console.log('Hero: Plan Your Furniture clicked');
     this.dispatchEvent(new CustomEvent('planfurniture'));
   }
   /*LWC compiler v9.3.6*/
@@ -1213,7 +1094,7 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
   var shadowSelector = token ? ("[" + token + "]") : "";
   var hostSelector = token ? ("[" + token + "-host]") : "";
   var suffixToken = token ? ("-" + token) : "";
-  return [((useActualHostSelector ? ":host {" : hostSelector + " {")), "display: block;background: var(--wm-bg);min-height: 100vh;}.plan-page", shadowSelector, " {padding: 64px 24px 90px;}.container", shadowSelector, " {max-width: 960px;margin: 0 auto;}.page-header", shadowSelector, " {text-align: center;max-width: 680px;margin: 0 auto 48px;}.eyebrow", shadowSelector, " {margin: 0 0 14px;font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.08em;color: var(--wm-copper);}h1", shadowSelector, " {margin: 0 0 18px;font-family: var(--font-display);font-size: clamp(2.4rem, 4vw, 3.7rem);line-height: 1.05;font-weight: 600;color: var(--wm-ink);}.intro", shadowSelector, " {max-width: 58ch;margin: 0 auto;font-size: 1.05rem;line-height: 1.65;color: var(--wm-ink-soft);}.progress-wrapper", shadowSelector, " {display: flex;align-items: center;max-width: 760px;margin: 0 auto 42px;}.progress-step", shadowSelector, " {display: flex;align-items: center;gap: 10px;white-space: nowrap;color: var(--wm-ink-soft);}.step-number", shadowSelector, " {width: 32px;height: 32px;display: flex;align-items: center;justify-content: center;border: 1px solid var(--wm-line-strong);border-radius: 50%;font-family: var(--font-mono);font-size: 0.7rem;}.step-label", shadowSelector, " {font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.02em;}.progress-step.active", shadowSelector, " {color: var(--wm-ink);}.progress-step.active", shadowSelector, " .step-number", shadowSelector, " {background: var(--wm-walnut-dark);border-color: var(--wm-walnut-dark);color: var(--wm-on-dark);}.progress-line", shadowSelector, " {flex: 1;height: 1px;margin: 0 16px;background: var(--wm-line);}.form-card", shadowSelector, " {background: var(--wm-bg-panel);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);padding: 42px;}.step-header", shadowSelector, " {max-width: 650px;margin-bottom: 36px;}.step-count", shadowSelector, " {display: block;margin-bottom: 12px;font-family: var(--font-mono);font-size: 0.7rem;letter-spacing: 0.08em;color: var(--wm-copper);}.step-header", shadowSelector, " h2", shadowSelector, " {margin: 0 0 10px;font-family: var(--font-display);font-size: 2rem;font-weight: 600;color: var(--wm-ink);}.step-header", shadowSelector, " p", shadowSelector, " {margin: 0;color: var(--wm-ink-soft);line-height: 1.6;}.step-content", shadowSelector, " {min-height: 280px;}.step-placeholder", shadowSelector, " {min-height: 240px;display: flex;align-items: center;justify-content: center;border: 1px dashed var(--wm-line-strong);border-radius: var(--wm-radius);color: var(--wm-ink-soft);font-family: var(--font-mono);font-size: 0.8rem;}.form-navigation", shadowSelector, " {display: flex;align-items: center;justify-content: space-between;margin-top: 40px;padding-top: 24px;border-top: 1px solid var(--wm-line);}.back-button", shadowSelector, ",\r.next-button", shadowSelector, " {font-family: var(--font-mono);font-size: 0.82rem;letter-spacing: 0.02em;padding: 12px 20px;border-radius: var(--wm-radius);cursor: pointer;}.back-button", shadowSelector, " {background: transparent;border: 1px solid var(--wm-line-strong);color: var(--wm-ink-soft);}.back-button:disabled", shadowSelector, " {opacity: 0.35;cursor: not-allowed;}.next-button", shadowSelector, " {background: var(--wm-walnut-dark);border: 1px solid var(--wm-walnut-dark);color: var(--wm-on-dark);}.next-button:hover", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);}.furniture-grid", shadowSelector, " {display: grid;grid-template-columns: repeat(3, minmax(0, 1fr));gap: 14px;width: 100%;}.furniture-card", shadowSelector, " {position: relative;min-height: 150px;display: flex;flex-direction: column;align-items: flex-start;justify-content: flex-end;padding: 22px;text-align: left;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);color: var(--wm-ink);cursor: pointer;box-sizing: border-box;transition:\r\n border-color 0.2s ease,\r\n background 0.2s ease,\r\n transform 0.2s ease;}.furniture-card:hover", shadowSelector, " {border-color: var(--wm-copper);transform: translateY(-2px);}.furniture-card.selected", shadowSelector, " {background: var(--wm-walnut-dark);border-color: var(--wm-walnut-dark);color: var(--wm-on-dark);}.selection-mark", shadowSelector, " {position: absolute;top: 16px;right: 16px;width: 24px;height: 24px;display: flex;align-items: center;justify-content: center;border: 1px solid var(--wm-line-strong);border-radius: 50%;font-size: 0.72rem;}.furniture-card.selected", shadowSelector, " .selection-mark", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);color: #ffffff;}.furniture-name", shadowSelector, " {display: block;margin-bottom: 7px;font-family: var(--font-display);font-size: 1.2rem;font-weight: 600;}.furniture-description", shadowSelector, " {display: block;max-width: 28ch;font-size: 0.82rem;line-height: 1.45;color: var(--wm-ink-soft);}.furniture-card.selected", shadowSelector, " .furniture-description", shadowSelector, " {color: rgba(255, 255, 255, 0.72);}@media (max-width: 800px) {.furniture-grid", shadowSelector, " {grid-template-columns: repeat(2, minmax(0, 1fr));}}@media (max-width: 700px) {.plan-page", shadowSelector, " {padding: 42px 18px 64px;}.page-header", shadowSelector, " {margin-bottom: 36px;}.progress-wrapper", shadowSelector, " {align-items: flex-start;}.progress-step", shadowSelector, " {flex-direction: column;gap: 7px;text-align: center;}.step-label", shadowSelector, " {font-size: 0.62rem;}.progress-line", shadowSelector, " {margin: 16px 8px 0;}.form-card", shadowSelector, " {padding: 26px 20px;}.step-header", shadowSelector, " h2", shadowSelector, " {font-size: 1.65rem;}.step-content", shadowSelector, " {min-height: 0;}}@media (max-width: 520px) {.furniture-grid", shadowSelector, " {grid-template-columns: 1fr;}.furniture-card", shadowSelector, " {min-height: 125px;}}.next-button:disabled", shadowSelector, " {opacity: 0.4;cursor: not-allowed;}.next-button:disabled:hover", shadowSelector, " {background: var(--wm-walnut-dark);border-color: var(--wm-walnut-dark);}.space-form", shadowSelector, " {max-width: 620px;display: flex;flex-direction: column;gap: 28px;}.field-group", shadowSelector, " {display: flex;flex-direction: column;gap: 8px;}.field-group", shadowSelector, " label", shadowSelector, " {font-family: var(--font-display);font-size: 1.05rem;font-weight: 600;color: var(--wm-ink);}.field-group", shadowSelector, " input", shadowSelector, ",\r.field-group", shadowSelector, " select", shadowSelector, " {width: 100%;box-sizing: border-box;padding: 14px 16px;background: var(--wm-bg);border: 1px solid var(--wm-line-strong);border-radius: var(--wm-radius);color: var(--wm-ink);font-family: inherit;font-size: 0.95rem;outline: none;}.field-group", shadowSelector, " input:focus", shadowSelector, ",\r.field-group", shadowSelector, " select:focus", shadowSelector, " {border-color: var(--wm-copper);}.field-help", shadowSelector, " {font-size: 0.78rem;line-height: 1.4;color: var(--wm-ink-soft);}.details-form", shadowSelector, " {max-width: 620px;display: flex;flex-direction: column;gap: 24px;}.details-intro", shadowSelector, " {margin-bottom: 4px;}.details-intro", shadowSelector, " h3", shadowSelector, " {margin: 0 0 8px;font-family: var(--font-display);font-size: 1.25rem;font-weight: 600;color: var(--wm-ink);}.details-intro", shadowSelector, " p", shadowSelector, " {margin: 0;font-size: 0.88rem;line-height: 1.5;color: var(--wm-ink-soft);}.required", shadowSelector, " {color: var(--wm-copper);}.optional", shadowSelector, " {margin-left: 6px;font-family: var(--font-mono);font-size: 0.65rem;font-weight: 400;color: var(--wm-ink-soft);}.contact-options", shadowSelector, " {display: grid;grid-template-columns: repeat(2, minmax(0, 1fr));gap: 12px;}.contact-option", shadowSelector, " {display: flex;align-items: center;gap: 12px;padding: 15px 18px;background: var(--wm-bg);border: 1px solid var(--wm-line-strong);border-radius: var(--wm-radius);color: var(--wm-ink);font-family: inherit;font-size: 0.9rem;cursor: pointer;text-align: left;transition:\r\n border-color 0.2s ease,\r\n background 0.2s ease;}.contact-option:hover", shadowSelector, " {border-color: var(--wm-copper);}.contact-option.selected", shadowSelector, " {background: var(--wm-walnut-dark);border-color: var(--wm-walnut-dark);color: var(--wm-on-dark);}.contact-radio", shadowSelector, " {width: 22px;height: 22px;display: flex;align-items: center;justify-content: center;flex: none;border: 1px solid var(--wm-line-strong);border-radius: 50%;font-size: 0.7rem;}.contact-option.selected", shadowSelector, " .contact-radio", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);color: #ffffff;}.review-content", shadowSelector, " {display: flex;flex-direction: column;gap: 28px;}.review-section", shadowSelector, " {padding-bottom: 28px;border-bottom: 1px solid var(--wm-line);}.review-section:last-of-type", shadowSelector, " {border-bottom: none;padding-bottom: 0;}.review-section-header", shadowSelector, " {display: flex;align-items: flex-start;gap: 14px;margin-bottom: 20px;}.review-number", shadowSelector, " {width: 32px;height: 32px;display: flex;align-items: center;justify-content: center;flex: none;border: 1px solid var(--wm-line-strong);border-radius: 50%;font-family: var(--font-mono);font-size: 0.68rem;color: var(--wm-copper);}.review-section-header", shadowSelector, " h3", shadowSelector, " {margin: 0 0 4px;font-family: var(--font-display);font-size: 1.15rem;font-weight: 600;color: var(--wm-ink);}.review-section-header", shadowSelector, " p", shadowSelector, " {margin: 0;font-size: 0.8rem;color: var(--wm-ink-soft);}.review-furniture-list", shadowSelector, " {display: flex;flex-wrap: wrap;gap: 10px;}.review-furniture-item", shadowSelector, " {padding: 10px 14px;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);font-family: var(--font-mono);font-size: 0.78rem;color: var(--wm-ink);}.review-details-grid", shadowSelector, " {display: grid;grid-template-columns:\r\n repeat(2, minmax(0, 1fr));gap: 18px;}.review-detail", shadowSelector, " {display: flex;flex-direction: column;gap: 6px;}.review-label", shadowSelector, " {font-family: var(--font-mono);font-size: 0.68rem;letter-spacing: 0.04em;text-transform: uppercase;color: var(--wm-ink-soft);}.review-detail", shadowSelector, " strong", shadowSelector, " {font-size: 0.95rem;font-weight: 500;color: var(--wm-ink);word-break: break-word;}.review-note", shadowSelector, " {display: flex;align-items: flex-start;gap: 12px;padding: 16px 18px;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);}.review-note-icon", shadowSelector, " {width: 22px;height: 22px;display: flex;align-items: center;justify-content: center;flex: none;border-radius: 50%;background: var(--wm-copper);color: #ffffff;font-size: 0.68rem;}.review-note", shadowSelector, " p", shadowSelector, " {margin: 0;font-size: 0.8rem;line-height: 1.5;color: var(--wm-ink-soft);}@media (max-width: 520px) {.review-details-grid", shadowSelector, " {grid-template-columns: 1fr;}}.success-content", shadowSelector, " {max-width: 620px;margin: 0 auto;display: flex;flex-direction: column;align-items: center;text-align: center;}.success-icon", shadowSelector, " {width: 64px;height: 64px;display: flex;align-items: center;justify-content: center;margin-bottom: 24px;border-radius: 50%;background: var(--wm-copper);color: #ffffff;font-size: 1.5rem;}.success-header", shadowSelector, " {max-width: 520px;margin-bottom: 36px;}.success-header", shadowSelector, " h2", shadowSelector, " {margin: 0 0 14px;font-family: var(--font-display);font-size: 2.2rem;font-weight: 600;color: var(--wm-ink);}.success-header", shadowSelector, " p", shadowSelector, " {margin: 0;font-size: 0.98rem;line-height: 1.65;color: var(--wm-ink-soft);}.success-summary", shadowSelector, " {width: 100%;display: grid;grid-template-columns:\r\n minmax(0, 1fr)\r\n minmax(0, 1fr);gap: 18px;padding: 24px;margin-bottom: 20px;box-sizing: border-box;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);text-align: left;}.success-detail", shadowSelector, " {display: flex;flex-direction: column;gap: 8px;}.success-label", shadowSelector, " {font-family: var(--font-mono);font-size: 0.68rem;letter-spacing: 0.05em;text-transform: uppercase;color: var(--wm-ink-soft);}.success-detail", shadowSelector, " strong", shadowSelector, " {font-size: 0.92rem;font-weight: 500;color: var(--wm-ink);}.success-furniture-list", shadowSelector, " {display: flex;flex-wrap: wrap;gap: 6px;}.success-furniture-item", shadowSelector, " {padding: 6px 9px;border: 1px solid var(--wm-line);border-radius: 999px;font-size: 0.76rem;color: var(--wm-ink);}.success-note", shadowSelector, " {width: 100%;display: flex;align-items: flex-start;gap: 12px;padding: 16px 18px;margin-bottom: 28px;box-sizing: border-box;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);text-align: left;}.success-note-icon", shadowSelector, " {width: 22px;height: 22px;display: flex;align-items: center;justify-content: center;flex: none;border-radius: 50%;background: var(--wm-copper);color: #ffffff;font-size: 0.68rem;}.success-note", shadowSelector, " p", shadowSelector, " {margin: 0;font-size: 0.78rem;line-height: 1.5;color: var(--wm-ink-soft);}.home-button", shadowSelector, " {display: inline-flex;align-items: center;gap: 8px;padding: 13px 22px;background: var(--wm-walnut-dark);border: 1px solid var(--wm-walnut-dark);border-radius: var(--wm-radius);color: var(--wm-on-dark);font-family: var(--font-mono);font-size: 0.82rem;letter-spacing: 0.02em;cursor: pointer;}.home-button:hover", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);}@media (max-width: 520px) {.success-summary", shadowSelector, " {grid-template-columns: 1fr;}}.page-exit", shadowSelector, " {margin-bottom: 28px;}.back-home-button", shadowSelector, " {padding: 0;background: transparent;border: none;color: #9c5b18;cursor: pointer;font-family: inherit;font-size: inherit;font-weight: 600;transition: 0.3s;}.back-home-button:hover", shadowSelector, " {color: #603813;}.back-home-button:focus-visible", shadowSelector, " {outline: 2px solid #9c5b18;outline-offset: 4px;}"].join('');
+  return [((useActualHostSelector ? ":host {" : hostSelector + " {")), "display: block;background: var(--wm-bg);min-height: 100vh;}.plan-page", shadowSelector, " {padding: 64px 24px 90px;}.container", shadowSelector, " {max-width: 960px;margin: 0 auto;}.page-header", shadowSelector, " {text-align: center;max-width: 680px;margin: 0 auto 48px;}.eyebrow", shadowSelector, " {margin: 0 0 14px;font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.08em;color: var(--wm-copper);}h1", shadowSelector, " {margin: 0 0 18px;font-family: var(--font-display);font-size: clamp(2.4rem, 4vw, 3.7rem);line-height: 1.05;font-weight: 600;color: var(--wm-ink);}.intro", shadowSelector, " {max-width: 58ch;margin: 0 auto;font-size: 1.05rem;line-height: 1.65;color: var(--wm-ink-soft);}.progress-wrapper", shadowSelector, " {display: flex;align-items: center;max-width: 760px;margin: 0 auto 42px;}.progress-step", shadowSelector, " {display: flex;align-items: center;gap: 10px;white-space: nowrap;color: var(--wm-ink-soft);}.step-number", shadowSelector, " {width: 32px;height: 32px;display: flex;align-items: center;justify-content: center;border: 1px solid var(--wm-line-strong);border-radius: 50%;font-family: var(--font-mono);font-size: 0.7rem;}.step-label", shadowSelector, " {font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.02em;}.progress-step.active", shadowSelector, " {color: var(--wm-ink);}.progress-step.active", shadowSelector, " .step-number", shadowSelector, " {background: var(--wm-walnut-dark);border-color: var(--wm-walnut-dark);color: var(--wm-on-dark);}.progress-line", shadowSelector, " {flex: 1;height: 1px;margin: 0 16px;background: var(--wm-line);}.form-card", shadowSelector, " {background: var(--wm-bg-panel);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);padding: 42px;}.step-header", shadowSelector, " {max-width: 650px;margin-bottom: 36px;}.step-count", shadowSelector, " {display: block;margin-bottom: 12px;font-family: var(--font-mono);font-size: 0.7rem;letter-spacing: 0.08em;color: var(--wm-copper);}.step-header", shadowSelector, " h2", shadowSelector, " {margin: 0 0 10px;font-family: var(--font-display);font-size: 2rem;font-weight: 600;color: var(--wm-ink);}.step-header", shadowSelector, " p", shadowSelector, " {margin: 0;color: var(--wm-ink-soft);line-height: 1.6;}.step-content", shadowSelector, " {min-height: 280px;}.step-placeholder", shadowSelector, " {min-height: 240px;display: flex;align-items: center;justify-content: center;border: 1px dashed var(--wm-line-strong);border-radius: var(--wm-radius);color: var(--wm-ink-soft);font-family: var(--font-mono);font-size: 0.8rem;}.form-navigation", shadowSelector, " {display: flex;align-items: center;justify-content: space-between;margin-top: 40px;padding-top: 24px;border-top: 1px solid var(--wm-line);}.back-button", shadowSelector, ",\r.next-button", shadowSelector, " {font-family: var(--font-mono);font-size: 0.82rem;letter-spacing: 0.02em;padding: 12px 20px;border-radius: var(--wm-radius);cursor: pointer;}.back-button", shadowSelector, " {background: transparent;border: 1px solid var(--wm-line-strong);color: var(--wm-ink-soft);}.back-button:disabled", shadowSelector, " {opacity: 0.35;cursor: not-allowed;}.next-button", shadowSelector, " {background: var(--wm-walnut-dark);border: 1px solid var(--wm-walnut-dark);color: var(--wm-on-dark);}.next-button:hover", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);}.furniture-grid", shadowSelector, " {display: grid;grid-template-columns: repeat(3, minmax(0, 1fr));gap: 14px;width: 100%;}.furniture-card", shadowSelector, " {position: relative;min-height: 150px;display: flex;flex-direction: column;align-items: flex-start;justify-content: flex-end;padding: 22px;text-align: left;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);color: var(--wm-ink);cursor: pointer;box-sizing: border-box;transition:\r\n border-color 0.2s ease,\r\n background 0.2s ease,\r\n transform 0.2s ease;}.furniture-card:hover", shadowSelector, " {border-color: var(--wm-copper);transform: translateY(-2px);}.furniture-card.selected", shadowSelector, " {background: var(--wm-walnut-dark);border-color: var(--wm-walnut-dark);color: var(--wm-on-dark);}.selection-mark", shadowSelector, " {position: absolute;top: 16px;right: 16px;width: 24px;height: 24px;display: flex;align-items: center;justify-content: center;border: 1px solid var(--wm-line-strong);border-radius: 50%;font-size: 0.72rem;}.furniture-card.selected", shadowSelector, " .selection-mark", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);color: #ffffff;}.furniture-name", shadowSelector, " {display: block;margin-bottom: 7px;font-family: var(--font-display);font-size: 1.2rem;font-weight: 600;}.furniture-description", shadowSelector, " {display: block;max-width: 28ch;font-size: 0.82rem;line-height: 1.45;color: var(--wm-ink-soft);}.furniture-card.selected", shadowSelector, " .furniture-description", shadowSelector, " {color: rgba(255, 255, 255, 0.72);}@media (max-width: 800px) {.furniture-grid", shadowSelector, " {grid-template-columns: repeat(2, minmax(0, 1fr));}}@media (max-width: 700px) {.plan-page", shadowSelector, " {padding: 42px 18px 64px;}.page-header", shadowSelector, " {margin-bottom: 36px;}.progress-wrapper", shadowSelector, " {align-items: flex-start;}.progress-step", shadowSelector, " {flex-direction: column;gap: 7px;text-align: center;}.step-label", shadowSelector, " {font-size: 0.62rem;}.progress-line", shadowSelector, " {margin: 16px 8px 0;}.form-card", shadowSelector, " {padding: 26px 20px;}.step-header", shadowSelector, " h2", shadowSelector, " {font-size: 1.65rem;}.step-content", shadowSelector, " {min-height: 0;}}@media (max-width: 520px) {.furniture-grid", shadowSelector, " {grid-template-columns: 1fr;}.furniture-card", shadowSelector, " {min-height: 125px;}}.next-button:disabled", shadowSelector, " {opacity: 0.4;cursor: not-allowed;}.next-button:disabled:hover", shadowSelector, " {background: var(--wm-walnut-dark);border-color: var(--wm-walnut-dark);}.space-form", shadowSelector, " {max-width: 620px;display: flex;flex-direction: column;gap: 28px;}.field-group", shadowSelector, " {display: flex;flex-direction: column;gap: 8px;}.field-group", shadowSelector, " label", shadowSelector, " {font-family: var(--font-display);font-size: 1.05rem;font-weight: 600;color: var(--wm-ink);}.field-group", shadowSelector, " input", shadowSelector, ",\r.field-group", shadowSelector, " select", shadowSelector, " {width: 100%;box-sizing: border-box;padding: 14px 16px;background: var(--wm-bg);border: 1px solid var(--wm-line-strong);border-radius: var(--wm-radius);color: var(--wm-ink);font-family: inherit;font-size: 0.95rem;outline: none;}.field-group", shadowSelector, " input:focus", shadowSelector, ",\r.field-group", shadowSelector, " select:focus", shadowSelector, " {border-color: var(--wm-copper);}.field-help", shadowSelector, " {font-size: 0.78rem;line-height: 1.4;color: var(--wm-ink-soft);}.details-form", shadowSelector, " {max-width: 620px;display: flex;flex-direction: column;gap: 24px;}.details-intro", shadowSelector, " {margin-bottom: 4px;}.details-intro", shadowSelector, " h3", shadowSelector, " {margin: 0 0 8px;font-family: var(--font-display);font-size: 1.25rem;font-weight: 600;color: var(--wm-ink);}.details-intro", shadowSelector, " p", shadowSelector, " {margin: 0;font-size: 0.88rem;line-height: 1.5;color: var(--wm-ink-soft);}.required", shadowSelector, " {color: var(--wm-copper);}.optional", shadowSelector, " {margin-left: 6px;font-family: var(--font-mono);font-size: 0.65rem;font-weight: 400;color: var(--wm-ink-soft);}.contact-options", shadowSelector, " {display: grid;grid-template-columns: repeat(2, minmax(0, 1fr));gap: 12px;}.contact-option", shadowSelector, " {display: flex;align-items: center;gap: 12px;padding: 15px 18px;background: var(--wm-bg);border: 1px solid var(--wm-line-strong);border-radius: var(--wm-radius);color: var(--wm-ink);font-family: inherit;font-size: 0.9rem;cursor: pointer;text-align: left;transition:\r\n border-color 0.2s ease,\r\n background 0.2s ease;}.contact-option:hover", shadowSelector, " {border-color: var(--wm-copper);}.contact-option.selected", shadowSelector, " {background: var(--wm-walnut-dark);border-color: var(--wm-walnut-dark);color: var(--wm-on-dark);}.contact-radio", shadowSelector, " {width: 22px;height: 22px;display: flex;align-items: center;justify-content: center;flex: none;border: 1px solid var(--wm-line-strong);border-radius: 50%;font-size: 0.7rem;}.contact-option.selected", shadowSelector, " .contact-radio", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);color: #ffffff;}.review-content", shadowSelector, " {display: flex;flex-direction: column;gap: 28px;}.review-section", shadowSelector, " {padding-bottom: 28px;border-bottom: 1px solid var(--wm-line);}.review-section:last-of-type", shadowSelector, " {border-bottom: none;padding-bottom: 0;}.review-section-header", shadowSelector, " {display: flex;align-items: flex-start;gap: 14px;margin-bottom: 20px;}.review-number", shadowSelector, " {width: 32px;height: 32px;display: flex;align-items: center;justify-content: center;flex: none;border: 1px solid var(--wm-line-strong);border-radius: 50%;font-family: var(--font-mono);font-size: 0.68rem;color: var(--wm-copper);}.review-section-header", shadowSelector, " h3", shadowSelector, " {margin: 0 0 4px;font-family: var(--font-display);font-size: 1.15rem;font-weight: 600;color: var(--wm-ink);}.review-section-header", shadowSelector, " p", shadowSelector, " {margin: 0;font-size: 0.8rem;color: var(--wm-ink-soft);}.review-furniture-list", shadowSelector, " {display: flex;flex-wrap: wrap;gap: 10px;}.review-furniture-item", shadowSelector, " {padding: 10px 14px;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);font-family: var(--font-mono);font-size: 0.78rem;color: var(--wm-ink);}.review-details-grid", shadowSelector, " {display: grid;grid-template-columns:\r\n repeat(2, minmax(0, 1fr));gap: 18px;}.review-detail", shadowSelector, " {display: flex;flex-direction: column;gap: 6px;}.review-label", shadowSelector, " {font-family: var(--font-mono);font-size: 0.68rem;letter-spacing: 0.04em;text-transform: uppercase;color: var(--wm-ink-soft);}.review-detail", shadowSelector, " strong", shadowSelector, " {font-size: 0.95rem;font-weight: 500;color: var(--wm-ink);word-break: break-word;}.review-note", shadowSelector, " {display: flex;align-items: flex-start;gap: 12px;padding: 16px 18px;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);}.review-note-icon", shadowSelector, " {width: 22px;height: 22px;display: flex;align-items: center;justify-content: center;flex: none;border-radius: 50%;background: var(--wm-copper);color: #ffffff;font-size: 0.68rem;}.review-note", shadowSelector, " p", shadowSelector, " {margin: 0;font-size: 0.8rem;line-height: 1.5;color: var(--wm-ink-soft);}@media (max-width: 520px) {.review-details-grid", shadowSelector, " {grid-template-columns: 1fr;}}.success-content", shadowSelector, " {max-width: 620px;margin: 0 auto;display: flex;flex-direction: column;align-items: center;text-align: center;}.success-icon", shadowSelector, " {width: 64px;height: 64px;display: flex;align-items: center;justify-content: center;margin-bottom: 24px;border-radius: 50%;background: var(--wm-copper);color: #ffffff;font-size: 1.5rem;}.success-header", shadowSelector, " {max-width: 520px;margin-bottom: 36px;}.success-header", shadowSelector, " h2", shadowSelector, " {margin: 0 0 14px;font-family: var(--font-display);font-size: 2.2rem;font-weight: 600;color: var(--wm-ink);}.success-header", shadowSelector, " p", shadowSelector, " {margin: 0;font-size: 0.98rem;line-height: 1.65;color: var(--wm-ink-soft);}.success-summary", shadowSelector, " {width: 100%;display: grid;grid-template-columns:\r\n minmax(0, 1fr)\r\n minmax(0, 1fr);gap: 18px;padding: 24px;margin-bottom: 20px;box-sizing: border-box;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);text-align: left;}.success-detail", shadowSelector, " {display: flex;flex-direction: column;gap: 8px;}.success-label", shadowSelector, " {font-family: var(--font-mono);font-size: 0.68rem;letter-spacing: 0.05em;text-transform: uppercase;color: var(--wm-ink-soft);}.success-detail", shadowSelector, " strong", shadowSelector, " {font-size: 0.92rem;font-weight: 500;color: var(--wm-ink);}.success-furniture-list", shadowSelector, " {display: flex;flex-wrap: wrap;gap: 6px;}.success-furniture-item", shadowSelector, " {padding: 6px 9px;border: 1px solid var(--wm-line);border-radius: 999px;font-size: 0.76rem;color: var(--wm-ink);}.success-note", shadowSelector, " {width: 100%;display: flex;align-items: flex-start;gap: 12px;padding: 16px 18px;margin-bottom: 28px;box-sizing: border-box;background: var(--wm-bg);border: 1px solid var(--wm-line);border-radius: var(--wm-radius);text-align: left;}.success-note-icon", shadowSelector, " {width: 22px;height: 22px;display: flex;align-items: center;justify-content: center;flex: none;border-radius: 50%;background: var(--wm-copper);color: #ffffff;font-size: 0.68rem;}.success-note", shadowSelector, " p", shadowSelector, " {margin: 0;font-size: 0.78rem;line-height: 1.5;color: var(--wm-ink-soft);}.home-button", shadowSelector, " {display: inline-flex;align-items: center;gap: 8px;padding: 13px 22px;background: var(--wm-walnut-dark);border: 1px solid var(--wm-walnut-dark);border-radius: var(--wm-radius);color: var(--wm-on-dark);font-family: var(--font-mono);font-size: 0.82rem;letter-spacing: 0.02em;cursor: pointer;}.home-button:hover", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);}@media (max-width: 520px) {.success-summary", shadowSelector, " {grid-template-columns: 1fr;}}.page-exit", shadowSelector, " {margin-bottom: 28px;}.back-home-button", shadowSelector, " {padding: 0;background: transparent;border: none;color: #9c5b18;cursor: pointer;font-family: inherit;font-size: inherit;font-weight: 600;transition: 0.3s;}.back-home-button:hover", shadowSelector, " {color: #603813;}.back-home-button:focus-visible", shadowSelector, " {outline: 2px solid #9c5b18;outline-offset: 4px;}.explore-products", shadowSelector, " {max-width: var(--wm-max);margin: 56px auto 64px;padding: 30px 32px;border: 1px solid var(--wm-line);background: var(--wm-bg-panel);box-sizing: border-box;}.explore-eyebrow", shadowSelector, " {margin: 0 0 16px;font-family: var(--font-mono);font-size: 0.72rem;letter-spacing: 0.06em;text-transform: uppercase;color: var(--wm-copper);}.explore-content", shadowSelector, " {display: flex;align-items: center;justify-content: space-between;gap: 40px;}.explore-content", shadowSelector, " h2", shadowSelector, " {margin: 0 0 8px;font-family: var(--font-display);font-size: 1.5rem;font-weight: 600;color: var(--wm-ink);}.explore-content", shadowSelector, " p", shadowSelector, " {margin: 0;max-width: 55ch;color: var(--wm-ink-soft);font-size: 0.9rem;line-height: 1.5;}.explore-btn", shadowSelector, " {flex-shrink: 0;padding: 14px 24px;border: 1px solid var(--wm-walnut-dark);background: var(--wm-walnut-dark);color: var(--wm-on-dark);font-family: var(--font-mono);font-size: 0.82rem;cursor: pointer;border-radius: var(--wm-radius);transition:\r\n background 0.2s ease,\r\n transform 0.2s ease;}.explore-btn:hover", shadowSelector, " {background: var(--wm-copper);border-color: var(--wm-copper);transform: translateY(-2px);}@media (max-width: 700px) {.explore-products", shadowSelector, " {margin-left: 20px;margin-right: 20px;padding: 24px;}.explore-content", shadowSelector, " {flex-direction: column;align-items: flex-start;}.explore-btn", shadowSelector, " {width: 100%;}}"].join('');
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
@@ -1224,58 +1105,58 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 2425
+/***/ 425
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var _planFurniture_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(263);
-/* harmony import */ var _planFurniture_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
-/* harmony import */ var wm_referenceDesigns__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8465);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9565);
+/* harmony import */ var _planFurniture_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
+/* harmony import */ var wm_referenceDesigns__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(465);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(565);
 
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="page-exit${0}"${2}><button class="back-home-button${0}"${2}>← Back to Home</button></div>`;
-const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="page-header${0}"${2}><p class="eyebrow${0}"${2}>CUSTOM WOODWORKING</p><h1${3}>Plan Your Furniture</h1><p class="intro${0}"${2}>Tell us what you&#x27;d like to build. We&#x27;ll help you turn your idea into furniture made for your space.</p></div>`;
-const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="progress-wrapper${0}"${2}><div${"c1"}${2}><span class="step-number${0}"${2}>01</span><span class="step-label${0}"${2}>What do you need?</span></div><div class="progress-line${0}"${2}></div><div${"c7"}${2}><span class="step-number${0}"${2}>02</span><span class="step-label${0}"${2}>Your space</span></div><div class="progress-line${0}"${2}></div><div${"c13"}${2}><span class="step-number${0}"${2}>03</span><span class="step-label${0}"${2}>Your details</span></div><div class="progress-line${0}"${2}></div><div${"c19"}${2}><span class="step-number${0}"${2}>04</span><span class="step-label${0}"${2}>Review</span></div></div>`;
-const $fragment4 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 01 OF 03</span>`;
-const $fragment5 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<h2${3}>What would you like us to build?</h2>`;
-const $fragment6 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<p${3}>Select one or more options. Don&#x27;t worry if you&#x27;re not sure yet.</p>`;
-const $fragment7 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 02 OF 03</span>`;
-const $fragment8 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<h2${3}>Tell us about your space</h2>`;
-const $fragment9 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<p${3}>A few simple details will help us understand where your furniture will be made.</p>`;
-const $fragment10 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 03 OF 03</span>`;
-const $fragment11 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<h2${3}>How can we reach you?</h2>`;
-const $fragment12 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<p${3}>We&#x27;ll contact you during your selected time slot to understand your project.</p>`;
-const $fragment13 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 04 OF 04</span>`;
-const $fragment14 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<h2${3}>Review Your Request</h2>`;
-const $fragment15 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<p${3}>Please check your details before sending your request.</p>`;
-const $fragment16 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="furniture-name${0}"${2}>${"t1"}</span>`;
-const $fragment17 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="furniture-description${0}"${2}>${"t1"}</span>`;
-const $fragment18 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Where is the work?</label>`;
-const $fragment19 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="field-help${0}"${2}>${"t1"}</span>`;
-const $fragment20 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="field-group${0}"${2}><label${"a1:for"}${3}>When can we contact you?</label><select${"a3:id"}${3}><option value${3}>Select a time slot</option><option value="10:00 AM - 11:00 AM"${3}>10:00 AM – 11:00 AM</option><option value="2:00 PM - 3:00 PM"${3}>2:00 PM – 3:00 PM</option><option value="6:00 PM - 7:00 PM"${3}>6:00 PM – 7:00 PM</option></select><span class="field-help${0}"${2}>We&#x27;ll contact you during this time.</span></div>`;
-const $fragment21 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Full Name<span class="required${0}"${2}>*</span></label>`;
-const $fragment22 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Phone Number<span class="required${0}"${2}>*</span></label>`;
-const $fragment23 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Email<span class="optional${0}"${2}>Optional</span></label>`;
-const $fragment24 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<label${3}>How would you prefer we contact you?<span class="required${0}"${2}>*</span></label>`;
-const $fragment25 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span${3}>Call</span>`;
-const $fragment26 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span${3}>WhatsApp</span>`;
-const $fragment27 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="review-section-header${0}"${2}><span class="review-number${0}"${2}>01</span><div${3}><h3${3}>What you want</h3><p${3}>Furniture you&#x27;re interested in</p></div></div>`;
-const $fragment28 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="review-furniture-item${0}"${2}>${"t1"}</div>`;
-const $fragment29 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="review-section${0}"${2}><div class="review-section-header${0}"${2}><span class="review-number${0}"${2}>02</span><div${3}><h3${3}>Your space</h3><p${3}>Where and when we can contact you</p></div></div><div class="review-details-grid${0}"${2}><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Location</span><strong${3}>${"t14"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Preferred time</span><strong${3}>${"t19"}</strong></div></div></div>`;
-const $fragment30 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="review-section${0}"${2}><div class="review-section-header${0}"${2}><span class="review-number${0}"${2}>03</span><div${3}><h3${3}>Your details</h3><p${3}>How we can reach you</p></div></div><div class="review-details-grid${0}"${2}><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Name</span><strong${3}>${"t14"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Phone</span><strong${3}>${"t19"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Email</span><strong${3}>${"t24"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Contact by</span><strong${3}>${"t29"}</strong></div></div></div>`;
-const $fragment31 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="review-note${0}"${2}><span class="review-note-icon${0}"${2}>✓</span><p${3}>Once you submit your request, we&#x27;ll contact you during your selected time slot to discuss your furniture requirements.</p></div>`;
-const $fragment32 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="success-icon${0}"${2}>✓</div>`;
-const $fragment33 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="success-header${0}"${2}><span class="step-count${0}"${2}>REQUEST RECEIVED</span><h2${3}>${"t4"}</h2><p${3}>We&#x27;ve received your furniture enquiry. We&#x27;ll contact you during your selected time slot to discuss your project.</p></div>`;
-const $fragment34 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="success-label${0}"${2}>Your request</span>`;
-const $fragment35 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="success-furniture-item${0}"${2}>${"t1"}</span>`;
-const $fragment36 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="success-detail${0}"${2}><span class="success-label${0}"${2}>Preferred time</span><strong${3}>${"t4"}</strong></div>`;
-const $fragment37 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="success-note${0}"${2}><span class="success-note-icon${0}"${2}>✓</span><p${3}>Our team will contact you during your selected time slot. You can discuss measurements, design, materials and other project details directly with us.</p></div>`;
-const $fragment38 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<button class="home-button${0}"${2}>Back to Home<span${3}>→</span></button>`;
-const $fragment39 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<button class="back-button${0}"${"a0:disabled"}${2}>← Back</button>`;
-const $fragment40 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<button class="next-button${0}"${"a0:disabled"}${2}>Next<span${3}>→</span></button>`;
-const $fragment41 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<button class="next-button${0}"${2}>Submit Request<span${3}>→</span></button>`;
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="page-header${0}"${2}><p class="eyebrow${0}"${2}>CUSTOM WOODWORKING</p><h1${3}>Plan Your Furniture</h1><p class="intro${0}"${2}>Tell us what you&#x27;d like to build. We&#x27;ll help you turn your idea into furniture made for your space.</p></div>`;
+const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="progress-wrapper${0}"${2}><div${"c1"}${2}><span class="step-number${0}"${2}>01</span><span class="step-label${0}"${2}>What do you need?</span></div><div class="progress-line${0}"${2}></div><div${"c7"}${2}><span class="step-number${0}"${2}>02</span><span class="step-label${0}"${2}>Your space</span></div><div class="progress-line${0}"${2}></div><div${"c13"}${2}><span class="step-number${0}"${2}>03</span><span class="step-label${0}"${2}>Your details</span></div><div class="progress-line${0}"${2}></div><div${"c19"}${2}><span class="step-number${0}"${2}>04</span><span class="step-label${0}"${2}>Review</span></div></div>`;
+const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 01 OF 03</span>`;
+const $fragment4 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<h2${3}>What would you like us to build?</h2>`;
+const $fragment5 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<p${3}>Select one or more options. Don&#x27;t worry if you&#x27;re not sure yet.</p>`;
+const $fragment6 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 02 OF 03</span>`;
+const $fragment7 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<h2${3}>Tell us about your space</h2>`;
+const $fragment8 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<p${3}>A few simple details will help us understand where your furniture will be made.</p>`;
+const $fragment9 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 03 OF 03</span>`;
+const $fragment10 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<h2${3}>How can we reach you?</h2>`;
+const $fragment11 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<p${3}>We&#x27;ll contact you during your selected time slot to understand your project.</p>`;
+const $fragment12 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="step-count${0}"${2}>STEP 04 OF 04</span>`;
+const $fragment13 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<h2${3}>Review Your Request</h2>`;
+const $fragment14 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<p${3}>Please check your details before sending your request.</p>`;
+const $fragment15 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="furniture-name${0}"${2}>${"t1"}</span>`;
+const $fragment16 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="furniture-description${0}"${2}>${"t1"}</span>`;
+const $fragment17 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Where is the work?</label>`;
+const $fragment18 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="field-help${0}"${2}>${"t1"}</span>`;
+const $fragment19 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="field-group${0}"${2}><label${"a1:for"}${3}>When can we contact you?</label><select${"a3:id"}${3}><option value${3}>Select a time slot</option><option value="10:00 AM - 11:00 AM"${3}>10:00 AM – 11:00 AM</option><option value="2:00 PM - 3:00 PM"${3}>2:00 PM – 3:00 PM</option><option value="6:00 PM - 7:00 PM"${3}>6:00 PM – 7:00 PM</option></select><span class="field-help${0}"${2}>We&#x27;ll contact you during this time.</span></div>`;
+const $fragment20 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Full Name<span class="required${0}"${2}>*</span></label>`;
+const $fragment21 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Phone Number<span class="required${0}"${2}>*</span></label>`;
+const $fragment22 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<label${"a0:for"}${3}>Email<span class="optional${0}"${2}>Optional</span></label>`;
+const $fragment23 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<label${3}>How would you prefer we contact you?<span class="required${0}"${2}>*</span></label>`;
+const $fragment24 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span${3}>Call</span>`;
+const $fragment25 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span${3}>WhatsApp</span>`;
+const $fragment26 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="review-section-header${0}"${2}><span class="review-number${0}"${2}>01</span><div${3}><h3${3}>What you want</h3><p${3}>Furniture you&#x27;re interested in</p></div></div>`;
+const $fragment27 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="review-furniture-item${0}"${2}>${"t1"}</div>`;
+const $fragment28 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="review-section${0}"${2}><div class="review-section-header${0}"${2}><span class="review-number${0}"${2}>02</span><div${3}><h3${3}>Your space</h3><p${3}>Where and when we can contact you</p></div></div><div class="review-details-grid${0}"${2}><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Location</span><strong${3}>${"t14"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Preferred time</span><strong${3}>${"t19"}</strong></div></div></div>`;
+const $fragment29 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="review-section${0}"${2}><div class="review-section-header${0}"${2}><span class="review-number${0}"${2}>03</span><div${3}><h3${3}>Your details</h3><p${3}>How we can reach you</p></div></div><div class="review-details-grid${0}"${2}><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Name</span><strong${3}>${"t14"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Phone</span><strong${3}>${"t19"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Email</span><strong${3}>${"t24"}</strong></div><div class="review-detail${0}"${2}><span class="review-label${0}"${2}>Contact by</span><strong${3}>${"t29"}</strong></div></div></div>`;
+const $fragment30 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="review-note${0}"${2}><span class="review-note-icon${0}"${2}>✓</span><p${3}>Once you submit your request, we&#x27;ll contact you during your selected time slot to discuss your furniture requirements.</p></div>`;
+const $fragment31 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="success-icon${0}"${2}>✓</div>`;
+const $fragment32 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="success-header${0}"${2}><span class="step-count${0}"${2}>REQUEST RECEIVED</span><h2${3}>${"t4"}</h2><p${3}>We&#x27;ve received your furniture enquiry. We&#x27;ll contact you during your selected time slot to discuss your project.</p></div>`;
+const $fragment33 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="success-label${0}"${2}>Your request</span>`;
+const $fragment34 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<span class="success-furniture-item${0}"${2}>${"t1"}</span>`;
+const $fragment35 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="success-detail${0}"${2}><span class="success-label${0}"${2}>Preferred time</span><strong${3}>${"t4"}</strong></div>`;
+const $fragment36 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="success-note${0}"${2}><span class="success-note-icon${0}"${2}>✓</span><p${3}>Our team will contact you during your selected time slot. You can discuss measurements, design, materials and other project details directly with us.</p></div>`;
+const $fragment37 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<button class="home-button${0}"${2}>Back to Home<span${3}>→</span></button>`;
+const $fragment38 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<button class="back-button${0}"${"a0:disabled"}${2}>← Back</button>`;
+const $fragment39 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<button class="next-button${0}"${"a0:disabled"}${2}>Next<span${3}>→</span></button>`;
+const $fragment40 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<button class="next-button${0}"${2}>Submit Request<span${3}>→</span></button>`;
+const $fragment41 = (0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .parseFragment */ .oH)`<div class="explore-products${0}"${2}><p class="explore-eyebrow${0}"${2}>Looking for ready-made furniture?</p><div class="explore-content${0}"${2}><div${3}><h2${3}>Explore Our Products</h2><p${3}>Browse our collection of handcrafted wooden furniture and find something that fits your space.</p></div><button class="explore-btn${0}"${2}>Explore Products →</button></div></div>`;
 const stc0 = {
   classMap: {
     "plan-page": true
@@ -1292,79 +1173,79 @@ const stc2 = {
   classMap: {
     "form-card": true
   },
-  key: 8
+  key: 6
 };
 const stc3 = {
   classMap: {
     "step-header": true
   },
-  key: 9
+  key: 7
 };
 const stc4 = {
   classMap: {
     "step-content": true
   },
-  key: 34
+  key: 32
 };
 const stc5 = {
   classMap: {
     "furniture-grid": true
   },
-  key: 35
+  key: 33
 };
 const stc6 = {
   classMap: {
     "selection-mark": true
   },
-  key: 37
+  key: 35
 };
 const stc7 = {
   classMap: {
     "space-form": true
   },
-  key: 42
+  key: 40
 };
 const stc8 = {
   classMap: {
     "field-group": true
   },
-  key: 43
+  key: 41
 };
 const stc9 = {
   classMap: {
     "details-form": true
   },
-  key: 51
+  key: 49
 };
 const stc10 = {
   classMap: {
     "field-group": true
   },
-  key: 52
+  key: 50
 };
 const stc11 = {
   classMap: {
     "field-group": true
   },
-  key: 56
+  key: 54
 };
 const stc12 = {
   classMap: {
     "field-group": true
   },
-  key: 60
+  key: 58
 };
 const stc13 = {
   classMap: {
     "field-group": true
   },
-  key: 64
+  key: 62
 };
 const stc14 = {
   classMap: {
     "contact-options": true
   },
-  key: 67
+  key: 65
 };
 const stc15 = {
   "type": "button",
@@ -1374,7 +1255,7 @@ const stc16 = {
   classMap: {
     "contact-radio": true
   },
-  key: 69
+  key: 67
 };
 const stc17 = {
   "type": "button",
@@ -1384,64 +1265,60 @@ const stc18 = {
   classMap: {
     "contact-radio": true
   },
-  key: 73
+  key: 71
 };
 const stc19 = {
   classMap: {
     "review-content": true
   },
-  key: 76
+  key: 74
 };
 const stc20 = {
   classMap: {
     "review-section": true
   },
-  key: 77
+  key: 75
 };
 const stc21 = {
   classMap: {
     "review-furniture-list": true
   },
-  key: 80
+  key: 78
 };
 const stc22 = {
   classMap: {
     "success-content": true
   },
-  key: 89
+  key: 87
 };
 const stc23 = {
   classMap: {
     "success-summary": true
   },
-  key: 95
+  key: 93
 };
 const stc24 = {
   classMap: {
     "success-detail": true
   },
-  key: 96
+  key: 94
 };
 const stc25 = {
   classMap: {
     "success-furniture-list": true
   },
-  key: 99
+  key: 97
 };
 const stc26 = {
   classMap: {
     "form-navigation": true
   },
-  key: 108
+  key: 106
 };
 function tmpl($api, $cmp, $slotset, $ctx) {
-  const {b: api_bind, sp: api_static_part, st: api_static_fragment, ncls: api_normalize_class_name, h: api_element, k: api_key, t: api_text, d: api_dynamic_text, i: api_iterator, gid: api_scoped_id, c: api_custom_element} = $api;
+  const {st: api_static_fragment, ncls: api_normalize_class_name, sp: api_static_part, h: api_element, k: api_key, b: api_bind, t: api_text, d: api_dynamic_text, i: api_iterator, gid: api_scoped_id, c: api_custom_element} = $api;
   const {_m0, _m1, _m2, _m3, _m4, _m5, _m6, _m7, _m8, _m9, _m10, _m11, _m12, _m13, _m14, _m15, _m16, _m17} = $ctx;
-  return [api_element("section", stc0, [api_element("div", stc1, [api_static_fragment($fragment1, 3, [api_static_part(1, {
-    on: _m0 || ($ctx._m0 = {
-      "click": api_bind($cmp.handleExitToHome)
-    })
-  }, null)]), api_static_fragment($fragment2, 5), !$cmp.isStepFive ? api_static_fragment($fragment3, 7, [api_static_part(1, {
+  return [api_element("section", stc0, [api_element("div", stc1, [api_static_fragment($fragment1, 3), !$cmp.isStepFive ? api_static_fragment($fragment2, 5, [api_static_part(1, {
     className: api_normalize_class_name($cmp.stepOneClass)
   }, null), api_static_part(7, {
     className: api_normalize_class_name($cmp.stepTwoClass)
@@ -1449,18 +1326,18 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     className: api_normalize_class_name($cmp.stepThreeClass)
   }, null), api_static_part(19, {
     className: api_normalize_class_name($cmp.stepFourClass)
-  }, null)]) : null, api_element("div", stc2, [api_element("div", stc3, [$cmp.isStepOne ? api_static_fragment($fragment4, 11) : null, $cmp.isStepOne ? api_static_fragment($fragment5, 13) : null, $cmp.isStepOne ? api_static_fragment($fragment6, 15) : null, $cmp.isStepTwo ? api_static_fragment($fragment7, 17) : null, $cmp.isStepTwo ? api_static_fragment($fragment8, 19) : null, $cmp.isStepTwo ? api_static_fragment($fragment9, 21) : null, $cmp.isStepThree ? api_static_fragment($fragment10, 23) : null, $cmp.isStepThree ? api_static_fragment($fragment11, 25) : null, $cmp.isStepThree ? api_static_fragment($fragment12, 27) : null, $cmp.isStepFour ? api_static_fragment($fragment13, 29) : null, $cmp.isStepFour ? api_static_fragment($fragment14, 31) : null, $cmp.isStepFour ? api_static_fragment($fragment15, 33) : null]), api_element("div", stc4, [$cmp.isStepOne ? api_element("div", stc5, api_iterator($cmp.furnitureOptionsWithState, function (option) {
+  }, null)]) : null, api_element("div", stc2, [api_element("div", stc3, [$cmp.isStepOne ? api_static_fragment($fragment3, 9) : null, $cmp.isStepOne ? api_static_fragment($fragment4, 11) : null, $cmp.isStepOne ? api_static_fragment($fragment5, 13) : null, $cmp.isStepTwo ? api_static_fragment($fragment6, 15) : null, $cmp.isStepTwo ? api_static_fragment($fragment7, 17) : null, $cmp.isStepTwo ? api_static_fragment($fragment8, 19) : null, $cmp.isStepThree ? api_static_fragment($fragment9, 21) : null, $cmp.isStepThree ? api_static_fragment($fragment10, 23) : null, $cmp.isStepThree ? api_static_fragment($fragment11, 25) : null, $cmp.isStepFour ? api_static_fragment($fragment12, 27) : null, $cmp.isStepFour ? api_static_fragment($fragment13, 29) : null, $cmp.isStepFour ? api_static_fragment($fragment14, 31) : null]), api_element("div", stc4, [$cmp.isStepOne ? api_element("div", stc5, api_iterator($cmp.furnitureOptionsWithState, function (option) {
     return api_element("button", {
       className: api_normalize_class_name(option.cardClass),
       attrs: {
         "data-id": option.id
       },
-      key: api_key(36, option.id),
-      on: _m1 || ($ctx._m1 = {
+      key: api_key(34, option.id),
+      on: _m0 || ($ctx._m0 = {
         "click": api_bind($cmp.handleFurnitureSelect)
       })
-    }, [api_element("span", stc6, [option.isSelected ? api_text("✓") : null]), api_static_fragment($fragment16, 39, [api_static_part(1, null, api_dynamic_text(option.name))]), api_static_fragment($fragment17, 41, [api_static_part(1, null, api_dynamic_text(option.description))])]);
-  })) : null, $cmp.isStepTwo ? api_element("div", stc7, [api_element("div", stc8, [api_static_fragment($fragment18, 45, [api_static_part(0, {
+    }, [api_element("span", stc6, [option.isSelected ? api_text("✓") : null]), api_static_fragment($fragment15, 37, [api_static_part(1, null, api_dynamic_text(option.name))]), api_static_fragment($fragment16, 39, [api_static_part(1, null, api_dynamic_text(option.description))])]);
+  })) : null, $cmp.isStepTwo ? api_element("div", stc7, [api_element("div", stc8, [api_static_fragment($fragment17, 43, [api_static_part(0, {
     attrs: {
       "for": api_scoped_id("location")
     }
@@ -1474,22 +1351,22 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     props: {
       "value": $cmp.location
     },
-    key: 46,
-    on: _m2 || ($ctx._m2 = {
+    key: 44,
+    on: _m1 || ($ctx._m1 = {
       "input": api_bind($cmp.handleLocationChange)
     })
-  }), api_static_fragment($fragment19, 48, [api_static_part(1, null, api_dynamic_text($cmp.location.length) + "/150 characters")])]), api_static_fragment($fragment20, 50, [api_static_part(1, {
+  }), api_static_fragment($fragment18, 46, [api_static_part(1, null, api_dynamic_text($cmp.location.length) + "/150 characters")])]), api_static_fragment($fragment19, 48, [api_static_part(1, {
     attrs: {
       "for": api_scoped_id("preferredTime")
     }
   }, null), api_static_part(3, {
-    on: _m3 || ($ctx._m3 = {
+    on: _m2 || ($ctx._m2 = {
       "change": api_bind($cmp.handleTimeChange)
     }),
     attrs: {
       "id": api_scoped_id("preferredTime")
     }
-  }, null)])]) : null, $cmp.isStepThree ? api_element("div", stc9, [api_element("div", stc10, [api_static_fragment($fragment21, 54, [api_static_part(0, {
+  }, null)])]) : null, $cmp.isStepThree ? api_element("div", stc9, [api_element("div", stc10, [api_static_fragment($fragment20, 52, [api_static_part(0, {
     attrs: {
       "for": api_scoped_id("customerName")
     }
@@ -1503,11 +1380,11 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     props: {
       "value": $cmp.customerName
     },
-    key: 55,
-    on: _m4 || ($ctx._m4 = {
+    key: 53,
+    on: _m3 || ($ctx._m3 = {
       "input": api_bind($cmp.handleCustomerNameChange)
     })
-  })]), api_element("div", stc11, [api_static_fragment($fragment22, 58, [api_static_part(0, {
+  })]), api_element("div", stc11, [api_static_fragment($fragment21, 56, [api_static_part(0, {
     attrs: {
       "for": api_scoped_id("phone")
     }
@@ -1522,11 +1399,11 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     props: {
       "value": $cmp.phone
     },
-    key: 59,
-    on: _m5 || ($ctx._m5 = {
+    key: 57,
+    on: _m4 || ($ctx._m4 = {
       "input": api_bind($cmp.handlePhoneChange)
     })
-  })]), api_element("div", stc12, [api_static_fragment($fragment23, 62, [api_static_part(0, {
+  })]), api_element("div", stc12, [api_static_fragment($fragment22, 60, [api_static_part(0, {
     attrs: {
       "for": api_scoped_id("email")
     }
@@ -1539,59 +1416,63 @@ function tmpl($api, $cmp, $slotset, $ctx) {
     props: {
       "value": $cmp.email
     },
-    key: 63,
-    on: _m6 || ($ctx._m6 = {
+    key: 61,
+    on: _m5 || ($ctx._m5 = {
       "input": api_bind($cmp.handleEmailChange)
     })
-  })]), api_element("div", stc13, [api_static_fragment($fragment24, 66), api_element("div", stc14, [api_element("button", {
+  })]), api_element("div", stc13, [api_static_fragment($fragment23, 64), api_element("div", stc14, [api_element("button", {
     className: api_normalize_class_name($cmp.callOptionClass),
     attrs: stc15,
-    key: 68,
+    key: 66,
+    on: _m6 || ($ctx._m6 = {
+      "click": api_bind($cmp.handleContactMethodChange)
+    })
+  }, [api_element("span", stc16, [$cmp.isCallSelected ? api_text("✓") : null]), api_static_fragment($fragment24, 69)]), api_element("button", {
+    className: api_normalize_class_name($cmp.whatsappOptionClass),
+    attrs: stc17,
+    key: 70,
     on: _m7 || ($ctx._m7 = {
       "click": api_bind($cmp.handleContactMethodChange)
     })
-  }, [api_element("span", stc16, [$cmp.isCallSelected ? api_text("✓") : null]), api_static_fragment($fragment25, 71)]), api_element("button", {
-    className: api_normalize_class_name($cmp.whatsappOptionClass),
-    attrs: stc17,
-    key: 72,
-    on: _m8 || ($ctx._m8 = {
-      "click": api_bind($cmp.handleContactMethodChange)
-    })
-  }, [api_element("span", stc18, [$cmp.isWhatsAppSelected ? api_text("✓") : null]), api_static_fragment($fragment26, 75)])])])]) : null, $cmp.isStepFour ? api_element("div", stc19, [api_element("div", stc20, [api_static_fragment($fragment27, 79), api_element("div", stc21, api_iterator($cmp.selectedFurnitureDetails, function (item) {
-    return api_static_fragment($fragment28, api_key(82, item.id), [api_static_part(1, null, api_dynamic_text(item.name))]);
-  }))]), api_static_fragment($fragment29, 84, [api_static_part(14, null, api_dynamic_text($cmp.location)), api_static_part(19, null, api_dynamic_text($cmp.preferredTime))]), api_static_fragment($fragment30, 86, [api_static_part(14, null, api_dynamic_text($cmp.customerName)), api_static_part(19, null, api_dynamic_text($cmp.phone)), api_static_part(24, null, api_dynamic_text($cmp.displayEmail)), api_static_part(29, null, api_dynamic_text($cmp.contactMethod))]), api_static_fragment($fragment31, 88)]) : null, $cmp.isStepFive ? api_element("div", stc22, [api_static_fragment($fragment32, 91), api_static_fragment($fragment33, 93, [api_static_part(4, null, "Thanks, " + api_dynamic_text($cmp.customerName) + ".")]), $cmp.showReferenceDesigns ? api_custom_element("wm-reference-designs", wm_referenceDesigns__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
+  }, [api_element("span", stc18, [$cmp.isWhatsAppSelected ? api_text("✓") : null]), api_static_fragment($fragment25, 73)])])])]) : null, $cmp.isStepFour ? api_element("div", stc19, [api_element("div", stc20, [api_static_fragment($fragment26, 77), api_element("div", stc21, api_iterator($cmp.selectedFurnitureDetails, function (item) {
+    return api_static_fragment($fragment27, api_key(80, item.id), [api_static_part(1, null, api_dynamic_text(item.name))]);
+  }))]), api_static_fragment($fragment28, 82, [api_static_part(14, null, api_dynamic_text($cmp.location)), api_static_part(19, null, api_dynamic_text($cmp.preferredTime))]), api_static_fragment($fragment29, 84, [api_static_part(14, null, api_dynamic_text($cmp.customerName)), api_static_part(19, null, api_dynamic_text($cmp.phone)), api_static_part(24, null, api_dynamic_text($cmp.displayEmail)), api_static_part(29, null, api_dynamic_text($cmp.contactMethod))]), api_static_fragment($fragment30, 86)]) : null, $cmp.isStepFive ? api_element("div", stc22, [api_static_fragment($fragment31, 89), api_static_fragment($fragment32, 91, [api_static_part(4, null, "Thanks, " + api_dynamic_text($cmp.customerName) + ".")]), $cmp.showReferenceDesigns ? api_custom_element("wm-reference-designs", wm_referenceDesigns__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .A, {
     props: {
       "selectedFurniture": $cmp.selectedFurniture
     },
-    key: 94,
-    on: _m9 || ($ctx._m9 = {
+    key: 92,
+    on: _m8 || ($ctx._m8 = {
       "continuewithoutinspiration": api_bind($cmp.handleContinueWithoutChoosing)
     })
-  }) : null, api_element("div", stc23, [api_element("div", stc24, [api_static_fragment($fragment34, 98), api_element("div", stc25, api_iterator($cmp.selectedFurnitureDetails, function (item) {
-    return api_static_fragment($fragment35, api_key(101, item.id), [api_static_part(1, null, api_dynamic_text(item.name))]);
-  }))]), api_static_fragment($fragment36, 103, [api_static_part(4, null, api_dynamic_text($cmp.preferredTime))])]), api_static_fragment($fragment37, 105), api_static_fragment($fragment38, 107, [api_static_part(0, {
-    on: _m11 || ($ctx._m11 = {
+  }) : null, api_element("div", stc23, [api_element("div", stc24, [api_static_fragment($fragment33, 96), api_element("div", stc25, api_iterator($cmp.selectedFurnitureDetails, function (item) {
+    return api_static_fragment($fragment34, api_key(99, item.id), [api_static_part(1, null, api_dynamic_text(item.name))]);
+  }))]), api_static_fragment($fragment35, 101, [api_static_part(4, null, api_dynamic_text($cmp.preferredTime))])]), api_static_fragment($fragment36, 103), api_static_fragment($fragment37, 105, [api_static_part(0, {
+    on: _m10 || ($ctx._m10 = {
       "click": api_bind($cmp.handleBackToHome)
     })
-  }, null)])]) : null]), !$cmp.isStepFive ? api_element("div", stc26, [api_static_fragment($fragment39, 110, [api_static_part(0, {
-    on: _m13 || ($ctx._m13 = {
+  }, null)])]) : null]), !$cmp.isStepFive ? api_element("div", stc26, [api_static_fragment($fragment38, 108, [api_static_part(0, {
+    on: _m12 || ($ctx._m12 = {
       "click": api_bind($cmp.handleBack)
     }),
     attrs: {
       "disabled": $cmp.isStepOne ? "" : null
     }
-  }, null)]), !$cmp.isStepFour ? api_static_fragment($fragment40, 112, [api_static_part(0, {
-    on: _m15 || ($ctx._m15 = {
+  }, null)]), !$cmp.isStepFour ? api_static_fragment($fragment39, 110, [api_static_part(0, {
+    on: _m14 || ($ctx._m14 = {
       "click": api_bind($cmp.handleNext)
     }),
     attrs: {
       "disabled": $cmp.isNextDisabled ? "" : null
     }
-  }, null)]) : null, $cmp.isStepFour ? api_static_fragment($fragment41, 114, [api_static_part(0, {
-    on: _m17 || ($ctx._m17 = {
+  }, null)]) : null, $cmp.isStepFour ? api_static_fragment($fragment40, 112, [api_static_part(0, {
+    on: _m16 || ($ctx._m16 = {
       "click": api_bind($cmp.handleSubmit)
     })
-  }, null)]) : null]) : null])])])];
+  }, null)]) : null]) : null])])]), api_static_fragment($fragment41, 114, [api_static_part(9, {
+    on: _m17 || ($ctx._m17 = {
+      "click": api_bind($cmp.handleExploreProducts)
+    })
+  }, null)])];
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,lwc__WEBPACK_IMPORTED_MODULE_3__/* .registerTemplate */ .cI)(tmpl));
@@ -1613,11 +1494,11 @@ if (_planFurniture_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["defau
 
 /***/ },
 
-/***/ 3127
+/***/ 127
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
-/* harmony import */ var _planFurniture_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2425);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
+/* harmony import */ var _planFurniture_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(425);
 
 
 
@@ -1849,10 +1730,6 @@ class PlanFurniture extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement
     this.email = '';
     this.contactMethod = '';
   }
-  handleExitToHome() {
-    console.log('PlanFurniture: Back to Home clicked');
-    this.dispatchEvent(new CustomEvent('backtohome'));
-  }
   get isStepThreeInvalid() {
     const validPhone = /^\d{10}$/.test(this.phone);
     const validEmail = !this.email || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.email);
@@ -1862,6 +1739,13 @@ class PlanFurniture extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement
     console.log('PLAN FURNITURE: Continue Without Inspiration received');
     this.showReferenceDesigns = false;
     console.log('Current Step:', this.currentStep);
+  }
+  handleExploreProducts() {
+    console.log('Explore Products clicked');
+    this.dispatchEvent(new CustomEvent('exploreproducts', {
+      bubbles: true,
+      composed: true
+    }));
   }
   /*LWC compiler v9.3.6*/
 }
@@ -1881,14 +1765,14 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 9227
+/***/ 227
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
   var shadowSelector = token ? ("[" + token + "]") : "";
   var hostSelector = token ? ("[" + token + "-host]") : "";
   var suffixToken = token ? ("-" + token) : "";
-  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;background: var(--wm-walnut-dark);color: var(--wm-on-dark);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 88px 24px;}.eyebrow" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.78rem;letter-spacing: 0.06em;color: var(--wm-copper-light);margin: 0 0 12px;}h2" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: clamp(1.8rem, 2.2vw + 1rem, 2.6rem);margin: 0 0 56px;max-width: 20ch;color: var(--wm-on-dark);}.timeline" + shadowSelector + " {list-style: none;margin: 0;padding: 0;display: grid;grid-template-columns: repeat(5, 1fr);gap: 28px;position: relative;}.timeline" + shadowSelector + "::before {content: '';position: absolute;top: 11px;left: 0;right: 0;height: 1px;background: rgba(243, 233, 216, 0.25);}.timeline" + shadowSelector + " li" + shadowSelector + " {position: relative;padding-top: 34px;}.tick" + shadowSelector + " {position: absolute;top: 0;left: 0;font-family: var(--font-mono);font-size: 0.78rem;color: var(--wm-copper-light);background: var(--wm-walnut-dark);padding-right: 8px;}.timeline" + shadowSelector + " h3" + shadowSelector + " {font-family: var(--font-display);font-size: 1.05rem;font-weight: 600;margin: 0 0 8px;color: var(--wm-on-dark);}.timeline" + shadowSelector + " p" + shadowSelector + " {font-size: 0.88rem;line-height: 1.55;color: var(--wm-on-dark-soft);margin: 0;}@media (max-width: 980px) {.timeline" + shadowSelector + " {grid-template-columns: 1fr;gap: 26px;}.timeline" + shadowSelector + "::before {top: 0;bottom: 0;left: 11px;right: auto;width: 1px;height: auto;}.timeline" + shadowSelector + " li" + shadowSelector + " {padding-top: 0;padding-left: 34px;}.tick" + shadowSelector + " {left: 0;top: 0;padding-right: 0;padding-bottom: 4px;}}";
+  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;background: var(--wm-walnut-dark);color: var(--wm-on-dark);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 88px 24px;}.heading" + shadowSelector + " {max-width: 700px;margin-bottom: 64px;}.eyebrow" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.78rem;letter-spacing: 0.06em;color: var(--wm-copper-light);margin: 0 0 14px;}h2" + shadowSelector + " {font-family: var(--font-display);font-weight: 600;font-size: clamp(\r\n 2rem,\r\n 3vw,\r\n 3rem\r\n );line-height: 1.08;color: var(--wm-on-dark);margin: 0 0 18px;}.intro" + shadowSelector + " {max-width: 58ch;margin: 0;color: var(--wm-on-dark-soft);font-size: 0.98rem;line-height: 1.65;}.timeline" + shadowSelector + " {list-style: none;margin: 0;padding: 0;display: grid;grid-template-columns:\r\n repeat(5, 1fr);gap: 28px;}.timeline" + shadowSelector + " li" + shadowSelector + " {position: relative;padding-top: 0;}.step-top" + shadowSelector + " {display: flex;align-items: center;height: 24px;margin-bottom: 30px;}.step-number" + shadowSelector + " {flex: none;width: 24px;height: 24px;display: flex;align-items: center;justify-content: center;border: 1px solid\r\n rgba(243, 233, 216, 0.35);border-radius: 50%;font-family: var(--font-mono);font-size: 0.62rem;color: var(--wm-copper-light);background: var(--wm-walnut-dark);}.step-line" + shadowSelector + " {height: 1px;flex: 1;margin-left: 10px;background:\r\n rgba(243, 233, 216, 0.2);}.timeline" + shadowSelector + " h3" + shadowSelector + " {font-family: var(--font-display);font-size: 1.12rem;font-weight: 600;line-height: 1.25;color: var(--wm-on-dark);margin: 0 0 10px;}.timeline" + shadowSelector + " p" + shadowSelector + " {font-size: 0.86rem;line-height: 1.55;color: var(--wm-on-dark-soft);margin: 0;}.process-note" + shadowSelector + " {margin-top: 56px;padding: 24px 28px;display: flex;align-items: center;gap: 16px;border: 1px solid\r\n rgba(243, 233, 216, 0.15);background:\r\n rgba(243, 233, 216, 0.04);}.note-mark" + shadowSelector + " {flex: none;color: var(--wm-copper-light);font-size: 1rem;}.process-note" + shadowSelector + " p" + shadowSelector + " {margin: 0;max-width: 70ch;color: var(--wm-on-dark-soft);font-size: 0.88rem;line-height: 1.55;}@media (max-width: 980px) {.timeline" + shadowSelector + " {grid-template-columns:\r\n repeat(2, 1fr);row-gap: 48px;}.step-line" + shadowSelector + " {display: none;}}@media (max-width: 600px) {.inner" + shadowSelector + " {padding: 70px 20px;}.heading" + shadowSelector + " {margin-bottom: 48px;}.timeline" + shadowSelector + " {grid-template-columns: 1fr;gap: 38px;}.step-top" + shadowSelector + " {margin-bottom: 18px;}.step-line" + shadowSelector + " {display: block;}.process-note" + shadowSelector + " {align-items: flex-start;padding: 20px;}}";
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
@@ -1899,18 +1783,18 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 8461
+/***/ 461
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _process_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9227);
-/* harmony import */ var _process_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
+/* harmony import */ var _process_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(227);
+/* harmony import */ var _process_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p class="eyebrow${0}"${2}>⊢— How A Piece Gets Made —⊣</p>`;
-const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<h2${3}>Five steps from sketch to install.</h2>`;
-const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<li${3}><span class="tick${0}"${2}>${"t2"}</span><h3${3}>${"t4"}</h3><p${3}>${"t6"}</p></li>`;
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="heading${0}"${2}><p class="eyebrow${0}"${2}>⊢— How Your Project Works —⊣</p><h2${3}>From Your Idea to Your Finished Furniture</h2><p class="intro${0}"${2}>Every project starts with your requirements. We take care of the measurements, design, construction and installation.</p></div>`;
+const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<li${3}><div class="step-top${0}"${2}><span class="step-number${0}"${2}>${"t3"}</span><span class="step-line${0}"${2}></span></div><h3${3}>${"t6"}</h3><p${3}>${"t8"}</p></li>`;
+const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="process-note${0}"${2}><span class="note-mark${0}"${2}>✦</span><p${3}>Have a design or reference you already like? Bring it along — we&#x27;ll help turn it into something that works for your space.</p></div>`;
 const stc0 = {
   "process": true
 };
@@ -1924,7 +1808,7 @@ const stc2 = {
   classMap: {
     "timeline": true
   },
-  key: 6
+  key: 4
 };
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {gid: api_scoped_id, st: api_static_fragment, k: api_key, d: api_dynamic_text, sp: api_static_part, i: api_iterator, h: api_element} = $api;
@@ -1934,9 +1818,9 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "id": api_scoped_id("process")
     },
     key: 0
-  }, [api_element("div", stc1, [api_static_fragment($fragment1, 3), api_static_fragment($fragment2, 5), api_element("ol", stc2, api_iterator($cmp.steps, function (step) {
-    return api_static_fragment($fragment3, api_key(8, step.id), [api_static_part(2, null, "⊢" + api_dynamic_text(step.id) + "⊣"), api_static_part(4, null, api_dynamic_text(step.title)), api_static_part(6, null, api_dynamic_text(step.description))]);
-  }))])])];
+  }, [api_element("div", stc1, [api_static_fragment($fragment1, 3), api_element("ol", stc2, api_iterator($cmp.steps, function (step) {
+    return api_static_fragment($fragment2, api_key(6, step.id), [api_static_part(3, null, api_dynamic_text(step.id)), api_static_part(6, null, api_dynamic_text(step.title)), api_static_part(8, null, api_dynamic_text(step.description))]);
+  })), api_static_fragment($fragment3, 8)])])];
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .registerTemplate */ .cI)(tmpl));
@@ -1958,11 +1842,11 @@ if (_process_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] *
 
 /***/ },
 
-/***/ 8787
+/***/ 787
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
-/* harmony import */ var _process_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8461);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
+/* harmony import */ var _process_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(461);
 
 
 
@@ -1971,24 +1855,24 @@ class Process extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .x
     super(...args);
     this.steps = [{
       id: '01',
-      title: 'Consult & Measure',
-      description: 'We visit your site, take exact measurements and talk through how the piece will actually be used.'
+      title: 'Tell Us What You Need',
+      description: 'Share what you want to build, your space, approximate dimensions and any reference designs you like.'
     }, {
       id: '02',
-      title: 'Sketch & Approve',
-      description: 'You get a dimensioned sketch and a materials list before any wood is cut, so there are no surprises.'
+      title: 'Site Visit & Measurement',
+      description: 'We visit your site, understand the space and take accurate measurements before planning the piece.'
     }, {
       id: '03',
-      title: 'Select Timber',
-      description: 'We choose and season the right wood for the job \u2014 sheesham, teak or mango \u2014 based on budget and use.'
+      title: 'Design & Approval',
+      description: 'We discuss the design, materials, dimensions and finish with you before anything is built.'
     }, {
       id: '04',
       title: 'Build & Finish',
-      description: 'Joined by hand at the workshop, sanded through several grits, and finished in your choice of stain.'
+      description: 'Your furniture is carefully built and finished according to the approved requirements.'
     }, {
       id: '05',
-      title: 'Deliver & Install',
-      description: 'Delivered, assembled and levelled on site \u2014 doors hung, drawers eased, edges checked by hand.'
+      title: 'Delivery & Installation',
+      description: 'We deliver, assemble and install the finished piece at your location.'
     }];
   }
   /*LWC compiler v9.3.6*/
@@ -2009,7 +1893,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 7171
+/***/ 171
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -2027,12 +1911,12 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 4098
+/***/ 98
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _productDetails_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7171);
-/* harmony import */ var _productDetails_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
+/* harmony import */ var _productDetails_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(171);
+/* harmony import */ var _productDetails_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
 
 
@@ -2082,12 +1966,12 @@ if (_productDetails_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["defa
 
 /***/ },
 
-/***/ 5595
+/***/ 595
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
-/* harmony import */ var _productDetails_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4098);
-/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9192);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
+/* harmony import */ var _productDetails_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(98);
+/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(192);
 
 
 
@@ -2173,7 +2057,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 9081
+/***/ 81
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
@@ -2191,12 +2075,12 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 7139
+/***/ 139
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _referenceDesigns_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9081);
-/* harmony import */ var _referenceDesigns_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
+/* harmony import */ var _referenceDesigns_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(81);
+/* harmony import */ var _referenceDesigns_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
 
 
@@ -2352,11 +2236,11 @@ if (_referenceDesigns_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["de
 
 /***/ },
 
-/***/ 8465
+/***/ 465
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
-/* harmony import */ var _referenceDesigns_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7139);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
+/* harmony import */ var _referenceDesigns_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(139);
 
 
 
@@ -2600,7 +2484,7 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
   var shadowSelector = token ? ("[" + token + "]") : "";
   var hostSelector = token ? ("[" + token + "-host]") : "";
   var suffixToken = token ? ("-" + token) : "";
-  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;background: var(--wm-bg-soft);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 90px 24px;}.eyebrow" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.8rem;letter-spacing: 0.08em;text-transform: uppercase;color: var(--wm-copper);text-align: center;margin-bottom: 12px;}h2" + shadowSelector + " {font-family: var(--font-display);font-size: clamp(2rem, 3vw, 3rem);font-weight: 600;text-align: center;margin-bottom: 60px;color: var(--wm-ink);max-width: 700px;margin-left: auto;margin-right: auto;}.grid" + shadowSelector + " {display: grid;grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));gap: 30px;}.card" + shadowSelector + " {background: #ffffff;border-radius: 18px;overflow: hidden;box-shadow: 0 10px 30px rgba(0,0,0,.08);transition: all .35s ease;display: flex;cursor: pointer;flex-direction: column;}.card:hover" + shadowSelector + " {transform: translateY(-8px) scale(1.02);box-shadow: 0 25px 45px rgba(0,0,0,.18);}.image-placeholder" + shadowSelector + "{transition: transform .5s ease;}.card:hover" + shadowSelector + " .image-placeholder" + shadowSelector + "{transform: scale(1.05);}.image-container" + shadowSelector + " {height: 240px;background: #f4f4f4;display: flex;align-items: center;justify-content: center;}.image-placeholder" + shadowSelector + " {width: 90%;height: 85%;border: 2px dashed #c8c8c8;border-radius: 12px;display: flex;align-items: center;justify-content: center;color: #9b9b9b;font-size: 1.1rem;font-weight: 600;letter-spacing: .05em;}.content" + shadowSelector + " {padding: 24px;display: flex;flex-direction: column;flex-grow: 1;}.content" + shadowSelector + " h3" + shadowSelector + " {margin: 0;font-size: 1.3rem;font-family: var(--font-display);color: var(--wm-ink);}.material" + shadowSelector + " {margin-top: 10px;margin-bottom: 20px;color: var(--wm-ink-soft);font-size: .95rem;line-height: 1.5;}.price-rating" + shadowSelector + " {display: flex;justify-content: space-between;align-items: center;margin-bottom: 22px;}.price" + shadowSelector + " {font-size: 1.35rem;font-weight: 700;color: var(--wm-copper);}.rating" + shadowSelector + " {color: #f5b301;font-size: 1rem;letter-spacing: 2px;}.cart-btn" + shadowSelector + " {width: 100%;padding: 14px;border: none;border-radius: 10px;background: var(--wm-copper);color: #fff;font-size: 1rem;font-weight: 600;cursor: pointer;transition: all .3s ease;margin-top: auto;}.cart-btn:hover" + shadowSelector + " {background: var(--wm-walnut-dark);transform: translateY(-2px);}.cart-btn:active" + shadowSelector + " {transform: scale(.98);}@media (max-width: 1024px) {.grid" + shadowSelector + " {grid-template-columns: repeat(2, 1fr);}}@media (max-width: 768px) {.inner" + shadowSelector + " {padding: 70px 20px;}.grid" + shadowSelector + " {grid-template-columns: 1fr;gap: 24px;}.image-container" + shadowSelector + " {height: 220px;}h2" + shadowSelector + " {margin-bottom: 45px;}}@media (max-width: 480px) {.content" + shadowSelector + " {padding: 20px;}.content" + shadowSelector + " h3" + shadowSelector + " {font-size: 1.15rem;}.price" + shadowSelector + " {font-size: 1.2rem;}.cart-btn" + shadowSelector + " {padding: 13px;}}";
+  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;background: var(--wm-bg-soft);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 90px 24px;}.eyebrow" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.8rem;letter-spacing: 0.08em;text-transform: uppercase;color: var(--wm-copper);text-align: center;margin-bottom: 12px;}h2" + shadowSelector + " {font-family: var(--font-display);font-size: clamp(2rem, 3vw, 3rem);font-weight: 600;text-align: center;margin-bottom: 60px;color: var(--wm-ink);max-width: 700px;margin-left: auto;margin-right: auto;}.grid" + shadowSelector + " {display: grid;grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));gap: 30px;}.card" + shadowSelector + " {background: #ffffff;border-radius: 18px;overflow: hidden;box-shadow: 0 10px 30px rgba(0,0,0,.08);transition: all .35s ease;display: flex;cursor: pointer;flex-direction: column;}.card:hover" + shadowSelector + " {transform: translateY(-8px) scale(1.02);box-shadow: 0 25px 45px rgba(0,0,0,.18);}.image-placeholder" + shadowSelector + " {transition: transform .5s ease;}.card:hover" + shadowSelector + " .image-placeholder" + shadowSelector + " {transform: scale(1.05);}.image-container" + shadowSelector + " {height: 240px;background: #f4f4f4;display: flex;align-items: center;justify-content: center;}.image-placeholder" + shadowSelector + " {width: 90%;height: 85%;border: 2px dashed #c8c8c8;border-radius: 12px;display: flex;align-items: center;justify-content: center;color: #9b9b9b;font-size: 1.1rem;font-weight: 600;letter-spacing: .05em;}.content" + shadowSelector + " {padding: 24px;display: flex;flex-direction: column;flex-grow: 1;}.content" + shadowSelector + " h3" + shadowSelector + " {margin: 0;font-size: 1.3rem;font-family: var(--font-display);color: var(--wm-ink);}.material" + shadowSelector + " {margin-top: 10px;margin-bottom: 20px;color: var(--wm-ink-soft);font-size: .95rem;line-height: 1.5;}.price-rating" + shadowSelector + " {display: flex;justify-content: space-between;align-items: center;margin-bottom: 22px;}.price" + shadowSelector + " {font-size: 1.35rem;font-weight: 700;color: var(--wm-copper);}.rating" + shadowSelector + " {color: #f5b301;font-size: 1rem;letter-spacing: 2px;}.cart-btn" + shadowSelector + " {width: 100%;padding: 14px;border: none;border-radius: 10px;background: var(--wm-copper);color: #fff;font-size: 1rem;font-weight: 600;cursor: pointer;transition: all .3s ease;margin-top: auto;}.cart-btn:hover" + shadowSelector + " {background: var(--wm-walnut-dark);transform: translateY(-2px);}.cart-btn:active" + shadowSelector + " {transform: scale(.98);}@media (max-width: 1024px) {.grid" + shadowSelector + " {grid-template-columns: repeat(2, 1fr);}}@media (max-width: 768px) {.inner" + shadowSelector + " {padding: 70px 20px;}.grid" + shadowSelector + " {grid-template-columns: 1fr;gap: 24px;}.image-container" + shadowSelector + " {height: 220px;}h2" + shadowSelector + " {margin-bottom: 45px;}}@media (max-width: 480px) {.content" + shadowSelector + " {padding: 20px;}.content" + shadowSelector + " h3" + shadowSelector + " {font-size: 1.15rem;}.price" + shadowSelector + " {font-size: 1.2rem;}.cart-btn" + shadowSelector + " {padding: 13px;}}";
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
@@ -2611,18 +2495,19 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 8287
+/***/ 287
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var _services_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(693);
-/* harmony import */ var _services_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
+/* harmony import */ var _services_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p class="eyebrow${0}"${2}>⊢— Featured Products —⊣</p>`;
-const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<h2${3}>Crafted Furniture for Every Corner of Your Home</h2>`;
-const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<article class="card${0}"${"a0:data-id"}${2}><div class="image-container${0}"${2}><div class="image-placeholder${0}"${2}>Image</div></div><div class="content${0}"${2}><h3${3}>${"t6"}</h3><p class="material${0}"${2}>${"t8"}</p><div class="price-rating${0}"${2}><span class="price${0}"${2}>${"t11"}</span><span class="rating${0}"${2}>★★★★★</span></div><button class="cart-btn${0}"${"a14:data-id"}${2}>Add to Cart</button></div></article>`;
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p class="eyebrow${0}"${2}>⊢— Our Collection —⊣</p>`;
+const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<h2${3}>Explore Our Wooden Furniture</h2>`;
+const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p class="intro${0}"${2}>Browse our handcrafted furniture collection. Each piece is built with quality materials and made to last.</p>`;
+const $fragment4 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<article class="card${0}"${"a0:data-id"}${2}><div class="image-container${0}"${2}><div class="image-placeholder${0}"${2}>Image</div></div><div class="content${0}"${2}><h3${3}>${"t6"}</h3><p class="material${0}"${2}>${"t8"}</p><div class="price-rating${0}"${2}><span class="price${0}"${2}>${"t11"}</span><span class="rating${0}"${2}>★★★★★</span></div><button class="cart-btn${0}"${"a14:data-id"}${2}>Add to Cart</button></div></article>`;
 const stc0 = {
   "services": true
 };
@@ -2636,7 +2521,7 @@ const stc2 = {
   classMap: {
     "grid": true
   },
-  key: 6
+  key: 8
 };
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {gid: api_scoped_id, st: api_static_fragment, k: api_key, b: api_bind, d: api_dynamic_text, sp: api_static_part, i: api_iterator, h: api_element} = $api;
@@ -2647,8 +2532,8 @@ function tmpl($api, $cmp, $slotset, $ctx) {
       "id": api_scoped_id("products")
     },
     key: 0
-  }, [api_element("div", stc1, [api_static_fragment($fragment1, 3), api_static_fragment($fragment2, 5), api_element("div", stc2, api_iterator($cmp.items, function (item) {
-    return api_static_fragment($fragment3, api_key(8, item.id), [api_static_part(0, {
+  }, [api_element("div", stc1, [api_static_fragment($fragment1, 3), api_static_fragment($fragment2, 5), api_static_fragment($fragment3, 7), api_element("div", stc2, api_iterator($cmp.items, function (item) {
+    return api_static_fragment($fragment4, api_key(10, item.id), [api_static_part(0, {
       on: _m1 || ($ctx._m1 = {
         "click": api_bind($cmp.handleProductClick)
       }),
@@ -2688,10 +2573,10 @@ if (_services_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["default"] 
 /***/ 389
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
-/* harmony import */ var _services_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8287);
-/* harmony import */ var _data_products__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1505);
-/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9192);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
+/* harmony import */ var _services_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(287);
+/* harmony import */ var _data_products__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(505);
+/* harmony import */ var _services_cartService__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(192);
 
 
 
@@ -2717,6 +2602,9 @@ class Services extends lwc__WEBPACK_IMPORTED_MODULE_0__/* .LightningElement */ .
   handleProductClick(event) {
     const productId = event.currentTarget.dataset.id;
     const selectedProduct = this.items.find(item => item.id === productId);
+    if (!selectedProduct) {
+      return;
+    }
     this.dispatchEvent(new CustomEvent('productclick', {
       detail: {
         productId: selectedProduct.id
@@ -2743,14 +2631,14 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 7697
+/***/ 697
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
   var shadowSelector = token ? ("[" + token + "]") : "";
   var hostSelector = token ? ("[" + token + "-host]") : "";
   var suffixToken = token ? ("-" + token) : "";
-  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;background: var(--wm-bg-soft);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 72px 24px;}.eyebrow" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.78rem;letter-spacing: 0.06em;color: var(--wm-copper);margin: 0 0 32px;}.grid" + shadowSelector + " {display: grid;grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));gap: 28px;}blockquote" + shadowSelector + " {margin: 0;padding: 28px 26px;background: var(--wm-bg-panel);border-left: 3px solid var(--wm-copper);}.quote" + shadowSelector + " {font-family: var(--font-display);font-size: 1.05rem;line-height: 1.55;margin: 0 0 18px;color: var(--wm-ink);}footer" + shadowSelector + " {display: flex;flex-direction: column;gap: 2px;}.name" + shadowSelector + " {font-weight: 600;font-size: 0.9rem;}.piece" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.76rem;color: var(--wm-ink-soft);}";
+  return ((useActualHostSelector ? ":host {" : hostSelector + " {")) + "display: block;background: var(--wm-bg-soft);}.inner" + shadowSelector + " {max-width: var(--wm-max);margin: 0 auto;padding: 82px 24px;}.heading" + shadowSelector + " {max-width: 650px;margin-bottom: 48px;}.eyebrow" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.78rem;letter-spacing: 0.06em;color: var(--wm-copper);margin: 0 0 12px;}h2" + shadowSelector + " {font-family: var(--font-display);font-size: clamp(\r\n 2rem,\r\n 3vw,\r\n 3rem\r\n );line-height: 1.08;font-weight: 600;color: var(--wm-ink);margin: 0;max-width: 15ch;}.grid" + shadowSelector + " {display: grid;grid-template-columns:\r\n repeat(3, 1fr);gap: 24px;}.testimonial" + shadowSelector + " {position: relative;margin: 0;padding: 30px 28px 26px;background: var(--wm-bg-panel);border: 1px solid var(--wm-line);min-height: 270px;display: flex;flex-direction: column;transition:\r\n transform 0.25s ease,\r\n border-color 0.25s ease;}.testimonial:hover" + shadowSelector + " {transform: translateY(-4px);border-color:\r\n var(--wm-line-strong);}.quote-mark" + shadowSelector + " {font-family: var(--font-display);font-size: 3rem;line-height: 0.7;color: var(--wm-copper);margin-bottom: 18px;}.quote" + shadowSelector + " {font-family: var(--font-display);font-size: 1.02rem;line-height: 1.6;color: var(--wm-ink);margin: 0 0 28px;flex: 1;}footer" + shadowSelector + " {display: flex;flex-direction: column;gap: 4px;padding-top: 18px;border-top: 1px solid var(--wm-line);}.name" + shadowSelector + " {font-size: 0.88rem;font-weight: 600;color: var(--wm-ink);}.piece" + shadowSelector + " {font-family: var(--font-mono);font-size: 0.7rem;color: var(--wm-ink-soft);letter-spacing: 0.02em;}.trust-note" + shadowSelector + " {margin-top: 40px;padding: 22px 26px;display: flex;align-items: center;gap: 16px;border: 1px solid var(--wm-line);background: var(--wm-bg);}.trust-icon" + shadowSelector + " {flex: none;color: var(--wm-copper);font-size: 1rem;}.trust-note" + shadowSelector + " p" + shadowSelector + " {margin: 0;max-width: 720px;color: var(--wm-ink-soft);font-size: 0.86rem;line-height: 1.55;}@media (max-width: 900px) {.grid" + shadowSelector + " {grid-template-columns:\r\n 1fr 1fr;}.testimonial:last-child" + shadowSelector + " {grid-column: 1 / 3;}}@media (max-width: 600px) {.inner" + shadowSelector + " {padding: 70px 20px;}.heading" + shadowSelector + " {margin-bottom: 36px;}.grid" + shadowSelector + " {grid-template-columns: 1fr;gap: 18px;}.testimonial:last-child" + shadowSelector + " {grid-column: auto;}.testimonial" + shadowSelector + " {min-height: auto;padding: 26px 22px;}.trust-note" + shadowSelector + " {align-items: flex-start;padding: 20px;}}";
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([stylesheet]);
@@ -2761,17 +2649,18 @@ function stylesheet(token, useActualHostSelector, useNativeDirPseudoclass) {
 
 /***/ },
 
-/***/ 6267
+/***/ 267
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _testimonials_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7697);
-/* harmony import */ var _testimonials_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9699);
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9565);
+/* harmony import */ var _testimonials_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(697);
+/* harmony import */ var _testimonials_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(699);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(565);
 
 
 
-const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<p class="eyebrow${0}"${2}>⊢— From The Clients —⊣</p>`;
-const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<blockquote${3}><p class="quote${0}"${2}>${"t2"}</p><footer${3}><span class="name${0}"${2}>${"t5"}</span><span class="piece${0}"${2}>${"t7"}</span></footer></blockquote>`;
+const $fragment1 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="heading${0}"${2}><p class="eyebrow${0}"${2}>⊢— From Our Clients —⊣</p><h2${3}>Built for Their Spaces. Trusted by Them.</h2></div>`;
+const $fragment2 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<blockquote class="testimonial${0}"${2}><div class="quote-mark${0}"${2}>“</div><p class="quote${0}"${2}>${"t4"}</p><footer${3}><span class="name${0}"${2}>${"t7"}</span><span class="piece${0}"${2}>${"t9"}</span></footer></blockquote>`;
+const $fragment3 = (0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .parseFragment */ .oH)`<div class="trust-note${0}"${2}><span class="trust-icon${0}"${2}>✦</span><p${3}>Every project is measured, designed and built around the space it is going into — not taken from a standard catalogue.</p></div>`;
 const stc0 = {
   classMap: {
     "testimonials": true
@@ -2793,8 +2682,8 @@ const stc2 = {
 function tmpl($api, $cmp, $slotset, $ctx) {
   const {st: api_static_fragment, k: api_key, d: api_dynamic_text, sp: api_static_part, i: api_iterator, h: api_element} = $api;
   return [api_element("section", stc0, [api_element("div", stc1, [api_static_fragment($fragment1, 3), api_element("div", stc2, api_iterator($cmp.quotes, function (q) {
-    return api_static_fragment($fragment2, api_key(6, q.id), [api_static_part(2, null, "“" + api_dynamic_text(q.text) + "”"), api_static_part(5, null, api_dynamic_text(q.name)), api_static_part(7, null, api_dynamic_text(q.piece))]);
-  }))])])];
+    return api_static_fragment($fragment2, api_key(6, q.id), [api_static_part(4, null, api_dynamic_text(q.text)), api_static_part(7, null, api_dynamic_text(q.name)), api_static_part(9, null, api_dynamic_text(q.piece))]);
+  })), api_static_fragment($fragment3, 8)])])];
   /*LWC compiler v9.3.6*/
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,lwc__WEBPACK_IMPORTED_MODULE_2__/* .registerTemplate */ .cI)(tmpl));
@@ -2816,11 +2705,11 @@ if (_testimonials_scoped_css_scoped_true__WEBPACK_IMPORTED_MODULE_1__/* ["defaul
 
 /***/ },
 
-/***/ 7001
+/***/ 1
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
-/* harmony import */ var _testimonials_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6267);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
+/* harmony import */ var _testimonials_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(267);
 
 
 
@@ -2862,7 +2751,7 @@ const __lwc_component_class_internal = (0,lwc__WEBPACK_IMPORTED_MODULE_0__/* .re
 
 /***/ },
 
-/***/ 9699
+/***/ 699
 (__unused_webpack_module, exports) {
 
 var __webpack_unused_export__;
@@ -2879,7 +2768,7 @@ exports.A = undefined;
 
 /***/ },
 
-/***/ 1505
+/***/ 505
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 const products = [
@@ -2980,7 +2869,7 @@ const products = [
 
 /***/ },
 
-/***/ 9192
+/***/ 192
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 class CartService {
@@ -3181,49 +3070,49 @@ const cartService = new CartService();
 
 /***/ },
 
-/***/ 7725
+/***/ 725
 (module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "338aa66afcd46480f4ce.webp";
 
 /***/ },
 
-/***/ 1558
+/***/ 558
 (module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "3864cc43885e46fc0eea.webp";
 
 /***/ },
 
-/***/ 6172
+/***/ 172
 (module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "dc38bf5abc1825a1627b.webp";
 
 /***/ },
 
-/***/ 2516
+/***/ 516
 (module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "7338b52b82b754460d42.jpg";
 
 /***/ },
 
-/***/ 9949
+/***/ 949
 (module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "a0210b9c36db3cac7b1c.jpg";
 
 /***/ },
 
-/***/ 2855
+/***/ 855
 (module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "9a6708ded0254f9f1678.webp";
 
 /***/ },
 
-/***/ 9565
+/***/ 565
 (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -13054,8 +12943,8 @@ function registerContextProvider(elm, adapterContextToken, onContextSubscription
 /******/ 	
 /************************************************************************/
 let __webpack_exports__ = {};
-/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9565);
-/* harmony import */ var wm_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5655);
+/* harmony import */ var lwc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(565);
+/* harmony import */ var wm_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(655);
 
 
 
