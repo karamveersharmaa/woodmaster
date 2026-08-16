@@ -1,18 +1,71 @@
 <template>
-  <section class="process" id="process">
-    <div class="inner">
-      <p class="eyebrow">⊢— How A Piece Gets Made —⊣</p>
-      <h2>Five steps from sketch to install.</h2>
+    <section class="process" id="process">
 
-      <ol class="timeline">
-        <template for:each={steps} for:item="step">
-          <li key={step.id}>
-            <span class="tick">⊢{step.id}⊣</span>
-            <h3>{step.title}</h3>
-            <p>{step.description}</p>
-          </li>
-        </template>
-      </ol>
-    </div>
-  </section>
+        <div class="inner">
+
+            <div class="heading">
+
+                <p class="eyebrow">
+                    ⊢— How Your Project Works —⊣
+                </p>
+
+                <h2>
+                    From Your Idea to Your Finished Furniture
+                </h2>
+
+                <p class="intro">
+                    Every project starts with your requirements.
+                    We take care of the measurements, design,
+                    construction and installation.
+                </p>
+
+            </div>
+
+            <ol class="timeline">
+
+                <template
+                    for:each={steps}
+                    for:item="step">
+
+                    <li key={step.id}>
+
+                        <div class="step-top">
+
+                            <span class="step-number">
+                                {step.id}
+                            </span>
+
+                            <span class="step-line"></span>
+
+                        </div>
+
+                        <h3>
+                            {step.title}
+                        </h3>
+
+                        <p>
+                            {step.description}
+                        </p>
+
+                    </li>
+
+                </template>
+
+            </ol>
+
+            <div class="process-note">
+
+                <span class="note-mark">✦</span>
+
+                <p>
+                    Have a design or reference you already like?
+                    Bring it along — we'll help turn it into something
+                    that works for your space.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
 </template>

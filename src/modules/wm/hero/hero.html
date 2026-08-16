@@ -1,92 +1,29 @@
 <template>
-  <section class="hero" id="top">
-    <div class="inner">
-      <div class="copy">
-        <p class="eyebrow">⊢— Noida &amp; Delhi NCR —⊣</p>
-        <h1>Custom Woodwork, Built for Your Space</h1>
-        <p class="lede">
-          We design and build custom wooden furniture for homes,
-          offices and commercial spaces — made around your
-          requirements, dimensions and style.
-        </p>
-        <div class="cta-row"> 
-        <button class="btn btn-primary" onclick={handlePlanFurniture}>Plan Your Furniture</button>
-          <a href="#gallery" class="btn btn-ghost">See Our Work</a>
-        </div>
-        <ul class="trust">
-          <li><span class="num">25+</span> years at the bench</li>
-          <li><span class="num">300+</span> pieces delivered</li>
-          <li><span class="num">0%</span> MDF or particle board</li>
-        </ul>
-      </div>
+    <section class="hero" id="top">
 
-      <div class="drawing" aria-hidden="true">
+        <div class="hero-content">
 
-        <div class="showcase-label">
-            CUSTOM WOODWORKING
-        </div>
+            <p class="eyebrow">
+                ⊢— Delhi NCR · Custom Woodworking —⊣
+            </p>
 
-        <div class="showcase">
+            <h1>
+                Handcrafted Furniture.<br />
+                Custom Built for Your Space.
+            </h1>
 
-            <!-- Chair -->
-            <div class="furniture-card chair-card">
+            <p class="lede">
+                WoodMaster — Custom wooden furniture, built around your
+                space, dimensions and style.
+            </p>
 
-                <div class="chair">
-                    <div class="chair-back"></div>
-                    <div class="chair-seat"></div>
-                    <div class="chair-leg left"></div>
-                    <div class="chair-leg right"></div>
-                </div>
-
-                <span class="furniture-label">
-                    CUSTOM CHAIRS
-                </span>
-
-            </div>
-
-            <!-- Table -->
-            <div class="furniture-card table-card">
-
-                <div class="table">
-                    <div class="table-top"></div>
-                    <div class="table-leg left"></div>
-                    <div class="table-leg right"></div>
-                </div>
-
-                <span class="furniture-label">
-                    DINING TABLES
-                </span>
-
-            </div>
-
-            <!-- Cabinet -->
-            <div class="furniture-card cabinet-card">
-
-                <div class="cabinet">
-
-                    <div class="cabinet-door">
-                        <span></span>
-                    </div>
-
-                    <div class="cabinet-door">
-                        <span></span>
-                    </div>
-
-                </div>
-
-                <span class="furniture-label">
-                    STORAGE & CABINETS
-                </span>
-
-            </div>
+            <button
+                class="hero-cta"
+                onclick={handlePlanFurniture}>
+                Plan Your Furniture →
+            </button>
 
         </div>
 
-        <div class="showcase-caption">
-            MADE TO YOUR DIMENSIONS · STYLE · SPACE
-        </div>
-
-    </div>
-    </div>
-  </section>
+    </section>
 </template>

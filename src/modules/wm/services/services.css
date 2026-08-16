@@ -53,11 +53,11 @@ h2 {
     box-shadow: 0 25px 45px rgba(0,0,0,.18);
 }
 
-.image-placeholder{
+.image-placeholder {
     transition: transform .5s ease;
 }
 
-.card:hover .image-placeholder{
+.card:hover .image-placeholder {
     transform: scale(1.05);
 }
 

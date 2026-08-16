@@ -1,98 +1,393 @@
 :host {
-  display: block;
-  background: var(--wm-bg);
+    display: block;
+
+    background: var(--wm-bg);
 }
 
 .inner {
-  max-width: var(--wm-max);
-  margin: 0 auto;
-  padding: 88px 24px 56px;
+    max-width: var(--wm-max);
+
+    margin: 0 auto;
+
+    padding: 88px 24px 72px;
+}
+
+
+/* =========================
+   Heading
+========================= */
+
+.heading {
+    max-width: 650px;
+
+    margin-bottom: 48px;
 }
 
 .eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  color: var(--wm-copper);
-  margin: 0 0 12px;
+    font-family: var(--font-mono);
+
+    font-size: 0.78rem;
+
+    letter-spacing: 0.06em;
+
+    color: var(--wm-copper);
+
+    margin: 0 0 12px;
 }
 
 h2 {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: clamp(1.8rem, 2.2vw + 1rem, 2.6rem);
-  margin: 0 0 40px;
-  max-width: 20ch;
+    font-family: var(--font-display);
+
+    font-weight: 600;
+
+    font-size: clamp(
+        2rem,
+        3vw,
+        3rem
+    );
+
+    line-height: 1.08;
+
+    margin: 0 0 16px;
+
+    color: var(--wm-ink);
 }
+
+.intro {
+    max-width: 58ch;
+
+    margin: 0;
+
+    color: var(--wm-ink-soft);
+
+    font-size: 0.98rem;
+
+    line-height: 1.65;
+}
+
+
+/* =========================
+   Gallery Grid
+========================= */
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 30px;
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 28px;
 }
+
+
+/* =========================
+   Piece
+========================= */
 
 .piece {
-  margin: 0;
-  cursor: pointer;
-  transition: transform 0.35s ease;
+    margin: 0;
+
+    cursor: default;
 }
 
-.piece:hover {
-  transform: translateY(-6px);
-}
+
+/* =========================
+   Image
+========================= */
 
 .swatch {
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  border-radius: 12px;
-  border: 1px solid var(--wm-line);
-  background: #f7f4ef;
-  transition: box-shadow 0.35s ease;
-}
+    position: relative;
 
-.piece:hover .swatch {
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    aspect-ratio: 4 / 3;
+
+    overflow: hidden;
+
+    border: 1px solid var(--wm-line);
+
+    background: var(--wm-bg-panel);
 }
 
 .gallery-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.5s ease;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+/* =========================
+   Overlay
+========================= */
+
+.image-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: flex-end;
+
+    padding: 16px;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(36, 26, 18, 0.55),
+            transparent 45%
+        );
+
+    opacity: 0;
+
+    transition:
+        opacity 0.3s ease;
+}
+
+.image-overlay span {
+    font-family: var(--font-mono);
+
+    font-size: 0.72rem;
+
+    letter-spacing: 0.04em;
+
+    color: var(--wm-on-dark);
+
+    transform: translateY(6px);
+
+    transition:
+        transform 0.3s ease;
 }
 
 .piece:hover .gallery-image {
-  transform: scale(1.12);
+    transform: scale(1.05);
 }
 
+.piece:hover .image-overlay {
+    opacity: 1;
+}
+
+.piece:hover .image-overlay span {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   Caption
+========================= */
+
 figcaption {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding-top: 14px;
+    padding-top: 14px;
+}
+
+.caption-main {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
 }
 
 .cap-title {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+    font-family: var(--font-display);
+
+    font-weight: 600;
+
+    font-size: 1rem;
+
+    color: var(--wm-ink);
+
+    transition:
+        color 0.25s ease;
 }
 
 .piece:hover .cap-title {
-  color: var(--wm-copper);
+    color: var(--wm-copper);
 }
 
 .cap-meta {
-  font-family: var(--font-mono);
-  font-size: 0.76rem;
-  color: var(--wm-ink-soft);
+    font-family: var(--font-mono);
+
+    font-size: 0.72rem;
+
+    color: var(--wm-ink-soft);
 }
 
+
+/* =========================
+   CTA
+========================= */
+
+.gallery-cta {
+    margin-top: 56px;
+
+    padding: 30px 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 32px;
+
+    border: 1px solid var(--wm-line);
+
+    background: var(--wm-bg-soft);
+}
+
+.cta-label {
+    font-family: var(--font-mono);
+
+    font-size: 0.72rem;
+
+    letter-spacing: 0.06em;
+
+    color: var(--wm-copper);
+
+    margin: 0 0 7px;
+}
+
+.cta-text {
+    max-width: 620px;
+
+    margin: 0;
+
+    color: var(--wm-ink-soft);
+
+    font-size: 0.9rem;
+
+    line-height: 1.55;
+}
+
+
+/* =========================
+   CTA Button
+========================= */
+
+.plan-btn {
+    flex: none;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 14px 20px;
+
+    background: var(--wm-walnut-dark);
+
+    border: 1px solid var(--wm-walnut-dark);
+
+    color: var(--wm-on-dark);
+
+    font-family: var(--font-mono);
+
+    font-size: 0.82rem;
+
+    letter-spacing: 0.02em;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.plan-btn span {
+    transition:
+        transform 0.2s ease;
+}
+
+.plan-btn:hover,
+.plan-btn:focus-visible {
+    background: var(--wm-copper);
+
+    border-color: var(--wm-copper);
+}
+
+.plan-btn:hover span {
+    transform: translateX(4px);
+}
+
+
+/* =========================
+   Note
+========================= */
+
 .note {
-  margin-top: 36px;
-  font-size: 0.82rem;
-  color: var(--wm-ink-soft);
-  font-style: italic;
+    margin: 20px 0 0;
+
+    font-family: var(--font-mono);
+
+    font-size: 0.7rem;
+
+    line-height: 1.5;
+
+    color: var(--wm-ink-soft);
+}
+
+
+/* =========================
+   Focus
+========================= */
+
+.plan-btn:focus-visible {
+    outline: 2px solid var(--wm-copper);
+
+    outline-offset: 2px;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 900px) {
+
+    .grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 650px) {
+
+    .inner {
+        padding: 70px 20px 60px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+
+        gap: 32px;
+    }
+
+    .gallery-cta {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 26px;
+    }
+
+    .plan-btn {
+        width: 100%;
+
+        justify-content: center;
+    }
+
 }

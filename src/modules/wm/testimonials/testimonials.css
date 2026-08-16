@@ -1,56 +1,269 @@
 :host {
-  display: block;
-  background: var(--wm-bg-soft);
+    display: block;
+
+    background: var(--wm-bg-soft);
 }
 
 .inner {
-  max-width: var(--wm-max);
-  margin: 0 auto;
-  padding: 72px 24px;
+    max-width: var(--wm-max);
+
+    margin: 0 auto;
+
+    padding: 82px 24px;
+}
+
+
+/* =========================
+   Heading
+========================= */
+
+.heading {
+    max-width: 650px;
+
+    margin-bottom: 48px;
 }
 
 .eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  color: var(--wm-copper);
-  margin: 0 0 32px;
+    font-family: var(--font-mono);
+
+    font-size: 0.78rem;
+
+    letter-spacing: 0.06em;
+
+    color: var(--wm-copper);
+
+    margin: 0 0 12px;
 }
+
+h2 {
+    font-family: var(--font-display);
+
+    font-size: clamp(
+        2rem,
+        3vw,
+        3rem
+    );
+
+    line-height: 1.08;
+
+    font-weight: 600;
+
+    color: var(--wm-ink);
+
+    margin: 0;
+
+    max-width: 15ch;
+}
+
+
+/* =========================
+   Testimonials
+========================= */
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 28px;
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 24px;
 }
 
-blockquote {
-  margin: 0;
-  padding: 28px 26px;
-  background: var(--wm-bg-panel);
-  border-left: 3px solid var(--wm-copper);
+.testimonial {
+    position: relative;
+
+    margin: 0;
+
+    padding: 30px 28px 26px;
+
+    background: var(--wm-bg-panel);
+
+    border: 1px solid var(--wm-line);
+
+    min-height: 270px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease;
 }
+
+.testimonial:hover {
+    transform: translateY(-4px);
+
+    border-color:
+        var(--wm-line-strong);
+}
+
+
+/* =========================
+   Quote Mark
+========================= */
+
+.quote-mark {
+    font-family: var(--font-display);
+
+    font-size: 3rem;
+
+    line-height: 0.7;
+
+    color: var(--wm-copper);
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   Quote
+========================= */
 
 .quote {
-  font-family: var(--font-display);
-  font-size: 1.05rem;
-  line-height: 1.55;
-  margin: 0 0 18px;
-  color: var(--wm-ink);
+    font-family: var(--font-display);
+
+    font-size: 1.02rem;
+
+    line-height: 1.6;
+
+    color: var(--wm-ink);
+
+    margin: 0 0 28px;
+
+    flex: 1;
 }
 
+
+/* =========================
+   Client
+========================= */
+
 footer {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid var(--wm-line);
 }
 
 .name {
-  font-weight: 600;
-  font-size: 0.9rem;
+    font-size: 0.88rem;
+
+    font-weight: 600;
+
+    color: var(--wm-ink);
 }
 
 .piece {
-  font-family: var(--font-mono);
-  font-size: 0.76rem;
-  color: var(--wm-ink-soft);
+    font-family: var(--font-mono);
+
+    font-size: 0.7rem;
+
+    color: var(--wm-ink-soft);
+
+    letter-spacing: 0.02em;
+}
+
+
+/* =========================
+   Trust Note
+========================= */
+
+.trust-note {
+    margin-top: 40px;
+
+    padding: 22px 26px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    border: 1px solid var(--wm-line);
+
+    background: var(--wm-bg);
+
+}
+
+.trust-icon {
+    flex: none;
+
+    color: var(--wm-copper);
+
+    font-size: 1rem;
+}
+
+.trust-note p {
+    margin: 0;
+
+    max-width: 720px;
+
+    color: var(--wm-ink-soft);
+
+    font-size: 0.86rem;
+
+    line-height: 1.55;
+}
+
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 900px) {
+
+    .grid {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .testimonial:last-child {
+        grid-column: 1 / 3;
+    }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+    .inner {
+        padding: 70px 20px;
+    }
+
+    .heading {
+        margin-bottom: 36px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .testimonial:last-child {
+        grid-column: auto;
+    }
+
+    .testimonial {
+        min-height: auto;
+
+        padding: 26px 22px;
+    }
+
+    .trust-note {
+        align-items: flex-start;
+
+        padding: 20px;
+    }
+
 }

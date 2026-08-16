@@ -40,3 +40,115 @@
 main {
   display: block;
 }
+
+/* =========================================
+   Explore Products CTA
+========================================= */
+
+.explore-products {
+    display: block;
+    background: var(--wm-bg-soft);
+    padding: 0 24px 88px;
+}
+
+.explore-inner {
+    max-width: var(--wm-max);
+    margin: 0 auto;
+
+    padding: 34px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 32px;
+
+    background: var(--wm-bg-panel);
+
+    border: 1px solid var(--wm-line);
+}
+
+.explore-copy {
+    max-width: 620px;
+}
+
+.explore-eyebrow {
+    margin: 0 0 10px;
+
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+
+    color: var(--wm-copper);
+}
+
+.explore-copy h2 {
+    margin: 0 0 8px;
+
+    font-family: var(--font-display);
+    font-size: 1.55rem;
+    line-height: 1.2;
+    font-weight: 600;
+
+    color: var(--wm-ink);
+}
+
+.explore-copy p {
+    margin: 0;
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+
+    color: var(--wm-ink-soft);
+}
+
+.explore-btn {
+    flex: none;
+
+    padding: 15px 24px;
+
+    border: 1px solid var(--wm-walnut-dark);
+    border-radius: var(--wm-radius);
+
+    background: var(--wm-walnut-dark);
+    color: var(--wm-on-dark);
+
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    letter-spacing: 0.02em;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.explore-btn:hover {
+    background: var(--wm-copper);
+    border-color: var(--wm-copper);
+    transform: translateY(-2px);
+}
+
+.explore-btn:focus-visible {
+    outline: 2px solid var(--wm-copper);
+    outline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+
+    .explore-products {
+        padding: 0 20px 64px;
+    }
+
+    .explore-inner {
+        padding: 28px 24px;
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .explore-btn {
+        width: 100%;
+    }
+}

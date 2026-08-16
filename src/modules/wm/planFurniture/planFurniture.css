@@ -1180,3 +1180,117 @@ h1 {
     outline: 2px solid #9c5b18;
     outline-offset: 4px;
 }
+
+/* =========================
+   EXPLORE PRODUCTS
+========================= */
+
+.explore-products {
+    max-width: var(--wm-max);
+
+    margin: 56px auto 64px;
+
+    padding: 30px 32px;
+
+    border: 1px solid var(--wm-line);
+
+    background: var(--wm-bg-panel);
+
+    box-sizing: border-box;
+}
+
+
+.explore-eyebrow {
+    margin: 0 0 16px;
+
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--wm-copper);
+}
+
+
+.explore-content {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+
+.explore-content h2 {
+    margin: 0 0 8px;
+
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    color: var(--wm-ink);
+}
+
+
+.explore-content p {
+    margin: 0;
+
+    max-width: 55ch;
+
+    color: var(--wm-ink-soft);
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.explore-btn {
+    flex-shrink: 0;
+
+    padding: 14px 24px;
+
+    border: 1px solid var(--wm-walnut-dark);
+
+    background: var(--wm-walnut-dark);
+    color: var(--wm-on-dark);
+
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+
+    cursor: pointer;
+
+    border-radius: var(--wm-radius);
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.explore-btn:hover {
+    background: var(--wm-copper);
+    border-color: var(--wm-copper);
+
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 700px) {
+
+    .explore-products {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        padding: 24px;
+    }
+
+    .explore-content {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .explore-btn {
+        width: 100%;
+    }
+
+}

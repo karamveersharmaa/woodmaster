@@ -6,23 +6,64 @@
 
     <template if:true={isHomePage}>
 
-        <wm-header oncartclick={handleCartClick} onplanfurniture={handlePlanFurniture}></wm-header>
+        <wm-header
+            oncartclick={handleCartClick}
+            onexploreproducts={handleExploreProducts}>
+        </wm-header>
 
         <main>
 
-           <wm-hero onplanfurniture={handlePlanFurniture}> </wm-hero>
+            <!-- Hero -->
+            <wm-hero
+                onplanfurniture={handlePlanFurniture}>
+            </wm-hero>
 
-            <wm-services onproductclick={handleProductClick}> </wm-services>
 
+            <!-- Plan Your Furniture -->
+
+                <wm-plan-furniture
+                    onbacktohome={handleBackToHome}
+                    onexploreproducts={handleExploreProducts}>
+                </wm-plan-furniture>
+
+
+            <!-- Process -->
             <wm-process></wm-process>
 
+
+            <!-- Gallery -->
             <wm-gallery></wm-gallery>
 
+
+            <!-- Testimonials -->
             <wm-testimonials></wm-testimonials>
 
+
+            <!-- About -->
             <wm-about></wm-about>
 
-            <wm-contact></wm-contact>
+        </main>
+
+        <wm-footer></wm-footer>
+
+    </template>
+
+
+    <!-- ===========================
+         PRODUCTS PAGE
+    ============================ -->
+
+    <template if:true={isProductsPage}>
+
+        <wm-header
+            oncartclick={handleCartClick}>
+        </wm-header>
+
+        <main>
+
+            <wm-services
+                onproductclick={handleProductClick}>
+            </wm-services>
 
         </main>
 
@@ -39,27 +80,23 @@
 
         <wm-product-details
             product={selectedProduct}
-            onback={handleBackToHome}
+            onback={handleBackToProducts}
             onopencart={handleOpenCart}>
         </wm-product-details>
 
     </template>
 
-     <!-- CART PAGE -->
+
+    <!-- ===========================
+         CART PAGE
+    ============================ -->
 
     <template if:true={isCartPage}>
 
         <wm-cart
-            onbacktohome={handleContinueShopping}> 
+            onbacktohome={handleContinueShopping}>
         </wm-cart>
 
     </template>
-    <!-- TEMPORARY PLAN YOUR FURNITURE TEST -->
-
-<template if:true={isPlanFurniturePage}>
-
-    <wm-plan-furniture onbacktohome={handleBackToHome}></wm-plan-furniture>
-
-</template>
 
 </template>

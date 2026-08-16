@@ -357,14 +357,6 @@ export default class PlanFurniture extends LightningElement {
 
     }
 
-    handleExitToHome() {
-console.log('PlanFurniture: Back to Home clicked');
-        this.dispatchEvent(
-            new CustomEvent('backtohome')
-        );
-
-    }
-
     get isStepThreeInvalid() {
 
         const validPhone =
@@ -393,6 +385,19 @@ console.log('PlanFurniture: Back to Home clicked');
         console.log(
             'Current Step:',
             this.currentStep
+        );
+
+    }
+
+    handleExploreProducts() {
+
+        console.log('Explore Products clicked');
+
+        this.dispatchEvent(
+            new CustomEvent('exploreproducts', {
+                bubbles: true,
+                composed: true
+            })
         );
 
     }

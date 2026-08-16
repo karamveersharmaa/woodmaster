@@ -1,29 +1,111 @@
 <template>
-  <section class="gallery" id="gallery">
-    <div class="inner">
-      <p class="eyebrow">⊢— Recent Work —⊣</p>
-      <h2>A few pieces that left the workshop.</h2>
+    <section class="gallery" id="gallery">
 
-      <div class="grid">
-        <template for:each={pieces} for:item="piece">
-          <figure class="piece" key={piece.id}>
-            <div class="swatch">
-                <img
-                    src={piece.image}
-                    alt={piece.title}
-                    class="gallery-image"
-                    loading="lazy"
-                />
+        <div class="inner">
+
+            <div class="heading">
+
+                <p class="eyebrow">
+                    ⊢— Our Work —⊣
+                </p>
+
+                <h2>
+                    Built for Real Spaces.
+                </h2>
+
+                <p class="intro">
+                    A look at some of the furniture and woodwork
+                    we've built for homes and spaces across Delhi NCR.
+                </p>
+
             </div>
-            <figcaption>
-              <span class="cap-title">{piece.title}</span>
-              <span class="cap-meta">{piece.meta}</span>
-            </figcaption>
-          </figure>
-        </template>
-      </div>
 
-      <p class="note">Photos of your own finished pieces will replace these swatches once the workshop gallery is loaded in.</p>
-    </div>
-  </section>
+
+            <div class="grid">
+
+                <template
+                    for:each={pieces}
+                    for:item="piece">
+
+                    <figure
+                        class="piece"
+                        key={piece.id}>
+
+                        <div class="swatch">
+
+                            <img
+                                src={piece.image}
+                                alt={piece.title}
+                                class="gallery-image"
+                                loading="lazy"
+                            />
+
+                            <div class="image-overlay">
+                                <span>
+                                    View Work →
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <figcaption>
+
+                            <div class="caption-main">
+
+                                <span class="cap-title">
+                                    {piece.title}
+                                </span>
+
+                                <span class="cap-meta">
+                                    {piece.meta}
+                                </span>
+
+                            </div>
+
+                        </figcaption>
+
+                    </figure>
+
+                </template>
+
+            </div>
+
+
+            <div class="gallery-cta">
+
+                <div class="cta-copy">
+
+                    <p class="cta-label">
+                        LIKE SOMETHING YOU SEE?
+                    </p>
+
+                    <p class="cta-text">
+                        Use any of these projects as a reference.
+                        We'll help adapt the idea to your space,
+                        dimensions and requirements.
+                    </p>
+
+                </div>
+
+                <button
+                    class="plan-btn"
+                    onclick={handlePlanFurniture}>
+
+                    Plan Your Furniture
+
+                    <span>→</span>
+
+                </button>
+
+            </div>
+
+
+            <p class="note">
+                Every project is customised. Final design,
+                materials and pricing depend on your requirements.
+            </p>
+
+        </div>
+
+    </section>
 </template>

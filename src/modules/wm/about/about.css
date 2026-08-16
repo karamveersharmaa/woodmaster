@@ -1,66 +1,384 @@
 :host {
-  display: block;
-  background: var(--wm-bg);
+    display: block;
+    background: var(--wm-bg);
 }
+
+
+/* =========================
+   Main Layout
+========================= */
 
 .inner {
-  max-width: var(--wm-max);
-  margin: 0 auto;
-  padding: 88px 24px;
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 56px;
-  align-items: start;
+    max-width: var(--wm-max);
+    margin: 0 auto;
+
+    padding: 96px 24px;
+
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+
+    gap: 72px;
+
+    align-items: start;
 }
+
+
+/* =========================
+   Left Content
+========================= */
+
+.copy {
+    max-width: 620px;
+}
+
 
 .eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  color: var(--wm-copper);
-  margin: 0 0 12px;
+    font-family: var(--font-mono);
+
+    font-size: 0.76rem;
+
+    letter-spacing: 0.08em;
+
+    color: var(--wm-copper);
+
+    margin: 0 0 18px;
 }
+
 
 h2 {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: clamp(1.8rem, 2.2vw + 1rem, 2.6rem);
-  margin: 0 0 24px;
+    font-family: var(--font-display);
+
+    font-weight: 600;
+
+    font-size: clamp(
+        2rem,
+        3vw,
+        3.1rem
+    );
+
+    line-height: 1.08;
+
+    letter-spacing: -0.01em;
+
+    margin: 0 0 28px;
+
+    max-width: 15ch;
 }
+
 
 .copy p {
-  line-height: 1.65;
-  color: var(--wm-ink-soft);
-  font-size: 1rem;
-  margin: 0 0 18px;
-  max-width: 58ch;
+    color: var(--wm-ink-soft);
+
+    font-size: 0.98rem;
+
+    line-height: 1.7;
+
+    max-width: 58ch;
+
+    margin: 0 0 18px;
 }
+
+
+.copy .lead {
+    color: var(--wm-ink);
+
+    font-size: 1.05rem;
+
+    line-height: 1.65;
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================
+   Plan CTA
+========================= */
+
+.plan-link {
+    margin-top: 18px;
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--wm-copper);
+
+    font-family: var(--font-mono);
+
+    font-size: 0.82rem;
+
+    letter-spacing: 0.03em;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.plan-link:hover {
+    color: var(--wm-walnut-dark);
+
+    transform: translateX(4px);
+}
+
+
+.plan-link:focus-visible {
+    outline: 2px solid var(--wm-copper);
+
+    outline-offset: 4px;
+}
+
+
+/* =========================
+   Workshop Panel
+========================= */
+
+.workshop-panel {
+    background: var(--wm-bg-panel);
+
+    border: 1px solid var(--wm-line);
+
+    padding: 30px;
+}
+
+
+/* =========================
+   Panel Heading
+========================= */
+
+.panel-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid var(--wm-line);
+}
+
+
+.panel-heading span {
+    font-family: var(--font-mono);
+
+    font-size: 0.68rem;
+
+    letter-spacing: 0.08em;
+
+    color: var(--wm-copper);
+}
+
+
+/* =========================
+   Statistics
+========================= */
 
 .stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px;
-  margin: 0;
-  border-top: 1px solid var(--wm-line);
-  padding-top: 28px;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 0;
+
+    margin: 0;
+
+    border-bottom: 1px solid var(--wm-line);
 }
 
-.stats dt {
-  font-family: var(--font-display);
-  font-size: 2.1rem;
-  font-weight: 600;
-  color: var(--wm-walnut-dark);
+
+.stat {
+    padding: 28px 18px 28px 0;
 }
 
-.stats dd {
-  margin: 4px 0 0;
-  font-size: 0.85rem;
-  color: var(--wm-ink-soft);
+
+.stat:nth-child(2),
+.stat:nth-child(4) {
+    padding-left: 18px;
+
+    border-left: 1px solid var(--wm-line);
 }
+
+
+.stat:nth-child(3),
+.stat:nth-child(4) {
+    border-top: 1px solid var(--wm-line);
+}
+
+
+.number {
+    display: block;
+
+    font-family: var(--font-display);
+
+    font-size: 2.25rem;
+
+    line-height: 1;
+
+    font-weight: 600;
+
+    color: var(--wm-walnut-dark);
+
+    margin-bottom: 8px;
+}
+
+
+.label {
+    display: block;
+
+    color: var(--wm-ink-soft);
+
+    font-size: 0.78rem;
+
+    line-height: 1.45;
+
+    max-width: 18ch;
+}
+
+
+/* =========================
+   Craftsmanship Principles
+========================= */
+
+.principles {
+    padding-top: 8px;
+}
+
+
+.principle {
+    display: grid;
+
+    grid-template-columns: 42px 1fr;
+
+    gap: 14px;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid var(--wm-line);
+}
+
+
+.principle:last-child {
+    border-bottom: none;
+}
+
+
+.index {
+    font-family: var(--font-mono);
+
+    font-size: 0.68rem;
+
+    color: var(--wm-copper);
+
+    padding-top: 3px;
+}
+
+
+.principle h3 {
+    font-family: var(--font-display);
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    margin: 0 0 5px;
+
+    color: var(--wm-ink);
+}
+
+
+.principle p {
+    font-size: 0.8rem;
+
+    line-height: 1.5;
+
+    color: var(--wm-ink-soft);
+
+    margin: 0;
+
+    max-width: 42ch;
+}
+
+
+/* =========================
+   Tablet
+========================= */
 
 @media (max-width: 900px) {
-  .inner {
-    grid-template-columns: 1fr;
-    gap: 36px;
-  }
+
+    .inner {
+        grid-template-columns: 1fr;
+
+        gap: 48px;
+
+        padding: 80px 24px;
+    }
+
+    .copy {
+        max-width: 680px;
+    }
+
+    h2 {
+        max-width: 18ch;
+    }
+
+    .workshop-panel {
+        max-width: 680px;
+
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+    .inner {
+        padding: 68px 20px;
+
+        gap: 40px;
+    }
+
+    h2 {
+        font-size: 2rem;
+
+        max-width: 16ch;
+    }
+
+    .copy .lead {
+        font-size: 1rem;
+    }
+
+    .workshop-panel {
+        padding: 22px;
+    }
+
+    .panel-heading {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 6px;
+    }
+
+    .stat {
+        padding: 22px 12px 22px 0;
+    }
+
+    .stat:nth-child(2),
+    .stat:nth-child(4) {
+        padding-left: 12px;
+    }
+
+    .number {
+        font-size: 1.9rem;
+    }
+
 }

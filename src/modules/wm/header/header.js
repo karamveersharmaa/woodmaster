@@ -55,10 +55,14 @@ export default class Header extends LightningElement {
     return this.menuOpen ? 'links open' : 'links';
   }
 
-  handlePlanFurniture() {
-      this.dispatchEvent(
-          new CustomEvent('planfurniture')
-      );
+  handleExploreProducts() {
+      console.log('Header: Explore Products clicked');
 
+      this.dispatchEvent(
+          new CustomEvent('exploreproducts', {
+              bubbles: true,
+              composed: true
+          })
+      );
   }
 }

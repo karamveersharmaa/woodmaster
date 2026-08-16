@@ -1,430 +1,200 @@
 :host {
     display: block;
-    background: var(--wm-bg);
 }
+
+/* =========================
+   HERO
+========================= */
 
 .hero {
-    max-width: var(--wm-max);
-    margin: 0 auto;
-    padding: 64px 24px 80px;
-}
+    position: relative;
 
-.inner {
-    display: grid;
-    grid-template-columns: 1.05fr 0.95fr;
-    gap: 56px;
+    min-height: 620px;
+
+    display: flex;
     align-items: center;
+    justify-content: center;
+
+    background-image:
+        linear-gradient(
+            rgba(30, 18, 11, 0.58),
+            rgba(30, 18, 11, 0.58)
+        ),
+        url('/assets/images/woodmaster-workshop.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    color: #ffffff;
+
+    overflow: hidden;
 }
+
 
 /* =========================
-   Hero Content
+   CONTENT
 ========================= */
 
-.eyebrow {
-    font-family: var(--font-mono);
-    font-size: 0.78rem;
-    letter-spacing: 0.06em;
-    color: var(--wm-copper);
-    margin: 0 0 18px;
-}
+.hero-content {
+    position: relative;
+    z-index: 2;
 
-h1 {
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: clamp(2.35rem, 3.6vw + 1rem, 4rem);
-    line-height: 1.04;
-    margin: 0 0 22px;
-    letter-spacing: -0.01em;
-}
+    width: min(900px, calc(100% - 48px));
 
-.lede {
-    font-size: 1.08rem;
-    line-height: 1.6;
-    color: var(--wm-ink-soft);
-    max-width: 46ch;
-    margin: 0 0 32px;
-}
-
-/* =========================
-   Buttons
-========================= */
-
-.cta-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    margin-bottom: 40px;
-}
-
-.btn {
-    font-family: var(--font-mono);
-    font-size: 0.88rem;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    padding: 14px 24px;
-    border-radius: var(--wm-radius);
-    display: inline-block;
-}
-
-.btn-primary {
-    background: var(--wm-walnut-dark);
-    color: var(--wm-on-dark);
-    border: 1px solid var(--wm-walnut-dark);
-}
-
-.btn-primary:hover,
-.btn-primary:focus-visible {
-    background: var(--wm-copper);
-    border-color: var(--wm-copper);
-}
-
-.btn-ghost {
-    color: var(--wm-ink);
-    border: 1px solid var(--wm-line-strong);
-}
-
-.btn-ghost:hover,
-.btn-ghost:focus-visible {
-    border-color: var(--wm-ink);
-}
-
-/* =========================
-   Trust / Stats
-========================= */
-
-.trust {
-    list-style: none;
-    margin: 0;
-    padding: 20px 0 0;
-    border-top: 1px solid var(--wm-line);
-
-    display: flex;
-    gap: 32px;
-    flex-wrap: wrap;
-
-    font-size: 0.86rem;
-    color: var(--wm-ink-soft);
-}
-
-.trust .num {
-    display: block;
-    font-family: var(--font-display);
-    font-size: 1.4rem;
-    color: var(--wm-ink);
-    font-weight: 600;
-}
-
-
-/* ==================================================
-   CUSTOM WOODWORKING SHOWCASE
-================================================== */
-
-.drawing {
-    min-height: 440px;
+    text-align: center;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
-    position: relative;
-
-    padding: 20px 10px;
-}
-
-.showcase-label {
-    font-family: var(--font-mono);
-    font-size: 0.72rem;
-    letter-spacing: 0.08em;
-
-    color: var(--wm-copper);
-
-    margin-bottom: 24px;
-}
-
-.showcase {
-    position: relative;
-
-    width: 100%;
-    min-height: 320px;
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-    gap: 16px;
+    align-items: center;
 }
 
 
 /* =========================
-   Furniture Cards
+   EYEBROW
 ========================= */
 
-.furniture-card {
-    position: relative;
-
-    min-height: 140px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    overflow: hidden;
-
-    background: var(--wm-bg-panel);
-
-    border: 1px solid var(--wm-line);
-
-    padding-bottom: 32px;
-}
-
-.furniture-label {
-    position: absolute;
-    left: 14px;
-    bottom: 9px;
+.eyebrow {
+    margin: 0 0 20px;
 
     font-family: var(--font-mono);
-    font-size: 0.58rem;
+    font-size: 0.76rem;
     letter-spacing: 0.08em;
 
-    color: var(--wm-ink-soft);
-
-    z-index: 2;
-}
-
-.chair-card .furniture-label {
     color: var(--wm-copper-light);
 }
 
 
 /* =========================
-   Chair
+   HEADING
 ========================= */
 
-.chair-card {
-    background: var(--wm-walnut-dark);
-}
+h1 {
+    margin: 0;
 
-.chair {
-    position: relative;
+    max-width: 900px;
 
-    width: 100px;
-    height: 110px;
-}
+    font-family: var(--font-display);
+    font-weight: 600;
 
-.chair-back {
-    position: absolute;
+    font-size: clamp(
+        2.7rem,
+        5vw,
+        5rem
+    );
 
-    left: 20px;
-    top: 8px;
+    line-height: 1.02;
 
-    width: 58px;
-    height: 58px;
+    letter-spacing: -0.02em;
 
-    border: 7px solid var(--wm-copper-light);
-    border-bottom: none;
-}
-
-.chair-seat {
-    position: absolute;
-
-    left: 10px;
-    top: 62px;
-
-    width: 78px;
-    height: 15px;
-
-    background: var(--wm-copper-light);
-}
-
-.chair-leg {
-    position: absolute;
-
-    top: 76px;
-
-    width: 8px;
-    height: 32px;
-
-    background: var(--wm-copper-light);
-}
-
-.chair-leg.left {
-    left: 20px;
-}
-
-.chair-leg.right {
-    right: 20px;
+    color: #ffffff;
 }
 
 
 /* =========================
-   Table
+   DESCRIPTION
 ========================= */
 
-.table {
-    position: relative;
+.lede {
+    max-width: 650px;
 
-    width: 150px;
-    height: 110px;
-}
+    margin: 24px 0 30px;
 
-.table-top {
-    position: absolute;
+    font-size: 1.08rem;
+    line-height: 1.6;
 
-    top: 25px;
-    left: 0;
-
-    width: 150px;
-    height: 18px;
-
-    background: var(--wm-walnut-dark);
-}
-
-.table-leg {
-    position: absolute;
-
-    top: 43px;
-
-    width: 10px;
-    height: 65px;
-
-    background: var(--wm-walnut-dark);
-}
-
-.table-leg.left {
-    left: 18px;
-}
-
-.table-leg.right {
-    right: 18px;
+    color: rgba(255, 255, 255, 0.88);
 }
 
 
 /* =========================
-   Cabinet
+   CTA
 ========================= */
 
-.cabinet-card {
-    grid-column: 1 / 3;
+.hero-cta {
+    padding: 15px 28px;
 
-    background: var(--wm-copper-light);
-}
+    border: 1px solid var(--wm-copper);
 
-.cabinet {
-    display: flex;
-
-    width: 180px;
-    height: 105px;
-
-    background: var(--wm-walnut-dark);
-
-    box-shadow:
-        12px 12px 0 rgba(60, 35, 23, 0.08);
-}
-
-.cabinet-door {
-    position: relative;
-
-    flex: 1;
-
-    border: 1px solid rgba(247, 241, 230, 0.18);
-}
-
-.cabinet-door span {
-    position: absolute;
-
-    width: 4px;
-    height: 4px;
-
-    border-radius: 50%;
-
-    background: var(--wm-copper-light);
-
-    top: 50%;
-    right: 10px;
-}
-
-
-/* =========================
-   Showcase Caption
-========================= */
-
-.showcase-caption {
-    margin-top: 20px;
+    background: var(--wm-copper);
+    color: #ffffff;
 
     font-family: var(--font-mono);
-    font-size: 0.68rem;
-    letter-spacing: 0.08em;
+    font-size: 0.86rem;
+    letter-spacing: 0.02em;
 
-    color: var(--wm-ink-soft);
+    cursor: pointer;
+
+    border-radius: var(--wm-radius);
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.hero-cta:hover {
+    background: var(--wm-walnut-dark);
+    border-color: var(--wm-walnut-dark);
+
+    transform: translateY(-2px);
 }
 
 
 /* =========================
-   Tablet
+   TABLET
 ========================= */
 
-@media (max-width: 900px) {
-
-    .inner {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .drawing {
-        order: -1;
-
-        max-width: 520px;
-
-        margin: 0 auto;
-
-        width: 100%;
-    }
+@media (max-width: 768px) {
 
     .hero {
-        padding: 40px 20px 56px;
+        min-height: 560px;
+
+        background-position: center;
+    }
+
+    h1 {
+        font-size: clamp(
+            2.4rem,
+            8vw,
+            3.8rem
+        );
+    }
+
+    .lede {
+        font-size: 1rem;
     }
 
 }
 
 
 /* =========================
-   Mobile
+   MOBILE
 ========================= */
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
 
-    .drawing {
-        min-height: 360px;
-
-        padding: 10px 0;
+    .hero {
+        min-height: 520px;
     }
 
-    .showcase {
-        min-height: 280px;
-
-        gap: 10px;
+    .hero-content {
+        width: calc(100% - 36px);
     }
 
-    .furniture-card {
-        min-height: 120px;
+    .eyebrow {
+        font-size: 0.65rem;
     }
 
-    .chair {
-        transform: scale(0.8);
+    h1 {
+        font-size: 2.35rem;
     }
 
-    .table {
-        transform: scale(0.8);
+    .lede {
+        font-size: 0.92rem;
     }
 
-    .cabinet {
-        width: 140px;
-        height: 85px;
-    }
-
-    .showcase-caption {
-        font-size: 0.6rem;
+    .hero-cta {
+        padding: 14px 22px;
     }
 
 }

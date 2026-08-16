@@ -1,18 +1,74 @@
 <template>
-  <section class="testimonials">
-    <div class="inner">
-      <p class="eyebrow">⊢— From The Clients —⊣</p>
-      <div class="grid">
-        <template for:each={quotes} for:item="q">
-          <blockquote key={q.id}>
-            <p class="quote">&ldquo;{q.text}&rdquo;</p>
-            <footer>
-              <span class="name">{q.name}</span>
-              <span class="piece">{q.piece}</span>
-            </footer>
-          </blockquote>
-        </template>
-      </div>
-    </div>
-  </section>
+    <section class="testimonials">
+
+        <div class="inner">
+
+            <div class="heading">
+
+                <p class="eyebrow">
+                    ⊢— From Our Clients —⊣
+                </p>
+
+                <h2>
+                    Built for Their Spaces.
+                    Trusted by Them.
+                </h2>
+
+            </div>
+
+
+            <div class="grid">
+
+                <template
+                    for:each={quotes}
+                    for:item="q">
+
+                    <blockquote
+                        key={q.id}
+                        class="testimonial">
+
+                        <div class="quote-mark">
+                            “
+                        </div>
+
+                        <p class="quote">
+                            {q.text}
+                        </p>
+
+                        <footer>
+
+                            <span class="name">
+                                {q.name}
+                            </span>
+
+                            <span class="piece">
+                                {q.piece}
+                            </span>
+
+                        </footer>
+
+                    </blockquote>
+
+                </template>
+
+            </div>
+
+
+            <div class="trust-note">
+
+                <span class="trust-icon">
+                    ✦
+                </span>
+
+                <p>
+                    Every project is measured, designed and built
+                    around the space it is going into — not taken
+                    from a standard catalogue.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
 </template>

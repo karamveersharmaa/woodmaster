@@ -1,55 +1,194 @@
 import { LightningElement } from 'lwc';
 import { products } from '../../../data/products';
+
 export default class App extends LightningElement {
 
     currentPage = 'home';
 
     selectedProduct = null;
 
+
     connectedCallback() {
 
-        // Handle Browser Back / Forward
-        window.addEventListener('popstate', this.handleBrowserNavigation);
+        window.addEventListener(
+            'popstate',
+            this.handleBrowserNavigation
+        );
 
     }
+
 
     disconnectedCallback() {
 
-        window.removeEventListener('popstate', this.handleBrowserNavigation);
+        window.removeEventListener(
+            'popstate',
+            this.handleBrowserNavigation
+        );
 
     }
 
+
+    // =========================================
+    // Browser Navigation
+    // =========================================
+
     handleBrowserNavigation = (event) => {
 
-        if (event.state && event.state.page === 'productDetails') {
+        const page = event.state?.page || 'home';
+
+
+        if (page === 'productDetails') {
 
             this.currentPage = 'productDetails';
+
             this.selectedProduct = event.state.product;
 
-        } else {
+            return;
+        }
 
-            this.currentPage = 'home';
+
+        if (page === 'products') {
+
+            this.currentPage = 'products';
+
             this.selectedProduct = null;
+
+            return;
+        }
+
+
+        if (page === 'cart') {
+
+            this.currentPage = 'cart';
+
+            this.selectedProduct = null;
+
+            return;
+        }
+
+
+        this.currentPage = 'home';
+
+        this.selectedProduct = null;
+
+    };
+
+
+    // =========================================
+    // Page Getters
+    // =========================================
+
+    get isHomePage() {
+        return this.currentPage === 'home';
+    }
+
+
+    get isProductsPage() {
+        return this.currentPage === 'products';
+    }
+
+
+    get isProductDetailsPage() {
+        return this.currentPage === 'productDetails';
+    }
+
+
+    get isCartPage() {
+        return this.currentPage === 'cart';
+    }
+
+    get isPlanFurniturePage() {
+        return this.currentPage === 'planFurniture';
+    }
+
+
+    // =========================================
+    // Plan Your Furniture
+    // =========================================
+
+    handlePlanFurniture() {
+
+        console.log('Plan Furniture event received');
+
+        const planFurniture =
+            this.template.querySelector('wm-plan-furniture');
+
+        if (planFurniture) {
+
+            planFurniture.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
 
         }
 
     }
 
-    get isHomePage() {
 
-        return this.currentPage === 'home';
+    // =========================================
+    // Explore Products
+    // =========================================
+
+    handleExploreProducts() {
+
+        console.log('Explore Products event received');
+        this.currentPage = 'products';
 
     }
 
-    get isProductDetailsPage() {
 
-        return this.currentPage === 'productDetails';
+    // =========================================
+    // Product Click
+    // =========================================
+
+    handleProductClick(event) {
+
+        const productId =
+            event.detail.productId;
+
+
+        const selectedProduct =
+            products.find(
+                product => product.id === productId
+            );
+
+
+        if (!selectedProduct) {
+
+            console.error(
+                'Product not found:',
+                productId
+            );
+
+            return;
+        }
+
+
+        this.selectedProduct = selectedProduct;
+
+        this.currentPage = 'productDetails';
 
     }
 
-    get isCartPage() {
-        return this.currentPage === 'cart';
+
+    // =========================================
+    // Back From Product Details
+    // =========================================
+
+    handleBackToProducts() {
+
+        console.log('Back to Products clicked');
+
+        this.currentPage = 'products';
+
+        this.selectedProduct = null;
+
     }
+
+
+    // =========================================
+    // Cart
+    // =========================================
 
     handleOpenCart() {
 
@@ -57,37 +196,6 @@ export default class App extends LightningElement {
 
     }
 
-    handleProductClick(event) {
-
-        const productId = event.detail.productId;
-
-        const selectedProduct = products.find(
-            product => product.id === productId
-        );
-
-        if (!selectedProduct) {
-            console.error('Product not found:', productId);
-            return;
-        }
-
-        this.selectedProduct = selectedProduct;
-
-        this.currentPage = 'productDetails';
-
-        console.log('Selected Product');
-        console.log(this.selectedProduct);
-
-    }
-
-    handleBackToHome() {
-
-        console.log('Back event received');
-
-        this.currentPage = 'home';
-
-        this.selectedProduct = null;
-
-    }
 
     handleCartClick() {
 
@@ -97,29 +205,34 @@ export default class App extends LightningElement {
 
     }
 
+
+    // =========================================
+    // Continue Shopping
+    // =========================================
+
     handleContinueShopping() {
+
         console.log('Continue Shopping event received');
+
         this.currentPage = 'home';
 
-        window.history.pushState(
-            { page: 'home' },
-            '',
-            '/'
-        );
+        this.selectedProduct = null;
 
     }
 
-    handlePlanFurniture() {
 
-        console.log('Plan Furniture event received');
+    // =========================================
+    // Back To Home
+    // =========================================
 
-        this.currentPage = 'planFurniture';
+    handleBackToHome() {
 
-    }
+        console.log('Back event received');
 
-    get isPlanFurniturePage() {
-        console.log('isPlanFurniturePage called');
-        return this.currentPage === 'planFurniture';
+        this.currentPage = 'home';
+
+        this.selectedProduct = null;
+
     }
 
 }

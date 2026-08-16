@@ -1,42 +1,133 @@
 <template>
-  <section class="about" id="about">
-    <div class="inner">
-      <div class="copy">
-        <p class="eyebrow">⊢— The Workshop —⊣</p>
-        <h2>Wood first. Screws second.</h2>
-        <p>
-          WoodMaster is run out of a small workshop in the Delhi NCR area,
-          building furniture and fittings the way it was done before
-          flat-pack: seasoned solid wood, cut and joined by hand, finished
-          on site. No MDF, no laminate shortcuts on load-bearing joints
-          &mdash; if a piece is going to hold your clothes, your books or your
-          dinner for the next twenty years, it's built like it has to.
-        </p>
-        <p>
-          Every job starts with a site visit and a hand-drawn sketch, not a
-          catalogue page, because your almirah has to fit your wall, not
-          the other way round.
-        </p>
-      </div>
+    <section class="about" id="about">
 
-      <dl class="stats">
-        <div>
-          <dt>25+</dt>
-          <dd>Years at the bench</dd>
+        <div class="inner">
+
+            <!-- LEFT: STORY -->
+            <div class="copy">
+
+                <p class="eyebrow">
+                    ⊢— The WoodMaster Approach —⊣
+                </p>
+
+                <h2>
+                    Built for your space,
+                    not picked from a catalogue.
+                </h2>
+
+                <p class="lead">
+                    Every piece we build starts with the space it needs to
+                    live in. We measure, understand how you use the room,
+                    discuss your requirements and then build around them.
+                </p>
+
+                <p>
+                    From wardrobes and TV units to dining tables, doors and
+                    complete custom furniture, our work is made to fit your
+                    dimensions, style and everyday needs.
+                </p>
+
+                <p>
+                    We believe good furniture should last. That's why we focus
+                    on solid construction, carefully selected timber and
+                    proper finishing rather than shortcuts.
+                </p>
+
+                <button
+                    class="plan-link"
+                    onclick={handlePlanFurniture}>
+                    Start Planning Your Furniture →
+                </button>
+
+            </div>
+
+
+            <!-- RIGHT: TRUST / CRAFTSMANSHIP -->
+            <div class="workshop-panel">
+
+                <div class="panel-heading">
+                    <span>WOODMASTER</span>
+                    <span>CRAFTSMANSHIP</span>
+                </div>
+
+                <div class="stats">
+
+                    <div class="stat">
+                        <span class="number">25+</span>
+                        <span class="label">
+                            Years of woodworking experience
+                        </span>
+                    </div>
+
+                    <div class="stat">
+                        <span class="number">300+</span>
+                        <span class="label">
+                            Pieces delivered
+                        </span>
+                    </div>
+
+                    <div class="stat">
+                        <span class="number">4</span>
+                        <span class="label">
+                            Timbers worked regularly
+                        </span>
+                    </div>
+
+                    <div class="stat">
+                        <span class="number">100%</span>
+                        <span class="label">
+                            Measured around your space
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="principles">
+
+                    <div class="principle">
+                        <span class="index">01</span>
+
+                        <div>
+                            <h3>Measure First</h3>
+                            <p>
+                                Your furniture starts with the actual
+                                dimensions of your space.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="principle">
+                        <span class="index">02</span>
+
+                        <div>
+                            <h3>Build Properly</h3>
+                            <p>
+                                Construction is designed for everyday use,
+                                durability and long-term strength.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="principle">
+                        <span class="index">03</span>
+
+                        <div>
+                            <h3>Finish Carefully</h3>
+                            <p>
+                                Every piece is finished with attention to
+                                material, detail and the final space.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-        <div>
-          <dt>300+</dt>
-          <dd>Pieces delivered</dd>
-        </div>
-        <div>
-          <dt>4</dt>
-          <dd>Timbers worked regularly</dd>
-        </div>
-        <div>
-          <dt>100%</dt>
-          <dd>Site-measured, not guessed</dd>
-        </div>
-      </dl>
-    </div>
-  </section>
+
+    </section>
 </template>
